@@ -1,0 +1,28 @@
+Gain: -3
+Gain: -3
+Tn: 4.18465 K
+Setting at.Temp=0.0
+device::T = 4.2
+Gain: -3
+Gain: -3
+Tn: 0.238824 K
+Setting at.Temp=300.0
+Gain: -3
+Gain: -3
+Tn: 298.579 K
+Setting at.dB=10.0
+Gain: -10
+Gain: -10
+Tn: 2700 K
+Shadow global temperature, set it to 100 K
+Gain: -10
+Gain: -10
+Tn: 900.002 K
+Test copy constructor:
+Gain: -10
+Gain: -10
+Tn: 900.002 K
+Test operator=
+Gain: -10
+Gain: -10
+Tn: 900.002 K

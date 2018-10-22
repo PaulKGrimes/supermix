@@ -1,0 +1,30 @@
+P(x) should be x*x:
+
+STL vector: 
+P(5): 25+i0
+error: -0+i0
+
+P(1.1): 1.21+i0
+error: -6.10623e-17+i0
+
+use previous data: 
+P(-1.41421): 2+i0
+error: 0+i0
+
+STL vector iterator and count: 
+P(0): 0+i0
+error: 0+i0
+
+copy constructor: 
+P(5): 25+i0
+error: -0+i0
+
+P(-1.41421): 2+i0
+error: 0+i0
+
+C array pointer and count: 
+P(10): 100+i0
+error: -0+i0
+
+P(1.1): 1.21+i0
+error: -6.10623e-17+i0

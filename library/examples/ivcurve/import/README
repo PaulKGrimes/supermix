@@ -1,0 +1,57 @@
+            Importing Measured IV Data Into SuperMix
+
+This directory contains the source for several utilities which can
+help you adapt measured IV data for use with SuperMix SIS mixer
+models. Each utility assumes that its input data is in the form of
+lines of text each containing a single whitespace-separated voltage
+and current pair. The input file may also contain lines of comments
+which are by default designated by a leading '#' character. Such lines
+are copied to the program's output but otherwise ignored.
+
+The V-I data should consist of a single sweep across the SIS IV curve
+from lowest voltage to highest voltage, preferably from around -2*Vgap
+to +2*Vgap. The voltages should be very nearly sorted, that is: sorted
+except for minor fluctuations in the measured voltage near the SIS
+gap. The data file "raw.iv.dat" is an example of a suitable file. 
+
+Each utility adds a few additional comment lines to the beginning of
+its output describing how it was invoked and listing the relevant
+parameter values it used to process the IV data.
+
+To learn about how to use the individual utilities, simply invoke each
+one without providing any additional command line arguments. Each
+utility will provide a brief description and usage prompt. Data output
+from each utility is to its standard output stream, so redirect the
+output into a file or pipe using '>' or '|' respectively on the
+command line used to invoke the utility. See the shell script
+"process" for examples.
+
+A sample measured IV data file, "raw.iv.dat", is included to let you
+experiment with the utilities. A shell script, "process", is also
+provided which demonstrates the order in which you should apply the
+utilities to properly condition and normalize measured IV data.
+
+There are two different ways to generate smoothed, normalized IV
+curves from measured data presented here: 
+
+(1) Assume a theoretical model for an SIS IV curve and fit the model
+    to the data by adjusting a few model parameters using a maximum
+    likelihood method. This is the approach taken by modeliv.cc using
+    a simple IV model.
+
+(2) Attempt to adequately smooth and normalize the measured data while
+    making only minimal assumptions about what the IV curve should
+    look like. Experiment with the aggressiveness of your smoothing
+    efforts until you are satisfied with the results. This approach is
+    used by the topositive.cc - normalizeiv.cc pair of utilities.
+
+The remaining utilities, pruneiv.cc and offsetiv.cc, are useful for
+data conditioning regardless of the method you choose.
+
+A plotting program such as xmgrace will be useful to examine the
+outputs of the utilities.
+
+Because each utility outputs to its standard output stream, a bold
+user could execute a single command line like:
+ ./pruneiv raw.iv.dat 9.0 0.4 | ./offsetiv - | ./topositive - 2.0 |
+ ./normalizeiv - >iv.dat

@@ -1,0 +1,20 @@
+
+The size of a terminator should be 1:
+zterm: 1	yterm: 1
+
+The default short-circuit zterm:
+S: 	C: 	B:
+-1+i0	0+i0	0+i0
+
+The default open-circuit yterm:
+S: 	C: 	B:
+1+i0	0+i0	0+i0
+
+The Z0 zterm:
+S: 	C: 	B:
+0+i0	300+i0	0+i0
+
+The 1/Z0 yterm:
+S: 	C: 	B:
+0+i0	300+i0	0+i0
+

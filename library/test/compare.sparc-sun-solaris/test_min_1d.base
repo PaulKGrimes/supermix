@@ -1,0 +1,27 @@
+
+return value fm bracket_minimum(): 0
+a: 0, b: 1.61803, c: 4.23607
+fa: -0, fb: -5.15247, fc: 10.6182
+
+return value fm refine_minimum(): -5.38533
+a: 1.77879, b: 1.77879, c: 1.77879
+
+return value fm bracket_minimum(): 0
+a: -2.2382, b: -1.97639, c: 0.229871
+fa: 0.674101, fb: -1.08908, fc: -0.13618
+
+return value fm refine_minimum(): -1.93773
+a: -1.66793, b: -1.66793, c: -1.66793
+
+return value fm bracket_minimum(): 0
+a: 5.56393, b: 3.52887, c: 2.66049
+fa: 54.6817, fb: -3.71211, fc: -2.0897
+
+return value fm refine_minimum(): -3.97628
+a: 3.40219, b: 3.40219, c: 3.40219
+
+return value fm minimize1(f,10,10): 
+ fmin = -3.97628, xmin = 3.40219
+
+return value fm minimize1(f,-2.5,-2.5): 
+ fmin = -1.93773, xmin = -1.66793

@@ -1,0 +1,15 @@
+Do something illegal....
+
+WARNING: Port number out of range for call to S(i,j).
+How about a negative resistance?
+Resistor S matrix: 
+
+0+i0 1+i0
+1+i0 0+i0
+Resistor C matrix: 
+
+0+i0 -0+i0
+0+i0 0+i0
+Now with strict=TRUE....
+
+FATAL ERROR: Port number out of range for call to S(i,j).

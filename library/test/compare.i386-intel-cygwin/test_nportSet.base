@@ -1,0 +1,39 @@
+Set length = 0
+
+Set length = 1
+1 
+Set length = 2
+2 1 
+Set length = 3
+3 2 1 
+Set length = 3
+3 2 1 
+Set length = 3
+3 2 1 
+Set length = 3
+3 2 1 
+Set length = 4
+4 3 2 1 
+Set length = 5
+5 4 3 2 1 
+Copying list.
+New Set length = 5
+1 2 3 4 5 
+Popping:
+Set length = 4
+5 4 2 1 
+Set length = 3
+5 4 2 
+Set length = 2
+4 2 
+Set length = 1
+2 
+Set length = 0
+
+Set length = 0
+
+New Set length = 5
+1 2 3 4 5 
+copy of empty set length = 0
+
+1 2 3 4 5 

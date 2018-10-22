@@ -1,0 +1,86 @@
+Calculating results of Pozar example 11.5, page 617.
+delta = 0.696 -83.1
+K = 0.607
+
+Load (port 2):
+Center = 1.36 46.7
+Radius = 0.5
+
+Source (port 1):
+Center = 1.13 68.5
+Radius = 0.199
+
+Not Unconditionally Stable
+
+Print out original, plus copies made 4 different ways.
+All five lines should be identical.
+0.696 -83.070  0.607  1.363 46.687  0.500  1.132 68.461  0.199  0
+0.696 -83.070  0.607  1.363 46.687  0.500  1.132 68.461  0.199  0
+0.696 -83.070  0.607  1.363 46.687  0.500  1.132 68.461  0.199  0
+0.696 -83.070  0.607  1.363 46.687  0.500  1.132 68.461  0.199  0
+0.696 -83.070  0.607  1.363 46.687  0.500  1.132 68.461  0.199  0
+
+Now make some mistakes, and verify warning messages.
+
+WARNING: port parameter must be 1 or 2 in ampdata::center(int).
+0.000 0.000
+
+WARNING: port parameter must be 1 or 2 in ampdata::center(int).
+0.000 0.000
+
+WARNING: port parameter must be 1 or 2 in ampdata::radius(int).
+0.000
+
+WARNING: port parameter must be 1 or 2 in ampdata::radius(int).
+0.000
+
+WARNING: ampdata size != 2 in ampdata::k().
+0.000
+
+WARNING: ampdata size != 2 in ampdata::delta().
+0.000 0.000
+
+WARNING: ampdata size != 2 in ampdata::center(int).
+0.000 0.000
+
+WARNING: ampdata size != 2 in ampdata::radius(int).
+0.000
+
+WARNING: ampdata size != 2 in ampdata::k().
+0
+
+WARNING: ampdata size != 2 in ampdata::k().
+0.000
+
+WARNING: ampdata size != 2 in ampdata::delta().
+0.000 0.000
+
+WARNING: ampdata size != 2 in ampdata::center(int).
+0.000 0.000
+
+WARNING: ampdata size != 2 in ampdata::radius(int).
+0.000
+
+WARNING: ampdata size != 2 in ampdata::k().
+0
+
+Test gamma_opt, t_min, F_min, Rn, etc.
+! Noise data
+!               Gamma   Gamma
+!               opt     opt
+! Freq  Fmin    Mag     Angle   Rn
+1.000	0.010	0.963	9.168	0.058
+1.500	0.015	0.946	13.742	0.058
+2.000	0.020	0.929	18.303	0.058
+2.500	0.025	0.913	22.848	0.057
+3.000	0.031	0.897	27.372	0.057
+3.500	0.036	0.882	31.872	0.056
+4.000	0.042	0.867	36.343	0.056
+4.500	0.048	0.854	40.782	0.055
+5.000	0.054	0.841	45.185	0.054
+5.500	0.060	0.829	49.549	0.053
+6.000	0.066	0.817	53.869	0.052
+6.500	0.072	0.806	58.143	0.051
+7.000	0.079	0.797	62.367	0.050
+7.500	0.085	0.787	66.539	0.049
+8.000	0.092	0.779	70.656	0.048

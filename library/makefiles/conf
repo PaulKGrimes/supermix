@@ -1,0 +1,9 @@
+#!/bin/sh
+
+OBJDIR=$1
+
+if [ ! -d $OBJDIR ]
+then
+	mkdir $OBJDIR
+	ln -s ../makefiles/Makefile.generic $OBJDIR/Makefile
+fi

@@ -1,0 +1,30 @@
+Iteration 1
+Parameters: 
+100 50
+Function value: 0.19795
+
+Iteration 2
+Parameters: 
+1 0.1
+Function value: 0.000497785
+
+Iteration 3
+Parameters: 
+39.9932 9.94281
+Function value: 2.90924e-08
+
+Iteration 4
+Parameters: 
+40 10.0002
+Function value: 3.31505e-14
+
+Iteration 5
+Parameters: 
+40 10
+Function value: 3.13046e-20
+
+Final error function value is: 3.13046e-20
+Final parameters are: 
+40 10
+Double-check the parameter values: 40  10
+Parameters with units: 40 ohms,  100 pF

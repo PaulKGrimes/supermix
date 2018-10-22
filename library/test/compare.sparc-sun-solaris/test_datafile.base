@@ -1,0 +1,9 @@
+Data file testdatafile.dat :
+Number of lines = 5
+Number of columns = 5
+
+Line 1: 1  2.2  3  4  5  
+Line 2: 4  5.7  -2  0  0  
+Line 3: 2.3  3e+07  -0.12  2  0  
+Line 4: 23  32  0  0  0  
+Line 5: 2  1  0  0  0  

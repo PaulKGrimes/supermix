@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# Make the utilities:
+make
+cd ..; make makeikk ; cd import
+
+# Prune the IV data so that potentially inaccurate data points
+# are deleted:
+./pruneiv raw.iv.dat 9.0 0.4 >iv.pruneiv.dat
+
+# Estimate and remove any zero offsets in the voltage and
+# current values in the data
+./offsetiv iv.pruneiv.dat >iv.pruneiv.offsetiv.dat
+
+# Now convert the data to smoothed, nonnegative IV values
+./topositive iv.pruneiv.offsetiv.dat 2.0 >iv.pruneiv.offsetiv.topositive.dat
+
+# Normalize the data so that Vgap is at 1.0 and the slope
+# of the IV above Vgap is also 1.0. The resulting file is
+# suitable for use with SuperMix.
+./normalizeiv iv.pruneiv.offsetiv.topositive.dat >iv.dat
+
+# Calculate the Kramers-Kronig transform. The resulting file, 
+# "ikk.dat" must be input to SuperMix along with "iv.dat". 
+../makeikk iv.dat >ikk.dat
+
+# Now fit a simple model IV curve to the data rather than use
+# topositive and normalizeiv. This may not do a very good job
+# because the model is very naive.
+./modeliv iv.pruneiv.offsetiv.dat 5.0 37 >iv.model.dat
+../makeikk iv.model.dat >ikk.model.dat

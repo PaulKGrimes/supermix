@@ -1,0 +1,59 @@
+
+The 100 Ohm Tee
+
+S:
+0.52381+i0 0.190476+i0
+0.190476+i0 0.52381+i0
+Y:
+0.00666667+i0 -0.00333333+i0
+-0.00333333+i0 0.00666667+i0
+Z:
+200+i0 100+i0
+100+i0 200+i0
+Y*Z:
+1+i0 0+i0
+0+i0 1+i0
+S - sdata(Y):
+0+i0 0+i0
+0+i0 0+i0
+S - sdata(Z):
+0+i0 0+i0
+0+i0 0+i0
+Y - ydata(Z):
+0+i0 0+i0
+0+i0 0+i0
+Z - zdata(Y):
+0+i0 0+i0
+0+i0 0+i0
+S - sdata(Yptr):
+0+i0 0+i0
+0+i0 0+i0
+S - S2:
+0+i0 0+i0
+0+i0 0+i0
+S - S2: (another way)
+0+i0 0+i0
+0+i0 0+i0
+Noise Matrix Comparisons:
+
+S - sdata(Y):
+0+i0 0+i0
+0+i0 0+i0
+S - sdata(Z):
+0+i0 0+i0
+0+i0 0+i0
+Y - ydata(Z):
+0+i0 0+i0
+0+i0 0+i0
+Z - zdata(Y):
+0+i0 0+i0
+0+i0 0+i0
+S - sdata(Yptr):
+0+i0 0+i0
+0+i0 0+i0
+C
+206.803+i0 -59.8639+i0
+-59.8639+i0 206.803+i0
+s2.C (should be a matrix of zeroes)
+0+i0 0+i0
+0+i0 0+i0

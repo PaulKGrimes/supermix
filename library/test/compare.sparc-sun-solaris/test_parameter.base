@@ -1,0 +1,40 @@
+Expect 55555: 55555
+Expect 15111: 15111
+Expect 25222: 15112
+Expect 2: 1
+Expect 8: 8
+Expect 1.5: 1
+Expect 5: 5
+Expect 3: 3
+Expect 1.5 1.5: 1 1
+Expect 1.5 3: 1 3
+Attempt self-shadowing (a = &a):
+
+WARNING: real_parameter::shadow(): a real_parameter must not shadow itself.
+1
+Attempt inifinite shadow loop:
+
+WARNING: real_parameter::get(): Terminating infinite shadowing loop, returning zero.
+
+WARNING: real_parameter::get(): Terminating infinite shadowing loop, returning zero.
+0 0
+Expect 15: 15
+Expect 42: 42
+Expect 49: 49
+Expect 8: 8
+Test unary operators
+5 unary -: -5
+5 unary +: 5
+Test +=, -=, *=, /=
+Expect 8: 8
+Expect 11: 11
+Expect 2: 2
+Expect -2: -2
+Expect 4: 4
+Expect 12: 12
+Expect 4: 4
+Expect 2: 2
+Test scaling.
+Expect 5, 10: 5, 10
+Expect 6, 12: 6, 12
+Expect 6, 18: 6, 18

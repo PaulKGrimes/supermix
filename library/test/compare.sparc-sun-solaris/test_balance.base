@@ -1,0 +1,84 @@
+
+Created an empty mixer. Status values:
+	flag_mixer_incomplete: 		 True
+	flag_state_invalid: 		 False
+	flag_balance_inaccurate: 	 False
+	harmonics: 			 1
+	junctions: 			 0
+The Bias circuit (S,B):
+-0.818182+i0 0+i0
+0+i0 -0.666667+i0
+
+0.289271+i0 0.282843+i0
+
+The LO source (S,B):
+0+i0
+
+0.075+i0
+Added LO and set operating state of junction. Status values:
+	flag_mixer_incomplete: 		 False
+	flag_state_invalid: 		 False
+	flag_balance_inaccurate: 	 True
+	harmonics: 			 3
+	junctions: 			 1
+
+Junction Operating State:
+voltage (millivolt RMS):
+2.25+i0 1.06066+i0 0+i0 0+i0
+current (milliamp RMS):
+0.0943286+i0 0.121701+i0.239431 -0.010904-i0.0205697 0.00273379+i0.00224457
+Attempting balance of the single-junction mixer...
+balance() return value: 0
+
+Status values:
+	flag_mixer_incomplete: 		 False
+	flag_state_invalid: 		 False
+	flag_balance_inaccurate: 	 False
+	harmonics: 			 3
+	junctions: 			 1
+
+Junction Operating State:
+voltage (millivolt RMS):
+2.14082+i0 0.0386332-i0.0662978 -0.000264075-i0.000224854 1.06292e-06-i5.72225e-07
+current (milliamp RMS):
+0.0218361+i0 0.0204405+i0.00132596 5.28148e-06+i4.49717e-06 -2.12933e-08+i1.45396e-08
+
+Should be a complete, 2 junction mixer. Status values:
+	flag_mixer_incomplete: 		 False
+	flag_state_invalid: 		 False
+	flag_balance_inaccurate: 	 True
+	harmonics: 			 3
+	junctions: 			 2
+
+Junction j1 Operating State:
+voltage (millivolt RMS):
+2.25+i0 1.06066+i0 0+i0 0+i0
+current (milliamp RMS):
+0.0943286+i0 0.121701+i0.239431 -0.010904-i0.0205697 0.00273379+i0.00224457
+
+Junction j2 Operating State:
+voltage (millivolt RMS):
+2.4+i0 1.06066+i0 0+i0 0+i0
+current (milliamp RMS):
+0.0986312+i0 0.125925+i0.225973 -0.0117396-i0.0183234 0.00288741+i0.00153536
+Attempting balance of the two-junction mixer...
+balance() return value: 0
+
+Status values:
+	flag_mixer_incomplete: 		 False
+	flag_state_invalid: 		 False
+	flag_balance_inaccurate: 	 False
+	harmonics: 			 3
+	junctions: 			 2
+
+Junction j1 Operating State:
+voltage (millivolt RMS):
+2.14233+i0 0.0186503-i0.0341655 -7.23096e-05-i5.20544e-05 1.42861e-07-i9.01624e-08
+current (milliamp RMS):
+0.0215332+i0 0.0103803+i0.000377748 4.86419e-07+i7.27598e-07 1.47328e-09+i7.49097e-09
+
+Junction j2 Operating State:
+voltage (millivolt RMS):
+2.18081+i0 0.0187784-i0.0340857 -7.27734e-05-i5.16261e-05 1.3772e-07-i9.67875e-08
+current (milliamp RMS):
+0.0219192+i0 0.0102523+i0.000298006 9.50135e-07+i2.99267e-07 6.26805e-09+i1.30426e-08

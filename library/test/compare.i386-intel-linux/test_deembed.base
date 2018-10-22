@@ -1,0 +1,9 @@
+The following two matrices should be the same.
+
+S parameter of a bare transistor:
+0.644851-i0.675995 0.0329569+i0.0605078
+-4.59972+i2.99033 0.350518-i0.309236
+
+S parameter of the same transistor, deembedded:
+0.644851-i0.675995 0.0329569+i0.0605078
+-4.59972+i2.99033 0.350518-i0.309236

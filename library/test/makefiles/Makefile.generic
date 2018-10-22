@@ -1,0 +1,115 @@
+# Makefile for test programs
+# SuperMix version 1.4  C++ source file
+#
+# Copyright (c) 1999, 2001, 2004 California Institute of Technology.
+# All rights reserved.
+#
+# Suitable for a single architecture/OS user.
+
+CC = g++
+
+# Include any additional compiler flags here
+CFLAGS = -s -Wall -I../../include
+
+# Set location of the supermix shared library.
+SUPERMIXDIR := ../..
+OBJDIR := $(SUPERMIXDIR)/obj
+LIB = libMiX.a
+SUPERMIXLIB = $(OBJDIR)/$(LIB)
+
+TESTS = test_adaptive \
+	test_alias \
+	test_ampdata \
+	test_ant \
+	test_atten \
+	test_balance \
+	test_circuit \
+	test_circuit_2 \
+	test_circuit_block \
+	test_circuit_copy \
+	test_circulator \
+	test_ck \
+	test_ck_prompt \
+	test_complex_input \
+	test_complex_io \
+	test_complex_trig \
+	test_connectors \
+	test_cpw \
+	test_data_ptr \
+	test_datafile \
+	test_datafile_copy \
+	test_deembed \
+	test_delay \
+	test_elements \
+	test_errfunc \
+	test_errors \
+	test_fet \
+	test_formatting \
+	test_generator \
+	test_hemt \
+	test_hybrid \
+	test_id \
+	test_inst \
+	test_integ \
+	test_interpolator \
+	test_io \
+	test_iv \
+	test_iv_slope \
+	test_linterp \
+	test_microstrip \
+	test_min_1d \
+	test_mix_current \
+	test_mixer \
+	test_mixer2 \
+	test_mixer3 \
+	test_mixer_noise \
+	test_mixer_speed \
+	test_ms3 \
+	test_nportSet \
+	test_parameter \
+	test_poly \
+	test_port \
+	test_primitives \
+	test_pumpedsis \
+	test_recvr \
+        test_recvr_2 \
+	test_reindex \
+	test_rinterp \
+	test_scale \
+	test_sdata \
+	test_sd_interp \
+        test_sfinterp \
+	test_sis \
+	test_speed \
+	test_stub \
+	test_surfZ \
+	test_term \
+	test_touch \
+	test_touch_2 \
+	test_tran \
+	test_trline
+
+VPATH = ../src
+
+.SUFFIXES: .cc .o
+
+.cc:
+	$(CC) $(CFLAGS) -o $@ $< $(SUPERMIXLIB)
+
+all: $(TESTS)
+
+$(TESTS): $(SUPERMIXLIB)
+
+# Use "make clean" to rid yourself of executables
+# The conditionals look to see if you are running Cygwin under MSWindows
+# and remove *.exe files as well. 
+.PHONY: clean
+clean:
+	-rm -f core $(TESTS) *.o
+ifeq ($(OSTYPE), cygwin)
+	-rm -f $(patsubst %, %.exe, $(TESTS))
+else
+ifeq ($(TERM), cygwin)
+	-rm -f $(patsubst %, %.exe, $(TESTS))
+endif
+endif

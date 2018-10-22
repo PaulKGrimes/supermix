@@ -1,0 +1,44 @@
+Default output, two doubles, one complex
+12345.7
+-9876.54
+12345.7+i9876.54
+
+Use scientific notation
+1.234568e+04
+-9.876543e+03
+1.234568e+04+i9.876543e+03
+
+Scientific, capital E
+1.234568E+04
+-9.876543E+03
+1.234568E+04+i9.876543E+03
+
+All on one line, setw(20) or setw(30) set before each number output
+        1.234568E+04       -9.876543E+03    1.234568E+04+i9.876543E+03
+
+Try a single space separator in complex
+1.234568E+04 9.876543E+03
+
+Back to general format, no uppercase e, but precision 15
+12345.6789000000
+-9876.54321000000
+12345.6789000000 9876.54321000000
+
+Default precision; use delimited form, width 30, two complex
+             (12345.7,9876.54)            (12345.7,-9876.54)
+
+Same, use polar output mode
+            (15810.2,0.674741)           (15810.2,-0.674741)
+
+Polar output mode with default output strings
+              15810.2 0.674741             15810.2 -0.674741
+
+Polar output of 0, +/-1
+     0.00000 0.00000     1.00000 0.00000     1.00000 3.14159
+
+Same, angles in degrees
+     0.00000 0.00000     1.00000 0.00000     1.00000 180.000
+
+Same, fixed format
+   0.000000 0.000000   1.000000 0.000000 1.000000 180.000000
+

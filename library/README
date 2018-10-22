@@ -1,0 +1,146 @@
+		     SuperMix ver 1.6 Readme File
+
+			 Welcome to SuperMix!
+
+Clearly you have successfully decompressed and installed at least some
+of the SuperMix library directory structure. The directory containing
+this readme file should be the parent directory of the complete
+SuperMix library, and is probably named "supermix". This directory
+should at least have the following subdirectories:
+
+    examples/   include/   lib-src/   makefiles/
+
+This directory must also include a file named "Makefile". It may also
+include one or more subdirectories with names like "test/", "obj/" or
+"obj.sparc-sun-solaris/".
+
+
+			How Do I Get Started?
+
+From the SuperMix parent directory (the one containing this readme
+file) execute "make lib". This will build the library for your
+machine, putting the compiled object code in a subdirectory named
+either "obj" or possibly "obj.<machine>", where <machine> identifies
+your machine type.
+
+Now read the README file in the supermix/examples/ subdirectory and go
+through the example programs.
+
+To use the SuperMix library in your own projects, copy the Makefile
+from one of the subdirectories of supermix/examples/ into the
+directory containing your project code. Then edit the following lines
+of the Makefile: 
+    SUPERMIXDIR = 
+    EXES =
+    DEPEND =
+
+Following the "SUPERMIXDIR = ", replace the given path with the
+correct directory path to this SuperMix parent directory. Following
+the "EXES = ", enter the name of the programs you wish to compile. The
+make program will then look for files with these names appended with
+".cc" in order to find your source code. The "DEPEND = " line may be
+edited to add any files such as local header files on which your
+program depends.
+
+Once these changes to the Makefile are saved, you should be able to
+just execute "make" and your programs will be compiled. If you wish,
+you can also execute "make myprogram", etc., in which case make will
+look for a file named "myprogram.cc" to compile and link with the
+SuperMix library. The resulting executable file will be named
+"myprogram". Of course, you can use whatever name you want instead of
+"myprogram"!
+
+
+	  What are the System Requirements to Use SuperMix?
+
+SuperMix is designed to run under Unix or Linux. To compile and run
+programs using the SuperMix class library, you must have:
+
+     g++           The GNU C/C++ compiler ver 3.2 or later
+     make          The GNU version of Make, ver 3.75 or later
+
+Both tools are copyright The Free Software Foundation, and are
+available on most systems.
+
+YOU MUST USE GNU MAKE TO USE THE MAKEFILES INCLUDED IN THIS LIBRARY!!!
+Check your version of make by entering "make -ver". If the result is
+not "GNU Make version 3.75, ... <etc,etc>", then talk to your system
+administrator.
+
+
+			  What is SuperMix?
+
+SuperMix is an extensive C++ software library written to aid in the
+design and optimization of high-frequency circuits.
+
+Containing over 48,000 lines of extensively-documented source code,
+the SuperMix class library and its associated programs allow users to
+write, compile, and run sophisticated circuit simulations of arbitrary
+complexity. By representing circuit components as C++ class objects,
+the library provides for natural, nearly self-documenting code which
+reads more like a circuit description than a program.  Although
+primarily intended for superconducting submillimeter circuit design,
+SuperMix provides a complete set of circuit elements suitable for
+frequency-domain simulations from DC to the terahertz range. Its
+lumped elements include detailed HEMT transistor models as well as
+passive components. Its high frequency distributed elements include
+standard components such as transmission lines, hybrids, attenuators,
+etc.
+
+What sets SuperMix apart, however, is its inclusion of SIS
+quasiparticle tunnel junctions and physical transmission line
+components such as microstrip and CPW lines. The physical transmission
+line objects can be built up from layers of normal metal and
+superconducting films and real dielectrics. These components are
+specified by their material characteristics and dimensions which
+SuperMix uses to determine electrical behavior.
+
+SuperMix can perform full harmonic balance calculations of SIS
+quasiparticle receiver designs of arbitrary complexity as well as
+mixer gain and noise analyses using any number of harmonics and
+including any number of superconducting tunnel junctions.
+
+SuperMix performs circuit calculations using a wave matrix
+representation and automatically includes full noise calculations. It
+can freely convert results between wave and impedance or admittance
+representations. SuperMix includes a sophisticated multiparameter
+optimizer.  Users can quickly tailor the optimizer's error function to
+their exact needs; the optimizer can then control any set of device
+parameters in order to refine a circuit design. To achieve this level
+of flexibility, SuperMix contains a rather complete numerical math
+library for manipulation of complex-valued matrix, vector, and scalar
+functions and objects. It includes robust linear algebra,
+interpolation, integration, root finding, and minimization routines.
+
+SuperMix includes a large set of formatted input and output routines
+for complex-valued matrix and vector data. SuperMix can construct
+interpolated circuit elements from Touchstone formatted data. If the
+provided routines are inadequate for a specific application, the user
+can easily add to the input/output capabilities using an extensive set
+of primitives. Of course, since the user creates simulations by
+writing a C++ program, the full capabilities of the standard C++ class
+libraries are available as well.
+
+
+		     Where is the Documentation?
+
+You're looking at it! Seriously, currently the only documentation
+consists of the contents of the supermix/examples/ subdirectory tree
+as well as the extensive commenting in the many header files in the
+supermix/include/ subdirectory. The example programs refer to the
+header files when appropriate.
+
+
+		    How Do I Contact The Authors?
+
+The SuperMix source code is copyright California Institute of
+Technology, Pasadena, CA, USA. It is being developed and maintained by
+members of the Submillimeter Astrophysics Group at Caltech.
+
+The SuperMix web site is:
+    http://www.submm.caltech.edu/supermix/
+
+Send bug reports, additions to the code, complaints, praise, or
+whatever to:
+    supermix@submm.caltech.edu
+

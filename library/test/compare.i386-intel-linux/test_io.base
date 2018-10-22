@@ -1,0 +1,50 @@
+Data file testdatafile.dat
+
+Line 1:! comment here
+ Number of values: 0, comment string: ! comment here
+ Tokens : ! : comment : here
+
+Convert to a double, Vector pair; scale factors: 2, 0.5  :
+  Conversion not performed.
+Line 2: 1 2.2 3 4 5
+ Number of values: 5, comment string: 
+ Tokens : 1 : 2.2 : 3 : 4 : 5
+  1  2.2  3  4  5
+Convert to a double, Vector pair; scale factors: 2, 0.5  :
+2 : 1.1+i1.5 2+i2.5
+Line 3:	#another comment
+ Number of values: 0, comment string: #another comment
+ Tokens : #another : comment
+
+Convert to a double, Vector pair; scale factors: 2, 0.5  :
+  Conversion not performed.
+Line 4:	Line3	4 hither 5.7 yon -2
+ Number of values: 3, comment string: 
+ Tokens : Line3 : 4 : hither : 5.7 : yon : -2
+  4  5.7  -2
+Convert to a double, Vector pair; scale factors: 2, 0.5  :
+8 : 2.85-i1
+Line 5:2.3 3e7 -12e-2 2 !more comments
+ Number of values: 4, comment string: !more comments
+ Tokens : 2.3 : 3e7 : -12e-2 : 2 : !more : comments
+  2.3  3e+07  -0.12  2
+Convert to a double, Vector pair; scale factors: 2, 0.5  :
+4.6 : 1.5e+07-i0.06 1+i0
+Line 6: this is a really long line 23 with 32 only two numbers in it;
+ Number of values: 2, comment string: 
+ Tokens : this : is : a : really : long : line : 23 : with : 32 : only : two : numbers : in : it;
+  23  32
+Convert to a double, Vector pair; scale factors: 2, 0.5  :
+46 : 16+i0
+Line 7:2 1
+ Number of values: 2, comment string: 
+ Tokens : 2 : 1
+  2  1
+Convert to a double, Vector pair; scale factors: 2, 0.5  :
+4 : 0.5+i0
+Line 8:
+ Number of values: 0, comment string: 
+ Tokens
+
+Convert to a double, Vector pair; scale factors: 2, 0.5  :
+  Conversion not performed.

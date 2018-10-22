@@ -1,0 +1,11 @@
+
+IF noise temperature: 23.2087 Kelvin.
+
+Approx Formula (e*Vbias/2/BoltzK): 23.2089 Kelvin.
+
+ H(if,if): 2.56348e-17 (mAmp)^2/Hz.
+
+Approx Formula 2*e*Vbias/Rn: 2.56348e-17 (mAmp)^2/Hz.
+
+converted H to sdata: 23.2087 Kelvin.
+

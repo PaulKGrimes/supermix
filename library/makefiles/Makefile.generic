@@ -1,0 +1,52 @@
+# Makefile for library source
+# SuperMix version 1.4 C++ source file
+#
+# Copyright (c) 1999, 2001, 2004 California Institute of Technology.
+# All rights reserved.
+
+CC = g++
+
+# Generic g++ compile flags
+CFLAGS = -Wall -W -Wno-uninitialized -O3 -I../include
+
+# Generic g++ profiler flags
+PCFLAGS = -pg -Wall -I../include
+
+# objs.mk defines the object file list variable "OBJS"
+include ../makefiles/objs.mk
+
+PROFOBJS = ${OBJS:.o=.p}
+
+VPATH = ../lib-src:../include:../include/parameter:../include/numerical
+
+.SUFFIXES: .cc .o
+
+.cc.o:
+	$(CC) -c $(CFLAGS) $<
+
+.cc.p:
+	$(CC) -c $(PCFLAGS) -o $@ $<
+
+all: lib
+
+libMiX.a: $(OBJS)
+	rm -f libMiX.a
+	ar r libMiX.a $(OBJS)
+	ranlib libMiX.a
+
+libMiXprof.a: $(PROFOBJS)
+	rm -f libMiXprof.a
+	ar r libMiXprof.a $(PROFOBJS)
+	ranlib libMiXprof.a
+
+lib: libMiX.a
+
+profile: libMiXprof.a
+
+clean:
+	rm -f $(OBJS) $(PROFOBJS) core
+
+# Here is included the file containing the list of object
+# file dependencies:
+
+include ../makefiles/depend.mk 

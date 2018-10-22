@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Create a directory name for executables for this architecture / OS.
+EXEDIR=$1
+
+# Create a directory name for output for this architecture / OS.
+COMPDIR=$2
+
+if [ ! -d $EXEDIR ]
+then
+	mkdir $EXEDIR
+	ln -s ../makefiles/Makefile.generic $EXEDIR/Makefile
+fi
+
+if [ ! -d $COMPDIR ]
+then
+ 	mkdir $COMPDIR
+	cp compare.i386-intel-linux/*.base $COMPDIR
+fi
+

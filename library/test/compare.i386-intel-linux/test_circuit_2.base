@@ -1,0 +1,123 @@
+
+The 2-port circuit:
+size: 2
+
+-0.2+i0 0.8+i0
+0.8+i0 -0.2+i0
+
+96+i0 96+i0
+96+i0 96+i0
+
+0+i0 0+i0
+
+circuit::pop() got the correct port.
+
+
+The 1-port circuit:
+size: 1
+
+-0.2+i0
+
+288+i0
+
+0+i0
+
+
+The default (empty) cascade:
+size: 2
+
+0+i0 1+i0
+1+i0 0+i0
+
+0+i0 0+i0
+0+i0 0+i0
+
+0+i0 0+i0
+
+
+The 2-port circuit, using a cascade:
+size: 2
+
+-0.2+i0 0.8+i0
+0.8+i0 -0.2+i0
+
+96+i0 96+i0
+96+i0 96+i0
+
+0+i0 0+i0
+
+
+The 1-port circuit, using a cascade:
+size: 1
+
+-0.2+i0
+
+288+i0
+
+0+i0
+
+
+Change the global temp to 100K
+
+-0.2+i0
+
+96+i0
+
+0+i0
+
+
+Local circuit temp back to 300K
+
+-0.2+i0
+
+288+i0
+
+0+i0
+
+
+cascade copy constructor:
+size: 1
+
+-0.2+i0
+
+288+i0
+
+0+i0
+
+
+cascade operator =:
+size: 1
+
+-0.2+i0
+
+288+i0
+
+0+i0
+
+
+Back to shadowing global 100K
+
+-0.2+i0
+
+96+i0
+
+0+i0
+
+
+But the copy should still be at 300K
+
+-0.2+i0
+
+288+i0
+
+0+i0
+
+
+Same for operator = copy
+
+-0.2+i0
+
+288+i0
+
+0+i0
+

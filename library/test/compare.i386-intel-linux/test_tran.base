@@ -1,0 +1,23 @@
+50 to 140 + j100 Ohm ideal transformer
+S matrix: 
+
+-0.154013+i0.607375 0.689655-i0.362976
+0.689655-i0.362976 0.587852+i0.21692
+Output impedance is:  140+i100
+C matrix: 
+
+0+i0 0+i0
+0+i0 0+i0
+
+140-j100 to 50 ohm transformer:
+Input impedance is:  140-i100
+50 to 140+j100 Ohm and 140-j100 to 50 Ohm transformer cascade
+S matrix: 
+
+0+i0 1+i0
+1+i0 0+i0
+C matrix: 
+
+0+i0 0+i0
+0+i0 0+i0
+

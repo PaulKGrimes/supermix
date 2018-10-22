@@ -1,0 +1,56 @@
+0.833333+i1.84207e-07 should be the same as 0.833333+i0
+0.166667-i1.84207e-07 should be the same as 0.166667+i0
+0.999297+i0.0265072 should be the same as 0.999297+i0.0265072
+0.000703125-i0.0265072 should be the same as 0.000703125-i0.0265072
+0.43877-i0.496237 should be the same as 0.43877-i0.496237
+0.56123+i0.496237 should be the same as 0.56123+i0.496237
+0.833333+i3.10369e-05 should be the same as 0.833333+i0
+0.166667-i3.10369e-05 should be the same as 0.166667+i0
+1+i0 should be the same as 1+i0
+0+i0 should be the same as 0+i0
+0.999295+i0.0265073 should be the same as 0.999297+i0.0265072
+0.000704539-i0.0265073 should be the same as 0.000703125-i0.0265072
+The following two noise correlation matrices should be nearly identical:
+
+146.346+i0 -146.346+i0
+-146.346+i0 146.346+i0
+
+146.346+i0 -146.346+i0
+-146.346+i0 146.346+i0
+
+The following two scattering matrices should be nearly identical:
+
+0.421964-i0.000624019 0.578036+i0.000624019
+0.578036+i0.000624019 0.421964-i0.000624019
+
+0.421965+i0 0.578035+i0
+0.578035+i0 0.421965+i0
+The following two noise correlation matrices should be nearly identical:
+
+4.87854+i0 -4.87854+i0
+-4.87854+i0 4.87854+i0
+
+4.87855+i0 -4.87855+i0
+-4.87855+i0 4.87855+i0
+The following two noise correlation matrices should be nearly identical:
+
+146.346+i0 -146.346+i0
+-146.346+i0 146.346+i0
+
+146.346+i0 -146.346+i0
+-146.346+i0 146.346+i0
+
+The following two scattering matrices should be nearly identical:
+
+0.421965-i8.86292e-11 0.578035+i8.86292e-11
+0.578035+i8.86292e-11 0.421965-i8.86292e-11
+
+0.421965+i0 0.578035+i0
+0.578035+i0 0.421965+i0
+The following two noise correlation matrices should be nearly identical:
+
+4.87855+i0 -4.87855+i0
+-4.87855+i0 4.87855+i0
+
+4.87855+i0 -4.87855+i0
+-4.87855+i0 4.87855+i0

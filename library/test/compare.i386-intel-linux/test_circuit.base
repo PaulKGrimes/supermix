@@ -1,0 +1,46 @@
+About to get data.
+Two 40 Ohm series resistors in parallel S matrix: 
+
+0.166667+i0 0.833333+i0
+0.833333+i0 0.166667+i0
+Two 40 Ohm series resistors in parallel C matrix: 
+
+27.7778+i0 -27.7778+i0
+-27.7778+i0 27.7778+i0
+About to get data.
+Two 40 Ohm series resistors in parallel S matrix: 
+
+0.166667+i0 0.833333+i0
+0.833333+i0 0.166667+i0
+Two 40 Ohm series resistors in parallel C matrix: 
+
+27.7778+i0 -27.7778+i0
+-27.7778+i0 27.7778+i0
+f=1 GHz, S21=0.98121-i0.0933925
+f=2 GHz, S21=0.955475-i0.181886
+f=3 GHz, S21=0.915457-i0.261402
+f=4 GHz, S21=0.864753-i0.329232
+f=5 GHz, S21=0.807265-i0.384181
+f=6 GHz, S21=0.746603-i0.426374
+f=7 GHz, S21=0.685706-i0.456863
+f=8 GHz, S21=0.626723-i0.477217
+f=9 GHz, S21=0.571053-i0.48918
+f=10 GHz, S21=0.51948-i0.494446
+
+Try creating a block diagonal matrix.
+Block diagonal S matrix: 
+
+-0.238095+i0 0.761905+i0 0.47619+i0 0+i0 0+i0 0+i0
+0.761905+i0 -0.238095+i0 0.47619+i0 0+i0 0+i0 0+i0
+0.47619+i0 0.47619+i0 0.047619+i0 0+i0 0+i0 0+i0
+0+i0 0+i0 0+i0 -0.263158+i0 0.736842+i0 0.526316+i0
+0+i0 0+i0 0+i0 0.736842+i0 -0.263158+i0 0.526316+i0
+0+i0 0+i0 0+i0 0.526316+i0 0.526316+i0 -0.0526316+i0
+Block diagonal C matrix: 
+
+13.6055+i0 13.6055+i0 -27.2109+i0 0+i0 0+i0 0+i0
+13.6055+i0 13.6055+i0 -27.2109+i0 0+i0 0+i0 0+i0
+-27.2109+i0 -27.2109+i0 54.4219+i0 0+i0 0+i0 0+i0
+0+i0 0+i0 0+i0 11.0804+i0 11.0804+i0 -22.1607+i0
+0+i0 0+i0 0+i0 11.0804+i0 11.0804+i0 -22.1607+i0
+0+i0 0+i0 0+i0 -22.1607+i0 -22.1607+i0 44.3214+i0

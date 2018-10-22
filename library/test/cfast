@@ -1,0 +1,17 @@
+#!/bin/sh
+
+ID=`makefiles/getmachtype`
+EXEDIR=exe.$ID
+COMPDIR=compare.$ID
+
+cd datafiles
+../$EXEDIR/$1 $2 $3 $4 $5 $6 $7 $8 $9 > ../$COMPDIR/$1.new 2>&1
+cd ..
+if [ -f $COMPDIR/$1.base ]
+then
+	diff $COMPDIR/$1.new $COMPDIR/$1.base | tee $COMPDIR/$1.diff
+else
+	echo "ERROR:  File $COMPDIR/$1.base not found!"
+	echo "Can't compare new output to reference output."
+fi
+

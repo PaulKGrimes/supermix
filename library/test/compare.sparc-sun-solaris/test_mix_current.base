@@ -1,0 +1,24 @@
+
+Test mixer_currents device:
+
+The mixer shouldn't know its size yet (size = 0):
+m.size(): 0
+
+The arguments to inst_circuit:
+int_bias.size() (should be 5): 5
+junction_bias_currents.size() (should be 3): 3
+number of voltmeters: 1
+
+The mixer should know its size now.
+m.size(): 7
+
+The individual junction bias voltages and currents:
+
+     Junction:     V(mVolt):      I(mAmp):
+            j1           1.5      0.117412
+            j2           1.5      0.117412
+            j3           1.5      0.117412
+
+The bias circuit's voltage and current readings:
+  V(mVolt):  1.5  I(mAmp):  0.352236
+

@@ -1,0 +1,69 @@
+#!/bin/sh
+# fast compare outputs of baseline and new versions, using script cfast
+# run from ~/supermix/
+#
+./cfast test_adaptive
+./cfast test_alias
+./cfast test_ampdata
+./cfast test_ant Zslot.750
+./cfast test_atten
+./cfast test_balance
+./cfast test_circuit
+./cfast test_circuit_2
+./cfast test_circuit_block
+./cfast test_circuit_copy
+./cfast test_circulator
+./cfast test_ck 1 1 120
+./cfast test_complex_io
+./cfast test_complex_trig
+./cfast test_connectors
+./cfast test_cpw
+./cfast test_data_ptr
+./cfast test_datafile testdatafile.dat
+./cfast test_datafile_copy ikk.dat
+./cfast test_deembed
+./cfast test_delay
+./cfast test_elements
+./cfast test_errfunc
+./cfast test_errors
+./cfast test_fet
+./cfast test_formatting
+./cfast test_generator
+./cfast test_hemt
+./cfast test_hybrid
+./cfast test_id
+./cfast test_inst
+./cfast test_integ
+./cfast test_interpolator
+./cfast test_io testdatafile.dat
+./cfast test_iv_slope iv.dat ikk.dat 0.92
+./cfast test_linterp iv.dat
+./cfast test_microstrip
+./cfast test_min_1d
+./cfast test_mixer
+./cfast test_mixer2
+./cfast test_mixer3
+./cfast test_mixer_noise 4
+./cfast test_mix_current
+./cfast test_ms3
+./cfast test_nportSet
+./cfast test_parameter
+./cfast test_poly
+./cfast test_port
+./cfast test_primitives
+./cfast test_recvr
+./cfast test_recvr_2
+./cfast test_reindex
+./cfast test_rinterp zs.dat
+./cfast test_scale
+./cfast test_sdata
+./cfast test_sd_interp fhx13x
+./cfast test_sfinterp
+./cfast test_sis iv.dat ikk.dat .5 .5 .5 .01 4
+./cfast test_stub
+./cfast test_surfZ
+./cfast test_term
+./cfast test_touch fhx13x 2
+./cfast test_touch_2 fhx13x
+./cfast test_tran
+./cfast test_trline

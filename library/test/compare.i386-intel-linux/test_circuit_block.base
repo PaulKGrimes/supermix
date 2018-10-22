@@ -1,0 +1,31 @@
+
+r1 = 100 Ohms:
+S matrix:
+
+0.333333+i0
+Z matrix:
+
+100+i0
+r2 = 25 Ohms:
+S matrix:
+
+-0.333333+i0
+Z matrix:
+
+25+i0
+c = single 100 Ohms
+S matrix:
+
+0.333333+i0
+Z matrix:
+
+100+i0
+c = block diagonal 100 & 25 Ohms
+S matrix:
+
+0.333333+i0 0+i0
+0+i0 -0.333333+i0
+Z matrix:
+
+100+i0 0+i0
+0+i0 25+i0

@@ -1,0 +1,71 @@
+
+Series resistor
+Resistor id: 1 size: 2
+Set R=20 * Ohm
+Resistor S matrix: 
+
+0.166667+i0 0.833333+i0
+0.833333+i0 0.166667+i0
+Resistor C matrix: 
+
+27.7778+i0 -27.7778+i0
+-27.7778+i0 27.7778+i0
+Parallel resistor
+Resistor id: 2 size: 2
+Set R=20 * Ohm
+Resistor S matrix: 
+
+-0.555556+i0 0.444444+i0
+0.444444+i0 -0.555556+i0
+Resistor C matrix: 
+
+49.3827+i0 49.3827+i0
+49.3827+i0 49.3827+i0
+Copy of parallel resistor
+Resistor id: 3
+Resistor S matrix: 
+
+-0.555556+i0 0.444444+i0
+0.444444+i0 -0.555556+i0
+Resistor C matrix: 
+
+49.3827+i0 49.3827+i0
+49.3827+i0 49.3827+i0
+Capacitor id: 4 size: 2
+Set C=1 pFarad
+Capacitor S matrix: 
+
+0.0919997-i0.289025 0.908+i0.289025
+0.908+i0.289025 0.0919997-i0.289025
+Capacitor C matrix: 
+
+0+i0 0+i0
+0+i0 0+i0
+Inductor id: 5 size: 2
+Set L=1 nHenry
+Inductor S matrix: 
+
+0.908+i0.289025 0.0919997-i0.289025
+0.0919997-i0.289025 0.908+i0.289025
+Inductor C matrix: 
+
+0+i0 0+i0
+0+i0 0+i0
+make nport copy of inductor
+Inductor S matrix: 
+
+0.908+i0.289025 0.0919997-i0.289025
+0.0919997-i0.289025 0.908+i0.289025
+Inductor C matrix: 
+
+0+i0 0+i0
+0+i0 0+i0
+make a copy of a copy
+Inductor S matrix: 
+
+0.908+i0.289025 0.0919997-i0.289025
+0.0919997-i0.289025 0.908+i0.289025
+Inductor C matrix: 
+
+0+i0 0+i0
+0+i0 0+i0

@@ -1,0 +1,33 @@
+Circulator S matrix:
+
+0+i0 0+i0 1+i0
+1+i0 0+i0 0+i0
+0+i0 1+i0 0+i0
+
+Circulator C matrix:
+
+0+i0 0+i0 0+i0
+0+i0 0+i0 0+i0
+0+i0 0+i0 0+i0
+Try copy constructor.
+
+0+i0 0+i0 1+i0
+1+i0 0+i0 0+i0
+0+i0 1+i0 0+i0
+
+
+0+i0 0+i0 0+i0
+0+i0 0+i0 0+i0
+0+i0 0+i0 0+i0
+
+Try operator=
+
+0+i0 0+i0 1+i0
+1+i0 0+i0 0+i0
+0+i0 1+i0 0+i0
+
+
+0+i0 0+i0 0+i0
+0+i0 0+i0 0+i0
+0+i0 0+i0 0+i0
+

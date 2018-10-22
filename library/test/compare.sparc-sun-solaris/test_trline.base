@@ -1,0 +1,40 @@
+
+Length (Degrees): 600  Freq (GHz): 10
+
+t1 S:
+(0,0) (1,-6.366105378)
+(1,-6.366105378) (0,0)
+d1 S:
+(0,0) (1,-6.366105378)
+(1,-6.366105378) (0,0)
+
+t1 C:
+(0,0) (0,0)
+(0,0) (0,0)
+d1 C:
+(0,0) (0,0)
+(0,0) (0,0)
+
+t1 B:
+(0,0) (0,0)
+d1 B:
+(0,0) (0,0)
+
+A 1/4 wave transformer: should invert impedance:
+the original imedance (Ohm):     (100,0)
+the transformed impedance (Ohm): (0.01,0)
+
+A 1/2 wave transformer: shouldn't change impedance:
+the original imedance (Ohm):     (100,0)
+the transformed impedance (Ohm): (100,0)
+
+Noise matrices should be equal as well:
+the original (Volt^2):     (3.17952e-09,0)
+the transformed (Volt^2)): (3.17952e-09,0)
+
+
+Test line with 3dB loss per wavelength.
+Gain = -3 dB (expect -3) 
+Gain = -6 dB (expect -6) 
+Gain = -1.5 dB (expect -1.5) 
+All tests completed.

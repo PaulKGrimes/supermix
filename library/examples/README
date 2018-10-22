@@ -1,0 +1,131 @@
+	       EXAMPLES FOR PROGRAMMING USING SUPERMIX
+
+The subdirectories here contain example programs which illustrate how
+to use the SuperMix library. To compile the sample programs, simply
+enter the desired subdirectory and execute make.
+
+In some cases, there are two versions of the same program, one with
+".annotated." in the file name. This version has many more comments to
+further explain the use of the SuperMix library. Unfortunately, so
+many comments may obscure the code, so a more reasonably commented
+version has been retained.
+
+One must have some minimal understanding of the C++ programming
+language in order to use SuperMix. A good introduction to C++
+programming is "Practical C++ Programming" by Steve Oualline (O'Reilly
+and Associates, 1995). For those familiar with C, the major
+differences between C and C++ which could be an obstacle to
+understanding the example programs include:
+
+  * the C++ "//" comment delimiter.
+  * the C++ input/output stream syntax ( cout << ... ).
+  * C++ allows for far more flexible variable declarations.
+  * C++ encourages operator and function overloading.
+  * C++ user-defined types behave just like internal types.
+  * C++ defines "namespaces" which restrict the scope of identifiers
+  * C++ uses "classes" which are like C structs but include functions
+
+An approach to learning SuperMix is to print out all programs in the
+examples directory tree. Make and execute the programs, referring to
+each program's output as you examine its source code. If both normal
+and annotated versions of the source are included, print out both
+versions, since it is easy to get lost in all the comments in the
+annotated versions. When the comments refer to a header file in the
+SuperMix library, make sure you briefly look at that file as well to
+familiarize yourself with its contents. The header files can be found
+in the include/ subdirectory of the SuperMix directory (the SuperMix
+directory should be the parent directory of this examples/
+subdirectory). Try to identify the member variable and function
+declarations in the header file and read any comments included with
+them.
+
+It is helpful to use an editor which can color-code program text
+according to context. This makes it easy to see the program code among
+all the comments. Emacs is very good in this regard, although you may
+have to tell it to interpret .h files as C++ rather than C code. Find
+a unix "guru" to help you modify the .emacs file in your home
+directory to accomplish this.
+
+The example programs include (somewhat in order of increasing
+sophistication):
+
+The basic SuperMix complex number data type and units conventions used
+in SuperMix:
+    basics/complex.cc
+    basics/using_units.cc
+
+An introduction to the parameter classes used extensively throughout
+the SuperMix library:
+    basics/parameters.cc
+    basics/parameters2.cc
+
+Brief introduction to matrix data types and operations in SuperMix:
+    basics/matrix.cc
+
+Brief introduction to circuit elements
+    circuit/circuit.cc
+
+Construct and evaluate a simple circuit using lumped elements:
+    circuit/filter.cc
+
+A more complicated circuit (a 2-stage hemt amplifier):
+    lna/lna.cc
+
+Using the Powell optimizer to pick circuit element values:
+    lna/lna_opt.cc
+
+Create a thin film, superconducting microstrip transmission line and
+use it as a circuit element.
+    trline/microstrip.cc
+
+Create a submillimeter RF matching network using a slot antenna and
+microstrip lines. Shows how to read in impedance file data and use it
+to define the behavior of a circuit element (the slot antenna).
+    trline/rfmatch.cc
+
+How to simulate SIS devices and construct a mixer simulation,
+including harmonic balance and small signal calculations:
+    mixer/mixer.cc
+
+Create a full, nonlinear simulation of the circuitry of a
+quasioptical, twinslot SIS receiver using two SIS junctions. Shows one
+approach to organize the source code for a complex project in order to
+enhance reuseability. Make sure you thoroughly understand how
+mixer/mixer.cc works before you delve into this code. The first
+example calculates a pumped IV curve and hot/cold load IF output as a
+function of SIS bias voltage.
+    mixer2/hotcold.cc
+    mixer2/specs.h
+    mixer2/classes.h
+    mixer2/build_mixer.inc
+    mixer2/Zslot.750
+
+This next example uses the same twinslot model to perform a
+sophisticated optimization. The program attempts to match the response
+of a mixer model to measured data by adjusting model parameters. Uses
+some artificially-generated "measured" data sets with noise and offset
+errors. An example of a complicated use of the optimization capability
+of SuperMix.
+    mixer2/matchivfts.cc
+    mixer2/fts.data
+    mixer2/pumpediv.data
+
+Generate simulated SIS DC IV curves, properly normalized for use by
+SuperMix using an interpolator and the adaptive interpolator fill
+capability: 
+    ivcurve/fakeiv.cc
+
+Generate the Kramers-Kronig transformed SIS IV curve for use by
+SuperMix. Uses a robust, brute-force numerical approximation.
+    ivcurve/makeikk.cc
+
+Generate the Kramers-Kronig transformed SIS IV curve, but using the
+SuperMix numerical integration routines. Not as robust as makeikk.cc,
+but illustrates how to use more features of the SuperMix library.
+    ivcurve/ikk-integrator.cc
+
+Additional utilities for conditioning and importing measured SIS DC IV
+data into SuperMix. See the README in the subdirectory:
+    ivcurve/import/
+
+
