@@ -1,0 +1,8 @@
+This repository contains code written by Paul Grimes to simulate a number of
+SIS mixer based receiver circuits and other microwave circuits.
+
+It incorporates the SuperMix library from CalTech in the library/ directory.  Please see:
+http://www.submm.caltech.edu/supermix/
+
+CalTech retains copyright of the SuperMix library, but allows distribution of source and binaries
+for non-commercial use.  See the COPYRIGHT notice in the library/ directory.
