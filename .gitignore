@@ -6,3 +6,4 @@
 # Add regular ignore patterns here.
 *.o
 *.a
+/library/obj
