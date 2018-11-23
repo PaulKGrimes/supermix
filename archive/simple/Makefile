@@ -2,7 +2,7 @@
 # Modified Paul Grimes, (pxg@astro.ox.ac.uk) 01/03/07
 #
 # Set this to the directory where SuperMiX is installed.
-SUPERMIXDIR = /d/collam/pxg/software/supermix
+SUPERMIXDIR = /home/pgrimes/Documents/Software/GitHub/supermix/library
 
 # The programs we wish to compile
 EXES = simple
@@ -17,7 +17,7 @@ CC = g++
 FLAGS = -Wall -g -O3
 
 # Set the subdirectory containing the shared library.
-OBJDIR := obj.$(shell $(SUPERMIXDIR)/makefiles/getmachtype)
+OBJDIR := obj
 
 # Set the location of the SuperMiX library.
 LIB = libMiX.a
