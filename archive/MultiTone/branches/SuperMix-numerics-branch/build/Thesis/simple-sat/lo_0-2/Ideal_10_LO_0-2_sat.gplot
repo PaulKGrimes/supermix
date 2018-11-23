@@ -1,0 +1,30 @@
+set size 0.9,1.0
+
+set xlabel "Signal Voltage"
+set ylabel "Mixer Gain"
+
+set logscale x
+
+set xrange [1e-3:1]
+set yrange [0:]
+set ytics 0.1
+
+
+
+plot "Ideal_10_LO_0-2_V_0-33_Bias_0-9_USB_sat.dat" using 1:(4*$6*$6/($1*$1)) title "V_{LO} = 0.33" with lines
+
+replot "Ideal_10_LO_0-2_V_0-67_Bias_0-9_USB_sat.dat" using 1:(4*$6*$6/($1*$1)) title "V_{LO} = 0.67" with lines
+
+replot "Ideal_10_LO_0-2_V_1-0_Bias_0-9_USB_sat.dat" using 1:(4*$6*$6/($1*$1)) title "V_{LO} = 1.00" with lines
+
+replot "Ideal_10_LO_0-2_V_1-33_Bias_0-9_USB_sat.dat" using 1:(4*$6*$6/($1*$1)) title "V_{LO} = 1.33" with lines
+
+set terminal postscript eps enhanced "Helvetica" 16
+
+set output "Ideal_10_LO_0-2_sat.eps"
+
+replot
+
+set output "/dev/null"
+
+

@@ -1,0 +1,27 @@
+set size 0.9,1.0
+
+set key right
+set xtics 0.2 
+set ytics nomirror
+set y2tics
+set logscale y2
+set y2range [1:1000]
+
+set ylabel "Mixer Gain"
+set y2label "Mixer Noise"
+
+set xlabel "Bias Voltage"
+
+plot "Ideal-30_LO_1-7_V_3-40_Z_1-0_IF_0-01_Z_1-0.dat" using 1:5 title "LSB Gain" with lines
+
+replot "Ideal-30_LO_1-7_V_3-40_Z_1-0_IF_0-01_Z_1-0.dat" using 1:6 title "USB Gain" with lines
+
+replot "Ideal-30_LO_1-7_V_3-40_Z_1-0_IF_0-01_Z_1-0.dat" using 1:8 axes x1y2 title "DSB Noise" with lines
+
+
+set terminal postscript eps "Helvetica" 18
+set output "Ideal-30_LO_1-7_V_3-40_Z_1-0_IF_0-01_Z_1-0_gain.eps"
+
+replot
+
+set output "/dev/null"

@@ -1,0 +1,41 @@
+8
+
+dir
+295
+https://ercsim.physics.ox.ac.uk:8443/svn/ERCMain/supermix/supermix_simulations/surfZ
+https://ercsim.physics.ox.ac.uk:8443/svn/ERCMain
+
+
+
+2009-06-29T13:00:35.549916Z
+295
+Grimes
+
+
+svn:special svn:externals svn:needs-lock
+
+Makefile
+file
+
+
+
+
+2009-06-29T11:27:02.000000Z
+48028dfd0e92ec6b274309b43aa01f54
+2009-06-29T13:00:35.549916Z
+295
+Grimes
+has-props
+
+surfZ.cc
+file
+
+
+
+
+2009-06-29T12:40:44.000000Z
+92e7408ea818dce06f2796486fcd7cf0
+2009-06-29T13:00:35.549916Z
+295
+Grimes
+

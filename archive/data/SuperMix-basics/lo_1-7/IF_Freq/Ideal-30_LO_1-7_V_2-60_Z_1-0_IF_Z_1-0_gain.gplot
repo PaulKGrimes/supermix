@@ -1,0 +1,17 @@
+set size 0.9,1.0
+
+set ylabel "USB Mixer Gain"
+set xlabel "Bias Voltage"
+
+set xrange [0.02:0.1]
+set yrange [0.2:]
+
+
+plot "Ideal-30_LO_1-7_V_2-60_Z_1-0_IF_Z_1-0_Bias_0-85.dat" using 1:6 title "" with lines
+
+set terminal postscript eps "Helvetica" 18
+set output "Ideal-30_LO_1-7_V_2-60_Z_1-0_IF_Z_1-0_gain.eps"
+
+replot
+
+set output "/dev/null"

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="21"
+   name=""
+   committed-date="2005-01-31T13:56:32.623411Z"
+   url="file:///svn/simulations/QTMix"
+   last-author="pkg22"
+   kind="dir"
+   revision="21"/>
+<entry
+   committed-rev="21"
+   name="QTMix.pro"
+   text-time="2004-09-24T13:05:00.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="fc25ba982b8ab435cfa070ff3cbcc973"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="21"
+   name="QTMix"
+   text-time="2004-09-24T13:07:32.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="84b6c6f8549787cdb727559f673ff8c7"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-01-31T13:54:46.000000Z"/>
+<entry
+   committed-rev="21"
+   name="qtmixform.ui"
+   text-time="2004-09-24T13:05:12.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="8ea61e5c684c3731426332df12044a76"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="21"
+   name="ikk.dat"
+   text-time="2004-01-09T11:00:14.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="79cad30a38e134631e1295de330ccf88"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="21"
+   name="main.cpp"
+   text-time="2004-01-09T11:00:14.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="cfdbfc2e42d8b8081efa32c11ef71bdb"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="21"
+   name="test.dat"
+   text-time="2004-02-10T18:01:02.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="a40dbdff78386c7541e20d1d2e558cb2"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="21"
+   name="idc.dat"
+   text-time="2004-01-09T11:00:14.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="5718b447a65aea8b917b39a843487994"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="21"
+   name="error_term.h"
+   text-time="2004-09-17T15:43:31.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="c79239716d29337cc059b379ebb83c86"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   name=".obj"
+   kind="dir"/>
+<entry
+   committed-rev="21"
+   name="qtmixform.ui.h"
+   text-time="2004-09-17T15:47:37.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="25b227b851955db1af6f1e69646b7291"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="21"
+   name="arbitary_impedance.h"
+   text-time="2004-02-10T17:54:57.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="fa5b62355507a6c79d6e6963fc4e27d6"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   name=".ui"
+   kind="dir"/>
+<entry
+   name=".moc"
+   kind="dir"/>
+<entry
+   committed-rev="21"
+   name="Makefile"
+   text-time="2004-09-24T13:05:48.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="9c1670b7b42920896c51f34d6ef9a241"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

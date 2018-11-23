@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="22"
+   name=""
+   committed-date="2005-01-31T13:57:23.051580Z"
+   url="file:///svn/simulations/QTMix-Stub"
+   last-author="pkg22"
+   kind="dir"
+   revision="22"/>
+<entry
+   committed-rev="22"
+   name="qtmixform.ui"
+   text-time="2004-03-18T14:37:25.000000Z"
+   committed-date="2005-01-31T13:57:23.051580Z"
+   checksum="569f73729c62058a4c56fe0433c96f77"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="22"
+   name="ikk.dat"
+   text-time="2004-03-18T11:37:02.000000Z"
+   committed-date="2005-01-31T13:57:23.051580Z"
+   checksum="79cad30a38e134631e1295de330ccf88"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="22"
+   name="main.cpp"
+   text-time="2004-03-18T11:37:02.000000Z"
+   committed-date="2005-01-31T13:57:23.051580Z"
+   checksum="cfdbfc2e42d8b8081efa32c11ef71bdb"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="22"
+   name="idc.dat"
+   text-time="2004-03-18T11:37:02.000000Z"
+   committed-date="2005-01-31T13:57:23.051580Z"
+   checksum="5718b447a65aea8b917b39a843487994"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   name=".obj"
+   kind="dir"/>
+<entry
+   committed-rev="22"
+   name="qtmixform.ui.h"
+   text-time="2004-05-07T13:58:56.000000Z"
+   committed-date="2005-01-31T13:57:23.051580Z"
+   checksum="88f9377a1c21a0b2b47a1b35631d81f0"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   name=".ui"
+   kind="dir"/>
+<entry
+   name=".moc"
+   kind="dir"/>
+<entry
+   committed-rev="22"
+   name="QTMix-Stub.pro"
+   text-time="2004-05-07T14:18:09.000000Z"
+   committed-date="2005-01-31T13:57:23.051580Z"
+   checksum="61d0df972f6bcc2d0777630d9cb61791"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="22"
+   name="Makefile"
+   text-time="2004-05-07T13:59:07.000000Z"
+   committed-date="2005-01-31T13:57:23.051580Z"
+   checksum="d65d4d2603a2f4c4964d4ff77cc79496"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="22"
+   name="QTMix-Stub"
+   text-time="2004-05-07T13:59:52.000000Z"
+   committed-date="2005-01-31T13:57:23.051580Z"
+   checksum="07ce17b8b170e4e44c50c3ca4ec01adb"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-01-31T13:57:04.000000Z"/>
+</wc-entries>

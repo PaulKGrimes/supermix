@@ -1,0 +1,45 @@
+set grid
+set key left
+
+set xrange [500:800]
+
+set xlabel "LO Frequency (GHz)"
+set ylabel "SSB Mixer Gain (dB)"
+set y2label "SSB Noise Temperature (K)"
+set y2tics 100
+
+set title "Belitsky Tuner: Z0 10 Ohm, Zif 50 Ohm, Rn 7 Ohm\nInput 13x48.5, Tuner 7x10.5, RF Choke 3x39"
+
+plot "Bal_13x48-5_7x10-5_7Ohm_130fF.dat" using 1:(10*log10($5)) title "130 fF" with lines lt 1
+replot "Bal_13x48-5_7x10-5_7Ohm_130fF.dat" using 1:(10*log10($6)) title "" with lines lt 1
+replot "Bal_13x48-5_7x10-5_7Ohm_130fF.dat" using 1:($7/$5) axes x1y2 title "" with lines lt 1
+replot "Bal_13x48-5_7x10-5_7Ohm_130fF.dat" using 1:($7/$6) axes x1y2 title "" with lines lt 1
+
+replot "Bal_13x48-5_7x10-5_7Ohm_150fF.dat" using 1:(10*log10($5)) title "150 fF" with lines lt 2
+replot "Bal_13x48-5_7x10-5_7Ohm_150fF.dat" using 1:(10*log10($6)) title "" with lines lt 2
+replot "Bal_13x48-5_7x10-5_7Ohm_150fF.dat" using 1:($7/$5) axes x1y2 title "" with lines lt 2
+replot "Bal_13x48-5_7x10-5_7Ohm_150fF.dat" using 1:($7/$6) axes x1y2 title "" with lines lt 2
+
+replot "Bal_13x48-5_7x10-5_7Ohm_170fF.dat" using 1:(10*log10($5)) title "170 fF" with lines lt 3
+replot "Bal_13x48-5_7x10-5_7Ohm_170fF.dat" using 1:(10*log10($6)) title "" with lines lt 3
+replot "Bal_13x48-5_7x10-5_7Ohm_170fF.dat" using 1:($7/$5) axes x1y2 title "" with lines lt 3
+replot "Bal_13x48-5_7x10-5_7Ohm_170fF.dat" using 1:($7/$6) axes x1y2 title "" with lines lt 3
+
+replot "Bal_13x48-5_7x10-5_7Ohm_190fF.dat" using 1:(10*log10($5)) title "190 fF" with lines lt 4
+replot "Bal_13x48-5_7x10-5_7Ohm_190fF.dat" using 1:(10*log10($6)) title "" with lines lt 4
+replot "Bal_13x48-5_7x10-5_7Ohm_190fF.dat" using 1:($7/$5) axes x1y2 title "" with lines lt 4
+replot "Bal_13x48-5_7x10-5_7Ohm_190fF.dat" using 1:($7/$6) axes x1y2 title "" with lines lt 4
+
+
+set terminal postscript eps color solid
+set output "Bal_13x48-5_7x10-5_7Ohm.eps"
+
+replot
+
+set terminal postscript color solid
+set output "Bal_13x48-5_7x10-5_7Ohm.ps"
+
+replot
+
+
+set terminal x11

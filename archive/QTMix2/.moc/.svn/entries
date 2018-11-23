@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="21"
+   name=""
+   committed-date="2005-01-31T13:56:32.623411Z"
+   url="file:///svn/simulations/QTMix/.moc"
+   last-author="pkg22"
+   kind="dir"
+   revision="21"/>
+<entry
+   committed-rev="21"
+   name="moc_qtmixform.cpp"
+   text-time="2004-09-24T13:07:02.000000Z"
+   committed-date="2005-01-31T13:56:32.623411Z"
+   checksum="ab7550f984a8173e2776c61eb87d293f"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

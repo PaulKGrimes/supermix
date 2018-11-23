@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="30"
+   name=""
+   committed-date="2004-12-06T18:12:58.153974Z"
+   url="file:///svn/MultiTone/MultiTone/branches/SuperMix-numerics-branch/build/Thesis/simple-sat/lo_0-2"
+   last-author="pkg22"
+   kind="dir"
+   revision="33"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_Bias_0-9_USB_lo-power.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="50f8795d7703a70d06554a163088344b"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_V_0-33_Bias_0-9_USB_mixer.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="62e2f3668fbf1675722fd97dbdee9aad"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:40.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_V_1-33_Bias_0-9_USB_mixer.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="e55908f864e2ea884808ff0eea430f7d"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:40.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_V_0-33_Bias_0-9_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="8a244ca7be4d02521633cfcf150eb850"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:40.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_V_1-33_Bias_0-9_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="0c0192c99e40228bcb45639b2384a553"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_V_0-67_Bias_0-9_USB_mixer.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="90ca2c643cc5ab92d7bf09acb9e6eaa2"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:40.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_V_0-67_Bias_0-9_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="a093589cd9b73e2ad86bf4ab9d279166"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:40.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_lo-power.gplot"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="ff7e10262ce1546428f39fd26a8ffd86"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_V_1-0_Bias_0-9_USB_mixer.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="3570d59a031331ab13595fac1194d021"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:40.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_lo-power.eps"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="479a73f49621a12bfaa452e27bcf30a0"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_lo-power.gplot"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="120b8e50302a4e968d856160258a17c5"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_lo-power.eps"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="59a805167b6797884453ce4f64a7abdb"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_V_1-0_Bias_0-9_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="331843747b363e39bab09d539aed86df"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_V_0-5_Bias_0-9_USB_mixer.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="ad0ce32533bf4bd28732a8661737ac4f"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_V_0-7_Bias_0-9_USB_mixer.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="fffd70f184ef9c242b016c9b1d021a06"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_V_0-5_Bias_0-9_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="13b2e16671f5489e61867d11e0e7f30b"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_gain.gplot"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="28fd558b13eed7770dbcfa5b55e548ed"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_V_0-9_Bias_0-9_USB_mixer.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="a614054355a1976a53d4693346351726"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_gain.gplot"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="b9b59a141c2ef45c200956369bc74db8"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_V_0-7_Bias_0-9_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="61e5d66ce12c2126081e36a8ab5f2c6a"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_gain.eps"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="e0ec42bd35916b10eb5f4ee4b802c951"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_gain.eps"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="4c2895776bc2ec6c502afe67b856f0cd"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_V_0-9_Bias_0-9_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="cf4df0a9f754f2447559d7271eeaf583"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_current.gplot"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="23c8b7a4ebf50bfdd11212b40d712fb8"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_current.gplot"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="e36b3959d1fe6747ac700da1b181b70b"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_current.eps"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="f792e63b2d20cef3fd280b695e29189f"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_current.eps"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="ee41255b00a72e63b75cb8cb04084108"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_sat.gplot"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="bd3ca7fb206f2f5aa1604fedd0b451aa"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_sat.eps"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="8d7660da4abd70eee6df7eb22806f240"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_sat.gplot"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="cdb88cecb7e20bd99e7a304cb7623047"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_sat.eps"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="a078a5a5185cf956f5644a29ddc02486"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_V_1-1_Bias_0-9_USB_mixer.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="74ca85af074cbd68a06bcb1cc00f8adf"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-2_V_1-1_Bias_0-9_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="142aad760f1fd3bdc4365178c8bb1f0f"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_10_LO_0-2_Bias_0-9_USB_lo-power.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="9acc7429537c24c588d1ff36ce0358cf"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:40.000000Z"/>
+</wc-entries>

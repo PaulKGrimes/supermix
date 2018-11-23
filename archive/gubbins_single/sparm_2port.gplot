@@ -1,0 +1,37 @@
+#!/bin/sh
+gnuplot << EOF
+
+set grid
+
+set terminal postscript eps solid color enhanced "Helvetica" 8 lw 0.5
+set output "$1.eps"
+
+set multiplot
+
+set origin 0.1, 0.5
+set size 0.4, 0.4
+set title "Return Loss"
+plot [:][-40:] "$1.dat" using 1:(10*log10(\$2*\$2+\$3*\$3)) title "Port 1" with lines, \
+				"$1.dat" using 1:(10*log10(\$8*\$8+\$9*\$9)) title "Port 2" with lines
+	
+set origin 0.5, 0.5
+set size 0.4, 0.4
+set title "Insertion Loss"
+plot [:][-40:] "$1.dat" using 1:(10*log10(\$4*\$4+\$5*\$5)) title "Port 2->1" with lines, \
+				"$1.dat" using 1:(10*log10(\$6*\$6+\$7*\$7)) title "Port 1->2" with lines
+
+set origin 0.1, 0.1
+set size 0.4, 0.4
+set title "Port 1 Impedance"
+plot [:][:] "$1.dat" using 1:(real((1+(\$2+\$3*{0,1}))/(1-(\$2+\$3*{0,1})))) title "Re(Z_{11})" with lines, \
+			   "$1.dat" using 1:(imag((1+(\$2+\$3*{0,1}))/(1-(\$2+\$3*{0,1})))) title "Im(Z_{11})" with lines
+
+
+set origin 0.5, 0.1
+set size 0.4, 0.4
+set title "Port 2 Impedance"
+plot [:][:] "$1.dat" using 1:(real((1+(\$8+\$9*{0,1}))/(1-(\$8+\$9*{0,1})))) title "Re(Z_{22})" with lines, \
+			   "$1.dat" using 1:(imag((1+(\$8+\$9*{0,1}))/(1-(\$8+\$9*{0,1})))) title "Im(Z_{22})" with lines
+
+EOF
+

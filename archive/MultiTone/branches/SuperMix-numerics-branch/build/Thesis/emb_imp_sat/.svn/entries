@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="33"
+   name=""
+   committed-date="2004-12-06T22:51:29.162321Z"
+   url="file:///svn/MultiTone/MultiTone/branches/SuperMix-numerics-branch/build/Thesis/emb_imp_sat"
+   last-author="pkg22"
+   kind="dir"
+   uuid="8c93da9f-85d9-0310-a74c-cd56c53ec461"
+   revision="33"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-8_Z_rf_1-0-0-5.dat"
+   text-time="2004-12-06T17:04:03.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="53cacd88ec2e3940dd0108736d4537e1"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_2-20_bias_0-80_Z_rf_1-0-0-5a.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="d954cc1ea83ef59c18f5485cace0cb5b"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_0-55_bias_0-80_Z_rf_1-0-0-5.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="1b00e49226f540a9b08d288286f782ed"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_0-45_bias_0-80_Z_rf_1-0-0-5a.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="afddfbb14d6412f8b3cff1cdb7c8efb2"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_1-35_bias_0-80_Z_rf_1-0-0-5a.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="017ff2fb34e9b7812c6c786c3833b8c1"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_1-65_bias_0-80_Z_rf_1-0-0-5.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="bd81aaa096ce40f85f504eba9ef90006"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-9_Z_rf_1-0+0-5.gplot"
+   text-time="2004-12-06T14:54:42.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="9a962edb10dafdfba092f3383fe9e5ad"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-95_lo-power.gplot"
+   text-time="2004-12-06T14:52:47.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="6c6440fe962cfc94be3b5a766c64b63a"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-9_Z_rf_1-0+0-5.eps"
+   text-time="2004-12-06T15:24:08.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="108483c9165bf8feee78bb2e15700cec"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-9_Z_rf_1-0-0-5.gplot"
+   text-time="2004-12-06T14:55:26.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="fac1d74dbf0c8db6aefd805a29c239b8"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0+0-5_gain.gplot"
+   text-time="2004-12-06T16:40:34.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="b1fd085ba3810634e1798f6896c839a1"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-9_Z_rf_1-0-0-5.eps"
+   text-time="2004-12-06T14:56:41.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="bef034dc4e6347e0f12e120760004d02"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0+0-5_gain.eps"
+   text-time="2004-12-06T16:41:00.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="8c61fe68f022549403123b8e284f9616"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0-0-5_gain.gplot"
+   text-time="2004-12-06T16:40:51.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="f67e35946848d1c9fb302e38e8ab2fe1"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0-0-5_gain.eps"
+   text-time="2004-12-06T16:41:04.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="028cc3345813d6765c9d19d3f1fc0bab"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0+0-5_current.gplot"
+   text-time="2004-12-06T16:31:54.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="27608184544a9a039b0dc22ba352f58a"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0+0-5_current.eps"
+   text-time="2004-12-06T16:31:58.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="e24c70fe8714c2e4c02466fdb3fe029b"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0-0-5_current.gplot"
+   text-time="2004-12-06T16:33:04.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="6c9ecb7e62f9e8f510ce2f18e3719e8b"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0-0-5_current.eps"
+   text-time="2004-12-06T16:33:06.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="b0065de62e8db0bd79034db2308d2fe2"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-95_gain.gplot"
+   text-time="2004-12-06T14:53:03.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="68c297ab8b324483c00c0ec7c1f08b52"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_0-55_Z_rf_1-0+0-5.dat"
+   text-time="2004-12-06T16:04:43.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="85ec353e92d3438f69a8d7b0135afd58"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-95_current.gplot"
+   text-time="2004-12-06T14:52:55.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="ff4b35cb521b2ff470a16eacd20a6d55"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_0-45_Z_rf_1-0-0-5.dat"
+   text-time="2004-12-06T16:08:32.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="ac26522ec4a1e5cb8861da898d434457"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_1-35_Z_rf_1-0-0-5.dat"
+   text-time="2004-12-06T16:26:02.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="58fa6ff93d3cebf1f61ba60381e95c68"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_1-65_Z_rf_1-0+0-5.dat"
+   text-time="2004-12-06T15:57:42.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="c9c1bf1ff05554d9671f7835495429fa"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_0-55_Z_rf_1-0-0-5.dat"
+   text-time="2004-12-06T17:26:25.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="08fd1e11feb15f538d907161173523d7"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_1-65_Z_rf_1-0-0-5.dat"
+   text-time="2004-12-06T17:09:34.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="9dbe6b7d4682e41d6e246ecfdef611e5"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_1-20_bias_0-80_Z_rf_1-0+0-5.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="181c239ab3b104673089fe515db5ee4c"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-9_Z_rf_1-0+0-5.dat"
+   text-time="2004-12-06T14:10:16.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="6054fc955e4ce6a98e94e93ee1704f5c"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_1-10_bias_0-80_Z_rf_1-0-0-5.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="628209b0de4d8dd8e81cf8edfdedff5c"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-95_sat.gplot"
+   text-time="2004-12-06T14:53:10.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="f6d04ccf3334557b33b1d186c78e002c"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-9_Z_rf_1-0-0-5.dat"
+   text-time="2004-12-06T14:09:23.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="536166d14581c77eea63418a56442742"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0+0-5_gain2.gplot"
+   text-time="2004-12-06T17:41:10.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="5756ac525c2683e641b8769450c53019"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_0-60_bias_0-80_Z_rf_1-0+0-5.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="2504e9fc67c86f52949190af2684061f"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_2-20_bias_0-80_Z_rf_1-0-0-5.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="0cf5dd789b506db0bfd15ac7b98e176d"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_2-40_bias_0-80_Z_rf_1-0+0-5.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="272f6eb28b5acff2487b2bb03c87cb86"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0-0-5_gain2.gplot"
+   text-time="2004-12-06T17:18:07.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="6e0e09bff9fd8476ef48c52dac30ea70"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0+0-5_gain2.eps"
+   text-time="2004-12-06T17:44:21.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="88887b363e52090f4404f068811fb561"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_sat_LO_0-95_LOv_1-80_bias_0-80_Z_rf_1-0+0-5.dat"
+   text-time="2004-12-06T18:11:41.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="43c9b6944a2a7d1540f3570649141eaf"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_Z_rf_1-0-0-5_gain2.eps"
+   text-time="2004-12-06T17:28:27.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="7584ef18ae4b86fe143a5341b2c8ca68"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_0-90_bias_0-80_Z_rf_1-0-0-5a.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="b32bcf390038daba1004fa715cb4236a"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="33"
+   name="Ideal_30_sat_LO_0-95_LOv_1-80_bias_0-80_Z_rf_1-0-0-5a.dat"
+   text-time="2005-02-13T11:45:18.000000Z"
+   committed-date="2004-12-06T22:51:29.162321Z"
+   checksum="ee96d071794fd851fd966c1e765e86a5"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-02-13T11:45:18.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-8_Z_rf_1-0+0-5.gplot"
+   text-time="2004-12-06T17:02:08.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="f33e205b80e1303b518120120d432a5a"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-8_Z_rf_1-0+0-5.eps"
+   text-time="2004-12-06T17:07:47.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="abcaa8177a11f5a1151fc5cf8e51ce05"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-8_Z_rf_1-0-0-5.gplot"
+   text-time="2004-12-06T17:01:22.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="0eabff81b92eb5715f9cd537331815ee"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-8_Z_rf_1-0-0-5.eps"
+   text-time="2004-12-06T17:05:57.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="99e8c0c89c38b4d1e629e79f0c32a491"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_1-10_Z_rf_1-0+0-5.dat"
+   text-time="2004-12-06T16:02:57.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="ca86dbdee7932f198007263880f50084"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_1-20_Z_rf_1-0+0-5.dat"
+   text-time="2004-12-06T17:33:34.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="a39523c0e81583194dbc948bad0c047c"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_2-20_Z_rf_1-0+0-5.dat"
+   text-time="2004-12-06T17:46:50.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="350c15ae162077f68750976fd5d1d414"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_1-10_Z_rf_1-0-0-5.dat"
+   text-time="2004-12-06T17:21:38.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="af7c2918449bdc20ad502fb4f64ec1d1"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_2-20_Z_rf_1-0-0-5.dat"
+   text-time="2004-12-06T17:19:34.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="97cdc8eae191c0e367360d97789f8228"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_0-60_Z_rf_1-0+0-5.dat"
+   text-time="2004-12-06T17:31:06.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="8baf7470ade0e34e3a71b17509975438"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_2-40_Z_rf_1-0+0-5.dat"
+   text-time="2004-12-06T17:43:16.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="06ea0a3a9211ec30fb2f7bf9dda87892"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_1-80_Z_rf_1-0+0-5.dat"
+   text-time="2004-12-06T17:37:21.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="4ca5fba517da4e13d78ba75f05d52b6d"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_0-90_Z_rf_1-0-0-5.dat"
+   text-time="2004-12-06T16:22:46.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="072c2109b9fc3c60cda5465029371c34"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_bias_LO_0-95_LOv_1-80_Z_rf_1-0-0-5.dat"
+   text-time="2004-12-06T16:31:03.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="ce2f863d5283ecb7abedb2dd66dee045"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_power_LO_0-95_bias_0-8_Z_rf_1-0+0-5.dat"
+   text-time="2004-12-06T17:03:13.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="975f9f5a8b5e514cb9b3ce674fe4cf22"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+</wc-entries>

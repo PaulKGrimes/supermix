@@ -1,0 +1,30 @@
+Run 1:  Mon Jan 19 10:47:40 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Pre-Analysis:
+      Subsectioning time:  8 seconds.
+
+    Frequency:  500 GHz
+      Circuit requires 6997 subsections (15269 CM Cells) and 378 MB of memory.
+      Waveguide mode time:  0.820 seconds.
+      Fourier transform time:  24 seconds.
+      Coupling time:  2 minutes 23 seconds.
+      Loss time:  10 seconds.
+      Matrix fill time:  2 minutes 59 seconds.
+      Matrix solve time:  1 hour 17 minutes.
+      De-embed left box wall:
+        First de-embedding standard, left box wall:  91.25 microns length, 192 subsections.
+          Time:  5 seconds.
+        Second de-embedding standard, left box wall:  182.5 microns length, 364 subsections.
+          Time:  13 seconds.
+      De-embed right box wall:
+        First de-embedding standard, right box wall:  91.25 microns length, 336 subsections.
+          Time:  7 seconds.
+        Second de-embedding standard, right box wall:  182.5 microns length, 616 subsections.
+          Time:  20 seconds.
+      Total time per frequency:  1 hour 21 minutes.
+
+    Post-Analysis:
+      Total time for 5 frequencies:  6 hours 46 minutes.
+
+Analysis successfully completed.

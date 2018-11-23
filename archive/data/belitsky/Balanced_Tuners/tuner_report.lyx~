@@ -1,0 +1,77 @@
+#LyX 1.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 221
+\textclass book
+\language english
+\inputencoding auto
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 0
+\use_amsmath 0
+\use_natbib 0
+\use_numerical_citations 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Title
+
+Belitsky Tuners for 650 GHz Balanced Mixer
+\layout Author
+
+Paul Grimes
+\layout Standard
+\align center 
+
+\begin_inset Graphics
+	filename /data/simulations/belitsky/Balanced_Tuners/10Ohm/Tuner_7x10-5/Bal_7x48-5_7x10-5_10Ohm.eps
+	width 5in
+	keepAspectRatio
+
+\end_inset 
+
+
+\layout Standard
+\align center 
+
+\begin_inset Graphics
+	filename /data/simulations/belitsky/Balanced_Tuners/10Ohm/Tuner_7x10-5/Bal_7x48-5_7x10-5_7Ohm.eps
+	width 5in
+	keepAspectRatio
+
+\end_inset 
+
+
+\layout Standard
+\align center 
+
+\begin_inset Graphics
+	filename /data/simulations/belitsky/Balanced_Tuners/10Ohm/Tuner_7x10-5/Bal_13x48-5_7x10-5_10Ohm.eps
+	width 5in
+	keepAspectRatio
+
+\end_inset 
+
+
+\layout Standard
+\align center 
+
+\begin_inset Graphics
+	filename /data/simulations/belitsky/Balanced_Tuners/10Ohm/Tuner_7x10-5/Bal_13x48-5_7x10-5_7Ohm.eps
+	width 5in
+	keepAspectRatio
+
+\end_inset 
+
+
+\the_end

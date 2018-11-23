@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="33"
+   name=""
+   committed-date="2004-12-06T22:51:29.162321Z"
+   url="file:///svn/MultiTone/MultiTone/branches/SuperMix-numerics-branch/build/Thesis"
+   last-author="pkg22"
+   kind="dir"
+   uuid="8c93da9f-85d9-0310-a74c-cd56c53ec461"
+   revision="33"/>
+<entry
+   name="emb_imp_sat"
+   kind="dir"/>
+<entry
+   name="DSB-sat"
+   kind="dir"/>
+<entry
+   name="simple-sat"
+   kind="dir"/>
+</wc-entries>

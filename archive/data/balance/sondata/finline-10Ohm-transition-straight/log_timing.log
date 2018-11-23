@@ -1,0 +1,74 @@
+Run 1:  Tue Jan 20 09:16:11 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Pre-Analysis:
+      Subsectioning time:  1 second.
+
+    Frequency:  500 GHz
+      Circuit requires 4601 subsections and 164 MB of memory.
+      Waveguide mode time:  0.460 seconds.
+      Fourier transform time:  6 seconds.
+      Coupling time:  2 minutes 2 seconds.
+      Loss time:  2 seconds.
+      Matrix fill time:  2 minutes 12 seconds.
+
+Analysis stopped.
+Run 1:  Tue Jan 20 09:19:40 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Pre-Analysis:
+      Subsectioning time:  1 second.
+
+    Frequency:  500 GHz
+      Circuit requires 4601 subsections and 164 MB of memory.
+      Waveguide mode time:  0.420 seconds.
+      Fourier transform time:  5 seconds.
+      Coupling time:  2 minutes 1 second.
+      Loss time:  2 seconds.
+      Matrix fill time:  2 minutes 10 seconds.
+      Matrix solve time:  34 minutes 40 seconds.
+      De-embed left box wall:
+        First de-embedding standard, left box wall:  90 microns length, 312 subsections.
+          Time:  2 seconds.
+        Second de-embedding standard, left box wall:  180 microns length, 606 subsections.
+          Time:  8 seconds.
+      De-embed right box wall:
+        First de-embedding standard, right box wall:  90 microns length, 626 subsections.
+          Time:  8 seconds.
+        Second de-embedding standard, right box wall:  180 microns length, 1196 subsections.
+          Time:  43 seconds.
+      Total time per frequency:  37 minutes 55 seconds.
+NOTICE: Tue Jan 20 12:08:43 2004 Lost license, temporarily suspending processing.
+NOTICE: Tue Jan 20 13:07:43 2004 Still do not have a license.
+
+Analysis stopped.
+Run 2:  Tue Jan 20 13:09:15 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Pre-Analysis:
+      Subsectioning time:  1 second.
+
+    Frequency:  900 GHz
+      Circuit requires 4601 subsections and 164 MB of memory.
+      Waveguide mode time:  0.410 seconds.
+      Fourier transform time:  5 seconds.
+      Coupling time:  2 minutes 2 seconds.
+      Loss time:  2 seconds.
+      Matrix fill time:  2 minutes 11 seconds.
+      Matrix solve time:  35 minutes 27 seconds.
+      De-embed left box wall:
+        First de-embedding standard, left box wall:  50 microns length, 222 subsections.
+          Time:  1 second.
+        Second de-embedding standard, left box wall:  100 microns length, 426 subsections.
+          Time:  3 seconds.
+      De-embed right box wall:
+        First de-embedding standard, right box wall:  50 microns length, 476 subsections.
+          Time:  4 seconds.
+        Second de-embedding standard, right box wall:  100 microns length, 896 subsections.
+          Time:  18 seconds.
+      Total time per frequency:  38 minutes 8 seconds.
+
+    Post-Analysis:
+      Total time for 1 frequency:  38 minutes 10 seconds.
+
+Analysis successfully completed.

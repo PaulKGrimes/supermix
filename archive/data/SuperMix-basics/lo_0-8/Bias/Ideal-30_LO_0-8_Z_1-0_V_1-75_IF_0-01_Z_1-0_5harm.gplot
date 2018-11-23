@@ -1,0 +1,26 @@
+set size 0.9,1.0
+
+set key left
+set xtics 0.5
+set yrange [-0.05:]
+
+set ylabel "Harmonic Current"
+set xlabel "Bias Voltage"
+
+plot "Ideal-30_LO_0-8_Z_1-0_V_1-75_IF_0-01_Z_1-0_5harm.dat" using 1:(sqrt(2)*$9) title "Fundamental" with lines
+
+replot "Ideal-30_LO_0-8_Z_1-0_V_1-75_IF_0-01_Z_1-0_5harm.dat" using 1:(sqrt(2)*$10) title "1st Harmonic" with lines
+
+replot "Ideal-30_LO_0-8_Z_1-0_V_1-75_IF_0-01_Z_1-0_5harm.dat" using 1:(sqrt(2)*$11) title "2nd Harmonic" with lines
+
+replot "Ideal-30_LO_0-8_Z_1-0_V_1-75_IF_0-01_Z_1-0_5harm.dat" using 1:(sqrt(2)*$12) title "3rd Harmonic" with lines
+
+replot "Ideal-30_LO_0-8_Z_1-0_V_1-75_IF_0-01_Z_1-0_5harm.dat" using 1:(sqrt(2)*$13) title "4th Harmonic" with lines
+
+
+set terminal postscript eps "Helvetica" 18
+set output "Ideal-30_LO_0-8_Z_1-0_V_1-75_IF_0-01_Z_1-0_5harm_currents.eps"
+
+replot
+
+set output "/dev/null"

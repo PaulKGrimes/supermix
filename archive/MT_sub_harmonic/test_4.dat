@@ -1,0 +1,11 @@
+# MT_sub_harmonic output
+# 
+# ivcurve : unpump.IV
+# kkcurve: unpump.KK
+# rf_freq: 0.02
+# rf_volt: 1
+# if_freq: 0.002
+# harmonic: 4
+# 
+# Vdc[n-1]: 1.99 vGap: 1
+# starting normalisation at 1.78

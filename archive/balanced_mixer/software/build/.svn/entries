@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="35"
+   name=""
+   committed-date="2005-02-09T17:09:25.026357Z"
+   url="file:///svn/simulations/supermix/balanced_mixer/trunk/software/build"
+   last-author="pkg22"
+   kind="dir"
+   uuid="6ba91bf1-79e6-0310-a5fc-820f14313a01"
+   revision="35"/>
+<entry
+   committed-rev="5"
+   name="beamsplitter.h"
+   text-time="2004-10-25T09:25:15.000000Z"
+   committed-date="2004-10-21T17:20:52.428083Z"
+   checksum="deb427f72aac24a8dc00c23be8a4882d"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="10"
+   name="31Jul03_akima_spline.KK"
+   text-time="2004-10-28T11:19:14.000000Z"
+   committed-date="2004-10-28T16:31:36.599037Z"
+   checksum="b639d3847596ef760dca81765e7c7185"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-28T16:28:42.000000Z"/>
+<entry
+   committed-rev="10"
+   name="31Jul03_unpump.IV"
+   text-time="2004-10-28T11:00:57.000000Z"
+   committed-date="2004-10-28T16:31:36.599037Z"
+   checksum="30131ec5e7d0502802035e7323d636f1"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="build_layers.inc"
+   text-time="2004-10-22T16:21:17.000000Z"
+   committed-date="2004-10-21T17:20:52.428083Z"
+   checksum="6319948ef98e44d73a302ebb26c6dd5e"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="operating_point.h"
+   text-time="2004-10-22T16:21:26.000000Z"
+   committed-date="2004-10-21T17:20:52.428083Z"
+   checksum="61c0f1a445bd246da69822a67850a3f1"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="unpump.KK"
+   text-time="2004-10-25T09:25:15.000000Z"
+   committed-date="2004-10-21T17:20:52.428083Z"
+   checksum="4abc2d9e187826870aebd1f376c525c9"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="confprint.h"
+   text-time="2004-10-28T10:28:44.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="ac07777452a0c4188ac17424fa234b85"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-25T09:25:15.000000Z"/>
+<entry
+   committed-rev="35"
+   name="balanced"
+   text-time="2005-02-09T17:03:09.000000Z"
+   committed-date="2005-02-09T17:09:25.026357Z"
+   checksum="37b090ae8f242d463957f9eb2b8cfbb0"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-25T09:38:55.000000Z"/>
+<entry
+   committed-rev="10"
+   name="31Jul03_akima_spline.IV"
+   text-time="2004-10-28T11:19:14.000000Z"
+   committed-date="2004-10-28T16:31:36.599037Z"
+   checksum="225c0bf855902153d97f2dcd5c20aefc"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="10"
+   name="31Jul03_unpump.norm.IV"
+   text-time="2004-10-28T11:00:57.000000Z"
+   committed-date="2004-10-28T16:31:36.599037Z"
+   checksum="0b012da37265de31a0f3b0eab10a92d1"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="realistic.c"
+   text-time="2004-10-22T16:21:17.000000Z"
+   committed-date="2004-10-21T17:20:52.428083Z"
+   checksum="8edefa8aa1e52d01d947a0a989987478"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="unpump.IV"
+   text-time="2004-10-25T09:25:15.000000Z"
+   committed-date="2004-10-21T17:20:52.428083Z"
+   checksum="84f7c02c25fcf3d034eb6bdc0d428583"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="if_hybrid.s4p"
+   text-time="2004-10-25T13:01:10.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="e55140bd4512d30662a549866eae1d52"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-25T09:25:16.000000Z"/>
+<entry
+   committed-rev="9"
+   name="confparse.h"
+   text-time="2004-10-28T10:31:00.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="da5a687f6679e35abf8dbbbd6e0132bc"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-25T09:25:16.000000Z"/>
+<entry
+   committed-rev="35"
+   name="mixer.conf"
+   text-time="2005-02-09T16:54:35.000000Z"
+   committed-date="2005-02-09T17:09:25.026357Z"
+   checksum="a6b806f5d177d7033ecd3a813b419c65"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-25T09:38:55.000000Z"/>
+<entry
+   committed-rev="9"
+   name="globals.h"
+   text-time="2004-10-28T10:27:56.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="0c463904970b2ed9d0b674f79891e8ce"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="10"
+   name="31Jul03_unpump.KK"
+   text-time="2004-10-28T11:00:57.000000Z"
+   committed-date="2004-10-28T16:31:36.599037Z"
+   checksum="1bf76a3c8273314990bdf49dfbe618cb"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="35"
+   name="balanced.c"
+   text-time="2005-02-09T17:02:36.000000Z"
+   committed-date="2005-02-09T17:09:25.026357Z"
+   checksum="984f212a9b982e51acb986cc8e419933"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-25T09:25:16.000000Z"/>
+<entry
+   committed-rev="7"
+   name="mixer_build.inc"
+   text-time="2004-10-25T09:25:16.000000Z"
+   committed-date="2004-10-23T13:25:29.731194Z"
+   checksum="05712b003f3d160eb23d3c4008b77180"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-25T09:25:16.000000Z"/>
+<entry
+   committed-rev="9"
+   name="build_circuits.inc"
+   text-time="2005-01-27T16:45:49.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="21a44055ff3d16534a09ff6ee52ff413"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-25T09:38:55.000000Z"/>
+<entry
+   committed-rev="35"
+   name="balanced.conf"
+   text-time="2005-02-09T16:54:43.000000Z"
+   committed-date="2005-02-09T17:09:25.026357Z"
+   checksum="8b746e99901bf815dccc1c4fd8b8da2b"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-25T09:38:55.000000Z"/>
+<entry
+   committed-rev="9"
+   name="Makefile"
+   text-time="2004-10-25T14:35:33.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="0dc83713a3a4a58bb6766d1f14808648"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-25T09:25:16.000000Z"/>
+<entry
+   committed-rev="10"
+   name="rf_hybrid.s4p"
+   text-time="2004-10-28T16:24:00.000000Z"
+   committed-date="2004-10-28T16:31:36.599037Z"
+   checksum="a6806fca2b85744991463482e8d3a585"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

@@ -1,0 +1,39 @@
+#!/bin/sh
+gnuplot << EOF
+
+set grid
+
+set terminal postscript landscape solid color enhanced "Helvetica" 8 lw 0.5
+set output "$1_IF_5k.ps"
+
+set multiplot
+
+set origin 0.1, 0.5
+set size 0.4, 0.4
+set title "Gain"
+plot [:][-15:] "$1.dat" using 1:(10*log10(\$2)) title "LSB Gain" with lines, \
+	"$1.dat" using 1:(10*log10(\$3)) title "USB Gain" with lines, \
+	"$1.dat" using 1:(10*log10(\$3+\$2)) title "DSB Gain" with lines
+
+set origin 0.5, 0.5
+set size 0.4, 0.4
+set title "SSB Noise Temp"
+plot [:][0:100] "$1.dat" using 1:((\$4+5)/\$2) title "LSB Noise" with lines, \
+	"$1.dat" using 1:((\$4+5)/\$3) title "USB Noise" with lines
+
+set origin 0.1, 0.1
+set size 0.4, 0.4
+set title "DC Current"
+plot "$1.dat" using 1:7 title "J1" with lines, \
+	 "$1.dat" using 1:8 title "J2" with lines, \
+	 "$1.dat" using 1:(\$7+\$8) title "Total" with lines
+
+
+set origin 0.5, 0.1
+set size 0.4, 0.4
+set title "DSB Noise Temp"
+plot [:][0:100] "$1.dat" using 1:((\$4+5)/(\$2+\$3)) title "DSB Noise" with lines, \
+	"$1.dat" using 1:((297-((\$6+5)/(\$5+5))*77)/(((\$6+5)/(\$5+5))-1)) title "YFact Noise" with lines
+
+EOF
+

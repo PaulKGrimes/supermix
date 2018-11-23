@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="30"
+   name=""
+   committed-date="2004-12-06T18:12:58.153974Z"
+   url="file:///svn/MultiTone/MultiTone/branches/SuperMix-numerics-branch/build/Thesis/DSB-sat/lo_1-7"
+   last-author="pkg22"
+   kind="dir"
+   revision="33"/>
+<entry
+   committed-rev="30"
+   name="DSB_phase_VLO_2-75_VDC_0-9_VSF_1e-4.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="1038c9b0c51307a982e69dd8756375d1"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+</wc-entries>

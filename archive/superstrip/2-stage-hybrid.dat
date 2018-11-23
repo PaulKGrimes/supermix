@@ -1,0 +1,19 @@
+Microstrip Lengths
+
+Z0 = 9.85
+W = 7.0 um
+L = 38.8
+Substrate thickness = 0.42 um
+Conductor Thickness = 0.40 um
+
+Z0 = 8.3
+W = 8.5 um
+L = 38.5 um 
+Substrate Thickness = 0.42 um
+Conductor Thickness = 0.40 um
+
+Z0 = 23.4
+W = 2.5 um
+L = 40.2
+Substrate Thickness = 0.42 um 
+Conductor Thickness = 0.40 um

@@ -1,0 +1,22 @@
+#!/bin/sh
+gnuplot << EOF
+
+set grid
+
+set terminal postscript eps solid color enhanced "Helvetica" 14
+set output "$1_gain.eps"
+
+set xlabel "LO Frequency (GHz)"
+set ylabel "Conversion Gain (dB)"
+
+set ytics 5
+set xtics 25
+
+plot [:][-15:] "$1.dat" using 1:(10*log10(\$2)) title "LSB Gain" with lines, \
+	"$1.dat" using 1:(10*log10(\$3)) title "USB Gain" with lines, \
+	"$1.dat" using 1:(10*log10(\$3+\$2)) title "DSB Gain" with lines
+
+
+
+EOF
+

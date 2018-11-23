@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="23"
+   name=""
+   committed-date="2005-01-31T13:58:24.957622Z"
+   url="file:///svn/simulations/QTMix-Belitsky/.moc"
+   last-author="pkg22"
+   kind="dir"
+   revision="23"/>
+<entry
+   committed-rev="23"
+   name="moc_qtmixform.cpp"
+   text-time="2004-03-10T15:46:54.000000Z"
+   committed-date="2005-01-31T13:58:24.957622Z"
+   checksum="42184add90b2b13119974018c7516944"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

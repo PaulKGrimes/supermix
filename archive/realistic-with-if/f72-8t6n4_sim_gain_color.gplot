@@ -1,0 +1,28 @@
+#set size 0.9,1.0
+
+set ylabel "Receiver Gain (dB)"
+set y2label "Receiver Noise (K)
+set xlabel "IF Frequency (GHz)"
+
+set yrange [-30:0]
+set xrange [0:50]
+
+set xtics 10
+set ytics 5
+
+set grid
+
+set key bottom left Left
+
+replot "B4N1_realistic_fitted_v_IF_Freq.dat" using 1:(10*log10($2*$2+$3*$3)) title "Gain" with lines lt 1
+
+
+set terminal postscript eps enhanced solid color "Helvetica" 24 lw 2.0 size 4.5,3.5
+
+set output "B4N1_v_IF_Freq_color.eps"
+
+replot
+
+set output "/dev/null"
+
+

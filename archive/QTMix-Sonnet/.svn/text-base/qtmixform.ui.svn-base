@@ -1,0 +1,2482 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>QTMixForm</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>QTMixForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>824</width>
+            <height>647</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>QT Mix - Sonnet Tuned Mixer</string>
+    </property>
+    <hbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>2</number>
+        </property>
+        <widget class="QSplitter">
+            <property name="name">
+                <cstring>splitter3</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <widget class="QFrame">
+                <property name="name">
+                    <cstring>frame4</cstring>
+                </property>
+                <property name="minimumSize">
+                    <size>
+                        <width>0</width>
+                        <height>0</height>
+                    </size>
+                </property>
+                <property name="frameShape">
+                    <enum>StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>Raised</enum>
+                </property>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QTabWidget">
+                        <property name="name">
+                            <cstring>tabWidget2</cstring>
+                        </property>
+                        <widget class="QWidget">
+                            <property name="name">
+                                <cstring>globalsTab</cstring>
+                            </property>
+                            <attribute name="title">
+                                <string>Globals</string>
+                            </attribute>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QGroupBox">
+                                    <property name="name">
+                                        <cstring>simulationGroupBox</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Simulation</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <spacer row="1" column="2">
+                                            <property name="name">
+                                                <cstring>spacer29</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>111</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="0" column="1" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>spacer30</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>51</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QDoubleSpinBox" row="0" column="3" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>tDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> K</string>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>0.1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>4.2</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>2</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel6_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Device Temperature:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="1" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel5_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Normalising Impedance:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QSpinBox" row="3" column="4">
+                                            <property name="name">
+                                                <cstring>harmonicsSpinBox</cstring>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>3</number>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>1</number>
+                                            </property>
+                                        </widget>
+                                        <spacer row="3" column="2" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>spacer27</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>134</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QLabel" row="3" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel11</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>No. of harmonics to include:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="2" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel1_5</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>IF Impedance:</string>
+                                            </property>
+                                        </widget>
+                                        <spacer row="2" column="1" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>spacer26_2</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>101</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QDoubleSpinBox" row="2" column="3" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>ifImpDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> Ω</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>999</number>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>1</number>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>10</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>50</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>1</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="1" column="3" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>z0DoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> Ω</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>999</number>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>20</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>1</number>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                                <widget class="QGroupBox">
+                                    <property name="name">
+                                        <cstring>opPointGroupBox</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Operating Point</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel5</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Bias:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="1" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel4_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>LO Frequency:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="2" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel6</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>LO Power:</string>
+                                            </property>
+                                        </widget>
+                                        <spacer row="0" column="1" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>spacer22</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>70</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="1" column="1" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>spacer21</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>70</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="2" column="1" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>spacer23</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>80</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QDoubleSpinBox" row="0" column="3">
+                                            <property name="name">
+                                                <cstring>biasDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> mV</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>10</number>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>0.1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>2</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>2</number>
+                                            </property>
+                                        </widget>
+                                        <spacer row="5" column="1" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>spacer24</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>90</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QLabel" row="5" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel8</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>IF Frequency:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="3" column="0" rowspan="2" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel3_4</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>LO Noise Temperature:</string>
+                                            </property>
+                                        </widget>
+                                        <spacer row="3" column="2">
+                                            <property name="name">
+                                                <cstring>spacer19</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>16</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QDoubleSpinBox" row="1" column="3">
+                                            <property name="name">
+                                                <cstring>freqDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> GHz</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>2000</number>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>10</number>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>5</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>650</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>0</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="2" column="3">
+                                            <property name="name">
+                                                <cstring>loPowerDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> nW</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>9999</number>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>100</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>0</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QSpinBox" row="3" column="3">
+                                            <property name="name">
+                                                <cstring>loTempSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> K</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>999</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="4" column="3" rowspan="2" colspan="1">
+                                            <property name="name">
+                                                <cstring>IFfreqDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> GHz</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>9.99</number>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>0.5</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>5</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>2</number>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QWidget">
+                            <property name="name">
+                                <cstring>junctionTab</cstring>
+                            </property>
+                            <attribute name="title">
+                                <string>Junction</string>
+                            </attribute>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QGroupBox">
+                                    <property name="name">
+                                        <cstring>junctionGroupBox</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Junction</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel1_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>IV data file:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="1" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel2_4</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>KK data file:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="FileChooser" row="0" column="3">
+                                            <property name="name">
+                                                <cstring>idcFileChooser</cstring>
+                                            </property>
+                                            <property name="enabled">
+                                                <bool>true</bool>
+                                            </property>
+                                        </widget>
+                                        <spacer row="0" column="1" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>spacer18_3</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>60</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="1" column="1" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>spacer17_3</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>60</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="FileChooser" row="1" column="3">
+                                            <property name="name">
+                                                <cstring>ikkFileChooser</cstring>
+                                            </property>
+                                            <property name="enabled">
+                                                <bool>true</bool>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="2" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel1_4</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Normal Resistance:</string>
+                                            </property>
+                                        </widget>
+                                        <spacer row="2" column="2">
+                                            <property name="name">
+                                                <cstring>spacer23_2</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>31</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="3" column="2">
+                                            <property name="name">
+                                                <cstring>spacer24_2</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>31</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QLabel" row="3" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel2_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Capacitance:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="4" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel3_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Gap Voltage:</string>
+                                            </property>
+                                        </widget>
+                                        <spacer row="4" column="2">
+                                            <property name="name">
+                                                <cstring>spacer25</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>41</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QDoubleSpinBox" row="2" column="3">
+                                            <property name="name">
+                                                <cstring>rnJuncDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="prefix">
+                                                <string></string>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> Ω</string>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>10</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>1</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="3" column="3">
+                                            <property name="name">
+                                                <cstring>capJuncDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="acceptDrops">
+                                                <bool>false</bool>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> fF</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>1999</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>65</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>1</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="4" column="3">
+                                            <property name="name">
+                                                <cstring>vGapJuncDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> mV</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>9</number>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>0.01</number>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>0.01</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>2.81</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>2</number>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer28_2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Vertical</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>101</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </vbox>
+                        </widget>
+                        <widget class="QWidget">
+                            <property name="name">
+                                <cstring>materialsTab</cstring>
+                            </property>
+                            <attribute name="title">
+                                <string>Materials</string>
+                            </attribute>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QGroupBox">
+                                    <property name="name">
+                                        <cstring>substrateGroupBox</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Substrate</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel1_6</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Dielectric Constant:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="1" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel2_5</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Loss Tangent:</string>
+                                            </property>
+                                        </widget>
+                                        <spacer row="0" column="1">
+                                            <property name="name">
+                                                <cstring>spacer29_2</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>71</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="1" column="1">
+                                            <property name="name">
+                                                <cstring>spacer30_2</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>71</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QDoubleSpinBox" row="0" column="2">
+                                            <property name="name">
+                                                <cstring>epsSubstrateDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>1</number>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>0.1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>5.8</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>1</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="1" column="2">
+                                            <property name="name">
+                                                <cstring>tandSubstrateDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string>e-4</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>9999</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>4</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>1</number>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                                <widget class="QGroupBox">
+                                    <property name="name">
+                                        <cstring>scMaterialGroupBox</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Superconductor</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel" row="0" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel3_5</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Transition Temperature:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="1" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel4_5</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Gap Voltage:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="2" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel5_3</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Normal Resistivity:</string>
+                                            </property>
+                                        </widget>
+                                        <spacer row="0" column="2">
+                                            <property name="name">
+                                                <cstring>spacer31</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>41</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="1" column="2">
+                                            <property name="name">
+                                                <cstring>spacer32</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>41</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="2" column="2">
+                                            <property name="name">
+                                                <cstring>spacer33</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>41</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QDoubleSpinBox" row="2" column="3">
+                                            <property name="name">
+                                                <cstring>rhoScMetalDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> μΩcm</string>
+                                            </property>
+                                            <property name="value">
+                                                <number>5</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>2</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="1" column="3">
+                                            <property name="name">
+                                                <cstring>vGapScMetalDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> mV</string>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>0.1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>2.85</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>2</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="0" column="3">
+                                            <property name="name">
+                                                <cstring>tcScMetalDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="prefix">
+                                                <string></string>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> K</string>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>0.1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>9.23</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>2</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="3" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel12_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Thickness:</string>
+                                            </property>
+                                        </widget>
+                                        <spacer row="3" column="1" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>spacer38_2</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>140</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QDoubleSpinBox" row="3" column="3">
+                                            <property name="name">
+                                                <cstring>thickScMetalDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> μm</string>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>0.1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>0.4</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>2</number>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                                <widget class="QGroupBox">
+                                    <property name="name">
+                                        <cstring>normMetalGroupBox</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>Normal Metal</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel6_3</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Resistivity:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="1" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel12</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Thickness:</string>
+                                            </property>
+                                        </widget>
+                                        <spacer row="1" column="1">
+                                            <property name="name">
+                                                <cstring>spacer38</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>170</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="0" column="1">
+                                            <property name="name">
+                                                <cstring>spacer34</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>170</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QDoubleSpinBox" row="0" column="2">
+                                            <property name="name">
+                                                <cstring>rhoNormMetalDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> μΩcm</string>
+                                            </property>
+                                            <property name="value">
+                                                <number>2.69</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>2</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="1" column="2">
+                                            <property name="name">
+                                                <cstring>thickNormMetalDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> μm</string>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>0.1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>0.4</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>2</number>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QWidget">
+                            <property name="name">
+                                <cstring>TabPage</cstring>
+                            </property>
+                            <attribute name="title">
+                                <string>Tuner</string>
+                            </attribute>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout17</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>textLabel1_7</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Touchstone File:</string>
+                                            </property>
+                                        </widget>
+                                        <spacer>
+                                            <property name="name">
+                                                <cstring>spacer43</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>31</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="FileChooser">
+                                            <property name="name">
+                                                <cstring>sonnetFileChooser</cstring>
+                                            </property>
+                                            <property name="fileName">
+                                                <string></string>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer44</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Vertical</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>261</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </vbox>
+                        </widget>
+                        <widget class="QWidget">
+                            <property name="name">
+                                <cstring>tunerTab</cstring>
+                            </property>
+                            <attribute name="title">
+                                <string>RF Choke</string>
+                            </attribute>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QCheckBox">
+                                    <property name="name">
+                                        <cstring>rfChokeCheckBox</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Include RF Choke</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QGroupBox">
+                                    <property name="name">
+                                        <cstring>rfChokeGroupBox</cstring>
+                                    </property>
+                                    <property name="title">
+                                        <string>RF Choke</string>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget" row="8" column="0" rowspan="1" colspan="4">
+                                            <property name="name">
+                                                <cstring>layout49</cstring>
+                                            </property>
+                                            <hbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel5_4_2_2</cstring>
+                                                    </property>
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>70</width>
+                                                            <height>21</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="maximumSize">
+                                                        <size>
+                                                            <width>70</width>
+                                                            <height>21</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Phase : </string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>AlignVCenter|AlignRight</set>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QLineEdit">
+                                                    <property name="name">
+                                                        <cstring>phaseRadialLineEdit</cstring>
+                                                    </property>
+                                                    <property name="readOnly">
+                                                        <bool>true</bool>
+                                                    </property>
+                                                </widget>
+                                            </hbox>
+                                        </widget>
+                                        <widget class="QLayoutWidget" row="7" column="0" rowspan="1" colspan="4">
+                                            <property name="name">
+                                                <cstring>layout48</cstring>
+                                            </property>
+                                            <hbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QLabel">
+                                                    <property name="name">
+                                                        <cstring>textLabel4_4_2_2</cstring>
+                                                    </property>
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>70</width>
+                                                            <height>21</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="maximumSize">
+                                                        <size>
+                                                            <width>70</width>
+                                                            <height>21</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Z0 : </string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>AlignVCenter|AlignRight</set>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QLineEdit">
+                                                    <property name="name">
+                                                        <cstring>z0RadialLineEdit</cstring>
+                                                    </property>
+                                                    <property name="readOnly">
+                                                        <bool>true</bool>
+                                                    </property>
+                                                </widget>
+                                            </hbox>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="6" column="3">
+                                            <property name="name">
+                                                <cstring>angleRfChokeDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string>°</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>180</number>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>30</number>
+                                            </property>
+                                            <property name="lineStep">
+                                                <number>10</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>180</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>0</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QComboBox" row="1" column="3">
+                                            <property name="name">
+                                                <cstring>groundRfChokeComboBox</cstring>
+                                            </property>
+                                            <property name="maxCount">
+                                                <number>10</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QComboBox" row="0" column="3">
+                                            <property name="name">
+                                                <cstring>topRfChokeComboBox</cstring>
+                                            </property>
+                                            <property name="maxCount">
+                                                <number>10</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="4" column="3">
+                                            <property name="name">
+                                                <cstring>heightRfChokeDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> μm</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>99</number>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>0.01</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>0.42</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>2</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="2" column="3">
+                                            <property name="name">
+                                                <cstring>lengthRfChokeDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> μm</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>999</number>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>0.1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>39</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>1</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="3" column="3">
+                                            <property name="name">
+                                                <cstring>widthRfChokeDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> μm</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>999</number>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>0.1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>3</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>1</number>
+                                            </property>
+                                        </widget>
+                                        <widget class="QDoubleSpinBox" row="5" column="3">
+                                            <property name="name">
+                                                <cstring>radiusRfChokeDoubleSpinBox</cstring>
+                                            </property>
+                                            <property name="suffix">
+                                                <string> μm</string>
+                                            </property>
+                                            <property name="maxValue">
+                                                <number>999</number>
+                                            </property>
+                                            <property name="minValue">
+                                                <number>0.1</number>
+                                            </property>
+                                            <property name="value">
+                                                <number>30</number>
+                                            </property>
+                                            <property name="displayPrecision">
+                                                <number>1</number>
+                                            </property>
+                                        </widget>
+                                        <spacer row="6" column="2">
+                                            <property name="name">
+                                                <cstring>spacer40_5</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>42</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="5" column="2">
+                                            <property name="name">
+                                                <cstring>spacer40_4</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>42</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="4" column="2">
+                                            <property name="name">
+                                                <cstring>spacer40_3</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>42</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="3" column="2">
+                                            <property name="name">
+                                                <cstring>spacer40_2</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>42</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="1" column="2">
+                                            <property name="name">
+                                                <cstring>spacer37</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>42</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QLabel" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>textLabel7_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Top Metal:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="1" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel8_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Ground Metal:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="3" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel9</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Input Line Width:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="4" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel11_2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Substrate Thickness:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="5" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel13</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Fan Radius:</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QLabel" row="6" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel14</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Fan Angle:</string>
+                                            </property>
+                                        </widget>
+                                        <spacer row="0" column="1" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>spacer36</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>50</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <spacer row="2" column="2">
+                                            <property name="name">
+                                                <cstring>spacer40</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Expanding</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>40</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QLabel" row="2" column="0" rowspan="1" colspan="2">
+                                            <property name="name">
+                                                <cstring>textLabel10</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Input Line Length:</string>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>resultsGroupBox</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Results</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <spacer row="0" column="1">
+                                <property name="name">
+                                    <cstring>spacer13</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>21</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <spacer row="1" column="1">
+                                <property name="name">
+                                    <cstring>spacer14</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>21</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QLineEdit" row="0" column="2">
+                                <property name="name">
+                                    <cstring>unpumpLineEdit</cstring>
+                                </property>
+                                <property name="readOnly">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel1_3</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Unpumped DC Current:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="1" column="0">
+                                <property name="name">
+                                    <cstring>textLabel2_3</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Pumped DC Current:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="1" column="2">
+                                <property name="name">
+                                    <cstring>pumpedLineEdit</cstring>
+                                </property>
+                                <property name="readOnly">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="3" column="0">
+                                <property name="name">
+                                    <cstring>textLabel3_3</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Mixer Gain (USB):</string>
+                                </property>
+                            </widget>
+                            <spacer row="3" column="1">
+                                <property name="name">
+                                    <cstring>spacer15</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>21</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QLabel" row="2" column="0">
+                                <property name="name">
+                                    <cstring>textLabel3_3_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Mixer Gain (LSB):</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="2" column="2">
+                                <property name="name">
+                                    <cstring>lsbGainLineEdit</cstring>
+                                </property>
+                                <property name="readOnly">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="3" column="2">
+                                <property name="name">
+                                    <cstring>usbGainLineEdit</cstring>
+                                </property>
+                                <property name="readOnly">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="4" column="0">
+                                <property name="name">
+                                    <cstring>textLabel4_3</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>IF Output:</string>
+                                </property>
+                            </widget>
+                            <spacer row="5" column="1">
+                                <property name="name">
+                                    <cstring>spacer16_2</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>35</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QLabel" row="5" column="0">
+                                <property name="name">
+                                    <cstring>textLabel4_3_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Mixer Noise (DSB):</string>
+                                </property>
+                            </widget>
+                            <spacer row="2" column="1">
+                                <property name="name">
+                                    <cstring>spacer15_2</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QLineEdit" row="5" column="2">
+                                <property name="name">
+                                    <cstring>noiseLineEdit</cstring>
+                                </property>
+                                <property name="readOnly">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="4" column="2">
+                                <property name="name">
+                                    <cstring>ifOutputLineEdit</cstring>
+                                </property>
+                                <property name="readOnly">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <spacer row="4" column="1">
+                                <property name="name">
+                                    <cstring>spacer16</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </grid>
+                    </widget>
+                    <spacer>
+                        <property name="name">
+                            <cstring>spacer17_2</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>20</width>
+                                <height>16</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>buttonLayout</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>resetPushButton</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Reset</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>calculatePushButton</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Calculate</string>
+                                </property>
+                                <property name="default">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>quitPushButton</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Quit</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QFrame">
+                <property name="name">
+                    <cstring>frame3</cstring>
+                </property>
+                <property name="sizePolicy">
+                    <sizepolicy>
+                        <hsizetype>3</hsizetype>
+                        <vsizetype>3</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                    </sizepolicy>
+                </property>
+                <property name="frameShape">
+                    <enum>StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>Raised</enum>
+                </property>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>plotControlsGroupBox</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Plot Controls</string>
+                        </property>
+                        <vbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout6</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel1</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Plot from:</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QDoubleSpinBox">
+                                        <property name="name">
+                                            <cstring>plotLowDoubleSpinBox</cstring>
+                                        </property>
+                                        <property name="suffix">
+                                            <string> mV</string>
+                                        </property>
+                                        <property name="maxValue">
+                                            <number>10</number>
+                                        </property>
+                                        <property name="minValue">
+                                            <number>0</number>
+                                        </property>
+                                        <property name="lineStep">
+                                            <number>0.1</number>
+                                        </property>
+                                        <property name="value">
+                                            <number>0</number>
+                                        </property>
+                                        <property name="displayPrecision">
+                                            <number>3</number>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>to:</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QDoubleSpinBox">
+                                        <property name="name">
+                                            <cstring>plotHighDoubleSpinBox</cstring>
+                                        </property>
+                                        <property name="suffix">
+                                            <string> mV</string>
+                                        </property>
+                                        <property name="maxValue">
+                                            <number>10</number>
+                                        </property>
+                                        <property name="minValue">
+                                            <number>0</number>
+                                        </property>
+                                        <property name="lineStep">
+                                            <number>0.1</number>
+                                        </property>
+                                        <property name="value">
+                                            <number>5</number>
+                                        </property>
+                                        <property name="displayPrecision">
+                                            <number>3</number>
+                                        </property>
+                                    </widget>
+                                    <spacer>
+                                        <property name="name">
+                                            <cstring>spacer18</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>41</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <widget class="QPushButton">
+                                        <property name="name">
+                                            <cstring>plotRedrawPushButton</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Re&amp;draw</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QPushButton">
+                                        <property name="name">
+                                            <cstring>saveDataPushButton</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Save</string>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout19</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel7</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>X axis:</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox">
+                                        <property name="name">
+                                            <cstring>plotXAxisComboBox</cstring>
+                                        </property>
+                                        <property name="maxCount">
+                                            <number>10</number>
+                                        </property>
+                                    </widget>
+                                    <spacer>
+                                        <property name="name">
+                                            <cstring>spacer26</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>71</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout3</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel3</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Left axis:</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox">
+                                        <property name="name">
+                                            <cstring>plotLeftComboBox</cstring>
+                                        </property>
+                                        <property name="autoCompletion">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="duplicatesEnabled">
+                                            <bool>false</bool>
+                                        </property>
+                                    </widget>
+                                    <spacer>
+                                        <property name="name">
+                                            <cstring>spacer17</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>21</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel4</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Right axis:</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox">
+                                        <property name="name">
+                                            <cstring>plotRightComboBox</cstring>
+                                        </property>
+                                        <property name="autoCompletion">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="duplicatesEnabled">
+                                            <bool>false</bool>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                        </vbox>
+                    </widget>
+                    <widget class="QwtPlot">
+                        <property name="name">
+                            <cstring>plot</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>3</hsizetype>
+                                <vsizetype>3</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="yRightAxis" stdset="0">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+        </widget>
+    </hbox>
+</widget>
+<customwidgets>
+</customwidgets>
+<connections>
+    <connection>
+        <sender>quitPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>calculatePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>calculate()</slot>
+    </connection>
+    <connection>
+        <sender>resetPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>init()</slot>
+    </connection>
+    <connection>
+        <sender>plotRedrawPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>redrawPlot()</slot>
+    </connection>
+    <connection>
+        <sender>plotLeftComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>redrawPlot()</slot>
+    </connection>
+    <connection>
+        <sender>plotRightComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>redrawPlot()</slot>
+    </connection>
+    <connection>
+        <sender>plotLowDoubleSpinBox</sender>
+        <signal>valueChanged(const QString&amp;)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setPlotLimits()</slot>
+    </connection>
+    <connection>
+        <sender>plotHighDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setPlotLimits()</slot>
+    </connection>
+    <connection>
+        <sender>saveDataPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>fileSaveAs()</slot>
+    </connection>
+    <connection>
+        <sender>plot</sender>
+        <signal>plotMousePressed(const QMouseEvent&amp;)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>calcOnMouse(const QMouseEvent&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>freqDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setOperatingPoint()</slot>
+    </connection>
+    <connection>
+        <sender>z0DoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setSimParameters()</slot>
+    </connection>
+    <connection>
+        <sender>IFfreqDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setOperatingPoint()</slot>
+    </connection>
+    <connection>
+        <sender>biasDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setOperatingPoint()</slot>
+    </connection>
+    <connection>
+        <sender>loPowerDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setOperatingPoint()</slot>
+    </connection>
+    <connection>
+        <sender>loTempSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setOperatingPoint()</slot>
+    </connection>
+    <connection>
+        <sender>idcFileChooser</sender>
+        <signal>fileNameChanged(const QString&amp;)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setIVdata()</slot>
+    </connection>
+    <connection>
+        <sender>ikkFileChooser</sender>
+        <signal>fileNameChanged(const QString&amp;)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setIVdata()</slot>
+    </connection>
+    <connection>
+        <sender>harmonicsSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setHarmonics(int)</slot>
+    </connection>
+    <connection>
+        <sender>capJuncDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setJunction()</slot>
+    </connection>
+    <connection>
+        <sender>rnJuncDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setJunction()</slot>
+    </connection>
+    <connection>
+        <sender>vGapJuncDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setJunction()</slot>
+    </connection>
+    <connection>
+        <sender>ifImpDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setIFImpedance()</slot>
+    </connection>
+    <connection>
+        <sender>tDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setSimParameters()</slot>
+    </connection>
+    <connection>
+        <sender>plotXAxisComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setPlotXAxis()</slot>
+    </connection>
+    <connection>
+        <sender>rhoNormMetalDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setNormMetal()</slot>
+    </connection>
+    <connection>
+        <sender>thickNormMetalDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setNormMetal()</slot>
+    </connection>
+    <connection>
+        <sender>tcScMetalDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setScMetal()</slot>
+    </connection>
+    <connection>
+        <sender>vGapScMetalDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setScMetal()</slot>
+    </connection>
+    <connection>
+        <sender>rhoScMetalDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setScMetal()</slot>
+    </connection>
+    <connection>
+        <sender>thickScMetalDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setScMetal()</slot>
+    </connection>
+    <connection>
+        <sender>epsSubstrateDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setDielectric()</slot>
+    </connection>
+    <connection>
+        <sender>tandSubstrateDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setDielectric()</slot>
+    </connection>
+    <connection>
+        <sender>angleRfChokeDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setRfChokeDim()</slot>
+    </connection>
+    <connection>
+        <sender>heightRfChokeDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setRfChokeDim()</slot>
+    </connection>
+    <connection>
+        <sender>lengthRfChokeDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setRfChokeDim()</slot>
+    </connection>
+    <connection>
+        <sender>radiusRfChokeDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setRfChokeDim()</slot>
+    </connection>
+    <connection>
+        <sender>widthRfChokeDoubleSpinBox</sender>
+        <signal>valueChanged(double)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setRfChokeDim()</slot>
+    </connection>
+    <connection>
+        <sender>groundRfChokeComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setRfChokeDim()</slot>
+    </connection>
+    <connection>
+        <sender>topRfChokeComboBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setRfChokeDim()</slot>
+    </connection>
+    <connection>
+        <sender>rfChokeCheckBox</sender>
+        <signal>stateChanged(int)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setRfChoke()</slot>
+    </connection>
+    <connection>
+        <sender>sonnetFileChooser</sender>
+        <signal>fileNameChanged(const QString&amp;)</signal>
+        <receiver>QTMixForm</receiver>
+        <slot>setTuner()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>resetPushButton</tabstop>
+    <tabstop>calculatePushButton</tabstop>
+    <tabstop>quitPushButton</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">supermix.h</include>
+    <include location="local" impldecl="in declaration">supermix.h</include>
+    <include location="local" impldecl="in declaration">reduced_nport.h</include>
+    <include location="local" impldecl="in implementation">qtmixform.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">QString sonnetFile;</variable>
+    <variable access="public">sdata_interp sonnetDevice;</variable>
+    <variable access="public">capacitor juncCap;</variable>
+    <variable access="public">circuit rfNoChokeZemb;</variable>
+    <variable access="public">reduced_nport rfNoChoke;</variable>
+    <variable access="public">Complex TwoPiI;</variable>
+    <variable access="public">Complex Zstub;</variable>
+    <variable access="public">Complex Zemb;</variable>
+    <variable access="public">const_diel substrate;</variable>
+    <variable access="public">transformer ifWithChokeTrans;</variable>
+    <variable access="public">int LSB_PORT;</variable>
+    <variable access="public">int IF_PORT;</variable>
+    <variable access="public">int USB_PORT;</variable>
+    <variable access="public">int initialised;</variable>
+    <variable access="public">sis_device sis;</variable>
+    <variable access="public">long plotLeftCurve;</variable>
+    <variable access="public">double plotHigh;</variable>
+    <variable access="public">double plotLow;</variable>
+    <variable access="public">long plotRightCurve;</variable>
+    <variable access="public">QString m_filename;</variable>
+    <variable access="public">mixer mix;</variable>
+    <variable access="public">voltage_source bias;</variable>
+    <variable access="public">generator lo;</variable>
+    <variable access="public">ivcurve iv;</variable>
+    <variable access="public">branch rfBranch;</variable>
+    <variable access="public">radial_stub rfChoke;</variable>
+    <variable access="public">zterm rfTerm;</variable>
+    <variable access="public">const_diel superstrate;</variable>
+    <variable access="public">super_film superconductor;</variable>
+    <variable access="public">normal_film normalconductor;</variable>
+    <variable access="public">circuit rfWithChoke;</variable>
+    <variable access="public">circuit rfWithChokeZemb;</variable>
+    <variable access="public">transformer ifNoChokeTrans;</variable>
+    <variable access="public">circuit ifWithChoke;</variable>
+    <variable access="public">microstrip rfChokeStrip;</variable>
+</variables>
+<slots>
+    <slot>calculate()</slot>
+    <slot>init()</slot>
+    <slot>redrawPlot()</slot>
+    <slot>setPlotLimits()</slot>
+    <slot>calcOnMouse( const QMouseEvent &amp; e )</slot>
+    <slot>fileSaveAs()</slot>
+    <slot>fileSave()</slot>
+    <slot>setOperatingPoint()</slot>
+    <slot>setIFImpedance()</slot>
+    <slot>setHarmonics( int h )</slot>
+    <slot>setIVdata()</slot>
+    <slot>setJunction()</slot>
+    <slot>setSimParameters()</slot>
+    <slot>setRfChoke()</slot>
+    <slot>setPlotXAxis()</slot>
+    <slot>setNormMetal()</slot>
+    <slot>setScMetal()</slot>
+    <slot>setDielectric()</slot>
+    <slot>setRfChokeDim()</slot>
+    <slot>setTuner()</slot>
+    <slot>calcStripProperties()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="6"/>
+<includehints>
+    <includehint>qwt_scale.h</includehint>
+    <includehint>qwt_scale.h</includehint>
+    <includehint>qwt_scale.h</includehint>
+</includehints>
+</UI>

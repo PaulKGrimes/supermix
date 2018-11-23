@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="10"
+   name=""
+   committed-date="2004-10-28T16:31:36.599037Z"
+   url="file:///svn/simulations/supermix/balanced_mixer/trunk/data/input"
+   last-author="pkg22"
+   kind="dir"
+   uuid="6ba91bf1-79e6-0310-a5fc-820f14313a01"
+   revision="35"/>
+<entry
+   committed-rev="10"
+   name="31Jul03_akima_spline.KK"
+   text-time="2004-10-28T11:18:50.000000Z"
+   committed-date="2004-10-28T16:31:36.599037Z"
+   checksum="b639d3847596ef760dca81765e7c7185"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-10-28T16:27:54.000000Z"/>
+<entry
+   committed-rev="10"
+   name="31Jul03_unpump.IV"
+   text-time="2004-10-28T11:00:29.000000Z"
+   committed-date="2004-10-28T16:31:36.599037Z"
+   checksum="30131ec5e7d0502802035e7323d636f1"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="if_hybrid.s4p"
+   text-time="2004-10-22T14:05:40.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="ce7bfbb602b75046670073ec63228a37"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="700_hybrid-0_52-0_5-2_0_22_freqvar.s4p"
+   text-time="2004-10-28T09:00:47.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="a6806fca2b85744991463482e8d3a585"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="700_hybrid_13-7_Ohm-0_52-0_48-2_0_22_freqvar.s4p"
+   text-time="2004-10-28T09:29:40.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="66c74cc72a86e9cd057c3f68f2f1b5bb"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="if_hybrid_10Ohm.s4p"
+   text-time="2004-10-25T10:49:55.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="bcebca313df3d3e686b13bf7e18ed8f7"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="10"
+   name="31Jul03_unpump.KK"
+   text-time="2004-10-28T11:00:29.000000Z"
+   committed-date="2004-10-28T16:31:36.599037Z"
+   checksum="1bf76a3c8273314990bdf49dfbe618cb"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="10"
+   name="31Jul03_akima_spline.IV"
+   text-time="2004-10-28T11:18:50.000000Z"
+   committed-date="2004-10-28T16:31:36.599037Z"
+   checksum="225c0bf855902153d97f2dcd5c20aefc"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="10"
+   name="31Jul03_unpump.norm.IV"
+   text-time="2004-10-28T11:00:29.000000Z"
+   committed-date="2004-10-28T16:31:36.599037Z"
+   checksum="0b012da37265de31a0f3b0eab10a92d1"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="rf_hybrid.s4p"
+   text-time="2004-10-22T13:13:09.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="996757b8b71bad22a60ce926c4625baf"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

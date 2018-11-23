@@ -1,0 +1,20 @@
+set size 0.9,1.0
+
+set key left
+
+set ylabel "DC Current"
+set xlabel "Bias Voltage"
+
+set yrange [-0.05:]
+
+plot "Ideal_10.idc" using 1:2 title "n=10" with lines
+replot "Ideal_20.idc" using 1:2 title "n=20" with lines
+replot "Ideal_30.idc" using 1:2 title "n=30" with lines
+replot "Ideal_50.idc" using 1:2 title "n=50" with lines
+
+set terminal postscript eps "Helvetica" 18
+set output "Ideal_idc.eps"
+
+replot
+
+set output "/dev/null"

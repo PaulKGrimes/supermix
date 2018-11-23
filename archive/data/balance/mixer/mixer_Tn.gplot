@@ -1,0 +1,27 @@
+#! /usr/bin/gnuplot
+#
+# Gnuplot script giving standard plots for mixer design evaluation
+#
+# plots mixer DSB gain for a number of data files to allow comparison of 
+# peak gain
+
+set title "Mixer Gain for 10Ohm-SCap65fF optimised for min noise temp"
+set ylabel "DSB Noise Temperature (dB)"
+set xlabel "LO Frequency (GHz)"
+set grid
+set ytics 50
+set xtics 50
+set key left
+
+plot "10Ohm_SCap65fF_1-0_optimumTn.dat" using 1:($7/($5+$6)) title "Nominal Area" with lines lt 1
+replot "10Ohm_SCap65fF_0-83_optimumTn.dat" using 1:($7/($5+$6)) title "0.83*Area" with lines lt 2
+replot "10Ohm_SCap65fF_1-2_optimumTn.dat" using 1:($7/($5+$6)) title "1.2*Area" with lines lt 3
+
+set terminal x11
+replot
+
+set terminal postscript color solid
+#set terminal postscript monochrome dashed
+
+set output "10Ohm_SCap65fF_Tn.ps"
+replot
