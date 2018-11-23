@@ -1,0 +1,36 @@
+set size 0.9,1.0
+
+set key bottom
+set xtics 0.2
+set y2tics
+set ytics nomirror
+set yrange [-0.05:]
+set y2range [0.:]
+
+set ylabel "DC Current"
+set y2label "LO Current"
+set xlabel "Bias Voltage"
+
+plot "Ideal-10_LO_1-7_Z_1-0_V_2-85_IF_0-01_Z_1-0.dat" using 1:4 title "n=10" with lines
+
+replot "Ideal-20_LO_1-7_Z_1-0_V_2-65_IF_0-01_Z_1-0.dat" using 1:4 title "n=20" with lines
+
+replot "Ideal-30_LO_1-7_Z_1-0_V_2-60_IF_0-01_Z_1-0.dat" using 1:4 title "n=30" with lines
+
+replot "Ideal-50_LO_1-7_Z_1-0_V_2-60_IF_0-01_Z_1-0.dat" using 1:4 title "n=50" with lines
+
+replot "Ideal-10_LO_1-7_Z_1-0_V_2-85_IF_0-01_Z_1-0.dat" using 1:9 axes x1y2 title "" with lines lt 1
+
+replot "Ideal-20_LO_1-7_Z_1-0_V_2-65_IF_0-01_Z_1-0.dat" using 1:9 axes x1y2 title "" with lines lt 2
+
+replot "Ideal-30_LO_1-7_Z_1-0_V_2-60_IF_0-01_Z_1-0.dat" using 1:9 axes x1y2 title "" with lines lt 3
+
+replot "Ideal-50_LO_1-7_Z_1-0_V_2-60_IF_0-01_Z_1-0.dat" using 1:9 axes x1y2 title "" with lines lt 4
+
+
+set terminal postscript eps "Helvetica" 18
+set output "Ideal-n_LO_1-7_Z_1-0_V_opt_IF_0-01_Z_1-0_current.eps"
+
+replot
+
+set output "/dev/null"

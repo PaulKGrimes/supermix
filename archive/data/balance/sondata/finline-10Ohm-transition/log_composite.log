@@ -1,0 +1,75 @@
+Run 1:  Mon Jan 19 10:47:40 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Pre-Analysis:
+      Sonnet Warning- EG2670:
+          Conformal Meshing Warning.
+          Filename: /ttgsa/data/pkg22/sonnet/balance/finline-10Ohm-transition.son
+          When used with conformal meshing, cell size aspect ratios of greater than 2.0 can cause increased error, for example, in shifting the response of a filter.
+
+      Sonnet Warning- EG2670:
+          Conformal Meshing Warning.
+          Filename: /ttgsa/data/pkg22/sonnet/balance/finline-10Ohm-transition.son
+          Junction between conformally meshed polygons joining along line from (276.25,98.2525) to (32.5,26.5025) (microns) on level 1 is too long, associated conformal subsections are being reverted to normal meshing.
+
+      Sonnet Warning- EG2670:
+          Conformal Meshing Warning.
+          Filename: /ttgsa/data/pkg22/sonnet/balance/finline-10Ohm-transition.son
+          Junction between conformally meshed polygons joining along line from (32.5,28.9975) to (276.25,105.247) (microns) on level 1 is too long, associated conformal subsections are being reverted to normal meshing.
+
+      Subsectioning time:  8 seconds.
+
+    Frequency:  500 GHz
+      Circuit requires 6997 subsections (15269 CM Cells) and 378 MB of memory.
+      Waveguide mode time:  0.820 seconds.
+      Fourier transform time:  24 seconds.
+      Coupling time:  2 minutes 23 seconds.
+      Loss time:  10 seconds.
+      Matrix fill time:  2 minutes 59 seconds.
+      Matrix solve time:  1 hour 17 minutes.
+      De-embed left box wall:
+        First de-embedding standard, left box wall:  91.25 microns length, 192 subsections.
+          Time:  5 seconds.
+        Second de-embedding standard, left box wall:  182.5 microns length, 364 subsections.
+          Time:  13 seconds.
+      De-embed right box wall:
+        First de-embedding standard, right box wall:  91.25 microns length, 336 subsections.
+          Time:  7 seconds.
+        Second de-embedding standard, right box wall:  182.5 microns length, 616 subsections.
+          Time:  20 seconds.
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. (S11 S21 S12 S22).
+        500.000000 0.692137 162.03 0.719914 -99.03 0.719914 -99.03 0.693029 179.96
+        !< P1 F=500.0 Eeff=(6.96852477 -2.8117e-3) Z0=(21.0267947 0.00667557) R=1.87229794 C=1.10487e-4 
+        !< P2 F=500.0 Eeff=(7.70018933 -3.1074e-3) Z0=(9.1135206 0.00290199) R=0.86398795 C=2.91169e-4 
+      Total time per frequency:  1 hour 21 minutes.
+
+    Frequency:  600 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. (S11 S21 S12 S22).
+        600.000000 0.656496 -87.62 0.751611 149.48 0.751611 149.48 0.658031 -153.6
+        !< P1 F=600.0 Eeff=(7.48871115 -0.2486535) Z0=(0.15863387 6.90515467) R=1.57484916 C=1.1025e-4 
+        !< P2 F=600.0 Eeff=(7.57375808 -0.0114498) Z0=(73.1652579 10.3366366) R=0.71477333 C=2.89529e-4 
+
+    Frequency:  700 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. (S11 S21 S12 S22).
+        700.000000 0.730455 164.71 0.680400 80.028 0.680400 80.028 0.731543 175.43
+        !< P1 F=700.0 Eeff=(7.23189084 -3.0504e-3) Z0=(31.6080903 0.01720563) R=1.26187069 C=1.10106e-4 
+        !< P2 F=700.0 Eeff=(7.88921514 -3.2065e-3) Z0=(11.3984891 0.00357933) R=0.5242345 C=2.88283e-4 
+
+    Frequency:  800 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. (S11 S21 S12 S22).
+        800.000000 0.648288 -96.09 0.757937 -34.70 0.757937 -34.70 0.650141 -153.5
+        !< P1 F=800.0 Eeff=(7.47957897 -3.0888e-3) Z0=(28.7014062 0.00744322) R=0.9006907 C=1.10039e-4 
+        !< P2 F=800.0 Eeff=(8.01688793 -3.2289e-3) Z0=(11.0418284 0.00256127) R=0.33846595 C=2.87408e-4 
+
+    Frequency:  900 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. (S11 S21 S12 S22).
+        900.000000 0.705753 159.68 0.705200 -104.3 0.705200 -104.3 0.707085 171.97
+        !< P1 F=900.0 Eeff=(7.7462474 -3.1346e-3) Z0=(29.2645863 0.00534856) R=0.57114118 C=1.10032e-4 
+        !< P2 F=900.0 Eeff=(8.14593852 -3.227e-3) Z0=(11.1777034 0.00220124) R=0.18117743 C=2.86768e-4 
+
+    Post-Analysis:
+      Total time for 5 frequencies:  6 hours 46 minutes.
+
+Errors detected: 0    Warnings detected: 3.
+
+Analysis successfully completed.

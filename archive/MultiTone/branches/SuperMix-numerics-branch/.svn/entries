@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="33"
+   name=""
+   committed-date="2004-12-06T22:51:29.162321Z"
+   url="file:///svn/MultiTone/MultiTone/branches/SuperMix-numerics-branch"
+   last-author="pkg22"
+   kind="dir"
+   uuid="8c93da9f-85d9-0310-a74c-cd56c53ec461"
+   revision="33"/>
+<entry
+   name="build"
+   kind="dir"/>
+<entry
+   name="unittest"
+   kind="dir"/>
+<entry
+   name="include"
+   kind="dir"/>
+<entry
+   name="src"
+   kind="dir"/>
+</wc-entries>

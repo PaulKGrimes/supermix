@@ -1,0 +1,29 @@
+set size 0.9,1.0
+
+set xlabel "Bias Voltage"
+set ylabel "DC Current"
+
+set key left
+
+set xrange [0:2]
+set yrange [0:2]
+
+plot "Ideal_30_LO_1-7_V_1-0_Bias_0-9_USB_mixer.dat" using 1:2 title "Unpumped" with lines
+
+replot "Ideal_30_LO_1-7_V_1-0_Bias_0-9_USB_mixer.dat" using 1:4 title "V_{LO} = 1.00" with lines
+
+replot "Ideal_30_LO_1-7_V_2-0_Bias_0-9_USB_mixer.dat" using 1:4 title "V_{LO} = 2.00" with lines
+
+replot "Ideal_30_LO_1-7_V_2-75_Bias_0-9_USB_mixer.dat" using 1:4 title "V_{LO} = 2.75" with lines
+
+replot "Ideal_30_LO_1-7_V_3-5_Bias_0-9_USB_mixer.dat" using 1:4 title "V_{LO} = 3.50" with lines
+
+set terminal postscript eps enhanced "Helvetica" 16
+
+set output "Ideal_30_LO_1-7_current.eps"
+
+replot
+
+set output "/dev/null"
+
+

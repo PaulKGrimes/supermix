@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="24"
+   name=""
+   committed-date="2005-01-31T13:59:12.505720Z"
+   url="file:///svn/simulations/QTMix-Sonnet"
+   last-author="pkg22"
+   kind="dir"
+   revision="24"/>
+<entry
+   committed-rev="24"
+   name="qtmixform.ui"
+   text-time="2004-03-18T11:39:26.000000Z"
+   committed-date="2005-01-31T13:59:12.505720Z"
+   checksum="0798fdbe02773074756dba816219f987"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="24"
+   name="ikk.dat"
+   text-time="2004-03-17T12:11:41.000000Z"
+   committed-date="2005-01-31T13:59:12.505720Z"
+   checksum="79cad30a38e134631e1295de330ccf88"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="24"
+   name="main.cpp"
+   text-time="2004-03-17T12:11:41.000000Z"
+   committed-date="2005-01-31T13:59:12.505720Z"
+   checksum="cfdbfc2e42d8b8081efa32c11ef71bdb"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="24"
+   name="QTMix-Sonnet.pro"
+   text-time="2004-05-06T12:11:45.000000Z"
+   committed-date="2005-01-31T13:59:12.505720Z"
+   checksum="dbca95279d6fe43bdf457a4ce126184b"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="24"
+   name="idc.dat"
+   text-time="2004-03-17T12:11:41.000000Z"
+   committed-date="2005-01-31T13:59:12.505720Z"
+   checksum="5718b447a65aea8b917b39a843487994"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="24"
+   name="QTMix-Sonnet"
+   text-time="2004-05-06T12:13:11.000000Z"
+   committed-date="2005-01-31T13:59:12.505720Z"
+   checksum="a672c0d4db653bef01275172eaf1378a"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-01-31T13:58:57.000000Z"/>
+<entry
+   name=".obj"
+   kind="dir"/>
+<entry
+   committed-rev="24"
+   name="qtmixform.ui.h"
+   text-time="2004-05-06T12:11:45.000000Z"
+   committed-date="2005-01-31T13:59:12.505720Z"
+   checksum="1d9db6d3723b1b80b8a4689bc3a29d4e"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   name=".ui"
+   kind="dir"/>
+<entry
+   name=".moc"
+   kind="dir"/>
+<entry
+   committed-rev="24"
+   name="Makefile"
+   text-time="2004-05-06T12:12:05.000000Z"
+   committed-date="2005-01-31T13:59:12.505720Z"
+   checksum="48f699a30e2448989ad2268f8e7e1d50"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="24"
+   name="dut.d"
+   text-time="2004-03-17T15:10:23.000000Z"
+   committed-date="2005-01-31T13:59:12.505720Z"
+   checksum="3331d82c7264d255eac930d2188c11ae"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

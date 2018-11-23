@@ -1,0 +1,24 @@
+set size 0.9,1.0
+
+set key bottom
+
+set logscale y
+set yrange [1:1000]
+
+set ylabel "Mixer Noise"
+set xlabel "Bias Voltage"
+
+plot "Ideal-30_LO_0-2_Z_1-0_IF_0-01_Z_1-0_Bias_0-9.dat" using 1:8 title "1st Photon Step" with lines
+
+replot "Ideal-30_LO_0-2_Z_1-0_IF_0-01_Z_1-0_Bias_0-7.dat" using 1:8 title "2nd Photon Step" with lines
+
+replot "Ideal-30_LO_0-2_Z_1-0_IF_0-01_Z_1-0_Bias_0-5.dat" using 1:8 title "3rd Photon Step" with lines
+
+#replot "Ideal-30_LO_0-2_Z_1-0_IF_0-01_Z_1-0_Bias_0-3.dat" using 1:8 title "4th Photon Step" with lines
+
+set terminal postscript eps "Helvetica" 18
+set output "Ideal-30_LO_0-2_Z_1-0_IF_0-01_Z_1-0_noise.eps"
+
+replot
+
+set output "/dev/null"

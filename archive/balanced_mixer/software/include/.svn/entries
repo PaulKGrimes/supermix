@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="9"
+   name=""
+   committed-date="2004-10-28T10:58:32.361644Z"
+   url="file:///svn/simulations/supermix/balanced_mixer/trunk/software/include"
+   last-author="pkg22"
+   kind="dir"
+   uuid="6ba91bf1-79e6-0310-a5fc-820f14313a01"
+   revision="35"/>
+<entry
+   committed-rev="3"
+   name="beamsplitter.h"
+   text-time="2004-10-25T10:15:23.000000Z"
+   committed-date="2004-10-15T11:01:20.358791Z"
+   checksum="deb427f72aac24a8dc00c23be8a4882d"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="confparse.h"
+   text-time="2004-10-25T10:15:23.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="8d28e1ee0f9c73abb376dcc56b11f243"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="operating_point.h"
+   text-time="2004-10-25T10:15:23.000000Z"
+   committed-date="2004-10-21T17:20:52.428083Z"
+   checksum="61c0f1a445bd246da69822a67850a3f1"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="confprint.h"
+   text-time="2004-10-25T10:15:23.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="445a68186b7ca6ef5d69a33947822e4e"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="globals.h"
+   text-time="2004-10-25T10:15:23.000000Z"
+   committed-date="2004-10-21T17:20:52.428083Z"
+   checksum="40a55af7a0aa211ef194472bd591d93a"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

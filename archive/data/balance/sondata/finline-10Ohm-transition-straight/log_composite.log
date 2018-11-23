@@ -1,0 +1,108 @@
+Run 1:  Tue Jan 20 09:16:11 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Pre-Analysis:
+      Subsectioning time:  1 second.
+
+    Frequency:  500 GHz
+      Circuit requires 4601 subsections and 164 MB of memory.
+      Waveguide mode time:  0.460 seconds.
+      Fourier transform time:  6 seconds.
+      Coupling time:  2 minutes 2 seconds.
+      Loss time:  2 seconds.
+      Matrix fill time:  2 minutes 12 seconds.
+
+Errors detected: 0    Warnings detected: 0.
+
+Analysis stopped.
+Run 1:  Tue Jan 20 09:19:40 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Pre-Analysis:
+      Subsectioning time:  1 second.
+
+    Frequency:  500 GHz
+      Circuit requires 4601 subsections and 164 MB of memory.
+      Waveguide mode time:  0.420 seconds.
+      Fourier transform time:  5 seconds.
+      Coupling time:  2 minutes 1 second.
+      Loss time:  2 seconds.
+      Matrix fill time:  2 minutes 10 seconds.
+      Matrix solve time:  34 minutes 40 seconds.
+      De-embed left box wall:
+        First de-embedding standard, left box wall:  90 microns length, 312 subsections.
+          Time:  2 seconds.
+        Second de-embedding standard, left box wall:  180 microns length, 606 subsections.
+          Time:  8 seconds.
+      De-embed right box wall:
+        First de-embedding standard, right box wall:  90 microns length, 626 subsections.
+          Time:  8 seconds.
+        Second de-embedding standard, right box wall:  180 microns length, 1196 subsections.
+          Time:  43 seconds.
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. (S11 S21 S12 S22).
+        500.000000 0.666593 100.41 0.742244 -137.4 0.742244 -137.4 0.668509 164.91
+        !< P1 F=500.0 Eeff=(6.87013313 -2.7633e-3) Z0=(22.9042449 0.00698081) R=1.08278305 C=9.98899e-5 
+        !< P2 F=500.0 Eeff=(7.66534382 -3.0925e-3) Z0=(9.13833369 0.00278796) R=0.37908232 C=2.91378e-4 
+      Total time per frequency:  37 minutes 55 seconds.
+
+    Frequency:  600 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. (S11 S21 S12 S22).
+        600.000000 0.775150 -160.2 0.628408 102.59 0.628408 102.59 0.776644 -174.7
+        !< P1 F=600.0 Eeff=(7.21395429 -4.2387e-3) Z0=(10.6833851 0.07062664) R=0.89763282 C=9.95976e-5 
+        !< P2 F=600.0 Eeff=(7.70302147 -0.2970654) Z0=(0.12626503 12.057987) R=0.29204466 C=2.89446e-4 
+
+    Frequency:  700 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. (S11 S21 S12 S22).
+        700.000000 0.472209 24.810 0.876150 8.9519 0.876150 8.9519 0.477531 173.25
+        !< P1 F=700.0 Eeff=(7.12530061 -3.0696e-3) Z0=(36.7309012 0.02690675) R=0.75678222 C=9.92843e-5 
+        !< P2 F=700.0 Eeff=(7.85759895 -3.2135e-3) Z0=(11.5792222 0.00401377) R=0.25442187 C=2.8738e-4 
+
+    Frequency:  800 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. (S11 S21 S12 S22).
+        800.000000 0.792919 172.58 0.605133 -94.53 0.605133 -94.53 0.794647 178.36
+        !< P1 F=800.0 Eeff=(7.40078682 -3.087e-3) Z0=(31.8555287 0.00881421) R=0.65967058 C=9.89645e-5 
+        !< P2 F=800.0 Eeff=(7.99366826 -3.239e-3) Z0=(11.1021077 0.00261405) R=0.2194991 C=2.85271e-4 
+NOTICE: Tue Jan 20 12:08:43 2004 Lost license, temporarily suspending processing.
+NOTICE: Tue Jan 20 13:07:43 2004 Still do not have a license.
+
+    Frequency:  900 GHz
+
+Errors detected: 0    Warnings detected: 0.
+
+Analysis stopped.
+Run 2:  Tue Jan 20 13:09:15 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Pre-Analysis:
+      Subsectioning time:  1 second.
+
+    Frequency:  900 GHz
+      Circuit requires 4601 subsections and 164 MB of memory.
+      Waveguide mode time:  0.410 seconds.
+      Fourier transform time:  5 seconds.
+      Coupling time:  2 minutes 2 seconds.
+      Loss time:  2 seconds.
+      Matrix fill time:  2 minutes 11 seconds.
+      Matrix solve time:  35 minutes 27 seconds.
+      De-embed left box wall:
+        First de-embedding standard, left box wall:  50 microns length, 222 subsections.
+          Time:  1 second.
+        Second de-embedding standard, left box wall:  100 microns length, 426 subsections.
+          Time:  3 seconds.
+      De-embed right box wall:
+        First de-embedding standard, right box wall:  50 microns length, 476 subsections.
+          Time:  4 seconds.
+        Second de-embedding standard, right box wall:  100 microns length, 896 subsections.
+          Time:  18 seconds.
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. (S11 S21 S12 S22).
+        900.000000 0.563540 -70.89 0.819362 152.25 0.819362 152.25 0.568926 -165.0
+        !< P1 F=900.0 Eeff=(6.84167072 -2.7411e-3) Z0=(22.7930777 0.00700751) R=0.59701791 C=9.86201e-5 
+        !< P2 F=900.0 Eeff=(7.63682775 -3.0713e-3) Z0=(9.07230885 0.00282319) R=0.20424381 C=2.83013e-4 
+      Total time per frequency:  38 minutes 8 seconds.
+
+    Post-Analysis:
+      Total time for 1 frequency:  38 minutes 10 seconds.
+
+Errors detected: 0    Warnings detected: 0.
+
+Analysis successfully completed.

@@ -1,0 +1,29 @@
+
+set key 0.5,0.03
+set y2tics
+set ytics nomirror
+
+set size 1.1,1.3
+
+set pointsize 0.5
+
+set xlabel "Bias Voltage"
+set ylabel "DC Current"
+set y2label "Dynamic Admittance"
+
+set y2range [-0.1:0.15]
+set yrange [0:0.2]
+set xrange [0:1]
+
+plot "Ideal_30_f_0-9_V_1-0_Z_1-0_MT.dat" using 1:4 title "MultiTone Current" with lines
+replot "Ideal_30_f_0-9_V_1-0_Z_1-0_SM.dat" using 1:2 title "SuperMix Current" with lines
+
+replot "Ideal_30_f_0-9_V_1-0_Z_1-0_MT.dat" using 1:(-$6) axes x1y2 title "MultiTone Dynamic Y" with lines
+replot "Ideal_30_f_0-9_V_1-0_Z_1-0_SM.dat" using 1:6 axes x1y2 title "SuperMix Dynamic Y" with lines
+
+set terminal postscript eps "Helvetica" 18
+set output "Ideal_30_f_0-9_V_1-0_Z_1-0_zoom.eps"
+
+replot
+
+set output "/dev/null"

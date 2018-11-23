@@ -1,0 +1,74 @@
+Run 1:  Wed Mar 17 15:09:45 2004.  Adaptive Band Synthesis.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Pre-Analysis:
+      Subsectioning time:  0.190 seconds.
+
+    Frequency:  300 GHz
+      Circuit requires 689 subsections and 5 MB of memory.
+      Waveguide mode time:  0.390 seconds.
+      Fourier transform time:  3 seconds.
+      Coupling time:  3 seconds.
+      Loss time:  0.130 seconds.
+      Matrix fill time:  7 seconds.
+      Matrix solve time:  8 seconds.
+      De-embed left box wall:
+        First de-embedding standard, left box wall:  64 microns length, 302 subsections.
+          Time:  2 seconds.
+        Second de-embedding standard, left box wall:  128 microns length, 584 subsections.
+          Time:  9 seconds.
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. Matrix Order (line #1: S11 S12 S13 ...).
+        300.000000 0.883905 -166.1 0.243871 -59.38 0.398634 -66.57
+                   0.243871 -59.38 0.896670 -172.4 0.369102 -68.59
+                   0.398634 -66.57 0.369102 -68.59 0.839301 -161.9
+        !< P1 F=300.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P2 F=300.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P3 F=300.0 Eeff=(7.67307369 -3.0381e-3) Z0=(7.11492981 0.00141886) R=0.15872015 C=5.96109e-4 
+      Total time per frequency:  29 seconds.
+
+    Frequency:  900 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. Matrix Order (line #1: S11 S12 S13 ...).
+        900.000000 0.515367 174.31 0.638545 -5.484 0.570064 -171.3
+                   0.638545 -5.484 0.177425 140.99 0.746874 -179.6
+                   0.570064 -171.3 0.746874 -179.6 0.338836 -178.5
+        !< P1 F=900.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P2 F=900.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P3 F=900.0 Eeff=(7.94636392 -3.2896e-3) Z0=(9.12350324 0.00697406) R=0.0927863 C=5.75051e-4 
+      ABS time:  1 second.
+
+    Frequency:  548 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. Matrix Order (line #1: S11 S12 S13 ...).
+        548.000000 0.960684 179.04 0.039554 -4.929 0.274504 -91.52
+                   0.039554 -4.929 0.960200 171.14 0.276164 -95.47
+                   0.274504 -91.52 0.276164 -95.47 0.920952 177.90
+        !< P1 F=548.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P2 F=548.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P3 F=548.0 Eeff=(7.77406585 -3.1396e-3) Z0=(6.97589981 0.00145504) R=0.0 C=5.88247e-4 
+      ABS time:  2 seconds.
+
+    Frequency:  844 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. Matrix Order (line #1: S11 S12 S13 ...).
+        844.000000 0.688400 160.91 0.495739 22.402 0.528392 -142.4
+                   0.495739 22.402 0.572512 130.31 0.651522 -149.7
+                   0.528392 -142.4 0.651522 -149.7 0.542843 152.60
+        !< P1 F=844.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P2 F=844.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P3 F=844.0 Eeff=(7.70558064 -0.1373562) Z0=(1.24696004 27.2194837) R=0.09315265 C=5.77055e-4 
+      ABS time:  2 seconds.
+
+    Frequency:  362 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. Matrix Order (line #1: S11 S12 S13 ...).
+        362.000000 0.930927 -171.3 0.160743 -64.70 0.327567 -75.60
+                   0.160743 -64.70 0.937597 -177.4 0.308011 -78.06
+                   0.327567 -75.60 0.308011 -78.06 0.893039 -169.1
+        !< P1 F=362.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P2 F=362.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P3 F=362.0 Eeff=(7.69311387 -3.0777e-3) Z0=(7.09609246 0.00141933) R=0.0 C=5.94559e-4 
+      ABS time:  2 seconds.
+
+    Post-Analysis:
+      Total time for 5 frequencies:  2 minutes 29 seconds.
+
+Errors detected: 0    Warnings detected: 0.
+
+Analysis successfully completed.

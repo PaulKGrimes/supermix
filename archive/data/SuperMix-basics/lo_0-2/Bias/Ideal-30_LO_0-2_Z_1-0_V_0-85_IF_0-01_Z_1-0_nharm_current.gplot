@@ -1,0 +1,26 @@
+set size 0.9,1.0
+
+set key left
+set xtics 0.2
+set yrange [-0.05:]
+
+set ylabel "DC Current"
+set xlabel "Bias Voltage"
+
+plot "Ideal-30_LO_0-2_Z_1-0_V_0-85_IF_0-01_Z_1-0.dat" using 1:4 title "1 Harmonic" with lines
+
+replot "Ideal-30_LO_0-2_Z_1-0_V_0-85_IF_0-01_Z_1-0_2harm.dat" using 1:4 title "2 Harmonics" with lines
+
+replot "Ideal-30_LO_0-2_Z_1-0_V_0-85_IF_0-01_Z_1-0_3harm.dat" using 1:4 title "3 Harmonics" with lines
+
+replot "Ideal-30_LO_0-2_Z_1-0_V_0-85_IF_0-01_Z_1-0_4harm.dat" using 1:4 title "4 Harmonics" with lines
+
+replot "Ideal-30_LO_0-2_Z_1-0_V_0-85_IF_0-01_Z_1-0_5harm.dat" using 1:4 title "5 Harmonics" with lines
+
+
+set terminal postscript eps "Helvetica" 18
+set output "Ideal-30_LO_0-2_Z_1-0_V_0-85_IF_0-01_Z_1-0_nharm_current.eps"
+
+replot
+
+set output "/dev/null"

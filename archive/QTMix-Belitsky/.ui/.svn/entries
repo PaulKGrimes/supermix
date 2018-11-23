@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="23"
+   name=""
+   committed-date="2005-01-31T13:58:24.957622Z"
+   url="file:///svn/simulations/QTMix-Belitsky/.ui"
+   last-author="pkg22"
+   kind="dir"
+   revision="23"/>
+<entry
+   committed-rev="23"
+   name="qtmixform.cpp"
+   text-time="2004-03-10T15:45:46.000000Z"
+   committed-date="2005-01-31T13:58:24.957622Z"
+   checksum="31e474db97181377acec0056fd6597e8"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="23"
+   name="qtmixform.h"
+   text-time="2004-03-10T15:45:38.000000Z"
+   committed-date="2005-01-31T13:58:24.957622Z"
+   checksum="0e2f16fb2990389c2efe0c2fda30e54d"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

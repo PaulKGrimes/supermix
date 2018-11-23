@@ -1,0 +1,35 @@
+# Creating One_Frequency object
+# Testing Accessors...
+# 
+#     No of harmonics : 1
+#     F               : 0.5
+#     F0              : 1
+#     delta_Ck        : 0
+#     delta_Ck_0      : 1e-13
+#     totalJ          : 14
+#     Vn              : 1 + 0 i
+#     Vs              : 1 + 0 i
+#     Zt              : 1 + 0 i
+# 
+# Testing data return...
+# 
+#     get_Cjk(0,1)    : 0.576725 + 0 i
+# Calling get_Cjk(0)...
+# Done
+#     get_Cjk(1)      : 0.223891 + 0 i
+# 
+# Testing add_harmonic()...
+#     No of harmonics : 2
+#     get_Cjk(1,2)    : 0.317851 + 0 i
+# 
+# 
+# Testing add_harmonic(complex, complex)...
+#     No of harmonics : 3
+#     get_Cjk(1,1)    : -0.321801 + 0 i
+# 
+#     get_Cjk(2,1)    : -0.370058 + 0 i
+# 
+# Testing remove_harmonic()...
+#     No of harmonics : 1
+# 
+# Testing remove_harmonic() exception throw (should terminate)

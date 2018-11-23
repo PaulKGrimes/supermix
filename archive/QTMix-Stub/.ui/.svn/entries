@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="22"
+   name=""
+   committed-date="2005-01-31T13:57:23.051580Z"
+   url="file:///svn/simulations/QTMix-Stub/.ui"
+   last-author="pkg22"
+   kind="dir"
+   revision="22"/>
+<entry
+   committed-rev="22"
+   name="qtmixform.cpp"
+   text-time="2004-03-18T14:38:24.000000Z"
+   committed-date="2005-01-31T13:57:23.051580Z"
+   checksum="7459371668c534fb1a2fac0fe8cefc9f"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="22"
+   name="qtmixform.h"
+   text-time="2004-03-18T14:38:16.000000Z"
+   committed-date="2005-01-31T13:57:23.051580Z"
+   checksum="10168b1a276d17e832f4610b0bf8e930"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

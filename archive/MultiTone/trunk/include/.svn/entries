@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="8"
+   name=""
+   committed-date="2004-05-03T18:12:14.127054Z"
+   url="file:///svn/MultiTone/MultiTone/trunk/include"
+   last-author="pkg22"
+   kind="dir"
+   uuid="8c93da9f-85d9-0310-a74c-cd56c53ec461"
+   revision="33"/>
+<entry
+   committed-rev="6"
+   name="Multi_Frequency.h"
+   text-time="2004-07-07T11:13:14.000000Z"
+   committed-date="2004-05-03T17:16:03.044639Z"
+   checksum="a626407ff43d28078dd6505ce09427be"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:14.000000Z"/>
+<entry
+   committed-rev="2"
+   name="Integrator.h"
+   text-time="2004-07-07T11:13:14.000000Z"
+   committed-date="2004-05-03T14:21:03.925946Z"
+   checksum="b84e547847fab81c8b6032b6b580fac8"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:14.000000Z"/>
+<entry
+   committed-rev="8"
+   name="MultiTone.h"
+   text-time="2004-07-07T11:13:14.000000Z"
+   committed-date="2004-05-03T18:12:14.127054Z"
+   checksum="06a868ac6fe2d59d3dce9ac396645348"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:14.000000Z"/>
+<entry
+   committed-rev="2"
+   name="MultiTone_exceptions.h"
+   text-time="2004-07-07T11:13:14.000000Z"
+   committed-date="2004-05-03T14:21:03.925946Z"
+   checksum="a68b0886fb279436f8f6560b6a639ecd"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:14.000000Z"/>
+<entry
+   committed-rev="2"
+   name="BesselFn.h"
+   text-time="2004-07-07T11:13:14.000000Z"
+   committed-date="2004-05-03T14:21:03.925946Z"
+   checksum="1442d3730f9bb916a33dd46e48e6afdb"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:14.000000Z"/>
+<entry
+   committed-rev="3"
+   name="One_Harmonic.h"
+   text-time="2004-07-07T11:13:14.000000Z"
+   committed-date="2004-05-03T15:14:08.993872Z"
+   checksum="f7296471d62cc3f18337b0ca094d5090"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:14.000000Z"/>
+<entry
+   committed-rev="2"
+   name="ResponseFn.h"
+   text-time="2004-07-07T11:13:14.000000Z"
+   committed-date="2004-05-03T14:21:03.925946Z"
+   checksum="30f195c7902b97d1676939cbaab06ac2"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:14.000000Z"/>
+<entry
+   committed-rev="4"
+   name="One_Frequency.h"
+   text-time="2004-07-07T11:13:14.000000Z"
+   committed-date="2004-05-03T16:25:57.324473Z"
+   checksum="221ba53f74e176867276f62bbd1dba0a"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:14.000000Z"/>
+<entry
+   committed-rev="2"
+   name="Slice_iter.h"
+   text-time="2004-07-07T11:13:14.000000Z"
+   committed-date="2004-05-03T14:21:03.925946Z"
+   checksum="c54681777b6dffa343b9f51c07c56770"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:14.000000Z"/>
+<entry
+   committed-rev="2"
+   name="matrix.h"
+   text-time="2004-07-07T11:13:14.000000Z"
+   committed-date="2004-05-03T14:21:03.925946Z"
+   checksum="8577d7dd2ddbf1c91268d0f5732ac8b5"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:14.000000Z"/>
+<entry
+   committed-rev="2"
+   name="matrix_exceptions.h"
+   text-time="2004-07-07T11:13:14.000000Z"
+   committed-date="2004-05-03T14:21:03.925946Z"
+   checksum="6b779cd5a6fe18136bde9e196af5ddbc"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:14.000000Z"/>
+</wc-entries>

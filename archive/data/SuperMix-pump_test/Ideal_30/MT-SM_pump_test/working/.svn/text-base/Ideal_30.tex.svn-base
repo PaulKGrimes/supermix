@@ -1,0 +1,164 @@
+%% LyX 1.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=0.5in,bmargin=0.5in,lmargin=0.5in,rmargin=0.5in}
+\usepackage{subfigure}
+\usepackage{graphicx}
+
+\makeatletter
+\usepackage{babel}
+\makeatother
+\begin{document}
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-1_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-2_V_1-0_Z_1-0.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-3_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-4_V_1-0_Z_1-0.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-5_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-6_V_1-0_Z_1-0.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-7_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-7_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-8_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-8_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-9_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_0-9_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-0_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-0_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-1_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-1_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-2_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-2_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-3_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-3_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-4_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-4_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-5_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-5_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-6_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-6_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-7_V_1-0_Z_1-0.eps}}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-7_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+
+%
+\begin{figure}
+\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-8_V_1-0_Z_1-0.eps}\hfill{}\subfigure[]{\includegraphics[%
+  width=3.5in,
+  keepaspectratio]{Ideal_30_f_1-8_V_1-0_Z_1-0_zoom.eps}}
+\end{figure}
+
+\end{document}

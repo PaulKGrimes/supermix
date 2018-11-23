@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="24"
+   name=""
+   committed-date="2004-08-05T13:50:34.489216Z"
+   url="file:///svn/thesis/sis_mixer_sims/figs/MT-SM_pump_test/working"
+   last-author="pkg22"
+   kind="dir"
+   schedule="delete"
+   revision="24"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-1_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="d294039c75c67d0f29910f6f5dcdfa31"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-2_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="f18c3bd1f04523f7b33c12e7b42c6387"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_2-0_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="0dda24672c339d4b0d81dfe25576809a"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-4_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="ef86987cdbf07c986f1819b5e51c089b"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-3_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="2c8efb836568530c10de7d74314b1f14"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-5_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="18b519c54cc7f1015df37391a93d5957"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-6_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="1b0e6c5e7b7e49b16e0f3ba143369314"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-8_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="8bb5b1c47f7748da217e22014f2e415f"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-7_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="21a24a26c44498eace8b689ab24552be"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-9_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="ce41007520b643dd30b2181d8038a6c2"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-0_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="c0600b8fe5e3cd3cd31e9249dc4f09c4"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-1_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="4a74709cde75a6b0b675390ff3a10b71"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-2_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="60eb5d7f53a67c50b295551f79c382ff"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-3_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="f2a3bd4932a46b38c7f56be4b7f13775"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-4_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="4a4f776cadaf34a8542b02d4a25e7446"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-5_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="2ac03864d7f531063dafe8464736eb82"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-1_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="5aa9370747ecf6a8b41a22c5b1ff6652"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-6_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="f7bdf40d11901f7f72a5495ad91c5f64"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-7_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="5fb86ae4bc13b727285883c328ce31d9"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-8_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="586d5e98bd4e294c4021878e194fa8db"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-5_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="b3c48f5290b2386d909740c831665950"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-9_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="50993d7f2da4259a839a2c2a4bba22b0"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-8_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="d220600f44caef077068afb228ce8a53"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30.tex"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="a4ba5c87d7bcb2ae4567d1899e1ee3a7"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-0_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="6a2fc9f006a59ef86099786efb657f7d"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-1_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="d69cdf76793a51866a2e9160b271abf2"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-3_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="ff1cabb5d0e6423a448d79e2eb154d1a"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-2_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="134586fbf4e47055aeb3c86ba89fd5d4"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-4_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="c37d43e0ca7b80698e34f2c6e20cff9f"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-5_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="332a5868de01ed22f48e48c69e227059"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-7_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="53c3f5746468e8d7e1fea33e74e8c3b2"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-6_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="f6ebfb79b7c245b3c51d8cf7cc9387af"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-8_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="9e832201e5f8ab8ab601511704cc8363"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-9_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="7e42b0f045dc38db41fa9dbd6da4de8d"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30.lyx"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="80f8b48d44b9991f1023b46cc8d85b4d"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30.ps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="5089382566d64e504668a3cd2a21893c"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30.dvi"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="afe66892714ae5376029fb2f5337740c"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"
+   prop-time="2004-08-05T13:48:16.000000Z"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-1_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="57e19777a59c7a86550787fdb5523803"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-2_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="60e270df01785d7360a82295ae46639c"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-6_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="5c1b491cbdb6c426aea4161c7a19cdde"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-9_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="4bfa222974cf4206b0558296758e3e6e"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-2_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="9cbaa2e3a82f6251e524eadc7bc13dd3"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_2-0_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="cd43e926b453f8ad1a5da69f78fe5899"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-1_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="79c16ceef3413db8d943093d25fcb58b"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-3_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="89f96d462bdac0113957a4721a911817"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-4_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="7eeb35eef3eede815b9fad869e647e71"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-6_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="a86351de45226e40fa1627ae689d48e7"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-5_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="5fc5c8399bb65e342b81a9b8add2360e"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-7_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="19e9e6be9d9de830d1fb85fc00b53a57"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-8_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="1f90b62c345f11b7aab7eede183e36c6"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-9_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="bc51f868e890f475c575b6ec157d8262"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-1_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="68d5dc2d408b7704c00beac8100e4145"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30.log"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="9c4a3652f8b198686862713a34d4b962"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-2_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="42a0eada04cbd477b6c54211f2da4704"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-3_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="0e8a83433a205ac05ddf13e3a9c09a85"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-4_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="b4af2af7e035cfa2d68df3d31c31b12f"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-5_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="81e7d00fc3fad502d092b0db6cbcacdc"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-6_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="704d7df56a37c01d181f36f164b966e2"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-7_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="319199828ba655d5083bde2bb5a9a28c"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-3_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="028a6ba4f04537dcd411ae3969ba6ddc"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-8_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="56688f1c1f82430eec7364b2e5fe5d00"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-9_V_1-0_Z_1-0.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="42c49e989419695d0850efdc1fc9a134"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-6_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="6a72ba0dd4fe6cf4121be8cb7eb0c287"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-7_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="1a16e4784b7fe0cde5f1b98d053ed53f"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30.aux"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="740f06851fb650031ebca16b536484b4"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-1_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="b31c1924a3b43c311e72c65e57fe85c7"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-0_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="5fbae59b19e8c460bb2b0a7e369c50f4"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-2_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="61d59909df4bced4564171f5eefa9132"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-3_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="72428ed5da2b3ff68a030657b4f89a24"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-5_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="8832ef2f7b8302cbe61034cf33f6a7ec"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-4_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="a4d819a2a95c377c71471036380fa5ce"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-6_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="900b54aee58cb80e529d1ef02541fa54"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-7_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="8dce7187c17e9543db5dbe8532743ca0"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-9_V_1-0_Z_1-0_SM.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="dd8142a085354930e213b53fb277f5e8"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-8_V_1-0_Z_1-0_MT.dat"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="788ef39c14d768b20229d2578d82b480"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-0_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="1d2078d4917b7d0f134963e74ce80178"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-4_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="e2488660742058abec5d0fb93f28b8a9"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_0-7_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="8e7ec442080a0d32348246d67b5ec045"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+<entry
+   committed-rev="24"
+   name="Ideal_30_f_1-8_V_1-0_Z_1-0_zoom.eps"
+   text-time="2004-08-05T13:22:37.000000Z"
+   committed-date="2004-08-05T13:50:34.489216Z"
+   checksum="92e645d764aa858a63a084ade62f2782"
+   last-author="pkg22"
+   kind="file"
+   schedule="delete"/>
+</wc-entries>

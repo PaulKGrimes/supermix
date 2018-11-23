@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="9"
+   name=""
+   committed-date="2004-10-28T10:58:32.361644Z"
+   url="file:///svn/simulations/supermix/balanced_mixer/trunk/software/src"
+   last-author="pkg22"
+   kind="dir"
+   uuid="6ba91bf1-79e6-0310-a5fc-820f14313a01"
+   revision="35"/>
+<entry
+   committed-rev="3"
+   name="realistic.c"
+   text-time="2004-10-25T10:15:56.000000Z"
+   committed-date="2004-10-15T11:01:20.358791Z"
+   checksum="8edefa8aa1e52d01d947a0a989987478"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="tapered_mstrip.c"
+   text-time="2004-10-25T13:54:50.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="73295756e17da65d563d931332a5b0d9"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="5"
+   name="build_layers.inc"
+   text-time="2004-10-25T10:15:52.000000Z"
+   committed-date="2004-10-21T17:20:52.428083Z"
+   checksum="6319948ef98e44d73a302ebb26c6dd5e"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="balanced.c"
+   text-time="2004-10-25T10:15:56.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="b8769399f1aa22a755d45ebe3b5b9e5b"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="mixer_build.inc"
+   text-time="2004-10-25T10:15:52.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="05712b003f3d160eb23d3c4008b77180"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="9"
+   name="build_circuits.inc"
+   text-time="2004-10-25T10:15:52.000000Z"
+   committed-date="2004-10-28T10:58:32.361644Z"
+   checksum="bf5e305aec901952b4bbea5d118bdd0f"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

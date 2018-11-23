@@ -1,0 +1,21 @@
+Run 1:  Mon Jan 19 10:47:40 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+      Sonnet Warning- EG2670:
+          Conformal Meshing Warning.
+          Filename: /ttgsa/data/pkg22/sonnet/balance/finline-10Ohm-transition.son
+          When used with conformal meshing, cell size aspect ratios of greater than 2.0 can cause increased error, for example, in shifting the response of a filter.
+
+      Sonnet Warning- EG2670:
+          Conformal Meshing Warning.
+          Filename: /ttgsa/data/pkg22/sonnet/balance/finline-10Ohm-transition.son
+          Junction between conformally meshed polygons joining along line from (276.25,98.2525) to (32.5,26.5025) (microns) on level 1 is too long, associated conformal subsections are being reverted to normal meshing.
+
+      Sonnet Warning- EG2670:
+          Conformal Meshing Warning.
+          Filename: /ttgsa/data/pkg22/sonnet/balance/finline-10Ohm-transition.son
+          Junction between conformally meshed polygons joining along line from (32.5,28.9975) to (276.25,105.247) (microns) on level 1 is too long, associated conformal subsections are being reverted to normal meshing.
+
+
+Errors detected: 0    Warnings detected: 3.
+
+Analysis successfully completed.

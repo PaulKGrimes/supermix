@@ -1,0 +1,58 @@
+Run 1:  Tue Mar 23 13:48:00 2004.  Adaptive Band Synthesis.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Frequency:  300 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. Matrix Order (line #1: S11 S12 S13 ...).
+        300.000000 0.909271 -167.4 0.224499 -62.66 0.350056 -70.17
+                   0.224499 -62.66 0.914534 -171.4 0.336118 -71.64
+                   0.350056 -70.17 0.336118 -71.64 0.874139 -166.7
+        !< P1 F=300.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P2 F=300.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P3 F=300.0 Eeff=(7.49846434 -2.9916e-3) Z0=(7.01322048 0.00140555) R=0.05029384 C=5.51215e-4 
+
+    Frequency:  900 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. Matrix Order (line #1: S11 S12 S13 ...).
+        900.000000 0.825979 -165.7 0.437375 -54.40 0.354297 137.82
+                   0.437375 -54.40 0.732714 -153.9 0.519829 131.47
+                   0.354297 137.82 0.519829 131.47 0.776011 -146.0
+        !< P1 F=900.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P2 F=900.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P3 F=900.0 Eeff=(7.93022055 -3.4386e-3) Z0=(10.0597239 0.01059505) R=0.11064525 C=5.3006e-4 
+
+    Frequency:  626 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. Matrix Order (line #1: S11 S12 S13 ...).
+        626.000000 0.946713 176.01 0.085983 40.220 0.310014 -101.9
+                   0.085983 40.220 0.933687 168.14 0.347138 -105.4
+                   0.310014 -101.9 0.347138 -105.4 0.884843 164.79
+        !< P1 F=626.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P2 F=626.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P3 F=626.0 Eeff=(7.72075635 -3.1348e-3) Z0=(6.68090056 0.00164647) R=0.14463476 C=5.40422e-4 
+
+    Frequency:  736 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. Matrix Order (line #1: S11 S12 S13 ...).
+        736.000000 0.826498 168.29 0.298402 34.279 0.476548 -127.0
+                   0.298402 34.279 0.755442 152.40 0.582224 -131.4
+                   0.476548 -127.0 0.582224 -131.4 0.657471 143.22
+        !< P1 F=736.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P2 F=736.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P3 F=736.0 Eeff=(7.84527776 -3.2531e-3) Z0=(6.01856431 0.00290002) R=0.13213259 C=5.36196e-4 
+
+    Frequency:  762 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. Matrix Order (line #1: S11 S12 S13 ...).
+        762.000000 0.746886 167.32 0.386985 24.011 0.539734 -139.0
+                   0.386985 24.011 0.626092 147.32 0.675562 -143.7
+                   0.539734 -139.0 0.675562 -143.7 0.499906 134.78
+        !< P1 F=762.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P2 F=762.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P3 F=762.0 Eeff=(7.88709036 -3.3356e-3) Z0=(5.57481396 0.00441652) R=0.1267393 C=5.35195e-4 
+
+    Frequency:  512 GHz
+      De-embedded 50-Ohm S-Params. Mag/Ang. Touchstone Format. Matrix Order (line #1: S11 S12 S13 ...).
+        512.000000 0.964066 -178.8 0.049857 -43.53 0.260648 -90.64
+                   0.049857 -43.53 0.960818 176.01 0.272353 -93.34
+                   0.260648 -90.64 0.272353 -93.34 0.926094 175.31
+        !< P1 F=512.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P2 F=512.0 Eeff=(undefined: nd) Z0=(undefined: nd) R=0.0 C=0.0 
+        !< P3 F=512.0 Eeff=(7.62398651 -3.0336e-3) Z0=(6.88321897 0.00146873) R=0.4028412 C=5.44638e-4 
+
+Analysis successfully completed.

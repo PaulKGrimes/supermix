@@ -1,0 +1,40 @@
+Run 1:  Tue Mar 23 13:48:00 2004.  Adaptive Band Synthesis.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Pre-Analysis:
+      Subsectioning time:  0.440 seconds.
+
+    Frequency:  300 GHz
+      Circuit requires 1113 subsections and 12 MB of memory.
+      Waveguide mode time:  0.630 seconds.
+      Fourier transform time:  10 seconds.
+      Coupling time:  8 seconds.
+      Loss time:  0.230 seconds.
+      Matrix fill time:  21 seconds.
+      Matrix solve time:  39 seconds.
+      De-embed left box wall:
+        First de-embedding standard, left box wall:  64 microns length, 507 subsections.
+          Time:  7 seconds.
+        Second de-embedding standard, left box wall:  128 microns length, 984 subsections.
+          Time:  29 seconds.
+      Total time per frequency:  1 minute 39 seconds.
+
+    Frequency:  900 GHz
+      ABS time:  2 seconds.
+
+    Frequency:  626 GHz
+      ABS time:  2 seconds.
+
+    Frequency:  736 GHz
+      ABS time:  3 seconds.
+
+    Frequency:  762 GHz
+      ABS time:  3 seconds.
+
+    Frequency:  512 GHz
+      ABS time:  4 seconds.
+
+    Post-Analysis:
+      Total time for 6 frequencies:  9 minutes 55 seconds.
+
+Analysis successfully completed.

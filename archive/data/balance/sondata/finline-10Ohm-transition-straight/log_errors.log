@@ -1,0 +1,24 @@
+Run 1:  Tue Jan 20 09:16:11 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+    Frequency:  500 GHz
+
+Errors detected: 0    Warnings detected: 0.
+
+Analysis stopped.
+Run 1:  Tue Jan 20 09:19:40 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+NOTICE: Tue Jan 20 12:08:43 2004 Lost license, temporarily suspending processing.
+NOTICE: Tue Jan 20 13:07:43 2004 Still do not have a license.
+
+    Frequency:  900 GHz
+
+Errors detected: 0    Warnings detected: 0.
+
+Analysis stopped.
+Run 2:  Tue Jan 20 13:09:15 2004.  Frequency Sweep.
+        Em version 9.52 on ttgsa (Solaris) local.
+
+Errors detected: 0    Warnings detected: 0.
+
+Analysis successfully completed.

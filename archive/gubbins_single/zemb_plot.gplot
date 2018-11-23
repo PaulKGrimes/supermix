@@ -1,0 +1,36 @@
+#!/bin/sh
+gnuplot << EOF
+
+set grid
+
+set terminal postscript eps solid color enhanced "Helvetica" 8 lw 0.5
+set output "$1_zemb.eps"
+
+set multiplot
+
+set origin 0.1, 0.5
+set size 0.4, 0.4
+set title "LO Embedding Impedance"
+plot [:][:] "$1.dat" using 1:8 title "Re(Z_{J1})" with lines, \
+	"$1.dat" using 1:9 title "Im(Z_{J1})" with lines
+	
+set origin 0.5, 0.5
+set size 0.4, 0.4
+set title "IF Embedding Impedance"
+plot [:][:] "$1.dat" using 1:10 title "Re(Z_{J1})" with lines, \
+	"$1.dat" using 1:11 title "Im(Z_{J1})" with lines
+
+set origin 0.1, 0.1
+set size 0.4, 0.4
+set title "LSB Embedding Impedance"
+plot [:][:] "$1.dat" using 1:12 title "Re(Z_{J1})" with lines, \
+	"$1.dat" using 1:13 title "Im(Z_{J1})" with lines
+
+set origin 0.5, 0.1
+set size 0.4, 0.4
+set title "USB Embedding Impedance"
+plot [:][:] "$1.dat" using 1:14 title "Re(Z_{J1})" with lines, \
+	"$1.dat" using 1:15 title "Im(Z_{J1})" with lines
+
+EOF
+

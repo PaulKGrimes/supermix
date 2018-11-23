@@ -1,0 +1,26 @@
+set size 0.9,1.0
+
+set xlabel "Bias Voltage"
+set ylabel "Mixer Gain"
+
+set xrange [0:2]
+set yrange [0:]
+set ytics 0.1
+
+plot "Ideal_30_bias_LO_0-95_LOv_0-55_Z_rf_1-0+0-5.dat" using 1:(4*$6*$6/1e-8) title "V_{LO} = 0.55" with lines
+
+replot "Ideal_30_bias_LO_0-95_LOv_1-10_Z_rf_1-0+0-5.dat" using 1:(4*$6*$6/1e-8) title "V_{LO} = 1.10" with lines
+
+replot "Ideal_30_bias_LO_0-95_LOv_1-65_Z_rf_1-0+0-5.dat" using 1:(4*$6*$6/1e-8) title "V_{LO} = 1.65" with lines
+
+replot "Ideal_30_bias_LO_0-95_LOv_2-20_Z_rf_1-0+0-5.dat" using 1:(4*$6*$6/1e-8) title "V_{LO} = 2.20" with lines
+
+set terminal postscript eps enhanced "Helvetica" 18
+
+set output "Ideal_30_bias_LO_0-95_Z_rf_1-0+0-5_gain.eps"
+
+replot
+
+set output "/dev/null"
+
+

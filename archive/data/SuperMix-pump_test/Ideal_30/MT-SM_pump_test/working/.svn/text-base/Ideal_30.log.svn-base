@@ -1,0 +1,276 @@
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2004.3.23)  4 AUG 2004 15:06
+**Ideal_30.tex
+(./Ideal_30.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, n
+ohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2001/06/05 v1.94 Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2001/06/05 v1.94 Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 38.
+))
+(/usr/share/texmf/tex/latex/base/inputenc.sty
+Package: inputenc 2001/07/10 v0.99a Input encoding file 
+
+(/usr/share/texmf/tex/latex/base/latin1.def
+File: latin1.def 2001/07/10 v0.99a Input encoding file 
+))
+(/usr/share/texmf/tex/latex/misc/geometry.sty
+Package: geometry 2002/07/08 v3.2 Page Geometry
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@dimlist=\toks15
+
+(/usr/share/texmf/tex/latex/config/geometry.cfg
+File: geometry.cfg 2001/06/05 v1.0 teTeX (uncustomised setup)
+))
+(/usr/share/texmf/tex/latex/misc/subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen107
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen108
+\subfiglabelskip=\skip46
+\c@subfigure=\count90
+\c@lofdepth=\count91
+\c@subtable=\count92
+\c@lotdepth=\count93
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2001/08/31 v1.1 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen109
+\Gin@req@width=\dimen110
+)
+(/usr/share/texmf/tex/generic/babel/babel.sty
+Package: babel 2001/03/01 v3.7h The Babel package
+
+(/usr/share/texmf/tex/generic/babel/english.ldf
+Language: english 2001/04/15 v3.3l English support from the babel system
+
+(/usr/share/texmf/tex/generic/babel/babel.def
+File: babel.def 2001/03/01 v3.7h Babel common definitions
+\babel@savecnt=\count94
+\U@D=\dimen111
+)
+\l@canadian = a dialect from \language\l@english 
+)) (./Ideal_30.aux)
+\openout1 = `Ideal_30.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+
+Package geometry Warning: The marginal notes would fall off the page.
+     Add 39.865pt and more to the right margin.
+
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 36.135pt, 525.23788pt, 36.135pt
+v-parts: 36.135pt, 772.77686pt, 36.135pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: 
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  525.23788pt
+\textheight 772.77686pt
+\oddsidemargin  -36.135pt
+\evensidemargin -36.135pt
+\topmargin  -73.135pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 65.0pt
+\marginparsep   11.0pt
+\columnsep  10.0pt
+\skip\footins  9.0pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+File: Ideal_30_f_0-1_V_1-0_Z_1-0.eps Graphic file (type eps)
+<Ideal_30_f_0-1_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_0-2_V_1-0_Z_1-0.eps Graphic file (type eps)
+ <Ideal_30_f_0-2_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_0-3_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_0-3_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_0-4_V_1-0_Z_1-0.eps Graphic file (type eps)
+ <Ideal_30_f_0-4_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_0-5_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_0-5_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_0-6_V_1-0_Z_1-0.eps Graphic file (type eps)
+ <Ideal_30_f_0-6_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_0-7_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_0-7_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_0-7_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+ <Ideal_30_f_0-7_V_1-0_Z_1-0_zoom.eps>
+File: Ideal_30_f_0-8_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_0-8_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_0-8_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+ <Ideal_30_f_0-8_V_1-0_Z_1-0_zoom.eps>
+File: Ideal_30_f_0-9_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_0-9_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_0-9_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+ <Ideal_30_f_0-9_V_1-0_Z_1-0_zoom.eps>
+File: Ideal_30_f_1-0_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_1-0_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_1-0_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+ <Ideal_30_f_1-0_V_1-0_Z_1-0_zoom.eps>
+File: Ideal_30_f_1-1_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_1-1_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_1-1_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+ <Ideal_30_f_1-1_V_1-0_Z_1-0_zoom.eps>
+File: Ideal_30_f_1-2_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_1-2_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_1-2_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+ <Ideal_30_f_1-2_V_1-0_Z_1-0_zoom.eps>
+File: Ideal_30_f_1-3_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_1-3_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_1-3_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+ <Ideal_30_f_1-3_V_1-0_Z_1-0_zoom.eps>
+File: Ideal_30_f_1-4_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_1-4_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_1-4_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+ <Ideal_30_f_1-4_V_1-0_Z_1-0_zoom.eps>
+File: Ideal_30_f_1-5_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_1-5_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_1-5_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+ <Ideal_30_f_1-5_V_1-0_Z_1-0_zoom.eps>
+File: Ideal_30_f_1-6_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_1-6_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_1-6_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+ <Ideal_30_f_1-6_V_1-0_Z_1-0_zoom.eps>
+File: Ideal_30_f_1-7_V_1-0_Z_1-0.eps Graphic file (type eps)
+
+<Ideal_30_f_1-7_V_1-0_Z_1-0.eps>
+
+! LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 ...ctratio]{Ideal_30_f_1-7_V_1-0_Z_1-0.eps}}
+                                                  \hfill{}\subfigure[]{\incl...
+
+? 
+File: Ideal_30_f_1-7_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+<Ideal_30_f_1-7_V_1-0_Z_1-0_zoom.eps>
+
+! LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 ...io]{Ideal_30_f_1-7_V_1-0_Z_1-0_zoom.eps}}
+                                                  
+? 
+File: Ideal_30_f_1-8_V_1-0_Z_1-0.eps Graphic file (type eps)
+<Ideal_30_f_1-8_V_1-0_Z_1-0.eps>
+File: Ideal_30_f_1-8_V_1-0_Z_1-0_zoom.eps Graphic file (type eps)
+ <Ideal_30_f_1-8_V_1-0_Z_1-0_zoom.eps>
+
+! LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 ...io]{Ideal_30_f_1-8_V_1-0_Z_1-0_zoom.eps}}
+                                                  
+? 
+[1] [2] [3] [4] [5] (./Ideal_30.aux) ) 
+Here is how much of TeX's memory you used:
+ 1580 strings out of 95847
+ 19885 string characters out of 1195948
+ 72702 words of memory out of 1000001
+ 4515 multiletter control sequences out of 10000+50000
+ 5167 words of font info for 16 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 25i,4n,24p,360b,344s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on Ideal_30.dvi (5 pages, 4060 bytes).

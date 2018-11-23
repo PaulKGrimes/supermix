@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="30"
+   name=""
+   committed-date="2004-12-06T18:12:58.153974Z"
+   url="file:///svn/MultiTone/MultiTone/branches/SuperMix-numerics-branch/build/Thesis/simple-sat/lo_0-9"
+   last-author="pkg22"
+   kind="dir"
+   revision="33"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-9_ZRF_1-5_ZIF_5-0_Bias_0-9_USB_lo-power.dat"
+   text-time="2004-09-21T15:34:54.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="abd7ac291b90a6e834a34b8dbb2eb3b0"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-9_V_1-3_Bias_0-87_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="42384571b529a420f272e37adca076c2"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-9_V_2-2_Bias_0-87_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="d21302337cf8be470167cc9e64f678e6"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-9_V_2-5_Bias_0-87_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="27a4efb267d5caa13f79377137e1cd9a"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+<entry
+   committed-rev="30"
+   name="Ideal_30_LO_0-9_V_1-9_Bias_0-87_USB_sat.dat"
+   text-time="2004-09-21T15:34:53.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="6aca721de960b984e599b3ab90447a57"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-12-06T18:11:41.000000Z"/>
+</wc-entries>

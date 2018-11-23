@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="23"
+   name=""
+   committed-date="2005-01-31T13:58:24.957622Z"
+   url="file:///svn/simulations/QTMix-Belitsky"
+   last-author="pkg22"
+   kind="dir"
+   revision="23"/>
+<entry
+   committed-rev="23"
+   name="qtmixform.ui"
+   text-time="2004-03-10T15:45:28.000000Z"
+   committed-date="2005-01-31T13:58:24.957622Z"
+   checksum="4c160c1310d3a255d1d0edf806850eff"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="23"
+   name="QTMix-Belitsky.pro"
+   text-time="2004-03-03T11:30:38.000000Z"
+   committed-date="2005-01-31T13:58:24.957622Z"
+   checksum="7bcdf24ab6b5bebab9c4d3ab0b1742b4"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="23"
+   name="main.cpp"
+   text-time="2004-03-02T11:09:38.000000Z"
+   committed-date="2005-01-31T13:58:24.957622Z"
+   checksum="cfdbfc2e42d8b8081efa32c11ef71bdb"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="23"
+   name="QTMix-Belitsky"
+   text-time="2004-03-18T14:58:50.000000Z"
+   committed-date="2005-01-31T13:58:24.957622Z"
+   checksum="77b92b975f9021c5cdcc5b4fcb4fbeac"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2005-01-31T13:58:01.000000Z"/>
+<entry
+   name=".obj"
+   kind="dir"/>
+<entry
+   committed-rev="23"
+   name="qtmixform.ui.h"
+   text-time="2004-03-18T14:58:05.000000Z"
+   committed-date="2005-01-31T13:58:24.957622Z"
+   checksum="c86e716e4d2c301931ea85cc53a304b7"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   name=".ui"
+   kind="dir"/>
+<entry
+   name=".moc"
+   kind="dir"/>
+<entry
+   committed-rev="23"
+   name="Makefile"
+   text-time="2004-03-09T10:12:13.000000Z"
+   committed-date="2005-01-31T13:58:24.957622Z"
+   checksum="f3e60e697df96a53c696780e5f245d00"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="23"
+   name="qtmixform-bak.ui"
+   text-time="2004-03-03T10:41:27.000000Z"
+   committed-date="2005-01-31T13:58:24.957622Z"
+   checksum="73e4fd4ac878afb9001b9379df3b28fc"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

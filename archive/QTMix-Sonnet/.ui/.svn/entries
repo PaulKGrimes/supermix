@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="24"
+   name=""
+   committed-date="2005-01-31T13:59:12.505720Z"
+   url="file:///svn/simulations/QTMix-Sonnet/.ui"
+   last-author="pkg22"
+   kind="dir"
+   revision="24"/>
+<entry
+   committed-rev="24"
+   name="qtmixform.cpp"
+   text-time="2004-05-06T12:12:24.000000Z"
+   committed-date="2005-01-31T13:59:12.505720Z"
+   checksum="84ed8192c0982b829116e04cc35ae69a"
+   last-author="pkg22"
+   kind="file"/>
+<entry
+   committed-rev="24"
+   name="qtmixform.h"
+   text-time="2004-05-06T12:12:12.000000Z"
+   committed-date="2005-01-31T13:59:12.505720Z"
+   checksum="e396ddc774c63fb4d96bf96b92d929ce"
+   last-author="pkg22"
+   kind="file"/>
+</wc-entries>

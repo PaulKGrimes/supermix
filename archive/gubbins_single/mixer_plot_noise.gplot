@@ -1,0 +1,22 @@
+#!/bin/sh
+gnuplot << EOF
+
+set grid
+
+set terminal postscript eps solid color enhanced "Helvetica" 14
+set output "$1_noise.eps"
+
+set key bottom
+
+set xlabel "LO Frequency (GHz)"
+set ylabel "Single Sideband Noise (K)"
+
+set ytics 10
+set xtics 25
+
+plot [:][0:100] "$1.dat" using 1:((\$4)/\$2) title "LSB Noise" with lines, \
+	"$1.dat" using 1:((\$4)/\$3) title "USB Noise" with lines
+
+
+EOF
+

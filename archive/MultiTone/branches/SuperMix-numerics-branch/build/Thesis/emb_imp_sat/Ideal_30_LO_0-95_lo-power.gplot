@@ -1,0 +1,22 @@
+set size 0.9,1.0
+
+set xlabel "LO Voltage"
+set ylabel "Mixer Gain"
+
+set xrange [0:4]
+set yrange [0:]
+
+set xtics 0.5
+set ytics 0.1
+
+plot "Ideal_30_LO_0-95_Bias_0-9_USB_lo-power.dat" using 1:(4*$6*$6/1e-8) title "" with lines
+
+set terminal postscript eps enhanced "Helvetica" 16
+
+set output "Ideal_30_LO_0-95_lo-power.eps"
+
+replot
+
+set output "/dev/null"
+
+

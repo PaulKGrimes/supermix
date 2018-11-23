@@ -1,0 +1,2192 @@
+simple.c:26:21: dotconf.h: No such file or directory
+In file included from simple.c:33:
+confparse.inc:19: error: `cb_fallback' was not declared in this scope
+confparse.inc:19: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:22: error: `mixer_config' was not declared in this scope
+confparse.inc:22: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:22: error: redefinition of `int DOTCONF_CB'
+confparse.inc:19: error: `int DOTCONF_CB' previously defined here
+confparse.inc:22: error: `DOTCONF_CB' was declared `extern' and later `static'
+confparse.inc:19: error: previous declaration of `DOTCONF_CB'
+confparse.inc:23: error: `output' was not declared in this scope
+confparse.inc:23: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:23: error: redefinition of `int DOTCONF_CB'
+confparse.inc:22: error: `int DOTCONF_CB' previously defined here
+confparse.inc:25: error: `scanned_variable' was not declared in this scope
+confparse.inc:25: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:25: error: redefinition of `int DOTCONF_CB'
+confparse.inc:23: error: `int DOTCONF_CB' previously defined here
+confparse.inc:26: error: `scan_unit' was not declared in this scope
+confparse.inc:26: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:26: error: redefinition of `int DOTCONF_CB'
+confparse.inc:25: error: `int DOTCONF_CB' previously defined here
+confparse.inc:27: error: `scan_low' was not declared in this scope
+confparse.inc:27: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:27: error: redefinition of `int DOTCONF_CB'
+confparse.inc:26: error: `int DOTCONF_CB' previously defined here
+confparse.inc:28: error: `scan_high' was not declared in this scope
+confparse.inc:28: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:28: error: redefinition of `int DOTCONF_CB'
+confparse.inc:27: error: `int DOTCONF_CB' previously defined here
+confparse.inc:29: error: `scan_step' was not declared in this scope
+confparse.inc:29: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:29: error: redefinition of `int DOTCONF_CB'
+confparse.inc:28: error: `int DOTCONF_CB' previously defined here
+confparse.inc:30: error: `frequency' was not declared in this scope
+confparse.inc:30: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:30: error: redefinition of `int DOTCONF_CB'
+confparse.inc:29: error: `int DOTCONF_CB' previously defined here
+confparse.inc:31: error: `bias' was not declared in this scope
+confparse.inc:31: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:31: error: redefinition of `int DOTCONF_CB'
+confparse.inc:30: error: `int DOTCONF_CB' previously defined here
+confparse.inc:32: error: `lo_power' was not declared in this scope
+confparse.inc:32: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:32: error: redefinition of `int DOTCONF_CB'
+confparse.inc:31: error: `int DOTCONF_CB' previously defined here
+confparse.inc:36: error: `temp' was not declared in this scope
+confparse.inc:36: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:36: error: redefinition of `int DOTCONF_CB'
+confparse.inc:32: error: `int DOTCONF_CB' previously defined here
+confparse.inc:37: error: `z0' was not declared in this scope
+confparse.inc:37: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:37: error: redefinition of `int DOTCONF_CB'
+confparse.inc:36: error: `int DOTCONF_CB' previously defined here
+confparse.inc:38: error: `if_freq' was not declared in this scope
+confparse.inc:38: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:38: error: redefinition of `int DOTCONF_CB'
+confparse.inc:37: error: `int DOTCONF_CB' previously defined here
+confparse.inc:39: error: `if_z0' was not declared in this scope
+confparse.inc:39: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:39: error: redefinition of `int DOTCONF_CB'
+confparse.inc:38: error: `int DOTCONF_CB' previously defined here
+confparse.inc:40: error: `harmonics' was not declared in this scope
+confparse.inc:40: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:40: error: redefinition of `int DOTCONF_CB'
+confparse.inc:39: error: `int DOTCONF_CB' previously defined here
+confparse.inc:42: error: `iv_curve' was not declared in this scope
+confparse.inc:42: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:42: error: redefinition of `int DOTCONF_CB'
+confparse.inc:40: error: `int DOTCONF_CB' previously defined here
+confparse.inc:43: error: `kk_curve' was not declared in this scope
+confparse.inc:43: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:43: error: redefinition of `int DOTCONF_CB'
+confparse.inc:42: error: `int DOTCONF_CB' previously defined here
+confparse.inc:44: error: `rna' was not declared in this scope
+confparse.inc:44: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:44: error: redefinition of `int DOTCONF_CB'
+confparse.inc:43: error: `int DOTCONF_CB' previously defined here
+confparse.inc:45: error: `scap' was not declared in this scope
+confparse.inc:45: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:45: error: redefinition of `int DOTCONF_CB'
+confparse.inc:44: error: `int DOTCONF_CB' previously defined here
+confparse.inc:46: error: `area' was not declared in this scope
+confparse.inc:46: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:46: error: redefinition of `int DOTCONF_CB'
+confparse.inc:45: error: `int DOTCONF_CB' previously defined here
+confparse.inc:47: error: `vgap' was not declared in this scope
+confparse.inc:47: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:47: error: redefinition of `int DOTCONF_CB'
+confparse.inc:46: error: `int DOTCONF_CB' previously defined here
+confparse.inc:49: error: `tuner_type' was not declared in this scope
+confparse.inc:49: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:49: error: redefinition of `int DOTCONF_CB'
+confparse.inc:47: error: `int DOTCONF_CB' previously defined here
+confparse.inc:50: error: `touchstone_file' was not declared in this scope
+confparse.inc:50: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:50: error: redefinition of `int DOTCONF_CB'
+confparse.inc:49: error: `int DOTCONF_CB' previously defined here
+confparse.inc:53: error: `single_stub_type' was not declared in this scope
+confparse.inc:53: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:53: error: redefinition of `int DOTCONF_CB'
+confparse.inc:50: error: `int DOTCONF_CB' previously defined here
+confparse.inc:54: error: `single_stub_input' was not declared in this scope
+confparse.inc:54: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:54: error: redefinition of `int DOTCONF_CB'
+confparse.inc:53: error: `int DOTCONF_CB' previously defined here
+confparse.inc:55: error: `single_stub_fan' was not declared in this scope
+confparse.inc:55: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:55: error: redefinition of `int DOTCONF_CB'
+confparse.inc:54: error: `int DOTCONF_CB' previously defined here
+confparse.inc:58: error: `double_stub_1_type' was not declared in this scope
+confparse.inc:58: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:58: error: redefinition of `int DOTCONF_CB'
+confparse.inc:55: error: `int DOTCONF_CB' previously defined here
+confparse.inc:59: error: `double_stub_1_input' was not declared in this scope
+confparse.inc:59: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:59: error: redefinition of `int DOTCONF_CB'
+confparse.inc:58: error: `int DOTCONF_CB' previously defined here
+confparse.inc:60: error: `double_stub_1_fan' was not declared in this scope
+confparse.inc:60: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:60: error: redefinition of `int DOTCONF_CB'
+confparse.inc:59: error: `int DOTCONF_CB' previously defined here
+confparse.inc:61: error: `double_stub_2_type' was not declared in this scope
+confparse.inc:61: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:61: error: redefinition of `int DOTCONF_CB'
+confparse.inc:60: error: `int DOTCONF_CB' previously defined here
+confparse.inc:62: error: `double_stub_2_input' was not declared in this scope
+confparse.inc:62: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:62: error: redefinition of `int DOTCONF_CB'
+confparse.inc:61: error: `int DOTCONF_CB' previously defined here
+confparse.inc:63: error: `double_stub_2_fan' was not declared in this scope
+confparse.inc:63: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:63: error: redefinition of `int DOTCONF_CB'
+confparse.inc:62: error: `int DOTCONF_CB' previously defined here
+confparse.inc:66: error: `triple_stub_1_type' was not declared in this scope
+confparse.inc:66: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:66: error: redefinition of `int DOTCONF_CB'
+confparse.inc:63: error: `int DOTCONF_CB' previously defined here
+confparse.inc:67: error: `triple_stub_1_input' was not declared in this scope
+confparse.inc:67: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:67: error: redefinition of `int DOTCONF_CB'
+confparse.inc:66: error: `int DOTCONF_CB' previously defined here
+confparse.inc:68: error: `triple_stub_1_fan' was not declared in this scope
+confparse.inc:68: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:68: error: redefinition of `int DOTCONF_CB'
+confparse.inc:67: error: `int DOTCONF_CB' previously defined here
+confparse.inc:69: error: `triple_stub_2_type' was not declared in this scope
+confparse.inc:69: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:69: error: redefinition of `int DOTCONF_CB'
+confparse.inc:68: error: `int DOTCONF_CB' previously defined here
+confparse.inc:70: error: `triple_stub_2_input' was not declared in this scope
+confparse.inc:70: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:70: error: redefinition of `int DOTCONF_CB'
+confparse.inc:69: error: `int DOTCONF_CB' previously defined here
+confparse.inc:71: error: `triple_stub_2_fan' was not declared in this scope
+confparse.inc:71: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:71: error: redefinition of `int DOTCONF_CB'
+confparse.inc:70: error: `int DOTCONF_CB' previously defined here
+confparse.inc:72: error: `triple_stub_3_type' was not declared in this scope
+confparse.inc:72: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:72: error: redefinition of `int DOTCONF_CB'
+confparse.inc:71: error: `int DOTCONF_CB' previously defined here
+confparse.inc:73: error: `triple_stub_3_input' was not declared in this scope
+confparse.inc:73: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:73: error: redefinition of `int DOTCONF_CB'
+confparse.inc:72: error: `int DOTCONF_CB' previously defined here
+confparse.inc:74: error: `triple_stub_3_fan' was not declared in this scope
+confparse.inc:74: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:74: error: redefinition of `int DOTCONF_CB'
+confparse.inc:73: error: `int DOTCONF_CB' previously defined here
+confparse.inc:77: error: `belitsky_input_strip' was not declared in this scope
+confparse.inc:77: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:77: error: redefinition of `int DOTCONF_CB'
+confparse.inc:74: error: `int DOTCONF_CB' previously defined here
+confparse.inc:78: error: `belitsky_tuning_strip' was not declared in this scope
+confparse.inc:78: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:78: error: redefinition of `int DOTCONF_CB'
+confparse.inc:77: error: `int DOTCONF_CB' previously defined here
+confparse.inc:81: error: `rf_choke_type' was not declared in this scope
+confparse.inc:81: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:81: error: redefinition of `int DOTCONF_CB'
+confparse.inc:78: error: `int DOTCONF_CB' previously defined here
+confparse.inc:82: error: `radial_choke_type' was not declared in this scope
+confparse.inc:82: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:82: error: redefinition of `int DOTCONF_CB'
+confparse.inc:81: error: `int DOTCONF_CB' previously defined here
+confparse.inc:83: error: `radial_choke_input' was not declared in this scope
+confparse.inc:83: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:83: error: redefinition of `int DOTCONF_CB'
+confparse.inc:82: error: `int DOTCONF_CB' previously defined here
+confparse.inc:84: error: `radial_choke_fan' was not declared in this scope
+confparse.inc:84: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:84: error: redefinition of `int DOTCONF_CB'
+confparse.inc:83: error: `int DOTCONF_CB' previously defined here
+confparse.inc:85: error: `radial_choke_output' was not declared in this scope
+confparse.inc:85: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:85: error: redefinition of `int DOTCONF_CB'
+confparse.inc:84: error: `int DOTCONF_CB' previously defined here
+confparse.inc:86: error: `filter_choke_sections' was not declared in this scope
+confparse.inc:86: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:86: error: redefinition of `int DOTCONF_CB'
+confparse.inc:85: error: `int DOTCONF_CB' previously defined here
+confparse.inc:87: error: `filter_choke_input' was not declared in this scope
+confparse.inc:87: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:87: error: redefinition of `int DOTCONF_CB'
+confparse.inc:86: error: `int DOTCONF_CB' previously defined here
+confparse.inc:88: error: `filter_choke_narrow' was not declared in this scope
+confparse.inc:88: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:88: error: redefinition of `int DOTCONF_CB'
+confparse.inc:87: error: `int DOTCONF_CB' previously defined here
+confparse.inc:89: error: `filter_choke_wide' was not declared in this scope
+confparse.inc:89: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:89: error: redefinition of `int DOTCONF_CB'
+confparse.inc:88: error: `int DOTCONF_CB' previously defined here
+confparse.inc:92: error: `top_default' was not declared in this scope
+confparse.inc:92: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:92: error: redefinition of `int DOTCONF_CB'
+confparse.inc:89: error: `int DOTCONF_CB' previously defined here
+confparse.inc:93: error: `top_thickness' was not declared in this scope
+confparse.inc:93: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:93: error: redefinition of `int DOTCONF_CB'
+confparse.inc:92: error: `int DOTCONF_CB' previously defined here
+confparse.inc:94: error: `ground_default' was not declared in this scope
+confparse.inc:94: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:94: error: redefinition of `int DOTCONF_CB'
+confparse.inc:93: error: `int DOTCONF_CB' previously defined here
+confparse.inc:95: error: `ground_thickness' was not declared in this scope
+confparse.inc:95: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:95: error: redefinition of `int DOTCONF_CB'
+confparse.inc:94: error: `int DOTCONF_CB' previously defined here
+confparse.inc:96: error: `insul_default' was not declared in this scope
+confparse.inc:96: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:96: error: redefinition of `int DOTCONF_CB'
+confparse.inc:95: error: `int DOTCONF_CB' previously defined here
+confparse.inc:97: error: `insul_thickness' was not declared in this scope
+confparse.inc:97: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:97: error: redefinition of `int DOTCONF_CB'
+confparse.inc:96: error: `int DOTCONF_CB' previously defined here
+confparse.inc:98: error: `cover_default' was not declared in this scope
+confparse.inc:98: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:98: error: redefinition of `int DOTCONF_CB'
+confparse.inc:97: error: `int DOTCONF_CB' previously defined here
+confparse.inc:99: error: `cover_thickness' was not declared in this scope
+confparse.inc:99: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:99: error: redefinition of `int DOTCONF_CB'
+confparse.inc:98: error: `int DOTCONF_CB' previously defined here
+confparse.inc:102: error: `nb_properties' was not declared in this scope
+confparse.inc:102: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:102: error: redefinition of `int DOTCONF_CB'
+confparse.inc:99: error: `int DOTCONF_CB' previously defined here
+confparse.inc:103: error: `nbtin_properties' was not declared in this scope
+confparse.inc:103: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:103: error: redefinition of `int DOTCONF_CB'
+confparse.inc:102: error: `int DOTCONF_CB' previously defined here
+confparse.inc:104: error: `sio_properties' was not declared in this scope
+confparse.inc:104: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:104: error: redefinition of `int DOTCONF_CB'
+confparse.inc:103: error: `int DOTCONF_CB' previously defined here
+confparse.inc:107: error: syntax error before `[' token
+confparse.inc:195: error: `mixer_config' was not declared in this scope
+confparse.inc:196: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:196: error: redefinition of `int DOTCONF_CB'
+confparse.inc:104: error: `int DOTCONF_CB' previously defined here
+confparse.inc:196: error: syntax error before `{' token
+confparse.inc:205: error: `output' was not declared in this scope
+confparse.inc:206: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:206: error: redefinition of `int DOTCONF_CB'
+confparse.inc:196: error: `int DOTCONF_CB' previously defined here
+confparse.inc:206: error: syntax error before `{' token
+confparse.inc:217: error: `scanned_variable' was not declared in this scope
+confparse.inc:218: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:218: error: redefinition of `int DOTCONF_CB'
+confparse.inc:206: error: `int DOTCONF_CB' previously defined here
+confparse.inc:218: error: syntax error before `{' token
+confparse.inc:223: error: `scan_unit' was not declared in this scope
+confparse.inc:224: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:224: error: redefinition of `int DOTCONF_CB'
+confparse.inc:218: error: `int DOTCONF_CB' previously defined here
+confparse.inc:224: error: syntax error before `{' token
+confparse.inc:239: error: `scan_low' was not declared in this scope
+confparse.inc:240: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:240: error: redefinition of `int DOTCONF_CB'
+confparse.inc:224: error: `int DOTCONF_CB' previously defined here
+confparse.inc:240: error: syntax error before `{' token
+confparse.inc:247: error: `scan_high' was not declared in this scope
+confparse.inc:248: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:248: error: redefinition of `int DOTCONF_CB'
+confparse.inc:240: error: `int DOTCONF_CB' previously defined here
+confparse.inc:248: error: syntax error before `{' token
+confparse.inc:255: error: `scan_step' was not declared in this scope
+confparse.inc:256: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:256: error: redefinition of `int DOTCONF_CB'
+confparse.inc:248: error: `int DOTCONF_CB' previously defined here
+confparse.inc:256: error: syntax error before `{' token
+confparse.inc:263: error: `frequency' was not declared in this scope
+confparse.inc:264: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:264: error: redefinition of `int DOTCONF_CB'
+confparse.inc:256: error: `int DOTCONF_CB' previously defined here
+confparse.inc:264: error: syntax error before `{' token
+confparse.inc:270: error: ISO C++ forbids declaration of `FREQUENCY' with no 
+   type
+confparse.inc:270: error: conflicting types for `int FREQUENCY'
+globals.inc:40: error: previous declaration as `parameter FREQUENCY'
+confparse.inc:270: error: `cmd' was not declared in this scope
+confparse.inc:272: error: parse error before `return'
+confparse.inc:275: error: `bias' was not declared in this scope
+confparse.inc:276: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:276: error: redefinition of `int DOTCONF_CB'
+confparse.inc:264: error: `int DOTCONF_CB' previously defined here
+confparse.inc:276: error: syntax error before `{' token
+confparse.inc:282: error: ISO C++ forbids declaration of `BIAS' with no type
+confparse.inc:282: error: conflicting types for `int BIAS'
+globals.inc:44: error: previous declaration as `parameter BIAS'
+confparse.inc:282: error: `cmd' was not declared in this scope
+confparse.inc:284: error: parse error before `return'
+confparse.inc:287: error: `lo_power' was not declared in this scope
+confparse.inc:288: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:288: error: redefinition of `int DOTCONF_CB'
+confparse.inc:276: error: `int DOTCONF_CB' previously defined here
+confparse.inc:288: error: syntax error before `{' token
+confparse.inc:294: error: ISO C++ forbids declaration of `LO_POWER' with no 
+   type
+confparse.inc:294: error: conflicting types for `int LO_POWER'
+globals.inc:48: error: previous declaration as `parameter LO_POWER'
+confparse.inc:294: error: `cmd' was not declared in this scope
+confparse.inc:296: error: parse error before `return'
+confparse.inc:302: error: `temp' was not declared in this scope
+confparse.inc:303: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:303: error: redefinition of `int DOTCONF_CB'
+confparse.inc:288: error: `int DOTCONF_CB' previously defined here
+confparse.inc:303: error: syntax error before `{' token
+confparse.inc:309: error: ISO C++ forbids declaration of `TEMP' with no type
+confparse.inc:309: error: conflicting types for `int TEMP'
+globals.inc:61: error: previous declaration as `parameter TEMP'
+confparse.inc:309: error: `cmd' was not declared in this scope
+confparse.inc:311: error: parse error before `return'
+confparse.inc:314: error: `z0' was not declared in this scope
+confparse.inc:315: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:315: error: redefinition of `int DOTCONF_CB'
+confparse.inc:303: error: `int DOTCONF_CB' previously defined here
+confparse.inc:315: error: syntax error before `{' token
+confparse.inc:321: error: ISO C++ forbids declaration of `Z0' with no type
+confparse.inc:321: error: conflicting types for `int Z0'
+globals.inc:65: error: previous declaration as `parameter Z0'
+confparse.inc:321: error: `cmd' was not declared in this scope
+confparse.inc:323: error: parse error before `return'
+confparse.inc:326: error: `if_freq' was not declared in this scope
+confparse.inc:327: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:327: error: redefinition of `int DOTCONF_CB'
+confparse.inc:315: error: `int DOTCONF_CB' previously defined here
+confparse.inc:327: error: syntax error before `{' token
+confparse.inc:333: error: ISO C++ forbids declaration of `IF_FREQ' with no type
+confparse.inc:333: error: conflicting types for `int IF_FREQ'
+globals.inc:69: error: previous declaration as `parameter IF_FREQ'
+confparse.inc:333: error: `cmd' was not declared in this scope
+confparse.inc:335: error: parse error before `return'
+confparse.inc:338: error: `if_z0' was not declared in this scope
+confparse.inc:339: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:339: error: redefinition of `int DOTCONF_CB'
+confparse.inc:327: error: `int DOTCONF_CB' previously defined here
+confparse.inc:339: error: syntax error before `{' token
+confparse.inc:345: error: ISO C++ forbids declaration of `IF_Z0' with no type
+confparse.inc:345: error: conflicting types for `int IF_Z0'
+globals.inc:73: error: previous declaration as `parameter IF_Z0'
+confparse.inc:345: error: `cmd' was not declared in this scope
+confparse.inc:347: error: parse error before `return'
+confparse.inc:350: error: `harmonics' was not declared in this scope
+confparse.inc:351: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:351: error: redefinition of `int DOTCONF_CB'
+confparse.inc:339: error: `int DOTCONF_CB' previously defined here
+confparse.inc:351: error: syntax error before `{' token
+confparse.inc:358: error: `iv_curve' was not declared in this scope
+confparse.inc:359: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:359: error: redefinition of `int DOTCONF_CB'
+confparse.inc:351: error: `int DOTCONF_CB' previously defined here
+confparse.inc:359: error: syntax error before `{' token
+confparse.inc:364: error: `kk_curve' was not declared in this scope
+confparse.inc:365: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:365: error: redefinition of `int DOTCONF_CB'
+confparse.inc:359: error: `int DOTCONF_CB' previously defined here
+confparse.inc:365: error: syntax error before `{' token
+confparse.inc:370: error: `rna' was not declared in this scope
+confparse.inc:371: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:371: error: redefinition of `int DOTCONF_CB'
+confparse.inc:365: error: `int DOTCONF_CB' previously defined here
+confparse.inc:371: error: syntax error before `{' token
+confparse.inc:374: error: ISO C++ forbids declaration of `RNA' with no type
+confparse.inc:374: error: conflicting types for `int RNA'
+globals.inc:85: error: previous declaration as `parameter RNA'
+confparse.inc:374: error: `cmd' was not declared in this scope
+confparse.inc:375: error: ISO C++ forbids declaration of `RNA_unitStr' with no 
+   type
+confparse.inc:375: error: conflicting types for `int RNA_unitStr'
+globals.inc:87: error: previous declaration as `std::string RNA_unitStr'
+confparse.inc:377: error: parse error before `return'
+confparse.inc:380: error: `scap' was not declared in this scope
+confparse.inc:381: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:381: error: redefinition of `int DOTCONF_CB'
+confparse.inc:371: error: `int DOTCONF_CB' previously defined here
+confparse.inc:381: error: syntax error before `{' token
+confparse.inc:383: error: ISO C++ forbids declaration of `SCAP' with no type
+confparse.inc:383: error: conflicting types for `int SCAP'
+globals.inc:89: error: previous declaration as `parameter SCAP'
+confparse.inc:383: error: `cmd' was not declared in this scope
+confparse.inc:384: error: ISO C++ forbids declaration of `SCAP_unitStr' with no 
+   type
+confparse.inc:384: error: conflicting types for `int SCAP_unitStr'
+globals.inc:91: error: previous declaration as `std::string SCAP_unitStr'
+confparse.inc:386: error: parse error before `return'
+confparse.inc:389: error: `area' was not declared in this scope
+confparse.inc:390: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:390: error: redefinition of `int DOTCONF_CB'
+confparse.inc:381: error: `int DOTCONF_CB' previously defined here
+confparse.inc:390: error: syntax error before `{' token
+confparse.inc:392: error: ISO C++ forbids declaration of `AREA' with no type
+confparse.inc:392: error: conflicting types for `int AREA'
+globals.inc:93: error: previous declaration as `parameter AREA'
+confparse.inc:392: error: `cmd' was not declared in this scope
+confparse.inc:393: error: ISO C++ forbids declaration of `AREA_unitStr' with no 
+   type
+confparse.inc:393: error: conflicting types for `int AREA_unitStr'
+globals.inc:95: error: previous declaration as `std::string AREA_unitStr'
+confparse.inc:395: error: parse error before `return'
+confparse.inc:398: error: `vgap' was not declared in this scope
+confparse.inc:399: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:399: error: redefinition of `int DOTCONF_CB'
+confparse.inc:390: error: `int DOTCONF_CB' previously defined here
+confparse.inc:399: error: syntax error before `{' token
+confparse.inc:401: error: ISO C++ forbids declaration of `VGAP' with no type
+confparse.inc:401: error: conflicting types for `int VGAP'
+globals.inc:97: error: previous declaration as `parameter VGAP'
+confparse.inc:401: error: `cmd' was not declared in this scope
+confparse.inc:402: error: ISO C++ forbids declaration of `VGAP_unitStr' with no 
+   type
+confparse.inc:402: error: conflicting types for `int VGAP_unitStr'
+globals.inc:99: error: previous declaration as `std::string VGAP_unitStr'
+confparse.inc:404: error: parse error before `return'
+confparse.inc:408: error: `tuner_type' was not declared in this scope
+confparse.inc:409: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:409: error: redefinition of `int DOTCONF_CB'
+confparse.inc:399: error: `int DOTCONF_CB' previously defined here
+confparse.inc:409: error: syntax error before `{' token
+confparse.inc:414: error: `touchstone_file' was not declared in this scope
+confparse.inc:415: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:415: error: redefinition of `int DOTCONF_CB'
+confparse.inc:409: error: `int DOTCONF_CB' previously defined here
+confparse.inc:415: error: syntax error before `{' token
+confparse.inc:421: error: `single_stub_type' was not declared in this scope
+confparse.inc:422: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:422: error: redefinition of `int DOTCONF_CB'
+confparse.inc:415: error: `int DOTCONF_CB' previously defined here
+confparse.inc:422: error: syntax error before `{' token
+confparse.inc:427: error: `single_stub_input' was not declared in this scope
+confparse.inc:428: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:428: error: redefinition of `int DOTCONF_CB'
+confparse.inc:422: error: `int DOTCONF_CB' previously defined here
+confparse.inc:428: error: syntax error before `{' token
+confparse.inc:430: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_INPUT_length_unitStr' with no type
+confparse.inc:430: error: conflicting types for `int 
+   SINGLE_STUB_INPUT_length_unitStr'
+globals.inc:113: error: previous declaration as `std::string 
+   SINGLE_STUB_INPUT_length_unitStr'
+confparse.inc:431: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_INPUT_length' with no type
+confparse.inc:431: error: conflicting types for `int SINGLE_STUB_INPUT_length'
+globals.inc:111: error: previous declaration as `parameter 
+   SINGLE_STUB_INPUT_length'
+confparse.inc:431: error: `cmd' was not declared in this scope
+confparse.inc:433: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_INPUT_width1_unit' with no type
+confparse.inc:433: error: conflicting types for `int 
+   SINGLE_STUB_INPUT_width1_unit'
+globals.inc:115: error: previous declaration as `parameter 
+   SINGLE_STUB_INPUT_width1_unit'
+confparse.inc:434: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_INPUT_width1_unitStr' with no type
+confparse.inc:434: error: conflicting types for `int 
+   SINGLE_STUB_INPUT_width1_unitStr'
+globals.inc:116: error: previous declaration as `std::string 
+   SINGLE_STUB_INPUT_width1_unitStr'
+confparse.inc:435: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_INPUT_width1' with no type
+confparse.inc:435: error: conflicting types for `int SINGLE_STUB_INPUT_width1'
+globals.inc:114: error: previous declaration as `parameter 
+   SINGLE_STUB_INPUT_width1'
+confparse.inc:435: error: `cmd' was not declared in this scope
+confparse.inc:437: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_INPUT_width2_unit' with no type
+confparse.inc:437: error: conflicting types for `int 
+   SINGLE_STUB_INPUT_width2_unit'
+globals.inc:118: error: previous declaration as `parameter 
+   SINGLE_STUB_INPUT_width2_unit'
+confparse.inc:438: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_INPUT_width2_unitStr' with no type
+confparse.inc:438: error: conflicting types for `int 
+   SINGLE_STUB_INPUT_width2_unitStr'
+globals.inc:119: error: previous declaration as `std::string 
+   SINGLE_STUB_INPUT_width2_unitStr'
+confparse.inc:439: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_INPUT_width2' with no type
+confparse.inc:439: error: conflicting types for `int SINGLE_STUB_INPUT_width2'
+globals.inc:117: error: previous declaration as `parameter 
+   SINGLE_STUB_INPUT_width2'
+confparse.inc:439: error: `cmd' was not declared in this scope
+confparse.inc:441: error: parse error before `return'
+confparse.inc:444: error: `single_stub_fan' was not declared in this scope
+confparse.inc:445: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:445: error: redefinition of `int DOTCONF_CB'
+confparse.inc:428: error: `int DOTCONF_CB' previously defined here
+confparse.inc:445: error: syntax error before `{' token
+confparse.inc:447: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_FAN_radius_unitStr' with no type
+confparse.inc:447: error: conflicting types for `int 
+   SINGLE_STUB_FAN_radius_unitStr'
+globals.inc:122: error: previous declaration as `std::string 
+   SINGLE_STUB_FAN_radius_unitStr'
+confparse.inc:448: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_FAN_radius' with no type
+confparse.inc:448: error: conflicting types for `int SINGLE_STUB_FAN_radius'
+globals.inc:120: error: previous declaration as `parameter 
+   SINGLE_STUB_FAN_radius'
+confparse.inc:448: error: `cmd' was not declared in this scope
+confparse.inc:450: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_FAN_angle_unit' with no type
+confparse.inc:450: error: conflicting types for `int SINGLE_STUB_FAN_angle_unit
+   '
+globals.inc:124: error: previous declaration as `parameter 
+   SINGLE_STUB_FAN_angle_unit'
+confparse.inc:451: error: ISO C++ forbids declaration of `
+   SINGLE_STUB_FAN_angle_unitStr' with no type
+confparse.inc:451: error: conflicting types for `int 
+   SINGLE_STUB_FAN_angle_unitStr'
+globals.inc:125: error: previous declaration as `std::string 
+   SINGLE_STUB_FAN_angle_unitStr'
+confparse.inc:452: error: ISO C++ forbids declaration of `SINGLE_STUB_FAN_angle
+   ' with no type
+confparse.inc:452: error: conflicting types for `int SINGLE_STUB_FAN_angle'
+globals.inc:123: error: previous declaration as `parameter 
+   SINGLE_STUB_FAN_angle'
+confparse.inc:452: error: `cmd' was not declared in this scope
+confparse.inc:454: error: parse error before `return'
+confparse.inc:458: error: `double_stub_1_type' was not declared in this scope
+confparse.inc:459: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:459: error: redefinition of `int DOTCONF_CB'
+confparse.inc:445: error: `int DOTCONF_CB' previously defined here
+confparse.inc:459: error: syntax error before `{' token
+confparse.inc:464: error: `double_stub_1_input' was not declared in this scope
+confparse.inc:465: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:465: error: redefinition of `int DOTCONF_CB'
+confparse.inc:459: error: `int DOTCONF_CB' previously defined here
+confparse.inc:465: error: syntax error before `{' token
+confparse.inc:467: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_INPUT_length_unitStr' with no type
+confparse.inc:467: error: conflicting types for `int 
+   DOUBLE_STUB_1_INPUT_length_unitStr'
+globals.inc:131: error: previous declaration as `std::string 
+   DOUBLE_STUB_1_INPUT_length_unitStr'
+confparse.inc:468: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_INPUT_length' with no type
+confparse.inc:468: error: conflicting types for `int DOUBLE_STUB_1_INPUT_length
+   '
+globals.inc:129: error: previous declaration as `parameter 
+   DOUBLE_STUB_1_INPUT_length'
+confparse.inc:468: error: `cmd' was not declared in this scope
+confparse.inc:470: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_INPUT_width1_unit' with no type
+confparse.inc:470: error: conflicting types for `int 
+   DOUBLE_STUB_1_INPUT_width1_unit'
+globals.inc:133: error: previous declaration as `parameter 
+   DOUBLE_STUB_1_INPUT_width1_unit'
+confparse.inc:471: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_INPUT_width1_unitStr' with no type
+confparse.inc:471: error: conflicting types for `int 
+   DOUBLE_STUB_1_INPUT_width1_unitStr'
+globals.inc:134: error: previous declaration as `std::string 
+   DOUBLE_STUB_1_INPUT_width1_unitStr'
+confparse.inc:472: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_INPUT_width1' with no type
+confparse.inc:472: error: conflicting types for `int DOUBLE_STUB_1_INPUT_width1
+   '
+globals.inc:132: error: previous declaration as `parameter 
+   DOUBLE_STUB_1_INPUT_width1'
+confparse.inc:472: error: `cmd' was not declared in this scope
+confparse.inc:474: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_INPUT_width2_unit' with no type
+confparse.inc:474: error: conflicting types for `int 
+   DOUBLE_STUB_1_INPUT_width2_unit'
+globals.inc:136: error: previous declaration as `parameter 
+   DOUBLE_STUB_1_INPUT_width2_unit'
+confparse.inc:475: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_INPUT_width2_unitStr' with no type
+confparse.inc:475: error: conflicting types for `int 
+   DOUBLE_STUB_1_INPUT_width2_unitStr'
+globals.inc:137: error: previous declaration as `std::string 
+   DOUBLE_STUB_1_INPUT_width2_unitStr'
+confparse.inc:476: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_INPUT_width2' with no type
+confparse.inc:476: error: conflicting types for `int DOUBLE_STUB_1_INPUT_width2
+   '
+globals.inc:135: error: previous declaration as `parameter 
+   DOUBLE_STUB_1_INPUT_width2'
+confparse.inc:476: error: `cmd' was not declared in this scope
+confparse.inc:478: error: parse error before `return'
+confparse.inc:481: error: `double_stub_1_fan' was not declared in this scope
+confparse.inc:482: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:482: error: redefinition of `int DOTCONF_CB'
+confparse.inc:465: error: `int DOTCONF_CB' previously defined here
+confparse.inc:482: error: syntax error before `{' token
+confparse.inc:484: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_FAN_radius_unitStr' with no type
+confparse.inc:484: error: conflicting types for `int 
+   DOUBLE_STUB_1_FAN_radius_unitStr'
+globals.inc:140: error: previous declaration as `std::string 
+   DOUBLE_STUB_1_FAN_radius_unitStr'
+confparse.inc:485: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_FAN_radius' with no type
+confparse.inc:485: error: conflicting types for `int DOUBLE_STUB_1_FAN_radius'
+globals.inc:138: error: previous declaration as `parameter 
+   DOUBLE_STUB_1_FAN_radius'
+confparse.inc:485: error: `cmd' was not declared in this scope
+confparse.inc:487: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_FAN_angle_unit' with no type
+confparse.inc:487: error: conflicting types for `int 
+   DOUBLE_STUB_1_FAN_angle_unit'
+globals.inc:142: error: previous declaration as `parameter 
+   DOUBLE_STUB_1_FAN_angle_unit'
+confparse.inc:488: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_FAN_angle_unitStr' with no type
+confparse.inc:488: error: conflicting types for `int 
+   DOUBLE_STUB_1_FAN_angle_unitStr'
+globals.inc:143: error: previous declaration as `std::string 
+   DOUBLE_STUB_1_FAN_angle_unitStr'
+confparse.inc:489: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_1_FAN_angle' with no type
+confparse.inc:489: error: conflicting types for `int DOUBLE_STUB_1_FAN_angle'
+globals.inc:141: error: previous declaration as `parameter 
+   DOUBLE_STUB_1_FAN_angle'
+confparse.inc:489: error: `cmd' was not declared in this scope
+confparse.inc:491: error: parse error before `return'
+confparse.inc:494: error: `double_stub_2_type' was not declared in this scope
+confparse.inc:495: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:495: error: redefinition of `int DOTCONF_CB'
+confparse.inc:482: error: `int DOTCONF_CB' previously defined here
+confparse.inc:495: error: syntax error before `{' token
+confparse.inc:500: error: `double_stub_2_input' was not declared in this scope
+confparse.inc:501: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:501: error: redefinition of `int DOTCONF_CB'
+confparse.inc:495: error: `int DOTCONF_CB' previously defined here
+confparse.inc:501: error: syntax error before `{' token
+confparse.inc:503: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_INPUT_length_unitStr' with no type
+confparse.inc:503: error: conflicting types for `int 
+   DOUBLE_STUB_2_INPUT_length_unitStr'
+globals.inc:148: error: previous declaration as `std::string 
+   DOUBLE_STUB_2_INPUT_length_unitStr'
+confparse.inc:504: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_INPUT_length' with no type
+confparse.inc:504: error: conflicting types for `int DOUBLE_STUB_2_INPUT_length
+   '
+globals.inc:146: error: previous declaration as `parameter 
+   DOUBLE_STUB_2_INPUT_length'
+confparse.inc:504: error: `cmd' was not declared in this scope
+confparse.inc:506: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_INPUT_width1_unit' with no type
+confparse.inc:506: error: conflicting types for `int 
+   DOUBLE_STUB_2_INPUT_width1_unit'
+globals.inc:150: error: previous declaration as `parameter 
+   DOUBLE_STUB_2_INPUT_width1_unit'
+confparse.inc:507: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_INPUT_width1_unitStr' with no type
+confparse.inc:507: error: conflicting types for `int 
+   DOUBLE_STUB_2_INPUT_width1_unitStr'
+globals.inc:151: error: previous declaration as `std::string 
+   DOUBLE_STUB_2_INPUT_width1_unitStr'
+confparse.inc:508: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_INPUT_width1' with no type
+confparse.inc:508: error: conflicting types for `int DOUBLE_STUB_2_INPUT_width1
+   '
+globals.inc:149: error: previous declaration as `parameter 
+   DOUBLE_STUB_2_INPUT_width1'
+confparse.inc:508: error: `cmd' was not declared in this scope
+confparse.inc:510: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_INPUT_width2_unit' with no type
+confparse.inc:510: error: conflicting types for `int 
+   DOUBLE_STUB_2_INPUT_width2_unit'
+globals.inc:153: error: previous declaration as `parameter 
+   DOUBLE_STUB_2_INPUT_width2_unit'
+confparse.inc:511: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_INPUT_width2_unitStr' with no type
+confparse.inc:511: error: conflicting types for `int 
+   DOUBLE_STUB_2_INPUT_width2_unitStr'
+globals.inc:154: error: previous declaration as `std::string 
+   DOUBLE_STUB_2_INPUT_width2_unitStr'
+confparse.inc:512: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_INPUT_width2' with no type
+confparse.inc:512: error: conflicting types for `int DOUBLE_STUB_2_INPUT_width2
+   '
+globals.inc:152: error: previous declaration as `parameter 
+   DOUBLE_STUB_2_INPUT_width2'
+confparse.inc:512: error: `cmd' was not declared in this scope
+confparse.inc:514: error: parse error before `return'
+confparse.inc:517: error: `double_stub_2_fan' was not declared in this scope
+confparse.inc:518: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:518: error: redefinition of `int DOTCONF_CB'
+confparse.inc:501: error: `int DOTCONF_CB' previously defined here
+confparse.inc:518: error: syntax error before `{' token
+confparse.inc:520: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_FAN_radius_unitStr' with no type
+confparse.inc:520: error: conflicting types for `int 
+   DOUBLE_STUB_2_FAN_radius_unitStr'
+globals.inc:157: error: previous declaration as `std::string 
+   DOUBLE_STUB_2_FAN_radius_unitStr'
+confparse.inc:521: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_FAN_radius' with no type
+confparse.inc:521: error: conflicting types for `int DOUBLE_STUB_2_FAN_radius'
+globals.inc:155: error: previous declaration as `parameter 
+   DOUBLE_STUB_2_FAN_radius'
+confparse.inc:521: error: `cmd' was not declared in this scope
+confparse.inc:523: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_FAN_angle_unit' with no type
+confparse.inc:523: error: conflicting types for `int 
+   DOUBLE_STUB_2_FAN_angle_unit'
+globals.inc:159: error: previous declaration as `parameter 
+   DOUBLE_STUB_2_FAN_angle_unit'
+confparse.inc:524: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_FAN_angle_unitStr' with no type
+confparse.inc:524: error: conflicting types for `int 
+   DOUBLE_STUB_2_FAN_angle_unitStr'
+globals.inc:160: error: previous declaration as `std::string 
+   DOUBLE_STUB_2_FAN_angle_unitStr'
+confparse.inc:525: error: ISO C++ forbids declaration of `
+   DOUBLE_STUB_2_FAN_angle' with no type
+confparse.inc:525: error: conflicting types for `int DOUBLE_STUB_2_FAN_angle'
+globals.inc:158: error: previous declaration as `parameter 
+   DOUBLE_STUB_2_FAN_angle'
+confparse.inc:525: error: `cmd' was not declared in this scope
+confparse.inc:527: error: parse error before `return'
+confparse.inc:531: error: `triple_stub_1_type' was not declared in this scope
+confparse.inc:532: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:532: error: redefinition of `int DOTCONF_CB'
+confparse.inc:518: error: `int DOTCONF_CB' previously defined here
+confparse.inc:532: error: syntax error before `{' token
+confparse.inc:537: error: `triple_stub_1_input' was not declared in this scope
+confparse.inc:538: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:538: error: redefinition of `int DOTCONF_CB'
+confparse.inc:532: error: `int DOTCONF_CB' previously defined here
+confparse.inc:538: error: syntax error before `{' token
+confparse.inc:540: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_INPUT_length_unitStr' with no type
+confparse.inc:540: error: conflicting types for `int 
+   TRIPLE_STUB_1_INPUT_length_unitStr'
+globals.inc:166: error: previous declaration as `std::string 
+   TRIPLE_STUB_1_INPUT_length_unitStr'
+confparse.inc:541: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_INPUT_length' with no type
+confparse.inc:541: error: conflicting types for `int TRIPLE_STUB_1_INPUT_length
+   '
+globals.inc:164: error: previous declaration as `parameter 
+   TRIPLE_STUB_1_INPUT_length'
+confparse.inc:541: error: `cmd' was not declared in this scope
+confparse.inc:543: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_INPUT_width1_unit' with no type
+confparse.inc:543: error: conflicting types for `int 
+   TRIPLE_STUB_1_INPUT_width1_unit'
+globals.inc:168: error: previous declaration as `parameter 
+   TRIPLE_STUB_1_INPUT_width1_unit'
+confparse.inc:544: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_INPUT_width1_unitStr' with no type
+confparse.inc:544: error: conflicting types for `int 
+   TRIPLE_STUB_1_INPUT_width1_unitStr'
+globals.inc:169: error: previous declaration as `std::string 
+   TRIPLE_STUB_1_INPUT_width1_unitStr'
+confparse.inc:545: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_INPUT_width1' with no type
+confparse.inc:545: error: conflicting types for `int TRIPLE_STUB_1_INPUT_width1
+   '
+globals.inc:167: error: previous declaration as `parameter 
+   TRIPLE_STUB_1_INPUT_width1'
+confparse.inc:545: error: `cmd' was not declared in this scope
+confparse.inc:547: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_INPUT_width2_unit' with no type
+confparse.inc:547: error: conflicting types for `int 
+   TRIPLE_STUB_1_INPUT_width2_unit'
+globals.inc:171: error: previous declaration as `parameter 
+   TRIPLE_STUB_1_INPUT_width2_unit'
+confparse.inc:548: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_INPUT_width2_unitStr' with no type
+confparse.inc:548: error: conflicting types for `int 
+   TRIPLE_STUB_1_INPUT_width2_unitStr'
+globals.inc:172: error: previous declaration as `std::string 
+   TRIPLE_STUB_1_INPUT_width2_unitStr'
+confparse.inc:549: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_INPUT_width2' with no type
+confparse.inc:549: error: conflicting types for `int TRIPLE_STUB_1_INPUT_width2
+   '
+globals.inc:170: error: previous declaration as `parameter 
+   TRIPLE_STUB_1_INPUT_width2'
+confparse.inc:549: error: `cmd' was not declared in this scope
+confparse.inc:551: error: parse error before `return'
+confparse.inc:554: error: `triple_stub_1_fan' was not declared in this scope
+confparse.inc:555: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:555: error: redefinition of `int DOTCONF_CB'
+confparse.inc:538: error: `int DOTCONF_CB' previously defined here
+confparse.inc:555: error: syntax error before `{' token
+confparse.inc:557: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_FAN_radius_unitStr' with no type
+confparse.inc:557: error: conflicting types for `int 
+   TRIPLE_STUB_1_FAN_radius_unitStr'
+globals.inc:175: error: previous declaration as `std::string 
+   TRIPLE_STUB_1_FAN_radius_unitStr'
+confparse.inc:558: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_FAN_radius' with no type
+confparse.inc:558: error: conflicting types for `int TRIPLE_STUB_1_FAN_radius'
+globals.inc:173: error: previous declaration as `parameter 
+   TRIPLE_STUB_1_FAN_radius'
+confparse.inc:558: error: `cmd' was not declared in this scope
+confparse.inc:560: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_FAN_angle_unit' with no type
+confparse.inc:560: error: conflicting types for `int 
+   TRIPLE_STUB_1_FAN_angle_unit'
+globals.inc:177: error: previous declaration as `parameter 
+   TRIPLE_STUB_1_FAN_angle_unit'
+confparse.inc:561: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_FAN_angle_unitStr' with no type
+confparse.inc:561: error: conflicting types for `int 
+   TRIPLE_STUB_1_FAN_angle_unitStr'
+globals.inc:178: error: previous declaration as `std::string 
+   TRIPLE_STUB_1_FAN_angle_unitStr'
+confparse.inc:562: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_1_FAN_angle' with no type
+confparse.inc:562: error: conflicting types for `int TRIPLE_STUB_1_FAN_angle'
+globals.inc:176: error: previous declaration as `parameter 
+   TRIPLE_STUB_1_FAN_angle'
+confparse.inc:562: error: `cmd' was not declared in this scope
+confparse.inc:564: error: parse error before `return'
+confparse.inc:567: error: `triple_stub_2_type' was not declared in this scope
+confparse.inc:568: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:568: error: redefinition of `int DOTCONF_CB'
+confparse.inc:555: error: `int DOTCONF_CB' previously defined here
+confparse.inc:568: error: syntax error before `{' token
+confparse.inc:573: error: `triple_stub_2_input' was not declared in this scope
+confparse.inc:574: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:574: error: redefinition of `int DOTCONF_CB'
+confparse.inc:568: error: `int DOTCONF_CB' previously defined here
+confparse.inc:574: error: syntax error before `{' token
+confparse.inc:576: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_INPUT_length_unitStr' with no type
+confparse.inc:576: error: conflicting types for `int 
+   TRIPLE_STUB_2_INPUT_length_unitStr'
+globals.inc:183: error: previous declaration as `std::string 
+   TRIPLE_STUB_2_INPUT_length_unitStr'
+confparse.inc:577: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_INPUT_length' with no type
+confparse.inc:577: error: conflicting types for `int TRIPLE_STUB_2_INPUT_length
+   '
+globals.inc:181: error: previous declaration as `parameter 
+   TRIPLE_STUB_2_INPUT_length'
+confparse.inc:577: error: `cmd' was not declared in this scope
+confparse.inc:579: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_INPUT_width1_unit' with no type
+confparse.inc:579: error: conflicting types for `int 
+   TRIPLE_STUB_2_INPUT_width1_unit'
+globals.inc:185: error: previous declaration as `parameter 
+   TRIPLE_STUB_2_INPUT_width1_unit'
+confparse.inc:580: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_INPUT_width1_unitStr' with no type
+confparse.inc:580: error: conflicting types for `int 
+   TRIPLE_STUB_2_INPUT_width1_unitStr'
+globals.inc:186: error: previous declaration as `std::string 
+   TRIPLE_STUB_2_INPUT_width1_unitStr'
+confparse.inc:581: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_INPUT_width1' with no type
+confparse.inc:581: error: conflicting types for `int TRIPLE_STUB_2_INPUT_width1
+   '
+globals.inc:184: error: previous declaration as `parameter 
+   TRIPLE_STUB_2_INPUT_width1'
+confparse.inc:581: error: `cmd' was not declared in this scope
+confparse.inc:583: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_INPUT_width2_unit' with no type
+confparse.inc:583: error: conflicting types for `int 
+   TRIPLE_STUB_2_INPUT_width2_unit'
+globals.inc:188: error: previous declaration as `parameter 
+   TRIPLE_STUB_2_INPUT_width2_unit'
+confparse.inc:584: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_INPUT_width2_unitStr' with no type
+confparse.inc:584: error: conflicting types for `int 
+   TRIPLE_STUB_2_INPUT_width2_unitStr'
+globals.inc:189: error: previous declaration as `std::string 
+   TRIPLE_STUB_2_INPUT_width2_unitStr'
+confparse.inc:585: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_INPUT_width2' with no type
+confparse.inc:585: error: conflicting types for `int TRIPLE_STUB_2_INPUT_width2
+   '
+globals.inc:187: error: previous declaration as `parameter 
+   TRIPLE_STUB_2_INPUT_width2'
+confparse.inc:585: error: `cmd' was not declared in this scope
+confparse.inc:587: error: parse error before `return'
+confparse.inc:590: error: `triple_stub_2_fan' was not declared in this scope
+confparse.inc:591: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:591: error: redefinition of `int DOTCONF_CB'
+confparse.inc:574: error: `int DOTCONF_CB' previously defined here
+confparse.inc:591: error: syntax error before `{' token
+confparse.inc:593: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_FAN_radius_unitStr' with no type
+confparse.inc:593: error: conflicting types for `int 
+   TRIPLE_STUB_2_FAN_radius_unitStr'
+globals.inc:192: error: previous declaration as `std::string 
+   TRIPLE_STUB_2_FAN_radius_unitStr'
+confparse.inc:594: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_FAN_radius' with no type
+confparse.inc:594: error: conflicting types for `int TRIPLE_STUB_2_FAN_radius'
+globals.inc:190: error: previous declaration as `parameter 
+   TRIPLE_STUB_2_FAN_radius'
+confparse.inc:594: error: `cmd' was not declared in this scope
+confparse.inc:596: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_FAN_angle_unit' with no type
+confparse.inc:596: error: conflicting types for `int 
+   TRIPLE_STUB_2_FAN_angle_unit'
+globals.inc:194: error: previous declaration as `parameter 
+   TRIPLE_STUB_2_FAN_angle_unit'
+confparse.inc:597: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_FAN_angle_unitStr' with no type
+confparse.inc:597: error: conflicting types for `int 
+   TRIPLE_STUB_2_FAN_angle_unitStr'
+globals.inc:195: error: previous declaration as `std::string 
+   TRIPLE_STUB_2_FAN_angle_unitStr'
+confparse.inc:598: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_2_FAN_angle' with no type
+confparse.inc:598: error: conflicting types for `int TRIPLE_STUB_2_FAN_angle'
+globals.inc:193: error: previous declaration as `parameter 
+   TRIPLE_STUB_2_FAN_angle'
+confparse.inc:598: error: `cmd' was not declared in this scope
+confparse.inc:600: error: parse error before `return'
+confparse.inc:603: error: `triple_stub_3_type' was not declared in this scope
+confparse.inc:604: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:604: error: redefinition of `int DOTCONF_CB'
+confparse.inc:591: error: `int DOTCONF_CB' previously defined here
+confparse.inc:604: error: syntax error before `{' token
+confparse.inc:609: error: `triple_stub_3_input' was not declared in this scope
+confparse.inc:610: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:610: error: redefinition of `int DOTCONF_CB'
+confparse.inc:604: error: `int DOTCONF_CB' previously defined here
+confparse.inc:610: error: syntax error before `{' token
+confparse.inc:612: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_INPUT_length_unitStr' with no type
+confparse.inc:612: error: conflicting types for `int 
+   TRIPLE_STUB_3_INPUT_length_unitStr'
+globals.inc:200: error: previous declaration as `std::string 
+   TRIPLE_STUB_3_INPUT_length_unitStr'
+confparse.inc:613: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_INPUT_length' with no type
+confparse.inc:613: error: conflicting types for `int TRIPLE_STUB_3_INPUT_length
+   '
+globals.inc:198: error: previous declaration as `parameter 
+   TRIPLE_STUB_3_INPUT_length'
+confparse.inc:613: error: `cmd' was not declared in this scope
+confparse.inc:615: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_INPUT_width1_unit' with no type
+confparse.inc:615: error: conflicting types for `int 
+   TRIPLE_STUB_3_INPUT_width1_unit'
+globals.inc:202: error: previous declaration as `parameter 
+   TRIPLE_STUB_3_INPUT_width1_unit'
+confparse.inc:616: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_INPUT_width1_unitStr' with no type
+confparse.inc:616: error: conflicting types for `int 
+   TRIPLE_STUB_3_INPUT_width1_unitStr'
+globals.inc:203: error: previous declaration as `std::string 
+   TRIPLE_STUB_3_INPUT_width1_unitStr'
+confparse.inc:617: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_INPUT_width1' with no type
+confparse.inc:617: error: conflicting types for `int TRIPLE_STUB_3_INPUT_width1
+   '
+globals.inc:201: error: previous declaration as `parameter 
+   TRIPLE_STUB_3_INPUT_width1'
+confparse.inc:617: error: `cmd' was not declared in this scope
+confparse.inc:619: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_INPUT_width2_unit' with no type
+confparse.inc:619: error: conflicting types for `int 
+   TRIPLE_STUB_3_INPUT_width2_unit'
+globals.inc:205: error: previous declaration as `parameter 
+   TRIPLE_STUB_3_INPUT_width2_unit'
+confparse.inc:620: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_INPUT_width2_unitStr' with no type
+confparse.inc:620: error: conflicting types for `int 
+   TRIPLE_STUB_3_INPUT_width2_unitStr'
+globals.inc:206: error: previous declaration as `std::string 
+   TRIPLE_STUB_3_INPUT_width2_unitStr'
+confparse.inc:621: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_INPUT_width2' with no type
+confparse.inc:621: error: conflicting types for `int TRIPLE_STUB_3_INPUT_width2
+   '
+globals.inc:204: error: previous declaration as `parameter 
+   TRIPLE_STUB_3_INPUT_width2'
+confparse.inc:621: error: `cmd' was not declared in this scope
+confparse.inc:623: error: parse error before `return'
+confparse.inc:626: error: `triple_stub_3_fan' was not declared in this scope
+confparse.inc:627: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:627: error: redefinition of `int DOTCONF_CB'
+confparse.inc:610: error: `int DOTCONF_CB' previously defined here
+confparse.inc:627: error: syntax error before `{' token
+confparse.inc:629: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_FAN_radius_unitStr' with no type
+confparse.inc:629: error: conflicting types for `int 
+   TRIPLE_STUB_3_FAN_radius_unitStr'
+globals.inc:209: error: previous declaration as `std::string 
+   TRIPLE_STUB_3_FAN_radius_unitStr'
+confparse.inc:630: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_FAN_radius' with no type
+confparse.inc:630: error: conflicting types for `int TRIPLE_STUB_3_FAN_radius'
+globals.inc:207: error: previous declaration as `parameter 
+   TRIPLE_STUB_3_FAN_radius'
+confparse.inc:630: error: `cmd' was not declared in this scope
+confparse.inc:632: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_FAN_angle_unit' with no type
+confparse.inc:632: error: conflicting types for `int 
+   TRIPLE_STUB_3_FAN_angle_unit'
+globals.inc:211: error: previous declaration as `parameter 
+   TRIPLE_STUB_3_FAN_angle_unit'
+confparse.inc:633: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_FAN_angle_unitStr' with no type
+confparse.inc:633: error: conflicting types for `int 
+   TRIPLE_STUB_3_FAN_angle_unitStr'
+globals.inc:212: error: previous declaration as `std::string 
+   TRIPLE_STUB_3_FAN_angle_unitStr'
+confparse.inc:634: error: ISO C++ forbids declaration of `
+   TRIPLE_STUB_3_FAN_angle' with no type
+confparse.inc:634: error: conflicting types for `int TRIPLE_STUB_3_FAN_angle'
+globals.inc:210: error: previous declaration as `parameter 
+   TRIPLE_STUB_3_FAN_angle'
+confparse.inc:634: error: `cmd' was not declared in this scope
+confparse.inc:636: error: parse error before `return'
+confparse.inc:640: error: `belitsky_input_strip' was not declared in this scope
+confparse.inc:641: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:641: error: redefinition of `int DOTCONF_CB'
+confparse.inc:627: error: `int DOTCONF_CB' previously defined here
+confparse.inc:641: error: syntax error before `{' token
+confparse.inc:643: error: ISO C++ forbids declaration of `
+   BELITSKY_INPUT_STRIP_length_unitStr' with no type
+confparse.inc:643: error: conflicting types for `int 
+   BELITSKY_INPUT_STRIP_length_unitStr'
+globals.inc:217: error: previous declaration as `std::string 
+   BELITSKY_INPUT_STRIP_length_unitStr'
+confparse.inc:644: error: ISO C++ forbids declaration of `
+   BELITSKY_INPUT_STRIP_length' with no type
+confparse.inc:644: error: conflicting types for `int 
+   BELITSKY_INPUT_STRIP_length'
+globals.inc:215: error: previous declaration as `parameter 
+   BELITSKY_INPUT_STRIP_length'
+confparse.inc:644: error: `cmd' was not declared in this scope
+confparse.inc:646: error: ISO C++ forbids declaration of `
+   BELITSKY_INPUT_STRIP_width_unit' with no type
+confparse.inc:646: error: conflicting types for `int 
+   BELITSKY_INPUT_STRIP_width_unit'
+globals.inc:219: error: previous declaration as `parameter 
+   BELITSKY_INPUT_STRIP_width_unit'
+confparse.inc:647: error: ISO C++ forbids declaration of `
+   BELITSKY_INPUT_STRIP_width_unitStr' with no type
+confparse.inc:647: error: conflicting types for `int 
+   BELITSKY_INPUT_STRIP_width_unitStr'
+globals.inc:220: error: previous declaration as `std::string 
+   BELITSKY_INPUT_STRIP_width_unitStr'
+confparse.inc:648: error: ISO C++ forbids declaration of `
+   BELITSKY_INPUT_STRIP_width' with no type
+confparse.inc:648: error: conflicting types for `int BELITSKY_INPUT_STRIP_width
+   '
+globals.inc:218: error: previous declaration as `parameter 
+   BELITSKY_INPUT_STRIP_width'
+confparse.inc:648: error: `cmd' was not declared in this scope
+confparse.inc:650: error: ISO C++ forbids declaration of `
+   BELITSKY_INPUT_STRIP_thick_unit' with no type
+confparse.inc:650: error: conflicting types for `int 
+   BELITSKY_INPUT_STRIP_thick_unit'
+globals.inc:222: error: previous declaration as `parameter 
+   BELITSKY_INPUT_STRIP_thick_unit'
+confparse.inc:651: error: ISO C++ forbids declaration of `
+   BELITSKY_INPUT_STRIP_thick_unitStr' with no type
+confparse.inc:651: error: conflicting types for `int 
+   BELITSKY_INPUT_STRIP_thick_unitStr'
+globals.inc:223: error: previous declaration as `std::string 
+   BELITSKY_INPUT_STRIP_thick_unitStr'
+confparse.inc:652: error: ISO C++ forbids declaration of `
+   BELITSKY_INPUT_STRIP_thick' with no type
+confparse.inc:652: error: conflicting types for `int BELITSKY_INPUT_STRIP_thick
+   '
+globals.inc:221: error: previous declaration as `parameter 
+   BELITSKY_INPUT_STRIP_thick'
+confparse.inc:652: error: `cmd' was not declared in this scope
+confparse.inc:654: error: parse error before `return'
+confparse.inc:657: error: `belitsky_tuning_strip' was not declared in this 
+   scope
+confparse.inc:658: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:658: error: redefinition of `int DOTCONF_CB'
+confparse.inc:641: error: `int DOTCONF_CB' previously defined here
+confparse.inc:658: error: syntax error before `{' token
+confparse.inc:660: error: ISO C++ forbids declaration of `
+   BELITSKY_TUNING_STRIP_length_unitStr' with no type
+confparse.inc:660: error: conflicting types for `int 
+   BELITSKY_TUNING_STRIP_length_unitStr'
+globals.inc:226: error: previous declaration as `std::string 
+   BELITSKY_TUNING_STRIP_length_unitStr'
+confparse.inc:661: error: ISO C++ forbids declaration of `
+   BELITSKY_TUNING_STRIP_length' with no type
+confparse.inc:661: error: conflicting types for `int 
+   BELITSKY_TUNING_STRIP_length'
+globals.inc:224: error: previous declaration as `parameter 
+   BELITSKY_TUNING_STRIP_length'
+confparse.inc:661: error: `cmd' was not declared in this scope
+confparse.inc:663: error: ISO C++ forbids declaration of `
+   BELITSKY_TUNING_STRIP_width_unit' with no type
+confparse.inc:663: error: conflicting types for `int 
+   BELITSKY_TUNING_STRIP_width_unit'
+globals.inc:228: error: previous declaration as `parameter 
+   BELITSKY_TUNING_STRIP_width_unit'
+confparse.inc:664: error: ISO C++ forbids declaration of `
+   BELITSKY_TUNING_STRIP_width_unitStr' with no type
+confparse.inc:664: error: conflicting types for `int 
+   BELITSKY_TUNING_STRIP_width_unitStr'
+globals.inc:229: error: previous declaration as `std::string 
+   BELITSKY_TUNING_STRIP_width_unitStr'
+confparse.inc:665: error: ISO C++ forbids declaration of `
+   BELITSKY_TUNING_STRIP_width' with no type
+confparse.inc:665: error: conflicting types for `int 
+   BELITSKY_TUNING_STRIP_width'
+globals.inc:227: error: previous declaration as `parameter 
+   BELITSKY_TUNING_STRIP_width'
+confparse.inc:665: error: `cmd' was not declared in this scope
+confparse.inc:667: error: ISO C++ forbids declaration of `
+   BELITSKY_TUNING_STRIP_thick_unit' with no type
+confparse.inc:667: error: conflicting types for `int 
+   BELITSKY_TUNING_STRIP_thick_unit'
+globals.inc:231: error: previous declaration as `parameter 
+   BELITSKY_TUNING_STRIP_thick_unit'
+confparse.inc:668: error: ISO C++ forbids declaration of `
+   BELITSKY_TUNING_STRIP_thick_unitStr' with no type
+confparse.inc:668: error: conflicting types for `int 
+   BELITSKY_TUNING_STRIP_thick_unitStr'
+globals.inc:232: error: previous declaration as `std::string 
+   BELITSKY_TUNING_STRIP_thick_unitStr'
+confparse.inc:669: error: ISO C++ forbids declaration of `
+   BELITSKY_TUNING_STRIP_thick' with no type
+confparse.inc:669: error: conflicting types for `int 
+   BELITSKY_TUNING_STRIP_thick'
+globals.inc:230: error: previous declaration as `parameter 
+   BELITSKY_TUNING_STRIP_thick'
+confparse.inc:669: error: `cmd' was not declared in this scope
+confparse.inc:671: error: parse error before `return'
+confparse.inc:676: error: `rf_choke_type' was not declared in this scope
+confparse.inc:677: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:677: error: redefinition of `int DOTCONF_CB'
+confparse.inc:658: error: `int DOTCONF_CB' previously defined here
+confparse.inc:677: error: syntax error before `{' token
+confparse.inc:682: error: `radial_choke_type' was not declared in this scope
+confparse.inc:683: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:683: error: redefinition of `int DOTCONF_CB'
+confparse.inc:677: error: `int DOTCONF_CB' previously defined here
+confparse.inc:683: error: syntax error before `{' token
+confparse.inc:688: error: `radial_choke_input' was not declared in this scope
+confparse.inc:689: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:689: error: redefinition of `int DOTCONF_CB'
+confparse.inc:683: error: `int DOTCONF_CB' previously defined here
+confparse.inc:689: error: syntax error before `{' token
+confparse.inc:691: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_INPUT_length_unitStr' with no type
+confparse.inc:691: error: conflicting types for `int 
+   RADIAL_CHOKE_INPUT_length_unitStr'
+globals.inc:241: error: previous declaration as `std::string 
+   RADIAL_CHOKE_INPUT_length_unitStr'
+confparse.inc:692: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_INPUT_length' with no type
+confparse.inc:692: error: conflicting types for `int RADIAL_CHOKE_INPUT_length'
+globals.inc:239: error: previous declaration as `parameter 
+   RADIAL_CHOKE_INPUT_length'
+confparse.inc:692: error: `cmd' was not declared in this scope
+confparse.inc:694: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_INPUT_width1_unit' with no type
+confparse.inc:694: error: conflicting types for `int 
+   RADIAL_CHOKE_INPUT_width1_unit'
+globals.inc:243: error: previous declaration as `parameter 
+   RADIAL_CHOKE_INPUT_width1_unit'
+confparse.inc:695: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_INPUT_width1_unitStr' with no type
+confparse.inc:695: error: conflicting types for `int 
+   RADIAL_CHOKE_INPUT_width1_unitStr'
+globals.inc:244: error: previous declaration as `std::string 
+   RADIAL_CHOKE_INPUT_width1_unitStr'
+confparse.inc:696: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_INPUT_width1' with no type
+confparse.inc:696: error: conflicting types for `int RADIAL_CHOKE_INPUT_width1'
+globals.inc:242: error: previous declaration as `parameter 
+   RADIAL_CHOKE_INPUT_width1'
+confparse.inc:696: error: `cmd' was not declared in this scope
+confparse.inc:698: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_INPUT_width2_unit' with no type
+confparse.inc:698: error: conflicting types for `int 
+   RADIAL_CHOKE_INPUT_width2_unit'
+globals.inc:246: error: previous declaration as `parameter 
+   RADIAL_CHOKE_INPUT_width2_unit'
+confparse.inc:699: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_INPUT_width2_unitStr' with no type
+confparse.inc:699: error: conflicting types for `int 
+   RADIAL_CHOKE_INPUT_width2_unitStr'
+globals.inc:247: error: previous declaration as `std::string 
+   RADIAL_CHOKE_INPUT_width2_unitStr'
+confparse.inc:700: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_INPUT_width2' with no type
+confparse.inc:700: error: conflicting types for `int RADIAL_CHOKE_INPUT_width2'
+globals.inc:245: error: previous declaration as `parameter 
+   RADIAL_CHOKE_INPUT_width2'
+confparse.inc:700: error: `cmd' was not declared in this scope
+confparse.inc:702: error: parse error before `return'
+confparse.inc:705: error: `radial_choke_fan' was not declared in this scope
+confparse.inc:706: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:706: error: redefinition of `int DOTCONF_CB'
+confparse.inc:689: error: `int DOTCONF_CB' previously defined here
+confparse.inc:706: error: syntax error before `{' token
+confparse.inc:708: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_FAN_radius_unitStr' with no type
+confparse.inc:708: error: conflicting types for `int 
+   RADIAL_CHOKE_FAN_radius_unitStr'
+globals.inc:250: error: previous declaration as `std::string 
+   RADIAL_CHOKE_FAN_radius_unitStr'
+confparse.inc:709: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_FAN_radius' with no type
+confparse.inc:709: error: conflicting types for `int RADIAL_CHOKE_FAN_radius'
+globals.inc:248: error: previous declaration as `parameter 
+   RADIAL_CHOKE_FAN_radius'
+confparse.inc:709: error: `cmd' was not declared in this scope
+confparse.inc:711: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_FAN_angle_unit' with no type
+confparse.inc:711: error: conflicting types for `int 
+   RADIAL_CHOKE_FAN_angle_unit'
+globals.inc:252: error: previous declaration as `parameter 
+   RADIAL_CHOKE_FAN_angle_unit'
+confparse.inc:712: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_FAN_angle_unitStr' with no type
+confparse.inc:712: error: conflicting types for `int 
+   RADIAL_CHOKE_FAN_angle_unitStr'
+globals.inc:253: error: previous declaration as `std::string 
+   RADIAL_CHOKE_FAN_angle_unitStr'
+confparse.inc:713: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_FAN_angle' with no type
+confparse.inc:713: error: conflicting types for `int RADIAL_CHOKE_FAN_angle'
+globals.inc:251: error: previous declaration as `parameter 
+   RADIAL_CHOKE_FAN_angle'
+confparse.inc:713: error: `cmd' was not declared in this scope
+confparse.inc:715: error: parse error before `return'
+confparse.inc:718: error: `radial_choke_output' was not declared in this scope
+confparse.inc:719: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:719: error: redefinition of `int DOTCONF_CB'
+confparse.inc:706: error: `int DOTCONF_CB' previously defined here
+confparse.inc:719: error: syntax error before `{' token
+confparse.inc:728: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_OUTPUT_length_unitStr' with no type
+confparse.inc:728: error: conflicting types for `int 
+   RADIAL_CHOKE_OUTPUT_length_unitStr'
+globals.inc:257: error: previous declaration as `std::string 
+   RADIAL_CHOKE_OUTPUT_length_unitStr'
+confparse.inc:729: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_OUTPUT_length_unit' with no type
+confparse.inc:729: error: conflicting types for `int 
+   RADIAL_CHOKE_OUTPUT_length_unit'
+globals.inc:256: error: previous declaration as `parameter 
+   RADIAL_CHOKE_OUTPUT_length_unit'
+confparse.inc:730: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_OUTPUT_length' with no type
+confparse.inc:730: error: conflicting types for `int RADIAL_CHOKE_OUTPUT_length
+   '
+globals.inc:255: error: previous declaration as `parameter 
+   RADIAL_CHOKE_OUTPUT_length'
+confparse.inc:730: error: `cmd' was not declared in this scope
+confparse.inc:731: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_OUTPUT_width_unitStr' with no type
+confparse.inc:731: error: conflicting types for `int 
+   RADIAL_CHOKE_OUTPUT_width_unitStr'
+globals.inc:260: error: previous declaration as `std::string 
+   RADIAL_CHOKE_OUTPUT_width_unitStr'
+confparse.inc:732: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_OUTPUT_width_unit' with no type
+confparse.inc:732: error: conflicting types for `int 
+   RADIAL_CHOKE_OUTPUT_width_unit'
+globals.inc:259: error: previous declaration as `parameter 
+   RADIAL_CHOKE_OUTPUT_width_unit'
+confparse.inc:733: error: ISO C++ forbids declaration of `
+   RADIAL_CHOKE_OUTPUT_width' with no type
+confparse.inc:733: error: conflicting types for `int RADIAL_CHOKE_OUTPUT_width'
+globals.inc:258: error: previous declaration as `parameter 
+   RADIAL_CHOKE_OUTPUT_width'
+confparse.inc:733: error: `cmd' was not declared in this scope
+confparse.inc:734: error: parse error before `}' token
+confparse.inc:739: error: `filter_choke_sections' was not declared in this 
+   scope
+confparse.inc:740: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:740: error: redefinition of `int DOTCONF_CB'
+confparse.inc:719: error: `int DOTCONF_CB' previously defined here
+confparse.inc:740: error: syntax error before `{' token
+confparse.inc:746: error: `filter_choke_input' was not declared in this scope
+confparse.inc:747: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:747: error: redefinition of `int DOTCONF_CB'
+confparse.inc:740: error: `int DOTCONF_CB' previously defined here
+confparse.inc:747: error: syntax error before `{' token
+confparse.inc:749: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_INPUT_width_unit' with no type
+confparse.inc:749: error: conflicting types for `int 
+   FILTER_CHOKE_INPUT_width_unit'
+globals.inc:268: error: previous declaration as `parameter 
+   FILTER_CHOKE_INPUT_width_unit'
+confparse.inc:750: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_INPUT_length_unitStr' with no type
+confparse.inc:750: error: conflicting types for `int 
+   FILTER_CHOKE_INPUT_length_unitStr'
+globals.inc:266: error: previous declaration as `std::string 
+   FILTER_CHOKE_INPUT_length_unitStr'
+confparse.inc:751: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_INPUT_width_unitStr' with no type
+confparse.inc:751: error: conflicting types for `int 
+   FILTER_CHOKE_INPUT_width_unitStr'
+globals.inc:269: error: previous declaration as `std::string 
+   FILTER_CHOKE_INPUT_width_unitStr'
+confparse.inc:753: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_INPUT_length' with no type
+confparse.inc:753: error: conflicting types for `int FILTER_CHOKE_INPUT_length'
+globals.inc:264: error: previous declaration as `parameter 
+   FILTER_CHOKE_INPUT_length'
+confparse.inc:753: error: `cmd' was not declared in this scope
+confparse.inc:754: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_INPUT_width' with no type
+confparse.inc:754: error: conflicting types for `int FILTER_CHOKE_INPUT_width'
+globals.inc:267: error: previous declaration as `parameter 
+   FILTER_CHOKE_INPUT_width'
+confparse.inc:754: error: `cmd' was not declared in this scope
+confparse.inc:756: error: parse error before `return'
+confparse.inc:759: error: `filter_choke_narrow' was not declared in this scope
+confparse.inc:760: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:760: error: redefinition of `int DOTCONF_CB'
+confparse.inc:747: error: `int DOTCONF_CB' previously defined here
+confparse.inc:760: error: syntax error before `{' token
+confparse.inc:762: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_NARROW_width_unit' with no type
+confparse.inc:762: error: conflicting types for `int 
+   FILTER_CHOKE_NARROW_width_unit'
+globals.inc:274: error: previous declaration as `parameter 
+   FILTER_CHOKE_NARROW_width_unit'
+confparse.inc:763: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_NARROW_length_unitStr' with no type
+confparse.inc:763: error: conflicting types for `int 
+   FILTER_CHOKE_NARROW_length_unitStr'
+globals.inc:272: error: previous declaration as `std::string 
+   FILTER_CHOKE_NARROW_length_unitStr'
+confparse.inc:764: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_NARROW_width_unitStr' with no type
+confparse.inc:764: error: conflicting types for `int 
+   FILTER_CHOKE_NARROW_width_unitStr'
+globals.inc:275: error: previous declaration as `std::string 
+   FILTER_CHOKE_NARROW_width_unitStr'
+confparse.inc:766: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_NARROW_length' with no type
+confparse.inc:766: error: conflicting types for `int FILTER_CHOKE_NARROW_length
+   '
+globals.inc:270: error: previous declaration as `parameter 
+   FILTER_CHOKE_NARROW_length'
+confparse.inc:766: error: `cmd' was not declared in this scope
+confparse.inc:767: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_NARROW_width' with no type
+confparse.inc:767: error: conflicting types for `int FILTER_CHOKE_NARROW_width'
+globals.inc:273: error: previous declaration as `parameter 
+   FILTER_CHOKE_NARROW_width'
+confparse.inc:767: error: `cmd' was not declared in this scope
+confparse.inc:769: error: parse error before `return'
+confparse.inc:772: error: `filter_choke_wide' was not declared in this scope
+confparse.inc:773: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:773: error: redefinition of `int DOTCONF_CB'
+confparse.inc:760: error: `int DOTCONF_CB' previously defined here
+confparse.inc:773: error: syntax error before `{' token
+confparse.inc:775: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_WIDE_width_unit' with no type
+confparse.inc:775: error: conflicting types for `int 
+   FILTER_CHOKE_WIDE_width_unit'
+globals.inc:280: error: previous declaration as `parameter 
+   FILTER_CHOKE_WIDE_width_unit'
+confparse.inc:776: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_WIDE_length_unitStr' with no type
+confparse.inc:776: error: conflicting types for `int 
+   FILTER_CHOKE_WIDE_length_unitStr'
+globals.inc:278: error: previous declaration as `std::string 
+   FILTER_CHOKE_WIDE_length_unitStr'
+confparse.inc:777: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_WIDE_width_unitStr' with no type
+confparse.inc:777: error: conflicting types for `int 
+   FILTER_CHOKE_WIDE_width_unitStr'
+globals.inc:281: error: previous declaration as `std::string 
+   FILTER_CHOKE_WIDE_width_unitStr'
+confparse.inc:779: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_WIDE_length' with no type
+confparse.inc:779: error: conflicting types for `int FILTER_CHOKE_WIDE_length'
+globals.inc:276: error: previous declaration as `parameter 
+   FILTER_CHOKE_WIDE_length'
+confparse.inc:779: error: `cmd' was not declared in this scope
+confparse.inc:780: error: ISO C++ forbids declaration of `
+   FILTER_CHOKE_WIDE_width' with no type
+confparse.inc:780: error: conflicting types for `int FILTER_CHOKE_WIDE_width'
+globals.inc:279: error: previous declaration as `parameter 
+   FILTER_CHOKE_WIDE_width'
+confparse.inc:780: error: `cmd' was not declared in this scope
+confparse.inc:782: error: parse error before `return'
+confparse.inc:787: error: `top_default' was not declared in this scope
+confparse.inc:788: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:788: error: redefinition of `int DOTCONF_CB'
+confparse.inc:773: error: `int DOTCONF_CB' previously defined here
+confparse.inc:788: error: syntax error before `{' token
+confparse.inc:793: error: `top_thickness' was not declared in this scope
+confparse.inc:794: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:794: error: redefinition of `int DOTCONF_CB'
+confparse.inc:788: error: `int DOTCONF_CB' previously defined here
+confparse.inc:794: error: syntax error before `{' token
+confparse.inc:796: error: ISO C++ forbids declaration of `TOP_THICKNESS_unitStr
+   ' with no type
+confparse.inc:796: error: conflicting types for `int TOP_THICKNESS_unitStr'
+globals.inc:292: error: previous declaration as `std::string 
+   TOP_THICKNESS_unitStr'
+confparse.inc:797: error: ISO C++ forbids declaration of `TOP_THICKNESS' with 
+   no type
+confparse.inc:797: error: conflicting types for `int TOP_THICKNESS'
+globals.inc:290: error: previous declaration as `parameter TOP_THICKNESS'
+confparse.inc:797: error: `cmd' was not declared in this scope
+confparse.inc:799: error: parse error before `return'
+confparse.inc:802: error: `ground_default' was not declared in this scope
+confparse.inc:803: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:803: error: redefinition of `int DOTCONF_CB'
+confparse.inc:794: error: `int DOTCONF_CB' previously defined here
+confparse.inc:803: error: syntax error before `{' token
+confparse.inc:808: error: `ground_thickness' was not declared in this scope
+confparse.inc:809: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:809: error: redefinition of `int DOTCONF_CB'
+confparse.inc:803: error: `int DOTCONF_CB' previously defined here
+confparse.inc:809: error: syntax error before `{' token
+confparse.inc:811: error: ISO C++ forbids declaration of `
+   GROUND_THICKNESS_unitStr' with no type
+confparse.inc:811: error: conflicting types for `int GROUND_THICKNESS_unitStr'
+globals.inc:298: error: previous declaration as `std::string 
+   GROUND_THICKNESS_unitStr'
+confparse.inc:812: error: ISO C++ forbids declaration of `GROUND_THICKNESS' 
+   with no type
+confparse.inc:812: error: conflicting types for `int GROUND_THICKNESS'
+globals.inc:296: error: previous declaration as `parameter GROUND_THICKNESS'
+confparse.inc:812: error: `cmd' was not declared in this scope
+confparse.inc:814: error: parse error before `return'
+confparse.inc:817: error: `insul_default' was not declared in this scope
+confparse.inc:818: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:818: error: redefinition of `int DOTCONF_CB'
+confparse.inc:809: error: `int DOTCONF_CB' previously defined here
+confparse.inc:818: error: syntax error before `{' token
+confparse.inc:823: error: `insul_thickness' was not declared in this scope
+confparse.inc:824: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:824: error: redefinition of `int DOTCONF_CB'
+confparse.inc:818: error: `int DOTCONF_CB' previously defined here
+confparse.inc:824: error: syntax error before `{' token
+confparse.inc:826: error: ISO C++ forbids declaration of `
+   INSUL_THICKNESS_unitStr' with no type
+confparse.inc:826: error: conflicting types for `int INSUL_THICKNESS_unitStr'
+globals.inc:304: error: previous declaration as `std::string 
+   INSUL_THICKNESS_unitStr'
+confparse.inc:827: error: ISO C++ forbids declaration of `INSUL_THICKNESS' with 
+   no type
+confparse.inc:827: error: conflicting types for `int INSUL_THICKNESS'
+globals.inc:302: error: previous declaration as `parameter INSUL_THICKNESS'
+confparse.inc:827: error: `cmd' was not declared in this scope
+confparse.inc:829: error: parse error before `return'
+confparse.inc:832: error: `cover_default' was not declared in this scope
+confparse.inc:833: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:833: error: redefinition of `int DOTCONF_CB'
+confparse.inc:824: error: `int DOTCONF_CB' previously defined here
+confparse.inc:833: error: syntax error before `{' token
+confparse.inc:838: error: `cover_thickness' was not declared in this scope
+confparse.inc:839: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:839: error: redefinition of `int DOTCONF_CB'
+confparse.inc:833: error: `int DOTCONF_CB' previously defined here
+confparse.inc:839: error: syntax error before `{' token
+confparse.inc:841: error: ISO C++ forbids declaration of `
+   COVER_THICKNESS_unitStr' with no type
+confparse.inc:841: error: conflicting types for `int COVER_THICKNESS_unitStr'
+globals.inc:310: error: previous declaration as `std::string 
+   COVER_THICKNESS_unitStr'
+confparse.inc:842: error: ISO C++ forbids declaration of `COVER_THICKNESS' with 
+   no type
+confparse.inc:842: error: conflicting types for `int COVER_THICKNESS'
+globals.inc:308: error: previous declaration as `parameter COVER_THICKNESS'
+confparse.inc:842: error: `cmd' was not declared in this scope
+confparse.inc:844: error: parse error before `return'
+confparse.inc:848: error: `nb_properties' was not declared in this scope
+confparse.inc:849: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:849: error: redefinition of `int DOTCONF_CB'
+confparse.inc:839: error: `int DOTCONF_CB' previously defined here
+confparse.inc:849: error: syntax error before `{' token
+confparse.inc:851: error: ISO C++ forbids declaration of `NB_Tc' with no type
+confparse.inc:851: error: conflicting types for `int NB_Tc'
+globals.inc:318: error: previous declaration as `parameter NB_Tc'
+confparse.inc:851: error: `cmd' was not declared in this scope
+confparse.inc:852: error: ISO C++ forbids declaration of `NB_Rho_normal' with 
+   no type
+confparse.inc:852: error: conflicting types for `int NB_Rho_normal'
+globals.inc:319: error: previous declaration as `parameter NB_Rho_normal'
+confparse.inc:852: error: `cmd' was not declared in this scope
+confparse.inc:854: error: parse error before `return'
+confparse.inc:857: error: `nbtin_properties' was not declared in this scope
+confparse.inc:858: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:858: error: redefinition of `int DOTCONF_CB'
+confparse.inc:849: error: `int DOTCONF_CB' previously defined here
+confparse.inc:858: error: syntax error before `{' token
+confparse.inc:860: error: ISO C++ forbids declaration of `NBTIN_Tc' with no 
+   type
+confparse.inc:860: error: conflicting types for `int NBTIN_Tc'
+globals.inc:323: error: previous declaration as `parameter NBTIN_Tc'
+confparse.inc:860: error: `cmd' was not declared in this scope
+confparse.inc:861: error: ISO C++ forbids declaration of `NBTIN_Rho_normal' 
+   with no type
+confparse.inc:861: error: conflicting types for `int NBTIN_Rho_normal'
+globals.inc:324: error: previous declaration as `parameter NBTIN_Rho_normal'
+confparse.inc:861: error: `cmd' was not declared in this scope
+confparse.inc:863: error: parse error before `return'
+confparse.inc:866: error: `sio_properties' was not declared in this scope
+confparse.inc:867: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:867: error: redefinition of `int DOTCONF_CB'
+confparse.inc:858: error: `int DOTCONF_CB' previously defined here
+confparse.inc:867: error: syntax error before `{' token
+confparse.inc:869: error: ISO C++ forbids declaration of `SIO_loss_tangent' 
+   with no type
+confparse.inc:869: error: conflicting types for `int SIO_loss_tangent'
+globals.inc:328: error: previous declaration as `parameter SIO_loss_tangent'
+confparse.inc:869: error: `cmd' was not declared in this scope
+confparse.inc:871: error: parse error before `return'
+confparse.inc:875: error: `cb_fallback' was not declared in this scope
+confparse.inc:876: error: ISO C++ forbids declaration of `DOTCONF_CB' with no 
+   type
+confparse.inc:876: error: redefinition of `int DOTCONF_CB'
+confparse.inc:867: error: `int DOTCONF_CB' previously defined here
+confparse.inc:876: error: syntax error before `{' token
+In file included from simple.c:34:
+confprint.inc: In function `int outputConf()':
+confprint.inc:36: error: request for member `c_str' in `RNA_unitStr', which is 
+   of non-aggregate type `int'
+confprint.inc:37: error: request for member `c_str' in `SCAP_unitStr', which is 
+   of non-aggregate type `int'
+confprint.inc:38: error: request for member `c_str' in `AREA_unitStr', which is 
+   of non-aggregate type `int'
+confprint.inc:39: error: request for member `c_str' in `VGAP_unitStr', which is 
+   of non-aggregate type `int'
+confprint.inc:57: warning: double format, different type arg (arg 3)
+confprint.inc:57: warning: double format, different type arg (arg 4)
+confprint.inc:60: warning: double format, different type arg (arg 2)
+confprint.inc:60: warning: double format, different type arg (arg 3)
+confprint.inc:63: warning: double format, different type arg (arg 3)
+confprint.inc:68: warning: double format, different type arg (arg 3)
+confprint.inc:69: warning: double format, different type arg (arg 3)
+confprint.inc:70: warning: double format, different type arg (arg 3)
+confprint.inc:80: warning: double format, different type arg (arg 3)
+confprint.inc:80: warning: double format, different type arg (arg 4)
+confprint.inc:83: warning: double format, different type arg (arg 3)
+confprint.inc:92: warning: double format, different type arg (arg 3)
+confprint.inc:92: warning: double format, different type arg (arg 4)
+confprint.inc:95: warning: double format, different type arg (arg 3)
+confprint.inc:100: warning: double format, different type arg (arg 3)
+confprint.inc:100: warning: double format, different type arg (arg 4)
+confprint.inc:103: warning: double format, different type arg (arg 3)
+confprint.inc:112: warning: double format, different type arg (arg 3)
+confprint.inc:112: warning: double format, different type arg (arg 4)
+confprint.inc:115: warning: double format, different type arg (arg 3)
+confprint.inc:120: warning: double format, different type arg (arg 3)
+confprint.inc:120: warning: double format, different type arg (arg 4)
+confprint.inc:123: warning: double format, different type arg (arg 3)
+confprint.inc:128: warning: double format, different type arg (arg 3)
+confprint.inc:128: warning: double format, different type arg (arg 4)
+confprint.inc:131: warning: double format, different type arg (arg 3)
+confprint.inc:139: warning: double format, different type arg (arg 3)
+confprint.inc:139: warning: double format, different type arg (arg 4)
+confprint.inc:143: warning: double format, different type arg (arg 3)
+confprint.inc:143: warning: double format, different type arg (arg 4)
+confprint.inc:151: warning: double format, different type arg (arg 3)
+confprint.inc:151: warning: double format, different type arg (arg 4)
+confprint.inc:155: warning: double format, different type arg (arg 3)
+confprint.inc:155: warning: double format, different type arg (arg 4)
+confprint.inc:163: warning: double format, different type arg (arg 3)
+confprint.inc:163: warning: double format, different type arg (arg 4)
+confprint.inc:166: warning: double format, different type arg (arg 3)
+confprint.inc:171: warning: double format, different type arg (arg 3)
+confprint.inc:172: warning: double format, different type arg (arg 3)
+confprint.inc:173: warning: double format, different type arg (arg 3)
+simple.c: In function `int main(int, char**)':
+simple.c:44: error: `configfile_t' undeclared (first use this function)
+simple.c:44: error: (Each undeclared identifier is reported only once for each 
+   function it appears in.)
+simple.c:44: error: `configfile' undeclared (first use this function)
+simple.c:47: error: `options' undeclared (first use this function)
+simple.c:47: error: `CASE_INSENSITIVE' undeclared (first use this function)
+simple.c:47: error: `dotconf_create' undeclared (first use this function)
+simple.c:55: error: `dotconf_command_loop' undeclared (first use this function)
+simple.c:60: error: `dotconf_cleanup' undeclared (first use this function)
+simple.c:65: error: `mixerconfigfile' undeclared (first use this function)
+In file included from simple.c:90:
+mixer_build.inc:14: error: invalid conversion from `int*' to `int'
+mixer_build.inc:14: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:15: error: invalid conversion from `int*' to `int'
+mixer_build.inc:15: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:16: error: invalid conversion from `int*' to `int'
+mixer_build.inc:16: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:24: error: invalid conversion from `int*' to `int'
+mixer_build.inc:24: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:25: error: invalid conversion from `int*' to `int'
+mixer_build.inc:25: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:30: error: invalid conversion from `int*' to `int'
+mixer_build.inc:30: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:31: error: invalid conversion from `int*' to `int'
+mixer_build.inc:31: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:33: error: invalid conversion from `int*' to `int'
+mixer_build.inc:33: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:40: error: invalid conversion from `int*' to `int'
+mixer_build.inc:40: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:41: error: invalid conversion from `int*' to `int'
+mixer_build.inc:41: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:46: error: invalid conversion from `int*' to `int'
+mixer_build.inc:46: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:47: error: invalid conversion from `int*' to `int'
+mixer_build.inc:47: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:49: error: invalid conversion from `int*' to `int'
+mixer_build.inc:49: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:56: error: invalid conversion from `int*' to `int'
+mixer_build.inc:56: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:68: error: invalid conversion from `int*' to `int'
+mixer_build.inc:68: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+In file included from mixer_build.inc:78,
+                 from simple.c:90:
+build_tuner.inc:20: error: invalid conversion from `int*' to `int'
+build_tuner.inc:20: error:   initializing argument 1 of `
+   complex_parameter::complex_parameter(int)'
+build_tuner.inc:21: error: invalid conversion from `int*' to `int'
+build_tuner.inc:21: error:   initializing argument 1 of `
+   complex_parameter::complex_parameter(int)'
+build_tuner.inc:53: error: invalid conversion from `int*' to `int'
+build_tuner.inc:53: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:54: error: invalid conversion from `int*' to `int'
+build_tuner.inc:54: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:55: error: invalid conversion from `int*' to `int'
+build_tuner.inc:55: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:56: error: invalid conversion from `int*' to `int'
+build_tuner.inc:56: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:57: error: invalid conversion from `int*' to `int'
+build_tuner.inc:57: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:65: error: invalid conversion from `int*' to `int'
+build_tuner.inc:65: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:66: error: invalid conversion from `int*' to `int'
+build_tuner.inc:66: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:67: error: invalid conversion from `int*' to `int'
+build_tuner.inc:67: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:86: error: invalid conversion from `int*' to `int'
+build_tuner.inc:86: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:87: error: invalid conversion from `int*' to `int'
+build_tuner.inc:87: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:88: error: invalid conversion from `int*' to `int'
+build_tuner.inc:88: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:95: error: invalid conversion from `int*' to `int'
+build_tuner.inc:95: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:96: error: invalid conversion from `int*' to `int'
+build_tuner.inc:96: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:97: error: invalid conversion from `int*' to `int'
+build_tuner.inc:97: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:107: error: invalid conversion from `int*' to `int'
+build_tuner.inc:107: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:108: error: invalid conversion from `int*' to `int'
+build_tuner.inc:108: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:109: error: invalid conversion from `int*' to `int'
+build_tuner.inc:109: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:153: error: invalid conversion from `int*' to `int'
+build_tuner.inc:153: error:   initializing argument 1 of `
+   complex_parameter::complex_parameter(int)'
+build_tuner.inc:154: error: invalid conversion from `int*' to `int'
+build_tuner.inc:154: error:   initializing argument 1 of `
+   complex_parameter::complex_parameter(int)'
+build_tuner.inc:160: error: invalid conversion from `int*' to `int'
+build_tuner.inc:160: error:   initializing argument 1 of `
+   complex_parameter::complex_parameter(int)'
+build_tuner.inc:161: error: invalid conversion from `int*' to `int'
+build_tuner.inc:161: error:   initializing argument 1 of `
+   complex_parameter::complex_parameter(int)'
+build_tuner.inc:184: error: invalid conversion from `int*' to `int'
+build_tuner.inc:184: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:191: error: invalid conversion from `int*' to `int'
+build_tuner.inc:191: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:192: error: invalid conversion from `int*' to `int'
+build_tuner.inc:192: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:193: error: invalid conversion from `int*' to `int'
+build_tuner.inc:193: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:194: error: invalid conversion from `int*' to `int'
+build_tuner.inc:194: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:208: error: invalid conversion from `int*' to `int'
+build_tuner.inc:208: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:209: error: invalid conversion from `int*' to `int'
+build_tuner.inc:209: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:210: error: invalid conversion from `int*' to `int'
+build_tuner.inc:210: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:211: error: invalid conversion from `int*' to `int'
+build_tuner.inc:211: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:212: error: invalid conversion from `int*' to `int'
+build_tuner.inc:212: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:228: error: invalid conversion from `int*' to `int'
+build_tuner.inc:228: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:229: error: invalid conversion from `int*' to `int'
+build_tuner.inc:229: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:230: error: invalid conversion from `int*' to `int'
+build_tuner.inc:230: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:231: error: invalid conversion from `int*' to `int'
+build_tuner.inc:231: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:232: error: invalid conversion from `int*' to `int'
+build_tuner.inc:232: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:241: error: invalid conversion from `int*' to `int'
+build_tuner.inc:241: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:242: error: invalid conversion from `int*' to `int'
+build_tuner.inc:242: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:243: error: invalid conversion from `int*' to `int'
+build_tuner.inc:243: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:244: error: invalid conversion from `int*' to `int'
+build_tuner.inc:244: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:245: error: invalid conversion from `int*' to `int'
+build_tuner.inc:245: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:262: error: invalid conversion from `int*' to `int'
+build_tuner.inc:262: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:263: error: invalid conversion from `int*' to `int'
+build_tuner.inc:263: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:264: error: invalid conversion from `int*' to `int'
+build_tuner.inc:264: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:265: error: invalid conversion from `int*' to `int'
+build_tuner.inc:265: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:266: error: invalid conversion from `int*' to `int'
+build_tuner.inc:266: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:282: error: invalid conversion from `int*' to `int'
+build_tuner.inc:282: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:283: error: invalid conversion from `int*' to `int'
+build_tuner.inc:283: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:284: error: invalid conversion from `int*' to `int'
+build_tuner.inc:284: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:285: error: invalid conversion from `int*' to `int'
+build_tuner.inc:285: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:286: error: invalid conversion from `int*' to `int'
+build_tuner.inc:286: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:294: error: invalid conversion from `int*' to `int'
+build_tuner.inc:294: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:295: error: invalid conversion from `int*' to `int'
+build_tuner.inc:295: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:296: error: invalid conversion from `int*' to `int'
+build_tuner.inc:296: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:297: error: invalid conversion from `int*' to `int'
+build_tuner.inc:297: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:298: error: invalid conversion from `int*' to `int'
+build_tuner.inc:298: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:306: error: invalid conversion from `int*' to `int'
+build_tuner.inc:306: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:307: error: invalid conversion from `int*' to `int'
+build_tuner.inc:307: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:308: error: invalid conversion from `int*' to `int'
+build_tuner.inc:308: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:309: error: invalid conversion from `int*' to `int'
+build_tuner.inc:309: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:310: error: invalid conversion from `int*' to `int'
+build_tuner.inc:310: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:330: error: invalid conversion from `int*' to `int'
+build_tuner.inc:330: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:331: error: invalid conversion from `int*' to `int'
+build_tuner.inc:331: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:332: error: invalid conversion from `int*' to `int'
+build_tuner.inc:332: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:333: error: invalid conversion from `int*' to `int'
+build_tuner.inc:333: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:334: error: invalid conversion from `int*' to `int'
+build_tuner.inc:334: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:353: error: invalid conversion from `int*' to `int'
+build_tuner.inc:353: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:354: error: invalid conversion from `int*' to `int'
+build_tuner.inc:354: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:355: error: invalid conversion from `int*' to `int'
+build_tuner.inc:355: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:363: error: invalid conversion from `int*' to `int'
+build_tuner.inc:363: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:364: error: invalid conversion from `int*' to `int'
+build_tuner.inc:364: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:365: error: invalid conversion from `int*' to `int'
+build_tuner.inc:365: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:385: error: invalid conversion from `int*' to `int'
+build_tuner.inc:385: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:386: error: invalid conversion from `int*' to `int'
+build_tuner.inc:386: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:387: error: invalid conversion from `int*' to `int'
+build_tuner.inc:387: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:406: error: invalid conversion from `int*' to `int'
+build_tuner.inc:406: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:407: error: invalid conversion from `int*' to `int'
+build_tuner.inc:407: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:408: error: invalid conversion from `int*' to `int'
+build_tuner.inc:408: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:416: error: invalid conversion from `int*' to `int'
+build_tuner.inc:416: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:417: error: invalid conversion from `int*' to `int'
+build_tuner.inc:417: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:418: error: invalid conversion from `int*' to `int'
+build_tuner.inc:418: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:438: error: invalid conversion from `int*' to `int'
+build_tuner.inc:438: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:439: error: invalid conversion from `int*' to `int'
+build_tuner.inc:439: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+build_tuner.inc:440: error: invalid conversion from `int*' to `int'
+build_tuner.inc:440: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+In file included from simple.c:90:
+mixer_build.inc:84: error: invalid conversion from `int*' to `int'
+mixer_build.inc:84: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+mixer_build.inc:117: error: invalid conversion from `int*' to `int'
+mixer_build.inc:117: error:   initializing argument 1 of `
+   real_parameter::real_parameter(int)'
+confparse.inc: In function `void __static_initialization_and_destruction_0(int, 
+   int)':
+confparse.inc:375: warning: statement with no effect
+confparse.inc:384: warning: statement with no effect
+confparse.inc:393: warning: statement with no effect
+confparse.inc:402: warning: statement with no effect
+confparse.inc:430: warning: statement with no effect
+confparse.inc:433: warning: statement with no effect
+confparse.inc:434: warning: statement with no effect
+confparse.inc:437: warning: statement with no effect
+confparse.inc:438: warning: statement with no effect
+confparse.inc:447: warning: statement with no effect
+confparse.inc:450: warning: statement with no effect
+confparse.inc:451: warning: statement with no effect
+confparse.inc:467: warning: statement with no effect
+confparse.inc:470: warning: statement with no effect
+confparse.inc:471: warning: statement with no effect
+confparse.inc:474: warning: statement with no effect
+confparse.inc:475: warning: statement with no effect
+confparse.inc:484: warning: statement with no effect
+confparse.inc:487: warning: statement with no effect
+confparse.inc:488: warning: statement with no effect
+confparse.inc:503: warning: statement with no effect
+confparse.inc:506: warning: statement with no effect
+confparse.inc:507: warning: statement with no effect
+confparse.inc:510: warning: statement with no effect
+confparse.inc:511: warning: statement with no effect
+confparse.inc:520: warning: statement with no effect
+confparse.inc:523: warning: statement with no effect
+confparse.inc:524: warning: statement with no effect
+confparse.inc:540: warning: statement with no effect
+confparse.inc:543: warning: statement with no effect
+confparse.inc:544: warning: statement with no effect
+confparse.inc:547: warning: statement with no effect
+confparse.inc:548: warning: statement with no effect
+confparse.inc:557: warning: statement with no effect
+confparse.inc:560: warning: statement with no effect
+confparse.inc:561: warning: statement with no effect
+confparse.inc:576: warning: statement with no effect
+confparse.inc:579: warning: statement with no effect
+confparse.inc:580: warning: statement with no effect
+confparse.inc:583: warning: statement with no effect
+confparse.inc:584: warning: statement with no effect
+confparse.inc:593: warning: statement with no effect
+confparse.inc:596: warning: statement with no effect
+confparse.inc:597: warning: statement with no effect
+confparse.inc:612: warning: statement with no effect
+confparse.inc:615: warning: statement with no effect
+confparse.inc:616: warning: statement with no effect
+confparse.inc:619: warning: statement with no effect
+confparse.inc:620: warning: statement with no effect
+confparse.inc:629: warning: statement with no effect
+confparse.inc:632: warning: statement with no effect
+confparse.inc:633: warning: statement with no effect
+confparse.inc:643: warning: statement with no effect
+confparse.inc:646: warning: statement with no effect
+confparse.inc:647: warning: statement with no effect
+confparse.inc:650: warning: statement with no effect
+confparse.inc:651: warning: statement with no effect
+confparse.inc:660: warning: statement with no effect
+confparse.inc:663: warning: statement with no effect
+confparse.inc:664: warning: statement with no effect
+confparse.inc:667: warning: statement with no effect
+confparse.inc:668: warning: statement with no effect
+confparse.inc:691: warning: statement with no effect
+confparse.inc:694: warning: statement with no effect
+confparse.inc:695: warning: statement with no effect
+confparse.inc:698: warning: statement with no effect
+confparse.inc:699: warning: statement with no effect
+confparse.inc:708: warning: statement with no effect
+confparse.inc:711: warning: statement with no effect
+confparse.inc:712: warning: statement with no effect
+confparse.inc:728: warning: statement with no effect
+confparse.inc:729: warning: statement with no effect
+confparse.inc:731: warning: statement with no effect
+confparse.inc:732: warning: statement with no effect
+confparse.inc:749: warning: statement with no effect
+confparse.inc:750: warning: statement with no effect
+confparse.inc:751: warning: statement with no effect
+confparse.inc:762: warning: statement with no effect
+confparse.inc:763: warning: statement with no effect
+confparse.inc:764: warning: statement with no effect
+confparse.inc:775: warning: statement with no effect
+confparse.inc:776: warning: statement with no effect
+confparse.inc:777: warning: statement with no effect
+confparse.inc:796: warning: statement with no effect
+confparse.inc:811: warning: statement with no effect
+confparse.inc:826: warning: statement with no effect
+confparse.inc:841: warning: statement with no effect
+/usr/include/c++/3.3/bits/stl_map.h: At top level:
+confparse.inc:22: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:23: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:25: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:26: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:27: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:28: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:29: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:30: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:31: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:32: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:36: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:37: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:38: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:39: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:40: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:42: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:43: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:44: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:45: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:46: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:47: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:49: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:50: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:53: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:54: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:55: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:58: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:59: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:60: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:61: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:62: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:63: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:66: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:67: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:68: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:69: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:70: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:71: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:72: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:73: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:74: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:77: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:78: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:81: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:82: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:83: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:84: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:85: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:86: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:87: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:88: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:89: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:92: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:93: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:94: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:95: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:96: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:97: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:98: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:99: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:102: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:103: warning: `int DOTCONF_CB' defined but not used
+confparse.inc:104: warning: `int DOTCONF_CB' defined but not used
+make: *** [simple] Error 1

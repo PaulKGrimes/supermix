@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="30"
+   name=""
+   committed-date="2004-12-06T18:12:58.153974Z"
+   url="file:///svn/MultiTone/MultiTone/branches/SuperMix-numerics-branch/src"
+   last-author="pkg22"
+   kind="dir"
+   uuid="8c93da9f-85d9-0310-a74c-cd56c53ec461"
+   revision="33"/>
+<entry
+   committed-rev="22"
+   name="Integrator.cpp"
+   text-time="2004-09-21T15:34:55.000000Z"
+   committed-date="2004-07-01T14:54:10.116649Z"
+   checksum="bc43d9b6e5dcdcb10b1bd57af3cbcf48"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:16.000000Z"/>
+<entry
+   committed-rev="30"
+   name="MultiTone.cpp"
+   text-time="2004-09-21T15:34:55.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="a9530a0780404c6d26cb763b1bac3914"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:16.000000Z"/>
+<entry
+   committed-rev="30"
+   name="One_Harmonic.cpp"
+   text-time="2004-09-21T15:34:55.000000Z"
+   committed-date="2004-12-06T18:12:58.153974Z"
+   checksum="922d99dd738f77fdd3e53a36f2a555e8"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:16.000000Z"/>
+<entry
+   committed-rev="18"
+   name="BesselFn.cpp"
+   text-time="2004-09-21T15:34:55.000000Z"
+   committed-date="2004-07-01T13:26:26.505035Z"
+   checksum="9c6ae87caab3f29e7bd39fe700f9d0bc"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:16.000000Z"/>
+<entry
+   committed-rev="20"
+   name="One_Frequency.cpp"
+   text-time="2004-09-21T15:34:55.000000Z"
+   committed-date="2004-07-01T14:10:36.154335Z"
+   checksum="0ebfd67fb20eccc8041a3be3cb7d78b5"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:16.000000Z"/>
+<entry
+   committed-rev="22"
+   name="ResponseFn.cpp"
+   text-time="2004-09-21T15:34:55.000000Z"
+   committed-date="2004-07-01T14:54:10.116649Z"
+   checksum="a91e61af8713e0b2b7755f2682c6ba09"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:16.000000Z"/>
+<entry
+   committed-rev="22"
+   name="Multi_Frequency.cpp"
+   text-time="2004-09-21T15:34:55.000000Z"
+   committed-date="2004-07-01T14:54:10.116649Z"
+   checksum="926f74984f17eadd05f76f18443d7c7c"
+   last-author="pkg22"
+   kind="file"
+   prop-time="2004-07-07T11:13:16.000000Z"/>
+</wc-entries>
