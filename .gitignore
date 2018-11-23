@@ -1,6 +1,8 @@
+# This pattern ignores all files without extensions, except Makefile
 *
 !*.*
 !*/
-
+!Makefile
+# Add regular ignore patterns here.
 *.o
 *.a
