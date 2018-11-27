@@ -1,0 +1,40 @@
+#!/bin/sh
+gnuplot << EOF
+
+set grid
+
+set terminal postscript eps solid color enhanced "Helvetica" 8 lw 0.5
+set output "$1.eps"
+
+set multiplot
+
+set origin 0.1, 0.5
+set size 0.4, 0.4
+set title "Gain"
+plot [:][-30:] "$1.dat" using 1:(10*log10(\$2)) title "LSB Gain" with lines, \
+	"$1.dat" using 1:(10*log10(\$3)) title "USB Gain" with lines, \
+	"$1.dat" using 1:(10*log10((\$6-\$5)/210.0)) title "DSB Gain" with lines
+
+set origin 0.5, 0.5
+set size 0.4, 0.4
+set title "SSB Noise Temp"
+plot [:][0:100] "$1.dat" using 1:(\$4/\$2) title "LSB Noise" with lines, \
+	"$1.dat" using 1:(\$4/\$3) title "USB Noise" with lines
+
+set origin 0.1, 0.1
+set size 0.4, 0.4
+set title "IF Embedding Impedance"
+plot [:][-1:1] "$1.dat" using 1:13 title "Re J1" with lines, \
+	 "$1.dat" using 1:14 title "Im J1" with lines, \
+	 "$1.dat" using 1:15 title "Re J2" with lines, \
+	 "$1.dat" using 1:16 title "Im J2" with lines
+
+
+set origin 0.5, 0.1
+set size 0.4, 0.4
+set title "DSB Noise Temp"
+plot [:][0:100] "$1.dat" using 1:(\$4/(\$2+\$3)) title "DSB Noise" with lines, \
+	"$1.dat" using 1:((297-(\$6/\$5)*77)/((\$6/\$5)-1)) title "YFact Noise" with lines
+
+EOF
+
