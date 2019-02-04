@@ -3,8 +3,8 @@ gnuplot << EOF
 
 set grid
 
-set terminal postscript eps solid color enhanced "Helvetica" 8 lw 0.5
-set output "$1.eps"
+set terminal pngcairo solid color enhanced size 1024, 768
+set output "$1.png"
 
 set multiplot
 
@@ -37,4 +37,3 @@ plot [:][0:100] "$1.dat" using 1:(\$4/(\$2+\$3)) title "DSB Noise" with lines, \
 	"$1.dat" using 1:((297-(\$6/\$5)*77)/((\$6/\$5)-1)) title "YFact Noise" with lines
 
 EOF
-
