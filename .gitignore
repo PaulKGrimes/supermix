@@ -7,3 +7,6 @@
 *.o
 *.a
 /library/obj
+*.dat
+*.eps
+*.png
