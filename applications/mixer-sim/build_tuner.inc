@@ -546,5 +546,86 @@ if (TUNER_TYPE == "BEL_WITH_RFCHOKE")
 
 }
 
+if (TUNER_TYPE == "SERIES_DISTRIBUTED_2")
+{
+    // RF Circuit
+    // Create microstrip - add switch here for CPW options
+    // Material specs
+    if (SDM_INPUT_TYPE == "COPLANAR")
+    {
+        Input_Strip_CPW.ground_plane(Ground);
+        Input_Strip_CPW.substrate(Insulation);
+        Input_Strip_CPW.top_strip(Top);
+        Input_Strip_CPW.superstrate(Cover);
+        // Physical dimensions
+        Input_Strip_CPW.length = & SDM_INPUT_STRIP_length;
+        Input_Strip_CPW.width = & SDM_INPUT_STRIP_width1;
+        Input_Strip_CPW.gap = & SDM_INPUT_STRIP_width2;
+
+        Input_Strip = &Input_Strip_CPW;
+    }
+    else // assume microstrip
+    {
+        Input_Strip_MS.ground_plane(Ground);
+        Input_Strip_MS.substrate(Insulation);
+        Input_Strip_MS.top_strip(Top);
+        Input_Strip_MS.superstrate(Cover);
+        // Physical dimensions
+        Input_Strip_MS.length = & SDM_INPUT_STRIP_length;
+        Input_Strip_MS.width = & SDM_INPUT_STRIP_width1;
+        Input_Strip_MS.sub_thick = & SDM_INPUT_STRIP_width2;
+
+        Input_Strip = &Input_Strip_MS;
+    }
+
+    if (SDM_TUNER_12_TYPE == "COPLANAR")
+    {
+        Tuning_Strip_CPW.ground_plane(Ground);
+        Tuning_Strip_CPW.substrate(Insulation);
+        Tuning_Strip_CPW.top_strip(Top);
+        Tuning_Strip_CPW.superstrate(Cover);
+        // Physical dimensions
+        Tuning_Strip_CPW.length = & SDM_TUNER_12_STRIP_length;
+        Tuning_Strip_CPW.width = & SDM_TUNER_12_STRIP_width1;
+        Tuning_Strip_CPW.gap = & SDM_TUNER_12_STRIP_width2;
+
+        Tuning_Strip = &Tuning_Strip_CPW;
+    }
+    else // assume microstrip
+    {
+        Tuning_Strip_MS.ground_plane(Ground);
+        Tuning_Strip_MS.substrate(Insulation);
+        Tuning_Strip_MS.top_strip(Top);
+        Tuning_Strip_MS.superstrate(Cover);
+        // Physical dimensions
+        Tuning_Strip_MS.length = & SDM_TUNER_12_STRIP_length;
+        Tuning_Strip_MS.width = & SDM_TUNER_12_STRIP_width1;
+        Tuning_Strip_MS.sub_thick = & SDM_TUNER_12_STRIP_width2;
+
+        Tuning_Strip = &Tuning_Strip_MS;
+    }
+
+
+    Rf_Branch.set_branches(3);
+
+    // Connect circuit
+    Rf.connect(Rf_Input, 2, *Input_Strip, 1);
+    Rf.connect(*Input_Strip, 2, Rf_Branch, 2);
+    Rf.connect(Rf_Branch, 3, *Tuning_Strip, 1);
+
+    // add ports
+    Rf.add_port(Rf_Branch, 1); // SIS 1
+    Rf.add_port(*Tuning_Strip, 2);  // SIS 2
+    Rf.add_port(Rf_Input, 1);   // RF Input
+
+    // IF Circuit
+
+    // Connect circuit and add ports
+    If.connect(*Tuning_Strip, 2, If_Branch, 1);
+    If.connect(If_Branch, 3, If_Load, 1);
+    If.add_port(*Tuning_Strip, 1);   // SIS_1
+    If.add_port(If_Branch, 2);  // SIS_2
+    If.add_port(If_Load, 2);  // If output
+}
 
 printf("# tuner complete\n");
