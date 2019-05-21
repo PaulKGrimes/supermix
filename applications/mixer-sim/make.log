@@ -1,0 +1,24 @@
+mixer-sim.c: In function ‘int main(int, char**)’:
+mixer-sim.c:47:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+                         options, NULL, CASE_INSENSITIVE);
+                                                        ^
+In file included from mixer_build.inc:78:0,
+                 from mixer-sim.c:90:
+build_tuner.inc:191:12: warning: unused variable ‘Tuning_Strip_2’ [-Wunused-variable]
+ trl_base * Tuning_Strip_2;
+            ^~~~~~~~~~~~~~
+build_tuner.inc:192:12: warning: unused variable ‘Tuning_Strip_3’ [-Wunused-variable]
+ trl_base * Tuning_Strip_3;
+            ^~~~~~~~~~~~~~
+mixer-sim2.c: In function ‘int main(int, char**)’:
+mixer-sim2.c:47:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+                         options, NULL, CASE_INSENSITIVE);
+                                                        ^
+In file included from mixer_build.inc:78:0,
+                 from mixer-sim2.c:90:
+build_tuner.inc:191:12: warning: unused variable ‘Tuning_Strip_2’ [-Wunused-variable]
+ trl_base * Tuning_Strip_2;
+            ^~~~~~~~~~~~~~
+build_tuner.inc:192:12: warning: unused variable ‘Tuning_Strip_3’ [-Wunused-variable]
+ trl_base * Tuning_Strip_3;
+            ^~~~~~~~~~~~~~

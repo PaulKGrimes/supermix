@@ -70,11 +70,11 @@ if (RF_CHOKE_TYPE == "RADIAL")
     Radial_Choke_Output.length = & RADIAL_CHOKE_OUTPUT_length;
     Radial_Choke_Output.width = & RADIAL_CHOKE_OUTPUT_width;
     Radial_Choke_Output.sub_thick = & INSUL_THICKNESS;
-    
+
     Rf_Choke.connect( Radial_Choke, 2, Radial_Choke_Output, 1);
     Rf_Choke.connect( Radial_Choke_Output, 2, Rf_Choke_Term, 1);
     Rf_Choke.add_port( Radial_Choke, 1);
-    
+
     If_Choke.connect( Radial_Choke, 2, Radial_Choke_Output, 1);
     If_Choke.add_port( Radial_Choke, 1);
     If_Choke.add_port( Radial_Choke_Output, 2);
@@ -90,7 +90,7 @@ else if (RF_CHOKE_TYPE == "FILTER")
     Filter_Choke_Input.length = & FILTER_CHOKE_INPUT_length;
     Filter_Choke_Input.width = & FILTER_CHOKE_INPUT_width;
     Filter_Choke_Input.sub_thick = & INSUL_THICKNESS;
-    
+
     Filter_Choke_Line1.ground_plane(Ground);
     Filter_Choke_Line1.substrate(Insulation);
     Filter_Choke_Line1.top_strip(Top);
@@ -99,7 +99,7 @@ else if (RF_CHOKE_TYPE == "FILTER")
     Filter_Choke_Line1.length = & FILTER_CHOKE_LINE1_length;
     Filter_Choke_Line1.width = & FILTER_CHOKE_LINE1_width;
     Filter_Choke_Line1.sub_thick = & INSUL_THICKNESS;
-    
+
     Filter_Choke_Line2.ground_plane(Ground);
     Filter_Choke_Line2.substrate(Insulation);
     Filter_Choke_Line2.top_strip(Top);
@@ -108,7 +108,7 @@ else if (RF_CHOKE_TYPE == "FILTER")
     Filter_Choke_Line2.length = & FILTER_CHOKE_LINE2_length;
     Filter_Choke_Line2.width = & FILTER_CHOKE_LINE2_width;
     Filter_Choke_Line2.sub_thick = & INSUL_THICKNESS;
-    
+
     Filter_Choke_Line3.ground_plane(Ground);
     Filter_Choke_Line3.substrate(Insulation);
     Filter_Choke_Line3.top_strip(Top);
@@ -117,7 +117,7 @@ else if (RF_CHOKE_TYPE == "FILTER")
     Filter_Choke_Line3.length = & FILTER_CHOKE_LINE3_length;
     Filter_Choke_Line3.width = & FILTER_CHOKE_LINE3_width;
     Filter_Choke_Line3.sub_thick = & INSUL_THICKNESS;
-    
+
     Filter_Choke_Line4.ground_plane(Ground);
     Filter_Choke_Line4.substrate(Insulation);
     Filter_Choke_Line4.top_strip(Top);
@@ -126,7 +126,7 @@ else if (RF_CHOKE_TYPE == "FILTER")
     Filter_Choke_Line4.length = & FILTER_CHOKE_LINE4_length;
     Filter_Choke_Line4.width = & FILTER_CHOKE_LINE4_width;
     Filter_Choke_Line4.sub_thick = & INSUL_THICKNESS;
-    
+
     Filter_Choke_Line5.ground_plane(Ground);
     Filter_Choke_Line5.substrate(Insulation);
     Filter_Choke_Line5.top_strip(Top);
@@ -135,7 +135,7 @@ else if (RF_CHOKE_TYPE == "FILTER")
     Filter_Choke_Line5.length = & FILTER_CHOKE_LINE5_length;
     Filter_Choke_Line5.width = & FILTER_CHOKE_LINE5_width;
     Filter_Choke_Line5.sub_thick = & INSUL_THICKNESS;
-    
+
     Filter_Choke_Line6.ground_plane(Ground);
     Filter_Choke_Line6.substrate(Insulation);
     Filter_Choke_Line6.top_strip(Top);
@@ -144,7 +144,7 @@ else if (RF_CHOKE_TYPE == "FILTER")
     Filter_Choke_Line6.length = & FILTER_CHOKE_LINE6_length;
     Filter_Choke_Line6.width = & FILTER_CHOKE_LINE6_width;
     Filter_Choke_Line6.sub_thick = & INSUL_THICKNESS;
-    
+
     Filter_Choke_Output.ground_plane(Ground);
     Filter_Choke_Output.substrate(Insulation);
     Filter_Choke_Output.top_strip(Top);
@@ -153,8 +153,8 @@ else if (RF_CHOKE_TYPE == "FILTER")
     Filter_Choke_Output.length = & FILTER_CHOKE_LINE6_length;
     Filter_Choke_Output.width = & FILTER_CHOKE_LINE6_width;
     Filter_Choke_Output.sub_thick = & INSUL_THICKNESS;
-    
-    
+
+
     Filter_Choke.connect( Filter_Choke_Input, 2, Filter_Choke_Line1, 1);
     Filter_Choke.connect( Filter_Choke_Line1, 2, Filter_Choke_Line2, 1);
     Filter_Choke.connect( Filter_Choke_Line2, 2, Filter_Choke_Line3, 1);
@@ -164,10 +164,10 @@ else if (RF_CHOKE_TYPE == "FILTER")
     Filter_Choke.connect( Filter_Choke_Line6, 2, Filter_Choke_Output, 1);
     Filter_Choke.add_port( Filter_Choke_Input, 1);
     Filter_Choke.add_port( Filter_Choke_Output, 2);
-    
+
     Rf_Choke.connect( Filter_Choke, 2, Rf_Choke_Term, 1 );
     Rf_Choke.add_port( Filter_Choke, 1 );
-    
+
     If_Choke = Filter_Choke;
 }
 
@@ -186,14 +186,23 @@ open_term Tuning_Term_3;
 
 radial_stub If_Tuning_Stub_1;
 
-microstrip Input_Strip;
-microstrip Tuning_Strip;
-microstrip If_Tuning_Strip;
+trl_base * Input_Strip;
+trl_base * Tuning_Strip;
+trl_base * Tuning_Strip_2;
+trl_base * Tuning_Strip_3;
 
+microstrip Input_Strip_MS;
+cpw Input_Strip_CPW;
+microstrip Tuning_Strip_MS;
+cpw Tuning_Strip_CPW;
+microstrip Tuning_Strip_2_MS;
+cpw Tuning_Strip_2_CPW;
+microstrip Tuning_Strip_3_MS;
+cpw Tuning_Strip_3_CPW;
 
 if (TUNER_TYPE == "EXTERNAL")
 {
-    
+
     Rf.connect(Rf_Input, 2, External, 1);
     Rf.add_port(External, 2); // Sis goes here
     Rf.add_port(Rf_Input, 1);    // LO goes here
@@ -225,7 +234,7 @@ if (TUNER_TYPE == "RFCHOKE")
     Rf.connect(Rf_Branch, 3, Rf_Choke, 1);
     Rf.add_port(Rf_Branch, 1);
     Rf.add_port(Rf_Input, 1);
-    
+
     If.connect(If_Choke, 2, If_Load, 1);
     If.add_port(If_Choke, 1);
     If.add_port(If_Load, 2);
@@ -419,7 +428,7 @@ if (TUNER_TYPE == "TRIPLE_STUB")
     Rf.connect(Tuning_Stub_3, 2, Tuning_Term_3, 1);
     Rf.add_port(Rf_Branch, 1); // SIS here
     Rf.add_port(Rf_Input, 1); // LO here
-    
+
     // Material specs
     If_Tuning_Stub_1.ground_plane(Ground);
     If_Tuning_Stub_1.substrate(Insulation);
@@ -431,7 +440,7 @@ if (TUNER_TYPE == "TRIPLE_STUB")
     If_Tuning_Stub_1.sub_thick = & INSUL_THICKNESS;
     If_Tuning_Stub_1.radius = & TRIPLE_STUB_1_FAN_radius;
     If_Tuning_Stub_1.angle = & TRIPLE_STUB_1_FAN_angle;
-    
+
     If.connect(If_Tuning_Stub_1, 2, If_Load, 1);
     If.add_port(If_Tuning_Stub_1, 1);
     If.add_port(If_Load, 2);
@@ -442,54 +451,48 @@ if (TUNER_TYPE == "TRIPLE_STUB")
 if (TUNER_TYPE == "BELITSKY")
 {
     // RF Circuit
-    // Create microstrip
+    // Create microstrip - add switch here for CPW options
     // Material specs
-    Input_Strip.ground_plane(Ground);
-    Input_Strip.substrate(Insulation);
-    Input_Strip.top_strip(Top);
-    Input_Strip.superstrate(Cover);
+    Input_Strip_MS.ground_plane(Ground);
+    Input_Strip_MS.substrate(Insulation);
+    Input_Strip_MS.top_strip(Top);
+    Input_Strip_MS.superstrate(Cover);
     // Physical dimensions
-    Input_Strip.length = & BELITSKY_INPUT_STRIP_length;
-    Input_Strip.width = & BELITSKY_INPUT_STRIP_width;
-    Input_Strip.sub_thick = & BELITSKY_INPUT_STRIP_thick;
+    Input_Strip_MS.length = & BELITSKY_INPUT_STRIP_length;
+    Input_Strip_MS.width = & BELITSKY_INPUT_STRIP_width;
+    Input_Strip_MS.sub_thick = & BELITSKY_INPUT_STRIP_thick;
 
     // Material specs
-    Tuning_Strip.ground_plane(Ground);
-    Tuning_Strip.substrate(Insulation);
-    Tuning_Strip.top_strip(Top);
-    Tuning_Strip.superstrate(Cover);
+    Tuning_Strip_MS.ground_plane(Ground);
+    Tuning_Strip_MS.substrate(Insulation);
+    Tuning_Strip_MS.top_strip(Top);
+    Tuning_Strip_MS.superstrate(Cover);
     // Physical dimensions
-    Tuning_Strip.length = & BELITSKY_TUNING_STRIP_length;
-    Tuning_Strip.width = & BELITSKY_TUNING_STRIP_width;
-    Tuning_Strip.sub_thick = & BELITSKY_TUNING_STRIP_thick;
+    Tuning_Strip_MS.length = & BELITSKY_TUNING_STRIP_length;
+    Tuning_Strip_MS.width = & BELITSKY_TUNING_STRIP_width;
+    Tuning_Strip_MS.sub_thick = & BELITSKY_TUNING_STRIP_thick;
+
+    Input_Strip = &Input_Strip_MS;
+    Tuning_Strip = &Tuning_Strip_MS;
 
     Rf_Branch.set_branches(3);
-    
+
     // Connect circuit
-    Rf.connect(Rf_Input, 2, Input_Strip, 1);
-    Rf.connect(Input_Strip, 2, Rf_Branch, 2);
-    Rf.connect(Rf_Branch, 3, Tuning_Strip, 1);
-    
+    Rf.connect(Rf_Input, 2, *Input_Strip, 1);
+    Rf.connect(*Input_Strip, 2, Rf_Branch, 2);
+    Rf.connect(Rf_Branch, 3, *Tuning_Strip, 1);
+
     // add ports
     Rf.add_port(Rf_Branch, 1); // SIS 1
-    Rf.add_port(Tuning_Strip, 2);  // SIS 2
+    Rf.add_port(*Tuning_Strip, 2);  // SIS 2
     Rf.add_port(Rf_Input, 1);   // RF Input
-    
+
     // IF Circuit
-    // Material specs
-    If_Tuning_Strip.ground_plane(Ground);
-    If_Tuning_Strip.substrate(Insulation);
-    If_Tuning_Strip.top_strip(Top);
-    If_Tuning_Strip.superstrate(Cover);
-    // Physical dimensions
-    If_Tuning_Strip.length = & BELITSKY_TUNING_STRIP_length;
-    If_Tuning_Strip.width = & BELITSKY_TUNING_STRIP_width;
-    If_Tuning_Strip.sub_thick = & BELITSKY_TUNING_STRIP_thick;
 
     // Connect circuit and add ports
-    If.connect(If_Tuning_Strip, 2, If_Branch, 1);
+    If.connect(*Tuning_Strip, 2, If_Branch, 1);
     If.connect(If_Branch, 3, If_Load, 1);
-    If.add_port(If_Tuning_Strip, 1);   // SIS_1
+    If.add_port(*Tuning_Strip, 1);   // SIS_1
     If.add_port(If_Branch, 2);  // SIS_2
     If.add_port(If_Load, 2);  // If output
 }
@@ -498,58 +501,50 @@ if (TUNER_TYPE == "BEL_WITH_RFCHOKE")
 {
     // RF Circuit
     // Material specs
-    Input_Strip.ground_plane(Ground);
-    Input_Strip.substrate(Insulation);
-    Input_Strip.top_strip(Top);
-    Input_Strip.superstrate(Cover);
+    Input_Strip_MS.ground_plane(Ground);
+    Input_Strip_MS.substrate(Insulation);
+    Input_Strip_MS.top_strip(Top);
+    Input_Strip_MS.superstrate(Cover);
     // Physical dimensions
-    Input_Strip.length = & BELITSKY_INPUT_STRIP_length;
-    Input_Strip.width = & BELITSKY_INPUT_STRIP_width;
-    Input_Strip.sub_thick = & BELITSKY_INPUT_STRIP_thick;
+    Input_Strip_MS.length = & BELITSKY_INPUT_STRIP_length;
+    Input_Strip_MS.width = & BELITSKY_INPUT_STRIP_width;
+    Input_Strip_MS.sub_thick = & BELITSKY_INPUT_STRIP_thick;
 
     // Material specs
-    Tuning_Strip.ground_plane(Ground);
-    Tuning_Strip.substrate(Insulation);
-    Tuning_Strip.top_strip(Top);
-    Tuning_Strip.superstrate(Cover);
+    Tuning_Strip_MS.ground_plane(Ground);
+    Tuning_Strip_MS.substrate(Insulation);
+    Tuning_Strip_MS.top_strip(Top);
+    Tuning_Strip_MS.superstrate(Cover);
     // Physical dimensions
-    Tuning_Strip.length = & BELITSKY_TUNING_STRIP_length;
-    Tuning_Strip.width = & BELITSKY_TUNING_STRIP_width;
-    Tuning_Strip.sub_thick = & BELITSKY_TUNING_STRIP_thick;
-    
+    Tuning_Strip_MS.length = & BELITSKY_TUNING_STRIP_length;
+    Tuning_Strip_MS.width = & BELITSKY_TUNING_STRIP_width;
+    Tuning_Strip_MS.sub_thick = & BELITSKY_TUNING_STRIP_thick;
+
+    Input_Strip = & Input_Strip_MS;
+    Tuning_Strip = & Tuning_Strip_MS;
+
     // Connect circuit
-    Rf.connect(Rf_Input, 2, Input_Strip, 1);
-    Rf.connect(Input_Strip, 2, Rf_Branch, 1);
-    Rf.connect(Rf_Branch, 2, Tuning_Strip, 1);
-    Rf.connect(Tuning_Strip, 2, Rf_Branch2, 1);
+    Rf.connect(Rf_Input, 2, *Input_Strip, 1);
+    Rf.connect(*Input_Strip, 2, Rf_Branch, 1);
+    Rf.connect(Rf_Branch, 2, *Tuning_Strip, 1);
+    Rf.connect(*Tuning_Strip, 2, Rf_Branch2, 1);
     Rf.connect(Rf_Branch2, 2, Rf_Choke, 1);
-        
+
     // add ports
     Rf.add_port(Rf_Branch, 3);   // SIS 1
     Rf.add_port(Rf_Branch2, 3);  // SIS 2
     Rf.add_port(Rf_Input, 1);     // RF Input
-    
+
     // IF Circuit
-    // Material specs
-    If_Tuning_Strip.ground_plane(Ground);
-    If_Tuning_Strip.substrate(Insulation);
-    If_Tuning_Strip.top_strip(Top);
-    If_Tuning_Strip.superstrate(Cover);
-    // Physical dimensions
-    If_Tuning_Strip.length = & BELITSKY_TUNING_STRIP_length;
-    If_Tuning_Strip.width = & BELITSKY_TUNING_STRIP_width;
-    If_Tuning_Strip.sub_thick = & BELITSKY_TUNING_STRIP_thick;
-       
     // Connect circuit and add ports
-    If.connect(If_Tuning_Strip, 2, If_Branch, 1);
+    If.connect(*Tuning_Strip, 2, If_Branch, 1);
     If.connect(If_Branch, 3, If_Choke, 1);
     If.connect(If_Choke, 2, If_Load, 1);
-    If.add_port(If_Tuning_Strip, 1);   // SIS_1
+    If.add_port(*Tuning_Strip, 1);   // SIS_1
     If.add_port(If_Branch, 2);  // SIS_2
     If.add_port(If_Load, 2);  // If output
 
 }
 
+
 printf("# tuner complete\n");
-
-
