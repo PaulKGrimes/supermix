@@ -82,21 +82,45 @@ int HARMONICS;
 std::string IV_CURVE;
 std::string KK_CURVE;
 
-parameter RNA;
-parameter RNA_unit;
-std::string RNA_unitStr;
+parameter JUNCTION_RNA;
+parameter JUNCTION_RNA_unit;
+std::string JUNCTION_RNA_unitStr;
 
-parameter SCAP;
-parameter SCAP_unit;
-std::string SCAP_unitStr;
+parameter JUNCTION_SCAP;
+parameter JUNCTION_SCAP_unit;
+std::string JUNCTION_SCAP_unitStr;
 
-parameter AREA;
-parameter AREA_unit;
-std::string AREA_unitStr;
+parameter JUNCTION_AREA;
+parameter JUNCTION_AREA_unit;
+std::string JUNCTION_AREA_unitStr;
 
-parameter VGAP;
-parameter VGAP_unit;
-std::string VGAP_unitStr;
+parameter JUNCTION_VGAP;
+parameter JUNCTION_VGAP_unit;
+std::string JUNCTION_VGAP_unitStr;
+
+parameter BELITKSY_JUNCTION_1_AREA;
+parameter BELITSKY_JUNCTION_1_AREA_unit;
+std::string BELITSKY_JUNCTION_1_AREA_unitStr;
+
+parameter BELITKSY_JUNCTION_2_AREA;
+parameter BELITSKY_JUNCTION_2_AREA_unit;
+std::string BELITSKY_JUNCTION_2_AREA_unitStr;
+
+parameter SDM_JUNCTION_1_AREA;
+parameter SDM_JUNCTION_1_AREA_unit;
+std::string SDM_JUNCTION_1_AREA_unitStr;
+
+parameter SDM_JUNCTION_2_AREA;
+parameter SDM_JUNCTION_2_AREA_unit;
+std::string SDM_JUNCTION_2_AREA_unitStr;
+
+parameter SDM_JUNCTION_3_AREA;
+parameter SDM_JUNCTION_3_AREA_unit;
+std::string SDM_JUNCTION_3_AREA_unitStr;
+
+parameter SDM_JUNCTION_4_AREA;
+parameter SDM_JUNCTION_4_AREA_unit;
+std::string SDM_JUNCTION_4_AREA_unitStr;
 
 /*******************
 * Tuner Parameters *
