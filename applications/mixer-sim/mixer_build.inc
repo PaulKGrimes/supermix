@@ -73,10 +73,6 @@ const_diel Cover;
         Cover.tand = & AIR_loss_tangent;
     }
 
-
-// Build the Rf and If circuits
-#include "build_tuner.inc"
-
 generator Lo;
     Lo.source_f = & Frequency;
     Lo.source_power = & Lo_Power;
@@ -89,13 +85,19 @@ printf("# building IV curves...\n");
 ivcurve Iv(IV_CURVE.c_str(), KK_CURVE.c_str());
 printf("# IV curves complete\n");
 
+// Declare the SIS junctions.
 sis_device Sis_1;
 sis_device Sis_2;
+sis_device Sis_3;
+sis_device Sis_4;
 
+// Create the bias source
 voltage_source Bias_Source;
-branch Bias_Branch;
-circuit Bias;
+Bias_Source.source_f = 0.0;
+Bias_Source.source_voltage = & Bias_Voltage;
 
+// Build the Rf and If circuits
+#include "build_tuner.inc"
 
 // finally create the mixer and its ports
 mixer mix;
@@ -103,55 +105,28 @@ mixer mix;
     mix.set_LO(& Frequency);
     mix.set_rf(Rf);
     mix.set_if(If);
-    // Need to switch here as number of junction depends on tuner type
-    if (TUNER_TYPE == "BELITSKY" || TUNER_TYPE == "BEL_WITH_RFCHOKE")
+
+    mix.add_junction(Sis_1);
+    if (TUNER_TYPE == "BELITSKY" || TUNER_TYPE == "BEL_WITH_RFCHOKE" || TUNER_TYPE == "SERIES_DISTRIBUTED_2" || TUNER_TYPE == "SERIES_EXTERNAL_2")
     {
-        // Create the two SIS junctions
-        Sis_1.set_iv(Iv);
-        Sis_1.Vn = VGAP;
-        Sis_1.Rn = RNA/AREA;
-        Sis_1.Cap = SCAP*AREA;
-
-        Sis_2.set_iv(Iv);
-        Sis_2.Vn = & VGAP;
-        Sis_2.Rn = RNA/AREA;
-        Sis_2.Cap = SCAP*AREA;
-
-        // Create the 2 junction bias circuit
-        Bias_Source.source_f = 0.0;
-        Bias_Source.source_voltage = & Bias_Voltage;
-        Bias.connect(Bias_Source, 1, Bias_Branch, 1);
-        Bias.add_port(Bias_Branch, 2);
-        Bias.add_port(Bias_Branch, 3);
-
-        mix.add_junction(Sis_1);
         mix.add_junction(Sis_2);
-        mix.set_bias(Bias);
-        mix.set_balance_terminator(Lo, 3);
-
-        USB_PORT = mix.port(3,  1);
-        LSB_PORT = mix.port(3, -1);
-        IF_PORT  = mix.port(3,  0);
-
     }
-    else
+    if (TUNER_TYPE == "SERIES_DISTRIBUTED_3" || TUNER_TYPE == "SERIES_EXTERNAL_3")
     {
-        // Create SIS junction
-        Sis_1.set_iv(Iv);
-        Sis_1.Vn = VGAP;
-        Sis_1.Rn = RNA/AREA;
-        Sis_1.Cap = SCAP*AREA;
-
-        // Create the Bias circuit
-        Bias_Source.source_f = 0.0;
-        Bias_Source.source_voltage = & Bias_Voltage;
-
-        mix.add_junction(Sis_1);
-        mix.set_bias(Bias_Source);
-        mix.set_balance_terminator(Lo, 2);
-        // Define port numbers
-        USB_PORT = mix.port(2,  1);
-        LSB_PORT = mix.port(2, -1);
-        IF_PORT  = mix.port(2,  0);
-
+        mix.add_junction(Sis_2);
+        mix.add_junction(Sis_3);
     }
+    if (TUNER_TYPE == "SERIES_DISTRIBUTED_4" || TUNER_TYPE == "SERIES_EXTERNAL_4")
+    {
+        mix.add_junction(Sis_2);
+        mix.add_junction(Sis_3);
+        mix.add_junction(Sis_4);
+    }
+    mix.set_bias(Bias);
+
+    int NumSIS = mix.junctions();
+    mix.set_balance_terminator(Lo, NumSIS+1);
+
+    USB_PORT = mix.port(NumSIS+1,  1);
+    LSB_PORT = mix.port(NumSIS+1, -1);
+    IF_PORT  = mix.port(NumSIS+1,  0);

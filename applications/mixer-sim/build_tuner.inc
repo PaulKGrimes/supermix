@@ -15,6 +15,12 @@ printf("# building tuner...\n");
 
 circuit Rf;
 circuit If;
+circuit Bias;
+
+branch Bias_Branch;
+series_tee Bias_SeriesT_1
+series_tee Bias_SeriesT_2;
+series_tee Bias_SeriesT_3;
 
 transformer If_Dummy;
 If_Dummy.Z1 = & IF_Z0;
@@ -495,6 +501,24 @@ if (TUNER_TYPE == "BELITSKY")
     If.add_port(*Tuning_Strip, 1);   // SIS_1
     If.add_port(If_Branch, 2);  // SIS_2
     If.add_port(If_Load, 2);  // If output
+
+    // Create the two SIS junctions
+    Sis_1.set_iv(Iv);
+    Sis_1.Vn = VGAP;
+    Sis_1.Rn = RNA/AREA;
+    Sis_1.Cap = SCAP*AREA;
+
+    Sis_2.set_iv(Iv);
+    Sis_2.Vn = & VGAP;
+    Sis_2.Rn = RNA/AREA;
+    Sis_2.Cap = SCAP*AREA;
+
+    // Create the 2 junction bias circuit
+    Bias_Source.source_f = 0.0;
+    Bias_Source.source_voltage = & Bias_Voltage;
+    Bias.connect(Bias_Source, 1, Bias_Branch_1, 1);
+    Bias.add_port(Bias_Branch_1, 2);
+    Bias.add_port(Bias_Branch_1, 3);
 }
 
 if (TUNER_TYPE == "BEL_WITH_RFCHOKE")
@@ -544,6 +568,23 @@ if (TUNER_TYPE == "BEL_WITH_RFCHOKE")
     If.add_port(If_Branch, 2);  // SIS_2
     If.add_port(If_Load, 2);  // If output
 
+    // Create the two SIS junctions
+    Sis_1.set_iv(Iv);
+    Sis_1.Vn = VGAP;
+    Sis_1.Rn = RNA/AREA;
+    Sis_1.Cap = SCAP*AREA;
+
+    Sis_2.set_iv(Iv);
+    Sis_2.Vn = & VGAP;
+    Sis_2.Rn = RNA/AREA;
+    Sis_2.Cap = SCAP*AREA;
+
+    // Create the 2 junction bias circuit
+    Bias_Source.source_f = 0.0;
+    Bias_Source.source_voltage = & Bias_Voltage;
+    Bias.connect(Bias_Source, 1, Bias_Branch_1, 1);
+    Bias.add_port(Bias_Branch_1, 2);
+    Bias.add_port(Bias_Branch_1, 3);
 }
 
 if (TUNER_TYPE == "SERIES_DISTRIBUTED_2")
@@ -626,6 +667,25 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_2")
     If.add_port(*Tuning_Strip, 1);   // SIS_1
     If.add_port(If_Branch, 2);  // SIS_2
     If.add_port(If_Load, 2);  // If output
+
+    // Create the two SIS junctions
+    Sis_1.set_iv(Iv);
+    Sis_1.Vn = VGAP;
+    Sis_1.Rn = RNA/AREA;
+    Sis_1.Cap = SCAP*AREA;
+
+    Sis_2.set_iv(Iv);
+    Sis_2.Vn = & VGAP;
+    Sis_2.Rn = RNA/AREA;
+    Sis_2.Cap = SCAP*AREA;
+
+    // Create the 2 junction bias circuit
+    Bias_Source.source_f = 0.0;
+    Bias_Source.source_voltage = & Bias_Voltage;
+    Bias_Branch_1.series()
+    Bias.connect(Bias_Source, 1, Bias_Branch_1, 1);
+    Bias.add_port(Bias_Branch_1, 2);
+    Bias.add_port(Bias_Branch_1, 3);
 }
 
 printf("# tuner complete\n");
