@@ -75,7 +75,23 @@ static DOTCONF_CB(triple_stub_3_fan);
 
     // belitsky tuner
 static DOTCONF_CB(belitsky_input_strip);
+static DOTCONF_CB(belitsky_junction_1_area);
 static DOTCONF_CB(belitsky_tuning_strip);
+static DOTCONF_CB(belitsky_junction_2_area);
+
+    // SDM tuner
+static DOTCONF_CB(sdm_input_type);
+static DOTCONF_CB(sdm_input);
+static DOTCONF_CB(sdm_junction_1_area);
+static DOTCONF_CB(sdm_tuner_12_type);
+static DOTCONF_CB(sdm_tuner_12);
+static DOTCONF_CB(sdm_junction_2_area);
+static DOTCONF_CB(sdm_tuner_23_type);
+static DOTCONF_CB(sdm_tuner_23);
+static DOTCONF_CB(sdm_junction_3_area);
+static DOTCONF_CB(sdm_tuner_34_type);
+static DOTCONF_CB(sdm_tuner_34);
+static DOTCONF_CB(sdm_junction_4_area);
 
     // RF choke
 static DOTCONF_CB(rf_choke_type);
@@ -132,10 +148,10 @@ static const configoption_t options[] = {
     // Junction parameters
     {"IV_CURVE",            ARG_STR,    iv_curve,           NULL,   CTX_ALL },
     {"KK_CURVE",            ARG_STR,    kk_curve,           NULL,   CTX_ALL },
-    {"RNA",                 ARG_LIST,   rna,                NULL,   CTX_ALL },
-    {"SCAP",                ARG_LIST,   scap,               NULL,   CTX_ALL },
-    {"AREA",                ARG_LIST,   area,               NULL,   CTX_ALL },
-    {"VGAP",                ARG_LIST,   vgap,               NULL,   CTX_ALL },
+    {"JUNCTION_RNA",                 ARG_LIST,   rna,                NULL,   CTX_ALL },
+    {"JUNCTION_SCAP",                ARG_LIST,   scap,               NULL,   CTX_ALL },
+    {"JUNCTION_AREA",                ARG_LIST,   area,               NULL,   CTX_ALL },
+    {"JUNCTION_VGAP",                ARG_LIST,   vgap,               NULL,   CTX_ALL },
     // Tuner parameters
     {"TUNER_TYPE",          ARG_STR,    tuner_type,         NULL,   CTX_ALL },
     {"TOUCHSTONE_FILE",     ARG_STR,    touchstone_file,    NULL,   CTX_ALL },
@@ -162,7 +178,24 @@ static const configoption_t options[] = {
     {"TRIPLE_STUB_3_FAN",   ARG_LIST,   triple_stub_3_fan,   NULL,   CTX_ALL },
         // Belitsky tuner
     {"BELITSKY_INPUT_STRIP",  ARG_LIST,  belitsky_input_strip,  NULL,   CTX_ALL },
+    {"BELITSKY_JUNCTION_1_AREA",  ARG_LIST,   belitsky_junction_1_area, NULL,   CTX_ALL},
     {"BELITSKY_TUNING_STRIP", ARG_LIST,  belitsky_tuning_strip, NULL,   CTX_ALL },
+    {"BELITSKY_JUNCTION_2_AREA",  ARG_LIST,   belitsky_junction_2_area, NULL,   CTX_ALL},
+
+        // Series Distributed Mixer tuner
+    {"SDM_INPUT_TYPE",       ARG_STR,    sdm_input_type,      NULL,   CTX_ALL},
+    {"SDM_INPUT",            ARG_LIST,   sdm_input,           NULL,   CTX_ALL},
+    {"SDM_JUNCTION_1_AREA",  ARG_LIST,   sdm_junction_1_area, NULL,   CTX_ALL},
+    {"SDM_TUNER_12_TYPE",    ARG_STR,    sdm_tuner_12_type,   NULL,   CTX_ALL},
+    {"SDM_TUNER_12",         ARG_LIST,   sdm_tuner_12,        NULL,   CTX_ALL},
+    {"SDM_JUNCTION_2_AREA",  ARG_LIST,   sdm_junction_2_area, NULL,   CTX_ALL},
+    {"SDM_TUNER_23_TYPE",    ARG_STR,    sdm_tuner_23_type,   NULL,   CTX_ALL},
+    {"SDM_TUNER_23",         ARG_LIST,   sdm_tuner_23,        NULL,   CTX_ALL},
+    {"SDM_JUNCTION_3_AREA",  ARG_LIST,   sdm_junction_3_area, NULL,   CTX_ALL},
+    {"SDM_TUNER_34_TYPE",    ARG_STR,    sdm_tuner_34_type,   NULL,   CTX_ALL},
+    {"SDM_TUNER_34",         ARG_LIST,   sdm_tuner_34,        NULL,   CTX_ALL},
+    {"SDM_JUNCTION_4_AREA",  ARG_LIST,   sdm_junction_4_area, NULL,   CTX_ALL},
+
         // RF choke
     {"RF_CHOKE_TYPE",        ARG_STR,    rf_choke_type,       NULL,   CTX_ALL },
     {"RADIAL_CHOKE_TYPE",    ARG_STR,    radial_choke_type,   NULL,   CTX_ALL },
@@ -664,6 +697,13 @@ DOTCONF_CB(belitsky_input_strip)
     return NULL;
 }
 
+DOTCONF_CB(belitsky_junction_1_area)
+{
+    BELITSKY_JUNCTION_1_AREA_unit = Micron*Micron;
+    BELITSKY_JUNCTION_1_AREA_unitStr = "um^2";
+    BELITSKY_JUNCTION_1_AREA = atof(cmd->data.list[0])*SDM_JUNCTION_1_AREA_unit;
+}
+
 DOTCONF_CB(belitsky_tuning_strip)
 {
     BELITSKY_TUNING_STRIP_length_unit = Micron;
@@ -681,6 +721,15 @@ DOTCONF_CB(belitsky_tuning_strip)
     return NULL;
 }
 
+
+DOTCONF_CB(belitsky_junction_2_area)
+{
+    BELITSKY_JUNCTION_2_AREA_unit = Micron*Micron;
+    BELITSKY_JUNCTION_2_AREA_unitStr = "um^2";
+    BELITSKY_JUNCTION_2_AREA = atof(cmd->data.list[0])*SDM_JUNCTION_1_AREA_unit;
+}
+
+// Series distributed mixer
 DOTCONF_CB(sdm_input_type)
 {
     SDM_INPUT_TYPE = cmd->data.str;

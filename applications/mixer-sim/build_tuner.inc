@@ -453,8 +453,6 @@ if (TUNER_TYPE == "TRIPLE_STUB")
 
 }
 
-SIS_Device_1
-
 if (TUNER_TYPE == "BELITSKY")
 {
     // RF Circuit

@@ -245,6 +245,10 @@ std::string BELITSKY_INPUT_STRIP_width_unitStr;
 parameter BELITSKY_INPUT_STRIP_thick;
 parameter BELITSKY_INPUT_STRIP_thick_unit;
 std::string BELITSKY_INPUT_STRIP_thick_unitStr;
+// Junction 1
+parameter BELITSKY_JUNCTION_1_AREA;
+parameter BELITSKY_JUNCTION_1_AREA_unit;
+std::string BELITSKY_JUNCTION_1_AREA_unitStr;
 parameter BELITSKY_TUNING_STRIP_length;
 parameter BELITSKY_TUNING_STRIP_length_unit;
 std::string BELITSKY_TUNING_STRIP_length_unitStr;
@@ -254,6 +258,10 @@ std::string BELITSKY_TUNING_STRIP_width_unitStr;
 parameter BELITSKY_TUNING_STRIP_thick;
 parameter BELITSKY_TUNING_STRIP_thick_unit;
 std::string BELITSKY_TUNING_STRIP_thick_unitStr;
+// Junction 2
+parameter BELITSKY_JUNCTION_2_AREA;
+parameter BELITSKY_JUNCTION_2_AREA_unit;
+std::string BELITSKY_JUNCTION_2_AREA_unitStr;
 
 // Series Distributed Mixer
 std::string SDM_INPUT_TYPE;
@@ -267,9 +275,9 @@ parameter SDM_INPUT_width2;
 parameter SDM_INPUT_width2_unit;
 std::string SDM_INPUT_width2_unitStr;
 // Junction 1
-parameter JUNCTION_1_AREA;
-parameter JUNCTION_1_AREA_unit;
-std::string JUNCTION_1_AREA_unitStr;
+parameter SDM_JUNCTION_1_AREA;
+parameter SDM_JUNCTION_1_AREA_unit;
+std::string SDM_JUNCTION_1_AREA_unitStr;
 // Line from junction 1 to 2
 std::string SDM_TUNER_12_TYPE;
 parameter SDM_TUNER_12_length;
@@ -282,9 +290,9 @@ parameter SDM_TUNER_12_width2;
 parameter SDM_TUNER_12_width2_unit;
 std::string SDM_TUNER_12_width2_unitStr;
 // Junction 2
-parameter JUNCTION_2_AREA;
-parameter JUNCTION_2_AREA_unit;
-std::string JUNCTION_2_AREA_unitStr;
+parameter SDM_JUNCTION_2_AREA;
+parameter SDM_JUNCTION_2_AREA_unit;
+std::string SDM_JUNCTION_2_AREA_unitStr;
 // Line from junction 2 to 3
 std::string SDM_TUNER_23_TYPE;
 parameter SDM_TUNER_23_length;
@@ -297,9 +305,9 @@ parameter SDM_TUNER_23_width2;
 parameter SDM_TUNER_23_width2_unit;
 std::string SDM_TUNER_23_width2_unitStr;
 // Junction 3
-parameter JUNCTION_3_AREA;
-parameter JUNCTION_3_AREA_unit;
-std::string JUNCTION_3_AREA_unitStr;
+parameter SDM_JUNCTION_3_AREA;
+parameter SDM_JUNCTION_3_AREA_unit;
+std::string SDM_JUNCTION_3_AREA_unitStr;
 // Line from junction 3 to 4
 std::string SDM_TUNER_34_TYPE;
 parameter SDM_TUNER_34_length;
@@ -312,9 +320,9 @@ parameter SDM_TUNER_34_width2;
 parameter SDM_TUNER_34_width2_unit;
 std::string SDM_TUNER_34_width2_unitStr;
 // Junction 4
-parameter JUNCTION_4_AREA;
-parameter JUNCTION_4_AREA_unit;
-std::string JUNCTION_4_AREA_unitStr;
+parameter SDM_JUNCTION_4_AREA;
+parameter SDM_JUNCTION_4_AREA_unit;
+std::string SDM_JUNCTION_4_AREA_unitStr;
 
 // RF Choke
 std::string RF_CHOKE_TYPE;
