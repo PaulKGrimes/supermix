@@ -1,102 +1,102 @@
 // SuperMix version 1.4 C++ source file
 // Copyright (c) 1999, 2001, 2004 California Institute of Technology.
 // All rights reserved.
-// ********************************************************************
-// adaptive.h : contains class adaptive<> and function adaptive_fill()
-// ********************************************************************
-// adaptive_fill():
-//
-// Fills and builds an interpolator (using class adaptive<>) so that it
-// approximates a given function.
-//
-// usage:
-// 
-// Given a function f() returning a Y_type:
-//        Y_type f(double x);
-//
-// And an interpolator of Y_types:
-//        interpolator<Y_type> Y;
-//
-// calling:
-//        adaptive_fill(Y, f, min_x, max_x);  // to use default tolerances
-// (or)   adaptive_fill(Y, f, min_x, max_x, abs_error, rel_error);
-//
-// will build Y so that Y(x) approximates f(x) within the range
-// [min_x .. max_x]. adaptive_fill() returns an int which equals 0 if all
-// went well. The tolerances will be calculated using the default global
-// norm() function for Y_type objects: double norm(Y_type);
-//
-// ********************************************************************
-// Class adaptive<>:
-//
-// A templated class used to adaptively build an interpolator
-// (cf interpolate.h) of an arbitrary function which meets specified
-// accuracy targets. If the default norm() function is adequate, function
-// adaptive_fill() is a simple alternative (see below).
-//
-// Given a function f(x) which calculates some Y_type object as a function
-// of the double x, we wish to approximate this function using an
-// interpolator Y(x). Class adaptive accomplishes the task of building
-// Y(x).
-//
-// Here's how to use it:
-//
-// double x;
-// Y_type f(double);       // The function to be interpolated. It could
-//                         // return a const Y_type & instead.
-//
-//  ** Note that if f() is a MEMBER FUNCTION of a class object, it can't **
-//  ** be used directly by class adaptive. It must be used as described  ** 
-//  ** below!!!                                                          **
-//
-// interpolator<Y_type> Y;  // declare the interpolator object, then
-// adaptive<Y_type> a(Y);   // construct an adaptive object from it.
-//
-// a.min_x = x1;
-// a.max_x = x2;            // set the interpolation limits
-//
-// int bad = a(f);          // this call fills and builds Y to approximate f.
-//     or                   // The optional second argument is a function for
-// int bad = a(f,n);        // the "squared magnitude" or "norm" of a Y_type y.
-//                          // If no second argument is provided, a will use
-//                          // the global function norm(y), if it is defined.
-//
-// if(bad) ...              // bad == 1 if a problem occured with the build.
-//
-// If either the function to be interpolated or the norm to be used is
-// defined as a member function, it must be converted for use with adaptive.
-// If, for example, the function to be interpolated is a member function
-// of the object Obj of class Cl: ie, f(x) is really Obj.f(x), then the
-// function must be passed to a() as follows:
-//
-//   a(member_function(& Cl::f, Obj))
-//
-// member_function() returns a function object properly bound to Obj.f() for
-// use by adaptive. This extra step is required because pointers to member
-// functions (ie, the name of a member function) are not pointers to functions.
-// The same conversion must be applied to a norm function as well, if it is
-// really a member function of some class.
-//
-//
-// Now we can use the interpolator to approximate f(x):
-// 
-// Y_type approx_f = Y(x);
-// 
-// If you wish to change the interpolation, use Y.clear() to throw away
-// the old points, then a(f) to rebuild Y.
-//
-// There are member variables for adaptive which control the accuracy and
-// other aspects of approximation; see the class declaration below for
-// details.
-//
-// ********************************************************************
-// Change history:
-//
-// 1/31/04:  Fixed for gcc 3.x
-// 7/19/99:  Added adaptive_fill()
-// 7/8/99:   Moved some definitions into num_utility.h
-//
-// ********************************************************************
+/** ********************************************************************
+* adaptive.h : contains class adaptive<> and function adaptive_fill()
+* ********************************************************************
+* adaptive_fill():
+*
+* Fills and builds an interpolator (using class adaptive<>) so that it
+* approximates a given function.
+*
+* usage:
+*
+* Given a function f() returning a Y_type:
+*        Y_type f(double x);
+*
+* And an interpolator of Y_types:
+*        interpolator<Y_type> Y;
+*
+* calling:
+*        adaptive_fill(Y, f, min_x, max_x);  // to use default tolerances
+* (or)   adaptive_fill(Y, f, min_x, max_x, abs_error, rel_error);
+*
+* will build Y so that Y(x) approximates f(x) within the range
+* [min_x .. max_x]. adaptive_fill() returns an int which equals 0 if all
+* went well. The tolerances will be calculated using the default global
+* norm() function for Y_type objects: double norm(Y_type);
+*
+* ********************************************************************
+* Class adaptive<>:
+*
+* A templated class used to adaptively build an interpolator
+* (cf interpolate.h) of an arbitrary function which meets specified
+* accuracy targets. If the default norm() function is adequate, function
+* adaptive_fill() is a simple alternative (see below).
+*
+* Given a function f(x) which calculates some Y_type object as a function
+* of the double x, we wish to approximate this function using an
+* interpolator Y(x). Class adaptive accomplishes the task of building
+* Y(x).
+*
+* Here's how to use it:
+*
+* double x;
+* Y_type f(double);       // The function to be interpolated. It could
+*                         // return a const Y_type & instead.
+*
+*  ** Note that if f() is a MEMBER FUNCTION of a class object, it can't **
+*  ** be used directly by class adaptive. It must be used as described  **
+*  ** below!!!                                                          **
+*
+* interpolator<Y_type> Y;  // declare the interpolator object, then
+* adaptive<Y_type> a(Y);   // construct an adaptive object from it.
+*
+* a.min_x = x1;
+* a.max_x = x2;            // set the interpolation limits
+*
+* int bad = a(f);          // this call fills and builds Y to approximate f.
+*     or                   // The optional second argument is a function for
+* int bad = a(f,n);        // the "squared magnitude" or "norm" of a Y_type y.
+*                          // If no second argument is provided, a will use
+*                          // the global function norm(y), if it is defined.
+*
+* if(bad) ...              // bad == 1 if a problem occured with the build.
+*
+* If either the function to be interpolated or the norm to be used is
+* defined as a member function, it must be converted for use with adaptive.
+* If, for example, the function to be interpolated is a member function
+* of the object Obj of class Cl: ie, f(x) is really Obj.f(x), then the
+* function must be passed to a() as follows:
+*
+*   a(member_function(& Cl::f, Obj))
+*
+* member_function() returns a function object properly bound to Obj.f() for
+* use by adaptive. This extra step is required because pointers to member
+* functions (ie, the name of a member function) are not pointers to functions.
+* The same conversion must be applied to a norm function as well, if it is
+* really a member function of some class.
+*
+*
+* Now we can use the interpolator to approximate f(x):
+*
+* Y_type approx_f = Y(x);
+*
+* If you wish to change the interpolation, use Y.clear() to throw away
+* the old points, then a(f) to rebuild Y.
+*
+* There are member variables for adaptive which control the accuracy and
+* other aspects of approximation; see the class declaration below for
+* details.
+*
+* ********************************************************************
+* Change history:
+*
+* 1/31/04:  Fixed for gcc 3.x
+* 7/19/99:  Added adaptive_fill()
+* 7/8/99:   Moved some definitions into num_utility.h
+*
+* ********************************************************************/
 
 #ifndef ADAPTIVE_H
 #define ADAPTIVE_H
@@ -128,9 +128,9 @@ public:
 
     // if either of the following accuracy limits is met, then accuracy is o.k:
   double abs_tolerance;  // (1.0e-100) the max absolute error target in the interpolation
-  double rel_tolerance;  // (1.0e-6)   the max relative error target in the interpolation 
+  double rel_tolerance;  // (1.0e-6)   the max relative error target in the interpolation
 
-  double min_x;          // (0.0)      the minimum x for the range being interpolated 
+  double min_x;          // (0.0)      the minimum x for the range being interpolated
   double max_x;          // (0.0)      the maximum x for the range being interpolated
 
 
@@ -243,7 +243,7 @@ template < class Y_type > template <class F, class N>
 inline void adaptive<Y_type>::check_and_add(F f, N n, double dx)
 {
   // steps through the points in chk_pts (which are sorted and unique, since
-  // chk_pts is of type set. The value of dx SHOULD BE 1/4 the minimum 
+  // chk_pts is of type set. The value of dx SHOULD BE 1/4 the minimum
   // separation between adjacent points, and determines the spacing to new
   // points which may be added. n() is the norm function for a Y_type.
 
@@ -297,5 +297,3 @@ inline void adaptive_fill(
 
 
 #endif /* ADAPTIVE_H */
-
-

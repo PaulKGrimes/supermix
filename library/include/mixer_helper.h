@@ -7,7 +7,7 @@
 // mixer_helper.h holds the private members and classes defined within
 // the mixer class.
 //
-// THIS FILE IS MEANT TO BE INCLUDED ONLY BY mixer.h AND WITHIN THE 
+// THIS FILE IS MEANT TO BE INCLUDED ONLY BY mixer.h AND WITHIN THE
 // DEFINITION OF CLASS mixer !!!
 //
 // holds classes mixer::balancer and mixer::analyzer
@@ -22,8 +22,8 @@ private:
 
   void auto_state();                   // fix invalid junction states or exit.
   void recalc();                       // the small signal mixer analysis.
-  void changed()                       // tell the caculators that the mixer has 
-  {                                    // changed, so their structures will be rebuilt. 
+  void changed()                       // tell the caculators that the mixer has
+  {                                    // changed, so their structures will be rebuilt.
     balance_.changed(); ssignal_.changed(); tsignal_.changed();
     balance_not_ok_flag = (num_junctions != 0);
   }
@@ -50,9 +50,9 @@ private:
 class balancer : private newton
 {
 public:
-  
+
   balancer(mixer &);// The constructor
-  
+
   int operator()(); // Perform a harmonic balance of the mixer, using
                     // the current operating state as a starting point.
 
@@ -69,7 +69,7 @@ public:
   balancer & parameters(
     int MAXITS,     // maximum number of iterations
     double TOLF,    // single voltage balance error tolerance
-    double TOLMIN,  // variance of all voltages from balance tolerance 
+    double TOLMIN,  // variance of all voltages from balance tolerance
     double TOLX,    // change in a single voltage step tolerance
     double ALF      // if variance of all voltages changes by less than
                     // this, assume at a local minimum of the error function
@@ -102,9 +102,9 @@ private:
       harm_inc,        // index increment to step to next harmonic
       junc_inc,        // index increment to step to next junction
       imag_inc;        // index increment to step to imaginary part
-  } 
+  }
   rep;                 // the scheme is established by init()
-  
+
   // helper functions (n is a junction index, m is a harmonic number):
   inline int index(int n, int m);     // calculate location in representation
   inline Complex B(int n, int m);          // linear source vector element
@@ -130,9 +130,9 @@ friend class mixer::balancer;
 class analyzer
 {
 public:
-  
+
   analyzer(mixer &);// The constructor
-  
+
   const sdata & operator()();  // Perform the small signal and noise
                     // analyses and return the resulting sdata object
 
@@ -143,9 +143,9 @@ public:
                     // anytime num_junctions, max_harmonics, rf_circuit,
                     // or term changes.
 
-  analyzer & terminate_rf(int); // tell analyzer whether or not it should 
+  analyzer & terminate_rf(int); // tell analyzer whether or not it should
                     // terminate the rf circuit with balance terminators
-                    // when performing the analysis. 
+                    // when performing the analysis.
                     //   Nonzero argument: terminate first
                     //   Zero argument:    don't terminate
                     // Applies to all subsequent calls to operator ().

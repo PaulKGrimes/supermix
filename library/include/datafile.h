@@ -1,7 +1,7 @@
 // SuperMix version 1.4 C++ source file
 // Copyright (c) 1999, 2001, 2004 California Institute of Technology.
 // All rights reserved.
-/**************************************************************\
+/** ***********************************************************\
 * datafile.h                                                   *
 *                                                              *
 * J. Zmuidzinas  October 31, 1997                              *
@@ -18,7 +18,7 @@
 *                                                              *
 * Data are stored in the private real_table in this            *
 * order; however, the first index of a table is usually called *
-* the "row" index and the second index is called the           * 
+* the "row" index and the second index is called the           *
 * "column" index.                                              *
 \**************************************************************/
 
@@ -27,7 +27,7 @@
 
 #include "table.h"
 
-/**************************************************************\
+/**  ***********************************************************\
 *                                                              *
 * class datafile                                               *
 *                                                              *

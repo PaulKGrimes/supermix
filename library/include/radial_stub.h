@@ -1,7 +1,7 @@
 // SuperMix version 1.4 C++ source file
 // Copyright (c) 1999, 2001, 2004 California Institute of Technology.
 // All rights reserved.
-/**************************************************************\
+/**  ***********************************************************\
 * radial_stub.h                                                *
 *                                                              *
 * John Ward, September 11, 1998                                *
@@ -13,7 +13,7 @@
 #include "circuit.h"
 #include "trlines.h"
 
-/**************************************************************\
+/**  ***********************************************************\
 *                                                              *
 * class radial_stub                                            *
 *                                                              *
@@ -35,7 +35,7 @@ public:
   // Radius of stub in standard units
   parameter radius;
 
-  // Opening angle of stub in standard units. 
+  // Opening angle of stub in standard units.
   parameter angle;
 
   // Length of input line in standard units
@@ -64,7 +64,7 @@ public:
 
   // Radial stubs are 2 port devices.
   int size() { return 2; }
-  
+
   // Virtual destructor is necessary to ensure proper subclass destruction.
   virtual ~radial_stub() { }
 

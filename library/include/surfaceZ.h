@@ -16,7 +16,7 @@
 #include "parameter.h"
 #include "interpolate.h"
 
-/**************************************************************\
+/**  ***********************************************************\
 *                                                              *
 * class surfimp                                                *
 *                                                              *
@@ -45,7 +45,7 @@ public:
 };
 
 
-/**************************************************************\
+/**  ***********************************************************\
 *                                                              *
 * class ideal_film                                             *
 *                                                              *
@@ -60,7 +60,7 @@ public:
 };
 
 
-/**************************************************************\
+/**  ***********************************************************\
 *                                                              *
 * class local_film                                             *
 *                                                              *
@@ -74,7 +74,7 @@ public:
 * redefine thickness() if desired, or use the default provided *
 *                                                              *
 \**************************************************************/
-// We treat local conductors (J = sigma x E) in a special way. 
+// We treat local conductors (J = sigma x E) in a special way.
 // This is because we want to be able to calculate multilayer stacks
 // of metal films (for instance a thin Nb layer on NbTiN) by
 // calculating the contribution of each layer independently.
@@ -89,13 +89,13 @@ public:
 // inherits class surfimp and implements Zsurf() here using its sigma()
 // and thichkness().
 
-class local_film : public surfimp { 
+class local_film : public surfimp {
 public:
   // The "back" side of the film must be terminated with some effective
   // impedance. A standard choice would be the free-space impedance.
   // For thick films, this parameter is irrelevant. For thin films,
-  // this parameter simulates the possibility of power loss due to 
-  // radiation from the back side of the metal film into free space 
+  // this parameter simulates the possibility of power loss due to
+  // radiation from the back side of the metal film into free space
   // (or a dielectric). The difficulty is that the amount of radiation
   // will depend in detail on the shape and size of the conductor.
   // If this parameter turns out to be important in your application,
@@ -111,38 +111,38 @@ public:
   virtual complex sigma(double freq, double Temp) = 0;
 
   // Surface impedance is calculated using thickness() and sigma()
-  complex Zsurf(double freq, double Temp) ;    // define now    
-  
+  complex Zsurf(double freq, double Temp) ;    // define now
+
   // Virtual destructor is necessary to ensure proper subclass destruction.
   virtual ~local_film() { }
 };
 
 
-/**************************************************************\
+/**  ***********************************************************\
 *                                                              *
 * class normal_film                                            *
 *                                                              *
 \**************************************************************/
 // A normal_film (normal metal film) is a local_film that
 // is calculated using the supplied resistivity parameter rho.
-// Since it is a parameter, it may shadow a function that 
+// Since it is a parameter, it may shadow a function that
 // computes a temperature-dependent value.
 
 class normal_film : public local_film {
 public:
-   parameter rho ;  // resistivity (resistance x length) 
+   parameter rho ;  // resistivity (resistance x length)
 
   // if rho is left at the default value of 0.0, then
   // sigma() will be infinite... use ideal_film for a perfect metal
 
    complex sigma(double, double) { return complex(1./rho, 0.); }
-  
+
   // Virtual destructor is necessary to ensure proper subclass destruction.
   virtual ~normal_film() { }
 };
 
 
-/**************************************************************\
+/**  ***********************************************************\
 *                                                              *
 * class super_film                                             *
 *                                                              *
@@ -155,9 +155,9 @@ class super_film : public local_film {
 public:
 
   // physical superconductor parameters:
-  parameter Vgap ; // 2 x gap energy of superconductor (voltage) 
-  parameter Tc ;   // Critical temperature 
-  parameter rho_normal ;  // normal-state resistivity (resistance x length) 
+  parameter Vgap ; // 2 x gap energy of superconductor (voltage)
+  parameter Tc ;   // Critical temperature
+  parameter rho_normal ;  // normal-state resistivity (resistance x length)
 
   // control whether to interpolate (the default) or to calculate directly
   super_film & interpolate()    { interp_flag = true; return *this; }
@@ -168,8 +168,8 @@ public:
   parameter maxpts; // maximum number of interpolation points (default is 1000)
 
   // return the superconducting conductance
-  virtual complex sigma(double freq, double Temp) ; // use Mattis-Bardeen 
-  
+  virtual complex sigma(double freq, double Temp) ; // use Mattis-Bardeen
+
   // Constructor and destructor
   super_film();
   virtual ~super_film() { }
@@ -184,16 +184,16 @@ private:
                                     // before checking tolerance (25)
 
   // we keep a copy of the values of the parameters
-  // used in the interpolation table so that we know if they've changed 
-  double Vgap_save ; // 2 x gap energy of superconductor (voltage) 
-  double Tc_save ;   // Critical temperature 
+  // used in the interpolation table so that we know if they've changed
+  double Vgap_save ; // 2 x gap energy of superconductor (voltage)
+  double Tc_save ;   // Critical temperature
   double Temp_save ; // temperature interpolation table used
 
   // We also need to keep track of the current interpolation table's parameters
-  double fmin ;        // frequency lower limit 
-  double fmax ;        // upper limit 
+  double fmin ;        // frequency lower limit
+  double fmax ;        // upper limit
   double tol_save  ;   // tolerance target used for interpolation
-  
+
   // This object does the interpolation
   interpolator<complex> sigma_tab;
 
@@ -212,7 +212,7 @@ private:
 };
 
 
-/**************************************************************\
+/**  ***********************************************************\
 *                                                              *
 * class layerListNode                                          *
 *                                                              *
@@ -224,7 +224,7 @@ public:
   local_film *layer;
 };
 
-/**************************************************************\
+/**  ***********************************************************\
 *                                                              *
 * class layerList                                              *
 *                                                              *
@@ -251,7 +251,7 @@ public:
 
   // The destructor must free each node of the list.
   ~layerList();
- 
+
   // Return TRUE if the list is empty.
   int isEmpty();
 
@@ -267,8 +267,8 @@ public:
   // Return head of list
        layerListNode *gethead() {return head; }
 
-  double thickness() ;                      // define this now 
-  complex Zsurf(double freq, double Temp) ; // define this now 
+  double thickness() ;                      // define this now
+  complex Zsurf(double freq, double Temp) ; // define this now
 
 };
 
@@ -279,7 +279,3 @@ public:
 //   impedance of a normal metal film.
 
 #endif  /* SURFACEZ_H */
-
-
-
-

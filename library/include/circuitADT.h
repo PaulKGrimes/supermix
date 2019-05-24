@@ -1,7 +1,7 @@
 // SuperMix version 1.4 C++ source file
 // Copyright (c) 1999, 2001, 2004 California Institute of Technology.
 // All rights reserved.
-/**************************************************************\
+/** ***********************************************************\
 * circuitADT.h                                                 *
 *                                                              *
 * John Ward, September 10, 1997                                *
@@ -13,7 +13,7 @@
 #include "nport.h"
 #include "connection.h"
 
-/**************************************************************\
+/** ***********************************************************\
 *                                                              *
 * class nportSetNode                                           *
 *                                                              *
@@ -27,7 +27,7 @@ public:
   nport *dev;
 };
 
-/**************************************************************\
+/** ***********************************************************\
 *                                                              *
 * class nportSet                                               *
 *                                                              *
@@ -64,7 +64,7 @@ public:
   // The destructor must free each node of the set.
   // NOTE:  The devices don't get deleted.
   ~nportSet();
- 
+
   // Return the number of devices in the set.
   int len() const;
 
@@ -87,7 +87,7 @@ public:
   void show();
 };
 
-/**************************************************************\
+/** ***********************************************************\
 *                                                              *
 * class tmpListNode                                            *
 *                                                              *
@@ -100,7 +100,7 @@ public:
   connection *dev;
 };
 
-/**************************************************************\
+/** ***********************************************************\
 *                                                              *
 * class tmpList                                                *
 *                                                              *
@@ -136,7 +136,7 @@ public:
   // The destructor must free each node of the list.
   // NOTE:  The devices don't get deleted.
   ~tmpList();
- 
+
   // Return the number of devices in the list.
   int len() const;
 
@@ -159,7 +159,7 @@ public:
   void show();
 };
 
-/**************************************************************\
+/** ***********************************************************\
 *                                                              *
 * class portStackNode                                          *
 *                                                              *
@@ -171,7 +171,7 @@ public:
   portArray cons;
 };
 
-/**************************************************************\
+/** ***********************************************************\
 *                                                              *
 * class portStack                                              *
 *                                                              *
@@ -193,7 +193,7 @@ public:
 
   // The destructor must free each node of the stack.
   ~portStack();
- 
+
   // Return TRUE if the stack is empty.
   int isEmpty();
 
@@ -215,7 +215,7 @@ public:
   void show();
 };
 
-/**************************************************************\
+/** ***********************************************************\
 *                                                              *
 * class portVectorNode                                         *
 *                                                              *
@@ -229,7 +229,7 @@ public:
   port label;
 };
 
-/**************************************************************\
+/** ***********************************************************\
 *                                                              *
 * class portVector                                             *
 *                                                              *
@@ -256,7 +256,7 @@ public:
 
   // The destructor must free each node of the list.
   ~portVector();
- 
+
   // Return the number of ports in the list.
   int len() const;
 
