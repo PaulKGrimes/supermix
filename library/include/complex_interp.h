@@ -1,4 +1,4 @@
-*  *  // SuperMix version 1.4 C++ source file
+// SuperMix version 1.4 C++ source file
 // Copyright (c) 1999, 2001, 2004 California Institute of Technology.
 // All rights reserved.
 /** ********************************************************************
@@ -104,7 +104,7 @@ public:
 	      const abstract_real_parameter &xp   // The independent (x) variable object
 	      ) ;
 
-  /** The x and y row numbers, xrow and yrow, refer to LEFT INDEX values in the 
+  /** The x and y row numbers, xrow and yrow, refer to LEFT INDEX values in the
   *   complex_matrix. They correspond to the FIRST INDEX in a complex_matrix::read(i,j)
   *   function call. Only the real part of the values in xrow will be used. */
 
