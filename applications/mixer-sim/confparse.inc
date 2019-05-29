@@ -41,10 +41,10 @@ static DOTCONF_CB(harmonics);
     // Junction parameters
 static DOTCONF_CB(iv_curve);
 static DOTCONF_CB(kk_curve);
-static DOTCONF_CB(rna);
-static DOTCONF_CB(scap);
-static DOTCONF_CB(area);
-static DOTCONF_CB(vgap);
+static DOTCONF_CB(junction_rna);
+static DOTCONF_CB(junction_scap);
+static DOTCONF_CB(junction_area);
+static DOTCONF_CB(junction_vgap);
     // Tuner parameters
 static DOTCONF_CB(tuner_type);
 static DOTCONF_CB(touchstone_file);
@@ -148,10 +148,10 @@ static const configoption_t options[] = {
     // Junction parameters
     {"IV_CURVE",            ARG_STR,    iv_curve,           NULL,   CTX_ALL },
     {"KK_CURVE",            ARG_STR,    kk_curve,           NULL,   CTX_ALL },
-    {"JUNCTION_RNA",                 ARG_LIST,   rna,                NULL,   CTX_ALL },
-    {"JUNCTION_SCAP",                ARG_LIST,   scap,               NULL,   CTX_ALL },
-    {"JUNCTION_AREA",                ARG_LIST,   area,               NULL,   CTX_ALL },
-    {"JUNCTION_VGAP",                ARG_LIST,   vgap,               NULL,   CTX_ALL },
+    {"JUNCTION_RNA",                 ARG_LIST,   junction_rna,                NULL,   CTX_ALL },
+    {"JUNCTION_SCAP",                ARG_LIST,   junction_scap,               NULL,   CTX_ALL },
+    {"JUNCTION_AREA",                ARG_LIST,   junction_area,               NULL,   CTX_ALL },
+    {"JUNCTION_VGAP",                ARG_LIST,   junction_vgap,               NULL,   CTX_ALL },
     // Tuner parameters
     {"TUNER_TYPE",          ARG_STR,    tuner_type,         NULL,   CTX_ALL },
     {"TOUCHSTONE_FILE",     ARG_STR,    touchstone_file,    NULL,   CTX_ALL },
@@ -410,39 +410,39 @@ DOTCONF_CB(kk_curve)
     return NULL;
 }
 
-DOTCONF_CB(rna)
+DOTCONF_CB(junction_rna)
 {
 
-    RNA_unit = Ohm*Micron*Micron;
-    RNA = atof(cmd->data.list[0])*RNA_unit;
-    RNA_unitStr = "Ohm*um^2";
+    JUNCTION_RNA_unit = Ohm*Micron*Micron;
+    JUNCTION_RNA = atof(cmd->data.list[0])*JUNCTION_RNA_unit;
+    JUNCTION_RNA_unitStr = "Ohm*um^2";
 
     return NULL;
 }
 
-DOTCONF_CB(scap)
+DOTCONF_CB(junction_scap)
 {
-    SCAP_unit = fFarad/Micron/Micron;
-    SCAP = atof(cmd->data.list[0])*SCAP_unit;
-    SCAP_unitStr = "fF/um^2";
+    JUNCTION_SCAP_unit = fFarad/Micron/Micron;
+    JUNCTION_SCAP = atof(cmd->data.list[0])*JUNCTION_SCAP_unit;
+    JUNCTION_SCAP_unitStr = "fF/um^2";
 
     return NULL;
 }
 
-DOTCONF_CB(area)
+DOTCONF_CB(junction_area)
 {
-    AREA_unit = Micron*Micron;
-    AREA = atof(cmd->data.list[0])*AREA_unit;
-    AREA_unitStr = "um^2";
+    JUNCTION_AREA_unit = Micron*Micron;
+    JUNCTION_AREA = atof(cmd->data.list[0])*JUNCTION_AREA_unit;
+    JUNCTION_AREA_unitStr = "um^2";
 
     return NULL;
 }
 
-DOTCONF_CB(vgap)
+DOTCONF_CB(junction_vgap)
 {
-    VGAP_unit = mVolt;
-    VGAP = atof(cmd->data.list[0])*VGAP_unit;
-    VGAP_unitStr = "mV";
+    JUNCTION_VGAP_unit = mVolt;
+    JUNCTION_VGAP = atof(cmd->data.list[0])*JUNCTION_VGAP_unit;
+    JUNCTION_VGAP_unitStr = "mV";
 
     return NULL;
 }
@@ -473,9 +473,9 @@ DOTCONF_CB(single_stub_input)
     SINGLE_STUB_INPUT_length_unitStr = "um";
     SINGLE_STUB_INPUT_length = atof(cmd->data.list[0])*SINGLE_STUB_INPUT_length_unit;
 
-    SINGLE_STUB_INPUT_width1_unit = Micron;
-    SINGLE_STUB_INPUT_width1_unitStr = "um";
-    SINGLE_STUB_INPUT_width1 = atof(cmd->data.list[1])*SINGLE_STUB_INPUT_width1_unit;
+    SINGLE_STUB_INPUT_width_unit = Micron;
+    SINGLE_STUB_INPUT_width_unitStr = "um";
+    SINGLE_STUB_INPUT_width = atof(cmd->data.list[1])*SINGLE_STUB_INPUT_width_unit;
 
     SINGLE_STUB_INPUT_width2_unit = Micron;
     SINGLE_STUB_INPUT_width2_unitStr = "um";
@@ -510,9 +510,9 @@ DOTCONF_CB(double_stub_1_input)
     DOUBLE_STUB_1_INPUT_length_unitStr = "um";
     DOUBLE_STUB_1_INPUT_length = atof(cmd->data.list[0])*DOUBLE_STUB_1_INPUT_length_unit;
 
-    DOUBLE_STUB_1_INPUT_width1_unit = Micron;
-    DOUBLE_STUB_1_INPUT_width1_unitStr = "um";
-    DOUBLE_STUB_1_INPUT_width1 = atof(cmd->data.list[1])*DOUBLE_STUB_1_INPUT_width1_unit;
+    DOUBLE_STUB_1_INPUT_width_unit = Micron;
+    DOUBLE_STUB_1_INPUT_width_unitStr = "um";
+    DOUBLE_STUB_1_INPUT_width = atof(cmd->data.list[1])*DOUBLE_STUB_1_INPUT_width_unit;
 
     DOUBLE_STUB_1_INPUT_width2_unit = Micron;
     DOUBLE_STUB_1_INPUT_width2_unitStr = "um";
@@ -546,9 +546,9 @@ DOTCONF_CB(double_stub_2_input)
     DOUBLE_STUB_2_INPUT_length_unitStr = "um";
     DOUBLE_STUB_2_INPUT_length = atof(cmd->data.list[0])*DOUBLE_STUB_2_INPUT_length_unit;
 
-    DOUBLE_STUB_2_INPUT_width1_unit = Micron;
-    DOUBLE_STUB_2_INPUT_width1_unitStr = "um";
-    DOUBLE_STUB_2_INPUT_width1 = atof(cmd->data.list[1])*DOUBLE_STUB_2_INPUT_width1_unit;
+    DOUBLE_STUB_2_INPUT_width_unit = Micron;
+    DOUBLE_STUB_2_INPUT_width_unitStr = "um";
+    DOUBLE_STUB_2_INPUT_width = atof(cmd->data.list[1])*DOUBLE_STUB_2_INPUT_width_unit;
 
     DOUBLE_STUB_2_INPUT_width2_unit = Micron;
     DOUBLE_STUB_2_INPUT_width2_unitStr = "um";
@@ -583,9 +583,9 @@ DOTCONF_CB(triple_stub_1_input)
     TRIPLE_STUB_1_INPUT_length_unitStr = "um";
     TRIPLE_STUB_1_INPUT_length = atof(cmd->data.list[0])*TRIPLE_STUB_1_INPUT_length_unit;
 
-    TRIPLE_STUB_1_INPUT_width1_unit = Micron;
-    TRIPLE_STUB_1_INPUT_width1_unitStr = "um";
-    TRIPLE_STUB_1_INPUT_width1 = atof(cmd->data.list[1])*TRIPLE_STUB_1_INPUT_width1_unit;
+    TRIPLE_STUB_1_INPUT_width_unit = Micron;
+    TRIPLE_STUB_1_INPUT_width_unitStr = "um";
+    TRIPLE_STUB_1_INPUT_width = atof(cmd->data.list[1])*TRIPLE_STUB_1_INPUT_width_unit;
 
     TRIPLE_STUB_1_INPUT_width2_unit = Micron;
     TRIPLE_STUB_1_INPUT_width2_unitStr = "um";
@@ -619,9 +619,9 @@ DOTCONF_CB(triple_stub_2_input)
     TRIPLE_STUB_2_INPUT_length_unitStr = "um";
     TRIPLE_STUB_2_INPUT_length = atof(cmd->data.list[0])*TRIPLE_STUB_2_INPUT_length_unit;
 
-    TRIPLE_STUB_2_INPUT_width1_unit = Micron;
-    TRIPLE_STUB_2_INPUT_width1_unitStr = "um";
-    TRIPLE_STUB_2_INPUT_width1 = atof(cmd->data.list[1])*TRIPLE_STUB_2_INPUT_width1_unit;
+    TRIPLE_STUB_2_INPUT_width_unit = Micron;
+    TRIPLE_STUB_2_INPUT_width_unitStr = "um";
+    TRIPLE_STUB_2_INPUT_width = atof(cmd->data.list[1])*TRIPLE_STUB_2_INPUT_width_unit;
 
     TRIPLE_STUB_2_INPUT_width2_unit = Micron;
     TRIPLE_STUB_2_INPUT_width2_unitStr = "um";
@@ -655,9 +655,9 @@ DOTCONF_CB(triple_stub_3_input)
     TRIPLE_STUB_3_INPUT_length_unitStr = "um";
     TRIPLE_STUB_3_INPUT_length = atof(cmd->data.list[0])*TRIPLE_STUB_3_INPUT_length_unit;
 
-    TRIPLE_STUB_3_INPUT_width1_unit = Micron;
-    TRIPLE_STUB_3_INPUT_width1_unitStr = "um";
-    TRIPLE_STUB_3_INPUT_width1 = atof(cmd->data.list[1])*TRIPLE_STUB_3_INPUT_width1_unit;
+    TRIPLE_STUB_3_INPUT_width_unit = Micron;
+    TRIPLE_STUB_3_INPUT_width_unitStr = "um";
+    TRIPLE_STUB_3_INPUT_width = atof(cmd->data.list[1])*TRIPLE_STUB_3_INPUT_width_unit;
 
     TRIPLE_STUB_3_INPUT_width2_unit = Micron;
     TRIPLE_STUB_3_INPUT_width2_unitStr = "um";
@@ -702,6 +702,8 @@ DOTCONF_CB(belitsky_junction_1_area)
     BELITSKY_JUNCTION_1_AREA_unit = Micron*Micron;
     BELITSKY_JUNCTION_1_AREA_unitStr = "um^2";
     BELITSKY_JUNCTION_1_AREA = atof(cmd->data.list[0])*SDM_JUNCTION_1_AREA_unit;
+
+    return NULL;
 }
 
 DOTCONF_CB(belitsky_tuning_strip)
@@ -727,12 +729,16 @@ DOTCONF_CB(belitsky_junction_2_area)
     BELITSKY_JUNCTION_2_AREA_unit = Micron*Micron;
     BELITSKY_JUNCTION_2_AREA_unitStr = "um^2";
     BELITSKY_JUNCTION_2_AREA = atof(cmd->data.list[0])*SDM_JUNCTION_1_AREA_unit;
+
+    return NULL;
 }
 
 // Series distributed mixer
 DOTCONF_CB(sdm_input_type)
 {
     SDM_INPUT_TYPE = cmd->data.str;
+
+    return NULL;
 }
 
 DOTCONF_CB(sdm_input)
@@ -745,9 +751,9 @@ DOTCONF_CB(sdm_input)
     SDM_INPUT_width_unitStr = "um";
     SDM_INPUT_width = atof(cmd->data.list[1])*SDM_INPUT_width_unit;
 
-    SDM_INPUT_thick_unit = Micron;
-    SDM_INPUT_thick_unitStr = "um";
-    SDM_INPUT_thick = atof(cmd->data.list[2])*SDM_INPUT_thick_unit;
+    SDM_INPUT_width2_unit = Micron;
+    SDM_INPUT_width2_unitStr = "um";
+    SDM_INPUT_width2 = atof(cmd->data.list[2])*SDM_INPUT_width2_unit;
 
     return NULL;
 }
@@ -757,11 +763,14 @@ DOTCONF_CB(sdm_junction_1_area)
     SDM_JUNCTION_1_AREA_unit = Micron*Micron;
     SDM_JUNCTION_1_AREA_unitStr = "um^2";
     SDM_JUNCTION_1_AREA = atof(cmd->data.list[0])*SDM_JUNCTION_1_AREA_unit;
+
+    return NULL;
 }
 
 DOTCONF_CB(sdm_tuner_12_type)
 {
     SDM_TUNER_12_TYPE = cmd->data.str;
+    return NULL;
 }
 
 DOTCONF_CB(sdm_tuner_12)
@@ -774,9 +783,9 @@ DOTCONF_CB(sdm_tuner_12)
     SDM_TUNER_12_width_unitStr = "um";
     SDM_TUNER_12_width = atof(cmd->data.list[1])*SDM_TUNER_12_width_unit;
 
-    SDM_TUNER_12_thick_unit = Micron;
-    SDM_TUNER_12_thick_unitStr = "um";
-    SDM_TUNER_12_thick = atof(cmd->data.list[2])*SDM_TUNER_12_thick_unit;
+    SDM_TUNER_12_width2_unit = Micron;
+    SDM_TUNER_12_width2_unitStr = "um";
+    SDM_TUNER_12_width2 = atof(cmd->data.list[2])*SDM_TUNER_12_width2_unit;
 
     return NULL;
 }
@@ -786,14 +795,18 @@ DOTCONF_CB(sdm_junction_2_area)
     SDM_JUNCTION_2_AREA_unit = Micron*Micron;
     SDM_JUNCTION_2_AREA_unitStr = "um^2";
     SDM_JUNCTION_2_AREA = atof(cmd->data.list[0])*SDM_JUNCTION_2_AREA_unit;
+
+    return NULL;
 }
 
 DOTCONF_CB(sdm_tuner_23_type)
 {
     SDM_TUNER_23_TYPE = cmd->data.str;
+
+    return NULL;
 }
 
-DOTCONF_CB(sdm_tuner_12)
+DOTCONF_CB(sdm_tuner_23)
 {
     SDM_TUNER_23_length_unit = Micron;
     SDM_TUNER_23_length_unitStr = "um";
@@ -803,9 +816,9 @@ DOTCONF_CB(sdm_tuner_12)
     SDM_TUNER_23_width_unitStr = "um";
     SDM_TUNER_23_width = atof(cmd->data.list[1])*SDM_TUNER_23_width_unit;
 
-    SDM_TUNER_23_thick_unit = Micron;
-    SDM_TUNER_23_thick_unitStr = "um";
-    SDM_TUNER_23_thick = atof(cmd->data.list[2])*SDM_TUNER_23_thick_unit;
+    SDM_TUNER_23_width2_unit = Micron;
+    SDM_TUNER_23_width2_unitStr = "um";
+    SDM_TUNER_23_width2 = atof(cmd->data.list[2])*SDM_TUNER_23_width2_unit;
 
     return NULL;
 }
@@ -815,11 +828,15 @@ DOTCONF_CB(sdm_junction_3_area)
     SDM_JUNCTION_3_AREA_unit = Micron*Micron;
     SDM_JUNCTION_3_AREA_unitStr = "um^2";
     SDM_JUNCTION_3_AREA = atof(cmd->data.list[0])*SDM_JUNCTION_3_AREA_unit;
+
+    return NULL;
 }
 
 DOTCONF_CB(sdm_tuner_34_type)
 {
     SDM_TUNER_34_TYPE = cmd->data.str;
+
+    return NULL;
 }
 
 DOTCONF_CB(sdm_tuner_34)
@@ -832,9 +849,9 @@ DOTCONF_CB(sdm_tuner_34)
     SDM_TUNER_34_width_unitStr = "um";
     SDM_TUNER_34_width = atof(cmd->data.list[1])*SDM_TUNER_34_width_unit;
 
-    SDM_TUNER_34_thick_unit = Micron;
-    SDM_TUNER_34_thick_unitStr = "um";
-    SDM_TUNER_34_thick = atof(cmd->data.list[2])*SDM_TUNER_34_thick_unit;
+    SDM_TUNER_34_width2_unit = Micron;
+    SDM_TUNER_34_width2_unitStr = "um";
+    SDM_TUNER_34_width2 = atof(cmd->data.list[2])*SDM_TUNER_34_width2_unit;
 
     return NULL;
 }
@@ -844,6 +861,8 @@ DOTCONF_CB(sdm_junction_4_area)
     SDM_JUNCTION_4_AREA_unit = Micron*Micron;
     SDM_JUNCTION_4_AREA_unitStr = "um^2";
     SDM_JUNCTION_4_AREA = atof(cmd->data.list[0])*SDM_JUNCTION_4_AREA_unit;
+
+    return NULL;
 }
 
 
@@ -866,9 +885,9 @@ DOTCONF_CB(radial_choke_input)
     RADIAL_CHOKE_INPUT_length_unitStr = "um";
     RADIAL_CHOKE_INPUT_length = atof(cmd->data.list[0])*RADIAL_CHOKE_INPUT_length_unit;
 
-    RADIAL_CHOKE_INPUT_width1_unit = Micron;
-    RADIAL_CHOKE_INPUT_width1_unitStr = "um";
-    RADIAL_CHOKE_INPUT_width1 = atof(cmd->data.list[1])*RADIAL_CHOKE_INPUT_width1_unit;
+    RADIAL_CHOKE_INPUT_width_unit = Micron;
+    RADIAL_CHOKE_INPUT_width_unitStr = "um";
+    RADIAL_CHOKE_INPUT_width = atof(cmd->data.list[1])*RADIAL_CHOKE_INPUT_width_unit;
 
     RADIAL_CHOKE_INPUT_width2_unit = Micron;
     RADIAL_CHOKE_INPUT_width2_unitStr = "um";
