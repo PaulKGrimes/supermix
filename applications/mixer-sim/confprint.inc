@@ -224,7 +224,7 @@ int outputConf()
             SDM_JUNCTION_1_AREA/SDM_JUNCTION_1_AREA_unit,
             SDM_JUNCTION_1_AREA_unitStr.c_str());
         printf("# SDM_TUNER_12_TYPE %s\n",
-           SDM_INPUT_TYPE.c_str());
+           SDM_TUNER_12_TYPE.c_str());
         printf("# SDM_TUNER_12 %f %f %f\n",
            SDM_TUNER_12_length/SDM_TUNER_12_length_unit,
            SDM_TUNER_12_width/SDM_TUNER_12_width_unit,
@@ -246,7 +246,7 @@ int outputConf()
             SDM_JUNCTION_1_AREA/SDM_JUNCTION_1_AREA_unit,
             SDM_JUNCTION_1_AREA_unitStr.c_str());
         printf("# SDM_TUNER_12_TYPE %s\n",
-           SDM_INPUT_TYPE.c_str());
+           SDM_TUNER_12_TYPE.c_str());
         printf("# SDM_TUNER_12 %f %f %f\n",
            SDM_TUNER_12_length/SDM_TUNER_12_length_unit,
            SDM_TUNER_12_width/SDM_TUNER_12_width_unit,
@@ -255,7 +255,7 @@ int outputConf()
             SDM_JUNCTION_2_AREA/SDM_JUNCTION_2_AREA_unit,
             SDM_JUNCTION_2_AREA_unitStr.c_str());
         printf("# SDM_TUNER_23_TYPE %s\n",
-           SDM_INPUT_TYPE.c_str());
+           SDM_TUNER_23_TYPE.c_str());
         printf("# SDM_TUNER_23 %f %f %f\n",
            SDM_TUNER_23_length/SDM_TUNER_23_length_unit,
            SDM_TUNER_23_width/SDM_TUNER_23_width_unit,
@@ -312,6 +312,8 @@ int outputConf()
     printf("# GROUND_THICKNESS %f\n", GROUND_THICKNESS/GROUND_THICKNESS_unit);
     printf("# INSUL_DEFAULT %s\n", INSUL_DEFAULT.c_str());
     printf("# INSUL_THICKNESS %f\n", INSUL_THICKNESS/INSUL_THICKNESS_unit);
+    printf("# SUBSTRATE_DEFAULT %s\n", SUBSTRATE_DEFAULT.c_str());
+    printf("# SUBSTRATE_THICKNESS %f\n", SUBSTRATE_THICKNESS/SUBSTRATE_THICKNESS_unit);
     printf("# COVER_DEFAULT %s\n", COVER_DEFAULT.c_str());
     printf("# COVER_THICKNESS %f\n#\n", COVER_THICKNESS/COVER_THICKNESS_unit);
 
@@ -321,6 +323,8 @@ int outputConf()
             NBTIN_Vgap/mVolt, NBTIN_Tc/Kelvin, NBTIN_Rho_normal/(Micro*Ohm*Centi*Meter));
     printf("# SIO_PROPERTIES %f %f\n",
             SIO_epsilon/1.0, SIO_loss_tangent/1.0);
+    printf("# SIO2_PROPERTIES %f %f\n",
+            SIO2_epsilon/1.0, SIO2_loss_tangent/1.0);
     printf("# AIR_PROPERTIES %f %f\n",
             AIR_epsilon/1.0, AIR_loss_tangent/1.0);
     printf("#\n# End of configuration file data\n# \n");

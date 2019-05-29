@@ -55,10 +55,33 @@ const_diel Insulation;
         Insulation.eps = & SIO_epsilon;
         Insulation.tand = & SIO_loss_tangent;
     }
+    else if (INSUL_DEFAULT == "SIO2")
+    {
+        Insulation.eps = & SIO2_epsilon;
+        Insulation.tand = & SIO2_loss_tangent;
+    }
     else // assume air
     {
         Insulation.eps = & AIR_epsilon;
         Insulation.tand = & AIR_loss_tangent;
+    }
+
+// Create the dielectrics
+const_diel Substrate;
+    if (SUBSTRATE_DEFAULT == "SIO")
+    {
+        Substrate.eps = & SIO_epsilon;
+        Substrate.tand = & SIO_loss_tangent;
+    }
+    else if (SUBSTRATE_DEFAULT == "SIO2")
+    {
+        Substrate.eps = & SIO2_epsilon;
+        Substrate.tand = & SIO2_loss_tangent;
+    }
+    else // assume air
+    {
+        Substrate.eps = & AIR_epsilon;
+        Substrate.tand = & AIR_loss_tangent;
     }
 
 const_diel Cover;
@@ -66,6 +89,11 @@ const_diel Cover;
     {
         Cover.eps = & SIO_epsilon;
         Cover.tand = & SIO_loss_tangent;
+    }
+    else if (COVER_DEFAULT == "SIO2")
+    {
+        Cover.eps = & SIO2_epsilon;
+        Cover.tand = & SIO2_loss_tangent;
     }
     else // assume air
     {
@@ -130,3 +158,7 @@ mixer mix;
     USB_PORT = mix.port(NumSIS+1,  1);
     LSB_PORT = mix.port(NumSIS+1, -1);
     IF_PORT  = mix.port(NumSIS+1,  0);
+
+    parameter usb_freq = mix.freq(USB_PORT);
+    parameter lsb_freq = mix.freq(LSB_PORT);
+    parameter if_freq = mix.freq(IF_PORT);

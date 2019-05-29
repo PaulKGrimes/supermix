@@ -1,11 +1,8 @@
-In file included from /mnt/d/pgrimes/Software/GitHub/supermix/library/include/supermix.h:40:0,
-                 from mixer-sim.c:27:
-/mnt/d/pgrimes/Software/GitHub/supermix/library/include/complex_interp.h:28:1: error: expected unqualified-id before ‘class’
- class complex_interp : public abstract_complex_parameter, public interpolator<complex>
- ^~~~~
-/mnt/d/pgrimes/Software/GitHub/supermix/library/include/complex_interp.h:28:1: error: expected constructor, destructor, or type conversion before ‘class’
 mixer-sim.c: In function ‘int main(int, char**)’:
 mixer-sim.c:47:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
                          options, NULL, CASE_INSENSITIVE);
                                                         ^
-make: *** [mixer-sim] Error 1
+mixer-sim2.c: In function ‘int main(int, char**)’:
+mixer-sim2.c:47:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+                         options, NULL, CASE_INSENSITIVE);
+                                                        ^

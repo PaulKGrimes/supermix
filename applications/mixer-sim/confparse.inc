@@ -116,6 +116,8 @@ static DOTCONF_CB(ground_default);
 static DOTCONF_CB(ground_thickness);
 static DOTCONF_CB(insul_default);
 static DOTCONF_CB(insul_thickness);
+static DOTCONF_CB(substrate_default);
+static DOTCONF_CB(substrate_thickness);
 static DOTCONF_CB(cover_default);
 static DOTCONF_CB(cover_thickness);
 
@@ -123,6 +125,7 @@ static DOTCONF_CB(cover_thickness);
 static DOTCONF_CB(nb_properties);
 static DOTCONF_CB(nbtin_properties);
 static DOTCONF_CB(sio_properties);
+static DOTCONF_CB(sio2_properties);
 
 // Create the mapping of .conf keywords to functions
 static const configoption_t options[] = {
@@ -219,12 +222,15 @@ static const configoption_t options[] = {
     {"GROUND_THICKNESS",    ARG_LIST,   ground_thickness,   NULL,   CTX_ALL },
     {"INSUL_DEFAULT",       ARG_STR,    insul_default,      NULL,   CTX_ALL },
     {"INSUL_THICKNESS",     ARG_LIST,   insul_thickness,    NULL,   CTX_ALL },
+    {"SUBSTRATE_DEFAULT",       ARG_STR,    substrate_default,      NULL,   CTX_ALL },
+    {"SUBSTRATE_THICKNESS",     ARG_LIST,   substrate_thickness,    NULL,   CTX_ALL },
     {"COVER_DEFAULT",       ARG_STR,    cover_default,      NULL,   CTX_ALL },
     {"COVER_THICKNESS",     ARG_LIST,   cover_thickness,    NULL,   CTX_ALL },
     // Material Properties
     {"NB_PROPERTIES",       ARG_LIST,   nb_properties,      NULL,   CTX_ALL },
     {"NBTIN_PROPERTIES",    ARG_LIST,   nbtin_properties,   NULL,   CTX_ALL },
     {"SIO_PROPERTIES",      ARG_LIST,   sio_properties,     NULL,   CTX_ALL },
+    {"SIO2_PROPERTIES",      ARG_LIST,   sio2_properties,     NULL,   CTX_ALL },
     // Fallback
     {"",                    ARG_NAME,   cb_fallback,        NULL,   0       },
     LAST_OPTION
@@ -701,7 +707,7 @@ DOTCONF_CB(belitsky_junction_1_area)
 {
     BELITSKY_JUNCTION_1_AREA_unit = Micron*Micron;
     BELITSKY_JUNCTION_1_AREA_unitStr = "um^2";
-    BELITSKY_JUNCTION_1_AREA = atof(cmd->data.list[0])*SDM_JUNCTION_1_AREA_unit;
+    BELITSKY_JUNCTION_1_AREA = atof(cmd->data.list[0])*BELITSKY_JUNCTION_1_AREA_unit;
 
     return NULL;
 }
@@ -728,7 +734,7 @@ DOTCONF_CB(belitsky_junction_2_area)
 {
     BELITSKY_JUNCTION_2_AREA_unit = Micron*Micron;
     BELITSKY_JUNCTION_2_AREA_unitStr = "um^2";
-    BELITSKY_JUNCTION_2_AREA = atof(cmd->data.list[0])*SDM_JUNCTION_1_AREA_unit;
+    BELITSKY_JUNCTION_2_AREA = atof(cmd->data.list[0])*BELITSKY_JUNCTION_1_AREA_unit;
 
     return NULL;
 }
@@ -1089,6 +1095,21 @@ DOTCONF_CB(insul_thickness)
     return NULL;
 }
 
+DOTCONF_CB(substrate_default)
+{
+    SUBSTRATE_DEFAULT = cmd->data.str;
+    return NULL;
+}
+
+DOTCONF_CB(substrate_thickness)
+{
+    SUBSTRATE_THICKNESS_unit = Micron;
+    SUBSTRATE_THICKNESS_unitStr = "um";
+    SUBSTRATE_THICKNESS = atof(cmd->data.list[0])*SUBSTRATE_THICKNESS_unit;
+
+    return NULL;
+}
+
 DOTCONF_CB(cover_default)
 {
     COVER_DEFAULT = cmd->data.str;
@@ -1127,6 +1148,14 @@ DOTCONF_CB(sio_properties)
 {
     SIO_epsilon = atof(cmd->data.list[0]);
     SIO_loss_tangent = atof(cmd->data.list[1]);
+
+    return NULL;
+}
+
+DOTCONF_CB(sio2_properties)
+{
+    SIO2_epsilon = atof(cmd->data.list[0]);
+    SIO2_loss_tangent = atof(cmd->data.list[1]);
 
     return NULL;
 }

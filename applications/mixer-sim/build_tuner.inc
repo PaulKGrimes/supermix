@@ -638,13 +638,15 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_2")
     if (SDM_INPUT_TYPE == "COPLANAR")
     {
 
-        Input_Strip_CPW.substrate(Insulation);
+        Input_Strip_CPW.substrate(Substrate);
         Input_Strip_CPW.top_strip(Top);
+        //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
         // Physical dimensions
         Input_Strip_CPW.length = & SDM_INPUT_length;
         Input_Strip_CPW.width = & SDM_INPUT_width;
         Input_Strip_CPW.space = & SDM_INPUT_width2;
+        Input_Strip_CPW.sub_thick = & SUBSTRATE_THICKNESS;
 
         Input_Strip = &Input_Strip_CPW;
     }
@@ -667,11 +669,13 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_2")
 
         Tuning_Strip_CPW.substrate(Insulation);
         Tuning_Strip_CPW.top_strip(Top);
+        //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
         // Physical dimensions
         Tuning_Strip_CPW.length = & SDM_TUNER_12_length;
         Tuning_Strip_CPW.width = & SDM_TUNER_12_width;
         Tuning_Strip_CPW.space = & SDM_TUNER_12_width2;
+        Tuning_Strip_CPW.sub_thick = & SUBSTRATE_THICKNESS;
 
         Tuning_Strip = &Tuning_Strip_CPW;
     }
@@ -694,21 +698,21 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_2")
 
     // Connect circuit
     Rf.connect(Rf_Input, 2, *Input_Strip, 1);
-    Rf.connect(*Input_Strip, 2, Series_Tee_1, 1);
-    Rf.connect(Series_Tee_1, 3, *Tuning_Strip, 1);
+    Rf.connect(*Input_Strip, 2, Series_Tee_1, 3);
+    Rf.connect(Series_Tee_1, 2, *Tuning_Strip, 1);
 
     // add ports
-    Rf.add_port(Series_Tee_1, 2); // SIS 1
+    Rf.add_port(Series_Tee_1, 1); // SIS 1
     Rf.add_port(*Tuning_Strip, 2);  // SIS 2
     Rf.add_port(Rf_Input, 1);   // RF Input
 
     // IF Circuit
 
     // Connect circuit and add ports
-    If.connect(*Tuning_Strip, 2, Series_Tee_1, 1);
+    If.connect(*Tuning_Strip, 1, Series_Tee_1, 2);
     If.connect(Series_Tee_1, 3, If_Load, 1);
-    If.add_port(*Tuning_Strip, 1);   // SIS_1
-    If.add_port(Series_Tee_1, 2);  // SIS_2
+    If.add_port(*Tuning_Strip, 2);   // SIS_1
+    If.add_port(Series_Tee_1, 1);  // SIS_2
     If.add_port(If_Load, 2);  // If output
 
     // Create the two SIS junctions
@@ -729,9 +733,9 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_2")
     // Create the 2 junction bias circuit
     Bias_Source.source_f = 0.0;
     Bias_Source.source_voltage = & Bias_Voltage;
-    Bias.connect(Bias_Source, 1, Series_Tee_1, 1);
+    Bias.connect(Bias_Source, 1, Series_Tee_1, 3);
+    Bias.add_port(Series_Tee_1, 1);
     Bias.add_port(Series_Tee_1, 2);
-    Bias.add_port(Series_Tee_1, 3);
 }
 
 
@@ -744,11 +748,13 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
     {
         Input_Strip_CPW.substrate(Insulation);
         Input_Strip_CPW.top_strip(Top);
+        //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
         // Physical dimensions
         Input_Strip_CPW.length = & SDM_INPUT_length;
         Input_Strip_CPW.width = & SDM_INPUT_width;
         Input_Strip_CPW.space = & SDM_INPUT_width2;
+        Input_Strip_CPW.sub_thick = & SUBSTRATE_THICKNESS;
 
         Input_Strip = &Input_Strip_CPW;
     }
@@ -771,11 +777,13 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
 
         Tuning_Strip_CPW.substrate(Insulation);
         Tuning_Strip_CPW.top_strip(Top);
+        //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
         // Physical dimensions
         Tuning_Strip_CPW.length = & SDM_TUNER_12_length;
         Tuning_Strip_CPW.width = & SDM_TUNER_12_width;
         Tuning_Strip_CPW.space = & SDM_TUNER_12_width2;
+        Tuning_Strip_CPW.sub_thick = & SUBSTRATE_THICKNESS;
 
         Tuning_Strip = &Tuning_Strip_CPW;
     }
@@ -798,11 +806,13 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
 
         Tuning_Strip_2_CPW.substrate(Insulation);
         Tuning_Strip_2_CPW.top_strip(Top);
+        //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
         // Physical dimensions
         Tuning_Strip_2_CPW.length = & SDM_TUNER_23_length;
         Tuning_Strip_2_CPW.width = & SDM_TUNER_23_width;
         Tuning_Strip_2_CPW.space = & SDM_TUNER_23_width2;
+        Tuning_Strip_2_CPW.sub_thick = & SUBSTRATE_THICKNESS;
 
         Tuning_Strip_2 = &Tuning_Strip_2_CPW;
     }
@@ -822,15 +832,15 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
 
     // Connect circuit
     Rf.connect(Rf_Input, 2, *Input_Strip, 1);
-    Rf.connect(*Input_Strip, 2, Series_Tee_1, 1);
-    Rf.connect(Series_Tee_1, 3, *Tuning_Strip, 1);
-    Rf.connect(*Tuning_Strip, 2, Series_Tee_2, 1);
-    Rf.connect(Series_Tee_2, 3, *Tuning_Strip_2, 1);
+    Rf.connect(*Input_Strip, 2, Series_Tee_1, 3);
+    Rf.connect(Series_Tee_1, 2, *Tuning_Strip, 1);
+    Rf.connect(*Tuning_Strip, 2, Series_Tee_2, 3);
+    Rf.connect(Series_Tee_2, 2, *Tuning_Strip_2, 1);
 
 
     // add ports
-    Rf.add_port(Series_Tee_1, 2); // SIS 1
-    Rf.add_port(Series_Tee_2, 2);  // SIS 2
+    Rf.add_port(Series_Tee_1, 1); // SIS 1
+    Rf.add_port(Series_Tee_2, 1);  // SIS 2
     Rf.add_port(*Tuning_Strip_2, 2);  // SIS 3
     Rf.add_port(Rf_Input, 1);   // RF Input
 
@@ -838,15 +848,15 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
 
     // Connect circuit and add ports
     If.connect(If_Load, 1, *Input_Strip, 1);
-    If.connect(*Input_Strip, 2, Series_Tee_1, 1);
-    If.connect(Series_Tee_1, 3, *Tuning_Strip, 1);
-    If.connect(*Tuning_Strip, 2, Series_Tee_2, 1);
-    If.connect(Series_Tee_2, 3, *Tuning_Strip_2, 1);
+    If.connect(*Input_Strip, 2, Series_Tee_1, 3);
+    If.connect(Series_Tee_1, 2, *Tuning_Strip, 1);
+    If.connect(*Tuning_Strip, 2, Series_Tee_2, 3);
+    If.connect(Series_Tee_2, 2, *Tuning_Strip_2, 1);
 
 
     // add ports
-    If.add_port(Series_Tee_1, 2); // SIS 1
-    If.add_port(Series_Tee_2, 2);  // SIS 2
+    If.add_port(Series_Tee_1, 1); // SIS 1
+    If.add_port(Series_Tee_2, 1);  // SIS 2
     If.add_port(*Tuning_Strip_2, 2);  // SIS 3
     If.add_port(If_Load, 2);   // RF Input
 
@@ -876,15 +886,14 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
     Bias_Source.source_f = 0.0;
     Bias_Source.source_voltage = & Bias_Voltage;
     Bias.connect(Bias_Source, 1, *Input_Strip, 1);
-    Bias.connect(*Input_Strip, 2, Series_Tee_1, 1);
-    Bias.connect(Series_Tee_1, 3, *Tuning_Strip, 1);
-    Bias.connect(*Tuning_Strip, 2, Series_Tee_2, 1);
-    Bias.connect(Series_Tee_2, 3, *Tuning_Strip_2, 1);
+    Bias.connect(*Input_Strip, 2, Series_Tee_1, 3);
+    Bias.connect(Series_Tee_1, 2, *Tuning_Strip, 1);
+    Bias.connect(*Tuning_Strip, 2, Series_Tee_2, 3);
+    Bias.connect(Series_Tee_2, 2, *Tuning_Strip_2, 1);
 
-    Bias.add_port(Series_Tee_1, 2);
-    Bias.add_port(Series_Tee_2, 2);
+    Bias.add_port(Series_Tee_1, 1);
+    Bias.add_port(Series_Tee_2, 1);
     Bias.add_port(*Tuning_Strip_2, 2);
-    Bias.add_port(*Input_Strip, 1);
 }
 
 if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
@@ -897,11 +906,13 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
 
         Input_Strip_CPW.substrate(Insulation);
         Input_Strip_CPW.top_strip(Top);
+        //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
         // Physical dimensions
         Input_Strip_CPW.length = & SDM_INPUT_length;
         Input_Strip_CPW.width = & SDM_INPUT_width;
         Input_Strip_CPW.space = & SDM_INPUT_width2;
+        Input_Strip_CPW.sub_thick = & SUBSTRATE_THICKNESS;
 
         Input_Strip = &Input_Strip_CPW;
     }
@@ -924,11 +935,13 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
 
         Tuning_Strip_CPW.substrate(Insulation);
         Tuning_Strip_CPW.top_strip(Top);
+        //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
         // Physical dimensions
         Tuning_Strip_CPW.length = & SDM_TUNER_12_length;
         Tuning_Strip_CPW.width = & SDM_TUNER_12_width;
         Tuning_Strip_CPW.space = & SDM_TUNER_12_width2;
+        Tuning_Strip_CPW.sub_thick = & SUBSTRATE_THICKNESS;
 
         Tuning_Strip = &Tuning_Strip_CPW;
     }
@@ -951,11 +964,13 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
 
         Tuning_Strip_2_CPW.substrate(Insulation);
         Tuning_Strip_2_CPW.top_strip(Top);
+        //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
         // Physical dimensions
         Tuning_Strip_2_CPW.length = & SDM_TUNER_23_length;
         Tuning_Strip_2_CPW.width = & SDM_TUNER_23_width;
         Tuning_Strip_2_CPW.space = & SDM_TUNER_23_width2;
+        Tuning_Strip_2_CPW.sub_thick = & SUBSTRATE_THICKNESS;
 
         Tuning_Strip_2 = &Tuning_Strip_2_CPW;
     }
@@ -978,11 +993,13 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
 
         Tuning_Strip_3_CPW.substrate(Insulation);
         Tuning_Strip_3_CPW.top_strip(Top);
+        //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
         // Physical dimensions
         Tuning_Strip_3_CPW.length = & SDM_TUNER_34_length;
         Tuning_Strip_3_CPW.width = & SDM_TUNER_34_width;
         Tuning_Strip_3_CPW.space = & SDM_TUNER_34_width2;
+        Tuning_Strip_3_CPW.sub_thick = & SUBSTRATE_THICKNESS;
 
         Tuning_Strip_3 = &Tuning_Strip_3_CPW;
     }
@@ -1002,18 +1019,18 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
 
     // Connect circuit
     Rf.connect(Rf_Input, 2, *Input_Strip, 1);
-    Rf.connect(*Input_Strip, 2, Series_Tee_1, 1);
-    Rf.connect(Series_Tee_1, 3, *Tuning_Strip, 1);
-    Rf.connect(*Tuning_Strip, 2, Series_Tee_2, 1);
-    Rf.connect(Series_Tee_2, 3, *Tuning_Strip_2, 1);
-    Rf.connect(*Tuning_Strip_2, 2, Series_Tee_3, 1);
-    Rf.connect(Series_Tee_3, 3, *Tuning_Strip_3, 1);
+    Rf.connect(*Input_Strip, 2, Series_Tee_1, 3);
+    Rf.connect(Series_Tee_1, 2, *Tuning_Strip, 1);
+    Rf.connect(*Tuning_Strip, 2, Series_Tee_2, 3);
+    Rf.connect(Series_Tee_2, 2, *Tuning_Strip_2, 1);
+    Rf.connect(*Tuning_Strip_2, 2, Series_Tee_3, 3);
+    Rf.connect(Series_Tee_3, 2, *Tuning_Strip_3, 1);
 
 
     // add ports
-    Rf.add_port(Series_Tee_1, 2); // SIS 1
-    Rf.add_port(Series_Tee_2, 2);  // SIS 2
-    Rf.add_port(Series_Tee_3, 2);  // SIS 3
+    Rf.add_port(Series_Tee_1, 1); // SIS 1
+    Rf.add_port(Series_Tee_2, 1);  // SIS 2
+    Rf.add_port(Series_Tee_3, 1);  // SIS 3
     Rf.add_port(*Tuning_Strip_3, 2);  // SIS 4
     Rf.add_port(Rf_Input, 1);   // RF Input
 
@@ -1021,18 +1038,18 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
 
     // Connect circuit and add ports
     If.connect(If_Load, 1, *Input_Strip, 1);
-    If.connect(*Input_Strip, 2, Series_Tee_1, 1);
-    If.connect(Series_Tee_1, 3, *Tuning_Strip, 1);
-    If.connect(*Tuning_Strip, 2, Series_Tee_2, 1);
-    If.connect(Series_Tee_2, 3, *Tuning_Strip_2, 1);
-    If.connect(*Tuning_Strip_2, 2, Series_Tee_3, 1);
-    If.connect(Series_Tee_3, 3, *Tuning_Strip_3, 1);
+    If.connect(*Input_Strip, 2, Series_Tee_1, 3);
+    If.connect(Series_Tee_1, 2, *Tuning_Strip, 1);
+    If.connect(*Tuning_Strip, 2, Series_Tee_2, 3);
+    If.connect(Series_Tee_2, 2, *Tuning_Strip_2, 1);
+    If.connect(*Tuning_Strip_2, 2, Series_Tee_3, 3);
+    If.connect(Series_Tee_3, 2, *Tuning_Strip_3, 1);
 
 
     // add ports
-    If.add_port(Series_Tee_1, 2); // SIS 1
-    If.add_port(Series_Tee_2, 2);  // SIS 2
-    If.add_port(Series_Tee_3, 2);  // SIS 3
+    If.add_port(Series_Tee_1, 1); // SIS 1
+    If.add_port(Series_Tee_2, 1);  // SIS 2
+    If.add_port(Series_Tee_3, 1);  // SIS 3
     If.add_port(*Tuning_Strip_3, 2);  // SIS 4
     If.add_port(If_Load, 2);   // RF Input
 
@@ -1069,18 +1086,17 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
     Bias_Source.source_f = 0.0;
     Bias_Source.source_voltage = & Bias_Voltage;
     Bias.connect(Bias_Source, 1, *Input_Strip, 1);
-    Bias.connect(*Input_Strip, 2, Series_Tee_1, 1);
-    Bias.connect(Series_Tee_1, 3, *Tuning_Strip, 1);
-    Bias.connect(*Tuning_Strip, 2, Series_Tee_2, 1);
-    Bias.connect(Series_Tee_2, 3, *Tuning_Strip_2, 1);
-    Bias.connect(*Tuning_Strip_2, 2, Series_Tee_3, 1);
-    Bias.connect(Series_Tee_3, 3, *Tuning_Strip_3, 1);
+    Bias.connect(*Input_Strip, 2, Series_Tee_1, 3);
+    Bias.connect(Series_Tee_1, 2, *Tuning_Strip, 1);
+    Bias.connect(*Tuning_Strip, 2, Series_Tee_2, 3);
+    Bias.connect(Series_Tee_2, 2, *Tuning_Strip_2, 1);
+    Bias.connect(*Tuning_Strip_2, 2, Series_Tee_3, 3);
+    Bias.connect(Series_Tee_3, 2, *Tuning_Strip_3, 1);
 
-    Bias.add_port(Series_Tee_1, 2);
-    Bias.add_port(Series_Tee_2, 2);
-    Bias.add_port(Series_Tee_3, 2);
+    Bias.add_port(Series_Tee_1, 1);
+    Bias.add_port(Series_Tee_2, 1);
+    Bias.add_port(Series_Tee_3, 1);
     Bias.add_port(*Tuning_Strip_3, 2);
-    Bias.add_port(*Input_Strip, 1);
 }
 
 

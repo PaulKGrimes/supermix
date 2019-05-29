@@ -403,6 +403,12 @@ parameter INSUL_THICKNESS;
 parameter INSUL_THICKNESS_unit;
 std::string INSUL_THICKNESS_unitStr;
 
+// SUBSTRATE metallisation
+std::string SUBSTRATE_DEFAULT;
+parameter SUBSTRATE_THICKNESS;
+parameter SUBSTRATE_THICKNESS_unit;
+std::string SUBSTRATE_THICKNESS_unitStr;
+
 // COVER metallisation
 std::string COVER_DEFAULT;
 parameter COVER_THICKNESS;
@@ -426,6 +432,10 @@ parameter NBTIN_Rho_normal;
 // SiO
 parameter SIO_epsilon;
 parameter SIO_loss_tangent;
+
+// SiO2
+parameter SIO2_epsilon;
+parameter SIO2_loss_tangent;
 
 // Air
 parameter AIR_epsilon = 1.0;
