@@ -667,7 +667,7 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_2")
     if (SDM_TUNER_12_TYPE == "COPLANAR")
     {
 
-        Tuning_Strip_CPW.substrate(Insulation);
+        Tuning_Strip_CPW.substrate(Substrate);
         Tuning_Strip_CPW.top_strip(Top);
         //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
@@ -746,7 +746,7 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
     // Material specs
     if (SDM_INPUT_TYPE == "COPLANAR")
     {
-        Input_Strip_CPW.substrate(Insulation);
+        Input_Strip_CPW.substrate(Substrate);
         Input_Strip_CPW.top_strip(Top);
         //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
@@ -775,7 +775,7 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
     if (SDM_TUNER_12_TYPE == "COPLANAR")
     {
 
-        Tuning_Strip_CPW.substrate(Insulation);
+        Tuning_Strip_CPW.substrate(Substrate);
         Tuning_Strip_CPW.top_strip(Top);
         //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
@@ -804,7 +804,7 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
     if (SDM_TUNER_23_TYPE == "COPLANAR")
     {
 
-        Tuning_Strip_2_CPW.substrate(Insulation);
+        Tuning_Strip_2_CPW.substrate(Substrate);
         Tuning_Strip_2_CPW.top_strip(Top);
         //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
@@ -906,7 +906,7 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
     if (SDM_INPUT_TYPE == "COPLANAR")
     {
 
-        Input_Strip_CPW.substrate(Insulation);
+        Input_Strip_CPW.substrate(Substrate);
         Input_Strip_CPW.top_strip(Top);
         //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
@@ -935,7 +935,7 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
     if (SDM_TUNER_12_TYPE == "COPLANAR")
     {
 
-        Tuning_Strip_CPW.substrate(Insulation);
+        Tuning_Strip_CPW.substrate(Substrate);
         Tuning_Strip_CPW.top_strip(Top);
         //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
@@ -964,7 +964,7 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
     if (SDM_TUNER_23_TYPE == "COPLANAR")
     {
 
-        Tuning_Strip_2_CPW.substrate(Insulation);
+        Tuning_Strip_2_CPW.substrate(Substrate);
         Tuning_Strip_2_CPW.top_strip(Top);
         //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
@@ -993,7 +993,7 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
     if (SDM_TUNER_34_TYPE == "COPLANAR")
     {
 
-        Tuning_Strip_3_CPW.substrate(Insulation);
+        Tuning_Strip_3_CPW.substrate(Substrate);
         Tuning_Strip_3_CPW.top_strip(Top);
         //Input_Strip_CPW.cover(Cover);  // Not yet implemented
 
