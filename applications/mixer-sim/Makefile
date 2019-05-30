@@ -2,7 +2,7 @@
 # Modified Paul Grimes, (pxg@astro.ox.ac.uk) 01/03/07
 #
 # Set this to the directory where SuperMiX is installed.
-SUPERMIXDIR = /mnt/d/pgrimes/Software/GitHub/supermix/library
+SUPERMIXDIR = ../../library
 
 # The programs we wish to compile
 EXES = mixer-sim mixer-sim2

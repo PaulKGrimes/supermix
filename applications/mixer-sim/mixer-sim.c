@@ -143,17 +143,17 @@ int main(int argc, char **argv)
             printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| Embedding Impedance (junc 1) | Embedding Impedance (junc2)\n"
                 , SCANNED_VARIABLE.c_str(), SCAN_unitStr.c_str());
         }
-        else if (TUNER_TYPE == "SERIES_DISTRIBUTED_2" || "SERIES_EXTERNAL_2")
+        else if (TUNER_TYPE == "SERIES_DISTRIBUTED_2" || TUNER_TYPE == "SERIES_EXTERNAL_2")
         {
             printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| Embedding Impedance (junc 1) | Embedding Impedance (junc2)\n"
                 , SCANNED_VARIABLE.c_str(), SCAN_unitStr.c_str());
         }
-        else if (TUNER_TYPE == "SERIES_DISTRIBUTED_3" || "SERIES_EXTERNAL_3")
+        else if (TUNER_TYPE == "SERIES_DISTRIBUTED_3" || TUNER_TYPE == "SERIES_EXTERNAL_3")
         {
             printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Current (junc 3) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| DC Voltage (junc 3) (mV)| Embedding Impedance (junc 1) | Embedding Impedance (junc2) | Embedding Impedance (junc3)\n"
                 , SCANNED_VARIABLE.c_str(), SCAN_unitStr.c_str());
         }
-        else if (TUNER_TYPE == "SERIES_DISTRIBUTED_4" || "SERIES_EXTERNAL_4")
+        else if (TUNER_TYPE == "SERIES_DISTRIBUTED_4" || TUNER_TYPE == "SERIES_EXTERNAL_4")
         {
             printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| Embedding Impedance (junc 1) | Embedding Impedance (junc2)\n"
                 , SCANNED_VARIABLE.c_str(), SCAN_unitStr.c_str());
@@ -246,7 +246,7 @@ int main(int argc, char **argv)
                     ZembUSB.real, ZembUSB.imaginary,
                     ZembUSB2.real, ZembUSB2.imaginary);
             }
-             else if (TUNER_TYPE == "SERIES_DISTRIBUTED_2" || "SERIES_EXTERNAL_2")
+             else if (TUNER_TYPE == "SERIES_DISTRIBUTED_2" || TUNER_TYPE == "SERIES_EXTERNAL_2")
             {
                 // Calculate the embedding impedance seen by each junction, at each frequency of interest
                 Zstub = ((1.0 + tuner_data.S[1][1])/(1.0-tuner_data.S[1][1]))*device::Z0;
@@ -293,7 +293,7 @@ int main(int argc, char **argv)
                     ZembUSB.real, ZembUSB.imaginary,
                     ZembUSB2.real, ZembUSB2.imaginary);
             }
-            else if (TUNER_TYPE == "SERIES_DISTRIBUTED_3" || "SERIES_EXTERNAL_3")
+            else if (TUNER_TYPE == "SERIES_DISTRIBUTED_3" || TUNER_TYPE == "SERIES_EXTERNAL_3")
             {
                 // Calculate the embedding impedance seen by each junction, at each frequency of interest
                 Zstub = ((1.0 + tuner_data.S[1][1])/(1.0-tuner_data.S[1][1]))*device::Z0;
@@ -400,6 +400,7 @@ int main(int argc, char **argv)
         device::f = IF_FREQ;
         if_data = If.get_data();
 
+        printf("# Tuner Type: %s\n", TUNER_TYPE.c_str());
         if (TUNER_TYPE == "BELITSKY" || TUNER_TYPE == "BEL_WITH_RFCHOKE")
         {
             // Calculate the embedding impedance seen by each junction, at each frequency of interest
@@ -428,18 +429,18 @@ int main(int argc, char **argv)
             ZIfemb2 = (1.0/((TwoPiI*device::f/GHz*1.0e-9*Sis_1.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_1.Rn;
 
             printf("# Junction 1 LO Embedding Impedance : %f+%fi\n", Zemb.real/1.0, Zemb.imaginary/1.0);
-            printf("# Junction 2 LO Embedding Impedance : %f+%fi\n# \n", Zemb2.real/1.0, Zemb2.imaginary/1.0);
+            printf("# Junction 2 LO Embedding Impedance : %f+%fi\n", Zemb2.real/1.0, Zemb2.imaginary/1.0);
             printf("# Junction 1 IF Embedding Impedance : %f+%fi\n", ZIfemb.real/1.0, ZIfemb.imaginary/1.0);
-            printf("# Junction 2 IF Embedding Impedance : %f+%fi\n# \n", ZIfemb2.real/1.0, ZIfemb2.imaginary/1.0);
+            printf("# Junction 2 IF Embedding Impedance : %f+%fi\n", ZIfemb2.real/1.0, ZIfemb2.imaginary/1.0);
             printf("# Junction 1 LSB Embedding Impedance : %f+%fi\n", ZembLSB.real/1.0, ZembLSB.imaginary/1.0);
-            printf("# Junction 2 LSB Embedding Impedance : %f+%fi\n# \n", ZembLSB2.real/1.0, ZembLSB2.imaginary/1.0);
+            printf("# Junction 2 LSB Embedding Impedance : %f+%fi\n", ZembLSB2.real/1.0, ZembLSB2.imaginary/1.0);
             printf("# Junction 1 USB Embedding Impedance : %f+%fi\n", ZembUSB.real/1.0, ZembUSB.imaginary/1.0);
-            printf("# Junction 2 USB Embedding Impedance : %f+%fi\n# \n", ZembUSB2.real/1.0, ZembUSB2.imaginary/1.0);
+            printf("# Junction 2 USB Embedding Impedance : %f+%fi\n", ZembUSB2.real/1.0, ZembUSB2.imaginary/1.0);
             printf("# Results:\n#\n");
             printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)\n"
                 , SCANNED_VARIABLE.c_str(), SCAN_unitStr.c_str());
         }
-        else if (TUNER_TYPE == "SERIES_DISTRIBUTED_3" || "SERIES_EXTERNAL_3")
+        else if (TUNER_TYPE == "SERIES_DISTRIBUTED_3" || TUNER_TYPE == "SERIES_EXTERNAL_3")
         {
             // Calculate the embedding impedance seen by each junction, at each frequency of interest
             Zstub = ((1.0 + tuner_data.S[1][1])/(1.0-tuner_data.S[1][1]))*device::Z0;
@@ -479,19 +480,19 @@ int main(int argc, char **argv)
             ZIfemb3 = (1.0/((TwoPiI*device::f/GHz*1.0e-9*Sis_3.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_3.Rn;
 
             printf("# Junction 1 LO Embedding Impedance : %f+%fi\n", Zemb.real/1.0, Zemb.imaginary/1.0);
-            printf("# Junction 2 LO Embedding Impedance : %f+%fi\n# \n", Zemb2.real/1.0, Zemb2.imaginary/1.0);
+            printf("# Junction 2 LO Embedding Impedance : %f+%fi\n", Zemb2.real/1.0, Zemb2.imaginary/1.0);
             printf("# Junction 3 LO Embedding Impedance : %f+%fi\n# \n", Zemb3.real/1.0, Zemb3.imaginary/1.0);
             printf("# Junction 1 IF Embedding Impedance : %f+%fi\n", ZIfemb.real/1.0, ZIfemb.imaginary/1.0);
-            printf("# Junction 2 IF Embedding Impedance : %f+%fi\n# \n", ZIfemb2.real/1.0, ZIfemb2.imaginary/1.0);
+            printf("# Junction 2 IF Embedding Impedance : %f+%fi\n", ZIfemb2.real/1.0, ZIfemb2.imaginary/1.0);
             printf("# Junction 3 IF Embedding Impedance : %f+%fi\n# \n", ZIfemb3.real/1.0, ZIfemb3.imaginary/1.0);
             printf("# Junction 1 LSB Embedding Impedance : %f+%fi\n", ZembLSB.real/1.0, ZembLSB.imaginary/1.0);
-            printf("# Junction 2 LSB Embedding Impedance : %f+%fi\n# \n", ZembLSB2.real/1.0, ZembLSB2.imaginary/1.0);
+            printf("# Junction 2 LSB Embedding Impedance : %f+%fi\n", ZembLSB2.real/1.0, ZembLSB2.imaginary/1.0);
             printf("# Junction 3 LSB Embedding Impedance : %f+%fi\n# \n", ZembLSB3.real/1.0, ZembLSB3.imaginary/1.0);
             printf("# Junction 1 USB Embedding Impedance : %f+%fi\n", ZembUSB.real/1.0, ZembUSB.imaginary/1.0);
-            printf("# Junction 2 USB Embedding Impedance : %f+%fi\n# \n", ZembUSB2.real/1.0, ZembUSB2.imaginary/1.0);
+            printf("# Junction 2 USB Embedding Impedance : %f+%fi\n", ZembUSB2.real/1.0, ZembUSB2.imaginary/1.0);
             printf("# Junction 3 USB Embedding Impedance : %f+%fi\n# \n", ZembUSB3.real/1.0, ZembUSB3.imaginary/1.0);
             printf("# Results:\n#\n");
-            printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)\n"
+            printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Current (junc 3) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| DC Voltage (junc 3) (mV)\n"
                 , SCANNED_VARIABLE.c_str(), SCAN_unitStr.c_str());
         }
         else
@@ -519,6 +520,7 @@ int main(int argc, char **argv)
         }
 
 
+        printf("# Tuner Type: %s\n", TUNER_TYPE.c_str());
         // Start the scan loop, outputting data
         for( double s = SCAN_LOW/1.0;
                     s <= SCAN_HIGH/1.0;
@@ -557,7 +559,7 @@ int main(int argc, char **argv)
                     abs(mix.I_junc(0)[1])/(Micro*Amp),
                     abs(mix.I_junc(0)[2])/(Micro*Amp));
             }
-            else if (TUNER_TYPE == "SERIES_DISTRIBUTED_2" || "SERIES_EXTERNAL_2")
+            else if (TUNER_TYPE == "SERIES_DISTRIBUTED_2" || TUNER_TYPE == "SERIES_EXTERNAL_2")
             {
                 printf("%f      %f      %f      %f      %f      %f      %f      %f      %f      %f\n",
                     s,
@@ -571,7 +573,7 @@ int main(int argc, char **argv)
                     abs(mix.V_junc(0)[1])/(Milli*Volt),
                     abs(mix.V_junc(0)[2])/(Milli*Volt));
             }
-            else if (TUNER_TYPE == "SERIES_DISTRIBUTED_3" || "SERIES_EXTERNAL_3")
+            else if (TUNER_TYPE == "SERIES_DISTRIBUTED_3" || TUNER_TYPE == "SERIES_EXTERNAL_3")
             {
                 printf("%f      %f      %f      %f      %f      %f      %f      %f      %f      %f      %f      %f\n",
                     s,

@@ -830,14 +830,21 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
         Tuning_Strip_2 = &Tuning_Strip_2_MS;
     }
 
+    // Circuit Diagram:
+    //                 SIS                  SIS
+    //                + 1 -                + 2 -
+    //                o 1 o                o 1 o
+    // +o___________o_|   |_o____________o_|   |_o______________o +
+    // V 1  Input  2 3  T  2 1  Tuning  2 3  T  2 1  Tuning_2  2 3 SIS
+    // -o___________o_______o____________o_______o______________o -
+
+    // RF Circuit
     // Connect circuit
     Rf.connect(Rf_Input, 2, *Input_Strip, 1);
     Rf.connect(*Input_Strip, 2, Series_Tee_1, 3);
     Rf.connect(Series_Tee_1, 2, *Tuning_Strip, 1);
     Rf.connect(*Tuning_Strip, 2, Series_Tee_2, 3);
     Rf.connect(Series_Tee_2, 2, *Tuning_Strip_2, 1);
-
-
     // add ports
     Rf.add_port(Series_Tee_1, 1); // SIS 1
     Rf.add_port(Series_Tee_2, 1);  // SIS 2
@@ -845,20 +852,27 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
     Rf.add_port(Rf_Input, 1);   // RF Input
 
     // IF Circuit
-
-    // Connect circuit and add ports
+    // Connect circuits
     If.connect(If_Load, 1, *Input_Strip, 1);
     If.connect(*Input_Strip, 2, Series_Tee_1, 3);
     If.connect(Series_Tee_1, 2, *Tuning_Strip, 1);
     If.connect(*Tuning_Strip, 2, Series_Tee_2, 3);
     If.connect(Series_Tee_2, 2, *Tuning_Strip_2, 1);
-
-
     // add ports
     If.add_port(Series_Tee_1, 1); // SIS 1
     If.add_port(Series_Tee_2, 1);  // SIS 2
     If.add_port(*Tuning_Strip_2, 2);  // SIS 3
     If.add_port(If_Load, 2);   // RF Input
+
+    // Create the 3 junction bias circuit
+    Bias_Source.source_f = 0.0;
+    Bias_Source.source_voltage = & Bias_Voltage;
+    Bias.connect(Bias_Source, 1, Series_Tee_1, 3);
+    Bias.connect(Series_Tee_1, 2, Series_Tee_2, 3);
+    // add the ports
+    Bias.add_port(Series_Tee_1, 1);
+    Bias.add_port(Series_Tee_2, 1);
+    Bias.add_port(Series_Tee_2, 2);
 
     // Create the three SIS junctions
     JUNCTION_AREA = SDM_JUNCTION_1_AREA;
@@ -882,18 +896,6 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
     Sis_3.Rn = JUNCTION_RNA/JUNCTION_AREA;
     Sis_3.Cap = JUNCTION_SCAP*JUNCTION_AREA;
 
-    // Create the 2 junction bias circuit
-    Bias_Source.source_f = 0.0;
-    Bias_Source.source_voltage = & Bias_Voltage;
-    Bias.connect(Bias_Source, 1, *Input_Strip, 1);
-    Bias.connect(*Input_Strip, 2, Series_Tee_1, 3);
-    Bias.connect(Series_Tee_1, 2, *Tuning_Strip, 1);
-    Bias.connect(*Tuning_Strip, 2, Series_Tee_2, 3);
-    Bias.connect(Series_Tee_2, 2, *Tuning_Strip_2, 1);
-
-    Bias.add_port(Series_Tee_1, 1);
-    Bias.add_port(Series_Tee_2, 1);
-    Bias.add_port(*Tuning_Strip_2, 2);
 }
 
 if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
