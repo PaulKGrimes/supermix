@@ -123,16 +123,20 @@ int main(int argc, char **argv)
     complex Zemb;
     complex Zemb2;
     complex Zemb3;
+    complex Zemb4;
     complex ZembUSB;
     complex ZembUSB2;
     complex ZembUSB3;
+    complex ZembUSB4;
     complex ZembLSB;
     complex ZembLSB2;
     complex ZembLSB3;
+    complex ZembLSB4;
     complex ZIfstub;
     complex ZIfemb;
     complex ZIfemb2;
     complex ZIfemb3;
+    complex ZIfemb4;
     complex TwoPiI(0.0, 2*Pi);
 
     if (SCANNED_VARIABLE == "FREQUENCY")
@@ -145,17 +149,17 @@ int main(int argc, char **argv)
         }
         else if (TUNER_TYPE == "SERIES_DISTRIBUTED_2" || TUNER_TYPE == "SERIES_EXTERNAL_2")
         {
-            printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| Embedding Impedance (junc 1) | Embedding Impedance (junc2)\n"
+            printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| Embedding Impedance (junc 1) | Embedding Impedance (junc 2)\n"
                 , SCANNED_VARIABLE.c_str(), SCAN_unitStr.c_str());
         }
         else if (TUNER_TYPE == "SERIES_DISTRIBUTED_3" || TUNER_TYPE == "SERIES_EXTERNAL_3")
         {
-            printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Current (junc 3) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| DC Voltage (junc 3) (mV)| Embedding Impedance (junc 1) | Embedding Impedance (junc2) | Embedding Impedance (junc3)\n"
+            printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Current (junc 3) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| DC Voltage (junc 3) (mV)| Embedding Impedance (junc 1) | Embedding Impedance (junc 2) | Embedding Impedance (junc 3)\n"
                 , SCANNED_VARIABLE.c_str(), SCAN_unitStr.c_str());
         }
         else if (TUNER_TYPE == "SERIES_DISTRIBUTED_4" || TUNER_TYPE == "SERIES_EXTERNAL_4")
         {
-            printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| Embedding Impedance (junc 1) | Embedding Impedance (junc2)\n"
+            printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Current (junc 3) (uA)| DC Current (junc 4) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| DC Voltage (junc 3) (mV)| DC Voltage (junc 4) (mV)| Embedding Impedance (junc 1) | Embedding Impedance (junc 2) | Embedding Impedance (junc 3) | Embedding Impedance (junc 4)\n"
                 , SCANNED_VARIABLE.c_str(), SCAN_unitStr.c_str());
         }
         else
@@ -357,7 +361,90 @@ int main(int argc, char **argv)
                     ZembUSB.real, ZembUSB.imaginary,
                     ZembUSB2.real, ZembUSB2.imaginary,
                     ZembUSB3.real, ZembUSB3.imaginary);
-           }
+            }
+            else if (TUNER_TYPE == "SERIES_DISTRIBUTED_4" || TUNER_TYPE == "SERIES_EXTERNAL_4")
+            {
+                // Calculate the embedding impedance seen by each junction, at each frequency of interest
+                Zstub = ((1.0 + tuner_data.S[1][1])/(1.0-tuner_data.S[1][1]))*device::Z0;
+                Zemb  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_1.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_1.Rn;
+
+                Zstub = ((1.0 + tuner_usb_data.S[1][1])/(1.0-tuner_usb_data.S[1][1]))*device::Z0;
+                ZembUSB  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_1.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_1.Rn;
+
+                Zstub = ((1.0 + tuner_lsb_data.S[1][1])/(1.0-tuner_lsb_data.S[1][1]))*device::Z0;
+                ZembLSB  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_1.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_1.Rn;
+
+                ZIfstub = ((1.0 + if_data.S[1][1])/(1.0-if_data.S[1][1]))*device::Z0;
+                ZIfemb = (1.0/((TwoPiI*device::f/GHz*1.0e-9*Sis_1.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_1.Rn;
+
+                Zstub = ((1.0 + tuner_data.S[2][2])/(1.0-tuner_data.S[2][2]))*device::Z0;
+                Zemb2 = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_2.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/(Sis_2.Rn);
+
+                Zstub = ((1.0 + tuner_usb_data.S[2][2])/(1.0-tuner_usb_data.S[2][2]))*device::Z0;
+                ZembUSB2  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_2.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_2.Rn;
+
+                Zstub = ((1.0 + tuner_lsb_data.S[2][2])/(1.0-tuner_lsb_data.S[2][2]))*device::Z0;
+                ZembLSB2  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_2.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_2.Rn;
+
+                ZIfstub = ((1.0 + if_data.S[2][2])/(1.0-if_data.S[2][2]))*device::Z0;
+                ZIfemb2 = (1.0/((TwoPiI*device::f/GHz*1.0e-9*Sis_2.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_2.Rn;
+
+                Zstub = ((1.0 + tuner_data.S[3][3])/(1.0-tuner_data.S[3][3]))*device::Z0;
+                Zemb3 = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_3.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/(Sis_3.Rn);
+
+                Zstub = ((1.0 + tuner_usb_data.S[3][3])/(1.0-tuner_usb_data.S[3][3]))*device::Z0;
+                ZembUSB3  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_3.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_3.Rn;
+
+                Zstub = ((1.0 + tuner_lsb_data.S[3][3])/(1.0-tuner_lsb_data.S[3][3]))*device::Z0;
+                ZembLSB3  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_3.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_3.Rn;
+
+                ZIfstub = ((1.0 + if_data.S[3][3])/(1.0-if_data.S[3][3]))*device::Z0;
+                ZIfemb3 = (1.0/((TwoPiI*device::f/GHz*1.0e-9*Sis_3.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_3.Rn;
+
+                Zstub = ((1.0 + tuner_data.S[4][4])/(1.0-tuner_data.S[4][4]))*device::Z0;
+                Zemb4 = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_4.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/(Sis_4.Rn);
+
+                Zstub = ((1.0 + tuner_usb_data.S[3][3])/(1.0-tuner_usb_data.S[3][3]))*device::Z0;
+                ZembUSB4  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_4.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_4.Rn;
+
+                Zstub = ((1.0 + tuner_lsb_data.S[4][4])/(1.0-tuner_lsb_data.S[4][4]))*device::Z0;
+                ZembLSB4  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_4.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_4.Rn;
+
+                ZIfstub = ((1.0 + if_data.S[4][4])/(1.0-if_data.S[4][4]))*device::Z0;
+                ZIfemb4 = (1.0/((TwoPiI*device::f/GHz*1.0e-9*Sis_4.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_4.Rn;
+
+                printf("%f      %f      %f      %f      %f      %f      %f      %f      %f      %f      %f      %f      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi      %f %fi\n",
+                   s,
+                   abs(result.S[IF_PORT][LSB_PORT]),
+                   abs(result.S[IF_PORT][USB_PORT]),
+                   term_result.C[IF_PORT][IF_PORT].real/Kelvin,
+                   cold_result.C[IF_PORT][IF_PORT].real/Kelvin,
+                   hot_result.C[IF_PORT][IF_PORT].real/Kelvin,
+                   abs(mix.I_junc(0)[1])/(Micro*Amp),
+                   abs(mix.I_junc(0)[2])/(Micro*Amp),
+                   abs(mix.I_junc(0)[3])/(Micro*Amp),
+                   abs(mix.I_junc(0)[4])/(Micro*Amp),
+                   abs(mix.V_junc(0)[1])/(Milli*Volt),
+                   abs(mix.V_junc(0)[2])/(Milli*Volt),
+                   abs(mix.V_junc(0)[3])/(Milli*Volt),
+                   abs(mix.V_junc(0)[4])/(Milli*Volt),
+                   Zemb.real, Zemb.imaginary,
+                   Zemb2.real, Zemb2.imaginary,
+                   Zemb3.real, Zemb3.imaginary,
+                   Zemb4.real, Zemb4.imaginary,
+                   ZIfemb.real, ZIfemb.imaginary,
+                   ZIfemb2.real, ZIfemb2.imaginary,
+                   ZIfemb3.real, ZIfemb3.imaginary,
+                   ZIfemb4.real, ZIfemb4.imaginary,
+                   ZembLSB.real, ZembLSB.imaginary,
+                   ZembLSB2.real, ZembLSB2.imaginary,
+                   ZembLSB3.real, ZembLSB3.imaginary,
+                   ZembLSB4.real, ZembLSB4.imaginary,
+                   ZembUSB.real, ZembUSB.imaginary,
+                   ZembUSB2.real, ZembUSB2.imaginary,
+                   ZembUSB3.real, ZembUSB3.imaginary,
+                   ZembUSB4.real, ZembUSB4.imaginary);
+            }
             else
             {
                 // Calculate the embedding impedance seen by each junction, at each frequency of interest
@@ -495,6 +582,77 @@ int main(int argc, char **argv)
             printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Current (junc 3) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| DC Voltage (junc 3) (mV)\n"
                 , SCANNED_VARIABLE.c_str(), SCAN_unitStr.c_str());
         }
+        else if (TUNER_TYPE == "SERIES_DISTRIBUTED_4" || TUNER_TYPE == "SERIES_EXTERNAL_4")
+        {
+            // Calculate the embedding impedance seen by each junction, at each frequency of interest
+            Zstub = ((1.0 + tuner_data.S[1][1])/(1.0-tuner_data.S[1][1]))*device::Z0;
+            Zemb  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_1.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_1.Rn;
+
+            Zstub = ((1.0 + tuner_usb_data.S[1][1])/(1.0-tuner_usb_data.S[1][1]))*device::Z0;
+            ZembUSB  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_1.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_1.Rn;
+
+            Zstub = ((1.0 + tuner_lsb_data.S[1][1])/(1.0-tuner_lsb_data.S[1][1]))*device::Z0;
+            ZembLSB  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_1.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_1.Rn;
+
+            ZIfstub = ((1.0 + if_data.S[1][1])/(1.0-if_data.S[1][1]))*device::Z0;
+            ZIfemb = (1.0/((TwoPiI*device::f/GHz*1.0e-9*Sis_1.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_1.Rn;
+
+            Zstub = ((1.0 + tuner_data.S[2][2])/(1.0-tuner_data.S[2][2]))*device::Z0;
+            Zemb2 = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_2.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/(Sis_2.Rn);
+
+            Zstub = ((1.0 + tuner_usb_data.S[2][2])/(1.0-tuner_usb_data.S[2][2]))*device::Z0;
+            ZembUSB2  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_2.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_2.Rn;
+
+            Zstub = ((1.0 + tuner_lsb_data.S[2][2])/(1.0-tuner_lsb_data.S[2][2]))*device::Z0;
+            ZembLSB2  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_2.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_2.Rn;
+
+            ZIfstub = ((1.0 + if_data.S[2][2])/(1.0-if_data.S[2][2]))*device::Z0;
+            ZIfemb2 = (1.0/((TwoPiI*device::f/GHz*1.0e-9*Sis_2.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_2.Rn;
+
+            Zstub = ((1.0 + tuner_data.S[3][3])/(1.0-tuner_data.S[3][3]))*device::Z0;
+            Zemb3 = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_3.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/(Sis_3.Rn);
+
+            Zstub = ((1.0 + tuner_usb_data.S[3][3])/(1.0-tuner_usb_data.S[3][3]))*device::Z0;
+            ZembUSB3  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_3.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_3.Rn;
+
+            Zstub = ((1.0 + tuner_lsb_data.S[3][3])/(1.0-tuner_lsb_data.S[3][3]))*device::Z0;
+            ZembLSB3  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_3.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_3.Rn;
+
+            ZIfstub = ((1.0 + if_data.S[3][3])/(1.0-if_data.S[3][3]))*device::Z0;
+            ZIfemb3 = (1.0/((TwoPiI*device::f/GHz*1.0e-9*Sis_3.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_3.Rn;
+
+            Zstub = ((1.0 + tuner_data.S[4][4])/(1.0-tuner_data.S[4][4]))*device::Z0;
+            Zemb4 = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_4.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/(Sis_4.Rn);
+
+            Zstub = ((1.0 + tuner_usb_data.S[3][3])/(1.0-tuner_usb_data.S[3][3]))*device::Z0;
+            ZembUSB4  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_4.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_4.Rn;
+
+            Zstub = ((1.0 + tuner_lsb_data.S[4][4])/(1.0-tuner_lsb_data.S[4][4]))*device::Z0;
+            ZembLSB4  = (1.0/((TwoPiI*Frequency/GHz*1.0e9*Sis_4.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_4.Rn;
+
+            ZIfstub = ((1.0 + if_data.S[4][4])/(1.0-if_data.S[4][4]))*device::Z0;
+            ZIfemb4 = (1.0/((TwoPiI*device::f/GHz*1.0e-9*Sis_4.Cap/fFarad*1.0e-15)+(1.0/Zstub)))/Sis_4.Rn;
+
+            printf("# Junction 1 LO Embedding Impedance : %f+%fi\n", Zemb.real/1.0, Zemb.imaginary/1.0);
+            printf("# Junction 2 LO Embedding Impedance : %f+%fi\n", Zemb2.real/1.0, Zemb2.imaginary/1.0);
+            printf("# Junction 3 LO Embedding Impedance : %f+%fi\n# \n", Zemb3.real/1.0, Zemb3.imaginary/1.0);
+            printf("# Junction 4 LO Embedding Impedance : %f+%fi\n# \n", Zemb4.real/1.0, Zemb4.imaginary/1.0);
+            printf("# Junction 1 IF Embedding Impedance : %f+%fi\n", ZIfemb.real/1.0, ZIfemb.imaginary/1.0);
+            printf("# Junction 2 IF Embedding Impedance : %f+%fi\n", ZIfemb2.real/1.0, ZIfemb2.imaginary/1.0);
+            printf("# Junction 3 IF Embedding Impedance : %f+%fi\n# \n", ZIfemb3.real/1.0, ZIfemb3.imaginary/1.0);
+            printf("# Junction 4 IF Embedding Impedance : %f+%fi\n# \n", ZIfemb4.real/1.0, ZIfemb4.imaginary/1.0);
+            printf("# Junction 1 LSB Embedding Impedance : %f+%fi\n", ZembLSB.real/1.0, ZembLSB.imaginary/1.0);
+            printf("# Junction 2 LSB Embedding Impedance : %f+%fi\n", ZembLSB2.real/1.0, ZembLSB2.imaginary/1.0);
+            printf("# Junction 3 LSB Embedding Impedance : %f+%fi\n# \n", ZembLSB3.real/1.0, ZembLSB3.imaginary/1.0);
+            printf("# Junction 4 LSB Embedding Impedance : %f+%fi\n# \n", ZembLSB4.real/1.0, ZembLSB4.imaginary/1.0);
+            printf("# Junction 1 USB Embedding Impedance : %f+%fi\n", ZembUSB.real/1.0, ZembUSB.imaginary/1.0);
+            printf("# Junction 2 USB Embedding Impedance : %f+%fi\n", ZembUSB2.real/1.0, ZembUSB2.imaginary/1.0);
+            printf("# Junction 3 USB Embedding Impedance : %f+%fi\n# \n", ZembUSB3.real/1.0, ZembUSB3.imaginary/1.0);
+            printf("# Junction 4 USB Embedding Impedance : %f+%fi\n# \n", ZembUSB4.real/1.0, ZembUSB4.imaginary/1.0);
+            printf("# Results:\n#\n");
+            printf("# %s (%s)| LSB Gain | USB Gain | IF Output 0K (K)| IF Output 77K (K)| IF Output 297K (K)| DC Current (junc 1) (uA)| DC Current (junc 2) (uA)| DC Current (junc 3) (uA)| DC Current (junc 4) (uA)| DC Voltage (junc 1) (mV)| DC Voltage (junc 2) (mV)| DC Voltage (junc 3) (mV)| DC Voltage (junc 3) (mV)\n"
+                , SCANNED_VARIABLE.c_str(), SCAN_unitStr.c_str());
+        }
         else
         {
             // Calculate the embedding impedance seen by each junction
@@ -587,6 +745,24 @@ int main(int argc, char **argv)
                     abs(mix.I_junc(0)[3])/(Micro*Amp),
                     abs(mix.V_junc(0)[1])/(Milli*Volt),
                     abs(mix.V_junc(0)[2])/(Milli*Volt),
+                    abs(mix.V_junc(0)[3])/(Milli*Volt));
+            }
+            else if (TUNER_TYPE == "SERIES_DISTRIBUTED_4" || TUNER_TYPE == "SERIES_EXTERNAL_4")
+            {
+                printf("%f      %f      %f      %f      %f      %f      %f      %f      %f      %f      %f      %f      %f      %f\n",
+                    s,
+                    abs(result.S[IF_PORT][LSB_PORT]),
+                    abs(result.S[IF_PORT][USB_PORT]),
+                    term_result.C[IF_PORT][IF_PORT].real/Kelvin,
+                    cold_result.C[IF_PORT][IF_PORT].real/Kelvin,
+                    hot_result.C[IF_PORT][IF_PORT].real/Kelvin,
+                    abs(mix.I_junc(0)[1])/(Micro*Amp),
+                    abs(mix.I_junc(0)[2])/(Micro*Amp),
+                    abs(mix.I_junc(0)[3])/(Micro*Amp),
+                    abs(mix.I_junc(0)[3])/(Micro*Amp),
+                    abs(mix.V_junc(0)[1])/(Milli*Volt),
+                    abs(mix.V_junc(0)[2])/(Milli*Volt),
+                    abs(mix.V_junc(0)[3])/(Milli*Volt),
                     abs(mix.V_junc(0)[3])/(Milli*Volt));
             }
             else
