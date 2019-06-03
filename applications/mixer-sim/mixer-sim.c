@@ -139,7 +139,7 @@ int main(int argc, char **argv)
     complex ZIfemb4;
     complex TwoPiI(0.0, 2*Pi);
 
-    if (SCANNED_VARIABLE == "FREQUENCY")
+    if (SCANNED_VARIABLE == "FREQUENCY" || SCANNED_VARIABLE == "IF_FREQ")
     {
         printf("# Results:\n#\n");
         if (TUNER_TYPE == "BELITSKY" || TUNER_TYPE == "BEL_WITH_RFCHOKE")
@@ -178,6 +178,8 @@ int main(int argc, char **argv)
             scan_var = s*SCAN_unit;
             if (SCANNED_VARIABLE == "FREQUENCY")
             {   Frequency = get_Frequency(scan_var);}
+            else if (SCANNED_VARIABLE == "IF_FREQ")
+            {   If_Freq = get_If_Freq(scan_var);}
             else if (SCANNED_VARIABLE == "BIAS")
             {   Bias_Voltage = get_Bias(scan_var);}
             else // (SCANNED_VARIABLE == "LO_POWER")
@@ -186,11 +188,11 @@ int main(int argc, char **argv)
             // Get the tuner data so we can calculate the embedding impedance
             device::f = Frequency;
             tuner_data = Rf.get_data();
-            device::f = Frequency + IF_FREQ;
+            device::f = Frequency + If_Freq;
             tuner_usb_data = Rf.get_data();
-            device::f = Frequency - IF_FREQ;
+            device::f = Frequency - If_Freq;
             tuner_lsb_data = Rf.get_data();
-            device::f = IF_FREQ;
+            device::f = If_Freq;
             if_data = If.get_data();
 
             Lo_Temp = 0.0*Kelvin;
@@ -480,11 +482,11 @@ int main(int argc, char **argv)
         // Get the tuner data so we can calculate the embedding impedance
         device::f = Frequency;
         tuner_data = Rf.get_data();
-        device::f = Frequency + IF_FREQ;
+        device::f = Frequency + If_Freq;
         tuner_usb_data = Rf.get_data();
-        device::f = Frequency - IF_FREQ;
+        device::f = Frequency - If_Freq;
         tuner_lsb_data = Rf.get_data();
-        device::f = IF_FREQ;
+        device::f = If_Freq;
         if_data = If.get_data();
 
         printf("# Tuner Type: %s\n", TUNER_TYPE.c_str());
@@ -690,6 +692,8 @@ int main(int argc, char **argv)
             {   Frequency = get_Frequency(scan_var);}
             else if (SCANNED_VARIABLE == "BIAS")
             {   Bias_Voltage = get_Bias(scan_var);}
+            else if (SCANNED_VARIABLE == "IF_FREQ")
+            {   If_Freq = get_If_Freq(scan_var);}
             else // (SCANNED_VARIABLE == "LO_POWER")
             {   Lo_Power = get_Lo_Power(scan_var);}
 

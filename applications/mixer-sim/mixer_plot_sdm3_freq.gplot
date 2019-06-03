@@ -1,0 +1,49 @@
+#!/bin/sh
+gnuplot << EOF
+
+set grid
+
+set terminal pngcairo solid color enhanced size 1024, 768
+set output "$1.png"
+
+set multiplot
+
+set origin 0.1, 0.5
+set size 0.4, 0.4
+set xlabel "Frequency (GHz)"
+set title "DC Current"
+set key top left
+set ylabel "Current (uA)"
+plot "$1.dat" using 1:7 title "J1" with lines, \
+	 "$1.dat" using 1:8 title "J2" with lines, \
+     "$1.dat" using 1:9 title "J3" with lines
+
+set origin 0.5, 0.5
+set size 0.4, 0.4
+set title "DC Voltage"
+set ylabel "DC Voltage (mV)"
+plot "$1.dat" using 1:10 title "J1" with lines, \
+	 "$1.dat" using 1:11 title "J2" with lines, \
+     "$1.dat" using 1:12 title "J3" with lines
+
+set origin 0.1, 0.1
+set size 0.4, 0.4
+set title "Conversion Gain"
+set ylabel "Gain (dB)"
+set key bottom right
+plot [:][-15:] "$1.dat" using 1:(20*log10(\$2)) title "LSB Gain" with lines, \
+               "$1.dat" using 1:(20*log10(\$3)) title "USB Gain" with lines, \
+               "$1.dat" using 1:(10*log10(\$2*\$2+\$3*\$3)) title "DSB Gain" with lines, \
+               "$1.dat" using 1:(10*log10((\$6-\$5)/220.0)) title "YFact Gain" with lines
+
+set origin 0.5, 0.1
+set size 0.4, 0.4
+set title "Noise Temperature"
+set key top right
+set ylabel "Noise (K)"
+plot [:][0:100] "$1.dat" using 1:((\$4)/(\$2*\$2)) title "LSB Noise" with lines, \
+	            "$1.dat" using 1:((\$4)/(\$3*\$3)) title "USB Noise" with lines, \
+                "$1.dat" using 1:((\$4)/(\$2*\$2+\$3*\$3)) title "DSB Noise" with lines, \
+                "$1.dat" using 1:((297-(\$6/\$5)*77)/((\$6/\$5)-1)) title "YFact Noise" with lines
+
+EOF
