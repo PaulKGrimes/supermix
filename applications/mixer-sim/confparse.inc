@@ -47,7 +47,8 @@ static DOTCONF_CB(junction_area);
 static DOTCONF_CB(junction_vgap);
     // Tuner parameters
 static DOTCONF_CB(tuner_type);
-static DOTCONF_CB(touchstone_file);
+static DOTCONF_CB(rf_touchstone_file);
+static DOTCONF_CB(if_touchstone_file);
 
     // Single stub tuner
 static DOTCONF_CB(single_stub_type);
@@ -157,7 +158,8 @@ static const configoption_t options[] = {
     {"JUNCTION_VGAP",                ARG_LIST,   junction_vgap,               NULL,   CTX_ALL },
     // Tuner parameters
     {"TUNER_TYPE",          ARG_STR,    tuner_type,         NULL,   CTX_ALL },
-    {"TOUCHSTONE_FILE",     ARG_STR,    touchstone_file,    NULL,   CTX_ALL },
+    {"RF_TOUCHSTONE_FILE",  ARG_STR,    rf_touchstone_file, NULL,   CTX_ALL },
+    {"IF_TOUCHSTONE_FILE",  ARG_STR,    if_touchstone_file, NULL,   CTX_ALL },
         // Single stub tuner
     {"SINGLE_STUB_TYPE",    ARG_STR,    single_stub_type,   NULL,   CTX_ALL },
     {"SINGLE_STUB_INPUT",   ARG_LIST,   single_stub_input,  NULL,   CTX_ALL },
@@ -460,9 +462,15 @@ DOTCONF_CB(tuner_type)
     return NULL;
 }
 
-DOTCONF_CB(touchstone_file)
+DOTCONF_CB(rf_touchstone_file)
 {
-    TOUCHSTONE_FILE = cmd->data.str;
+    RF_TOUCHSTONE_FILE = cmd->data.str;
+    return NULL;
+}
+
+DOTCONF_CB(if_touchstone_file)
+{
+    IF_TOUCHSTONE_FILE = cmd->data.str;
     return NULL;
 }
 

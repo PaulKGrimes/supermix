@@ -41,12 +41,14 @@ int outputConf()
     if (TUNER_TYPE == "EXTERNAL")
     {
         printf("# TUNER_TYPE EXTERNAL\n");
-        printf("# TOUCHSTONE_FILE %s\n", TOUCHSTONE_FILE.c_str());
+        printf("# RF_TOUCHSTONE_FILE %s\n", RF_TOUCHSTONE_FILE.c_str());
+        printf("# IF_TOUCHSTONE_FILE %s\n", IF_TOUCHSTONE_FILE.c_str());
     }
     else if (TUNER_TYPE == "EXT_WITH_RFCHOKE")
     {
         printf("# TUNER_TYPE EXT_WITH_RFCHOKE\n");
-        printf("# TOUCHSTONE_FILE %s\n", TOUCHSTONE_FILE.c_str());
+        printf("# RF_TOUCHSTONE_FILE %s\n", RF_TOUCHSTONE_FILE.c_str());
+        printf("# IF_TOUCHSTONE_FILE %s\n", IF_TOUCHSTONE_FILE.c_str());
         printf("# RF_CHOKE_TYPE %s\n", RF_CHOKE_TYPE.c_str());
         if (RF_CHOKE_TYPE == "RADIAL")
         {
@@ -233,6 +235,18 @@ int outputConf()
             SDM_JUNCTION_2_AREA/SDM_JUNCTION_2_AREA_unit,
             SDM_JUNCTION_2_AREA_unitStr.c_str());
     }
+    else if (TUNER_TYPE == "SERIES_EXTERNAL_2")
+    {
+        printf("# TUNER_TYPE %s\n", TUNER_TYPE.c_str());
+        printf("# RF_TOUCHSTONE_FILE %s\n", RF_TOUCHSTONE_FILE.c_str());
+        printf("# IF_TOUCHSTONE_FILE %s\n", IF_TOUCHSTONE_FILE.c_str());
+        printf("# SDM_JUNCTION_1_AREA %f %s\n",
+            SDM_JUNCTION_1_AREA/SDM_JUNCTION_1_AREA_unit,
+            SDM_JUNCTION_1_AREA_unitStr.c_str());
+        printf("# SDM_JUNCTION_2_AREA %f %s\n",
+            SDM_JUNCTION_2_AREA/SDM_JUNCTION_2_AREA_unit,
+            SDM_JUNCTION_2_AREA_unitStr.c_str());
+    }
     else if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
     {
         printf("# TUNER_TYPE SERIES_DISTRIBUTED_3\n");
@@ -264,9 +278,24 @@ int outputConf()
             SDM_JUNCTION_3_AREA/SDM_JUNCTION_3_AREA_unit,
             SDM_JUNCTION_3_AREA_unitStr.c_str());
     }
-    else //if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
+    else if (TUNER_TYPE == "SERIES_EXTERNAL_3")
     {
-        printf("# TUNER_TYPE SERIES_DISTRIBUTED_3\n");
+        printf("# TUNER_TYPE %s\n", TUNER_TYPE.c_str());
+        printf("# RF_TOUCHSTONE_FILE %s\n", RF_TOUCHSTONE_FILE.c_str());
+        printf("# IF_TOUCHSTONE_FILE %s\n", IF_TOUCHSTONE_FILE.c_str());
+        printf("# SDM_JUNCTION_1_AREA %f %s\n",
+            SDM_JUNCTION_1_AREA/SDM_JUNCTION_1_AREA_unit,
+            SDM_JUNCTION_1_AREA_unitStr.c_str());
+        printf("# SDM_JUNCTION_2_AREA %f %s\n",
+            SDM_JUNCTION_2_AREA/SDM_JUNCTION_2_AREA_unit,
+            SDM_JUNCTION_2_AREA_unitStr.c_str());
+        printf("# SDM_JUNCTION_3_AREA %f %s\n",
+            SDM_JUNCTION_3_AREA/SDM_JUNCTION_3_AREA_unit,
+            SDM_JUNCTION_3_AREA_unitStr.c_str());
+    }
+    else if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
+    {
+        printf("# TUNER_TYPE SERIES_DISTRIBUTED_4\n");
         printf("# SDM_INPUT_TYPE %s\n",
            SDM_INPUT_TYPE.c_str());
         printf("# SDM_INPUT %f %f %f\n",
@@ -304,7 +333,28 @@ int outputConf()
             SDM_JUNCTION_4_AREA/SDM_JUNCTION_4_AREA_unit,
             SDM_JUNCTION_4_AREA_unitStr.c_str());
     }
-
+    else if (TUNER_TYPE == "SERIES_EXTERNAL_4")
+    {
+        printf("# TUNER_TYPE %s\n", TUNER_TYPE.c_str());
+        printf("# RF_TOUCHSTONE_FILE %s\n", RF_TOUCHSTONE_FILE.c_str());
+        printf("# IF_TOUCHSTONE_FILE %s\n", IF_TOUCHSTONE_FILE.c_str());
+        printf("# SDM_JUNCTION_1_AREA %f %s\n",
+            SDM_JUNCTION_1_AREA/SDM_JUNCTION_1_AREA_unit,
+            SDM_JUNCTION_1_AREA_unitStr.c_str());
+        printf("# SDM_JUNCTION_2_AREA %f %s\n",
+            SDM_JUNCTION_2_AREA/SDM_JUNCTION_2_AREA_unit,
+            SDM_JUNCTION_2_AREA_unitStr.c_str());
+        printf("# SDM_JUNCTION_3_AREA %f %s\n",
+            SDM_JUNCTION_3_AREA/SDM_JUNCTION_3_AREA_unit,
+            SDM_JUNCTION_3_AREA_unitStr.c_str());
+        printf("# SDM_JUNCTION_4_AREA %f %s\n",
+            SDM_JUNCTION_4_AREA/SDM_JUNCTION_4_AREA_unit,
+            SDM_JUNCTION_4_AREA_unitStr.c_str());
+    }
+    else
+    {
+        printf("# TUNER_TYPE %s not implemeted!\n", TUNER_TYPE.c_str());
+    }
 
     printf("#\n# TOP_DEFAULT %s\n", TOP_DEFAULT.c_str());
     printf("# TOP_THICKNESS %f\n", TOP_THICKNESS/TOP_THICKNESS_unit);

@@ -104,7 +104,8 @@ std::string JUNCTION_VGAP_unitStr;
 
 std::string TUNER_TYPE;
 
-std::string TOUCHSTONE_FILE;
+std::string RF_TOUCHSTONE_FILE;
+std::string IF_TOUCHSTONE_FILE;
 
 // Single stub tuner
 std::string SINGLE_STUB_TYPE;

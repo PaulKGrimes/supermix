@@ -29,8 +29,15 @@ If_Load.Z1 = & IF_Z0;
 transformer Rf_Input;
 Rf_Input.Z2 = & Z0;
 
-sdata_interp External(2, device::f);
-External.touchstone(TOUCHSTONE_FILE.c_str());
+sdata_interp External(2, device::f); // Single junction external circuit
+sdata_interp External2(3, device::f);  // Two junction external circuit
+sdata_interp External3(4, device::f);  // Three junction external circuit
+sdata_interp External4(5, device::f);  // Four junction external circuit
+
+sdata_interp If_External(2, device::f); // Single junction external circuit
+sdata_interp If_External2(3, device::f);  // Two junction external circuit
+sdata_interp If_External3(4, device::f);  // Three junction external circuit
+sdata_interp If_External4(5, device::f);  // Four junction external circuit
 
 circuit Rf_Choke;
 open_term Rf_Choke_Term;
@@ -209,13 +216,16 @@ cpw Tuning_Strip_3_CPW;
 
 if (TUNER_TYPE == "EXTERNAL")
 {
+    External.touchstone(RF_TOUCHSTONE_FILE.c_str());
+    If_External.touchstone(IF_TOUCHSTONE_FILE.c_str());
+
 
     Rf.connect(Rf_Input, 2, External, 1);
     Rf.add_port(External, 2); // Sis goes here
     Rf.add_port(Rf_Input, 1);    // LO goes here
 
-    If.connect(If_Dummy, 2, If_Load, 1);
-    If.add_port(If_Dummy, 1);    // SIS goes here
+    If.connect(If_External, 1, If_Load, 1);
+    If.add_port(If_External, 2);    // SIS goes here
     If.add_port(If_Load, 2);     // LO goes here
 
     Sis_1.set_iv(Iv);
@@ -226,6 +236,9 @@ if (TUNER_TYPE == "EXTERNAL")
 
 if (TUNER_TYPE == "EXT_WITH_RFCHOKE")
 {
+    External.touchstone(RF_TOUCHSTONE_FILE.c_str());
+    If_External.touchstone(IF_TOUCHSTONE_FILE.c_str());
+
     // Create RF choke
     Rf.connect(Rf_Input, 2, External, 1);
     Rf.connect(External, 2, Rf_Branch, 1);
@@ -234,8 +247,11 @@ if (TUNER_TYPE == "EXT_WITH_RFCHOKE")
     Rf.add_port(Rf_Input, 1);  // LO goes here
 
     // Connect circuit and add ports
+    If.connect(If_Dummy, 1, If_External, 1);
+    If.connect(If_External, 2, If_Branch, 1);
+    If.connect(If_Branch, 2, If_Choke, 1);
     If.connect(If_Choke, 2, If_Load, 1);
-    If.add_port(If_Choke, 1);  // SIS
+    If.add_port(If_Branch, 3);  // SIS
     If.add_port(If_Load, 2);  // If output
 
     Sis_1.set_iv(Iv);
@@ -738,6 +754,50 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_2")
     Bias.add_port(Series_Tee_1, 2);
 }
 
+if (TUNER_TYPE == "SERIES_EXTERNAL_2")
+{
+    // RF Circuit
+    External2.touchstone(RF_TOUCHSTONE_FILE.c_str());
+    If_External2.touchstone(IF_TOUCHSTONE_FILE.c_str());
+
+    // Connect circuit
+    Rf.connect(Rf_Input, 2, External2, 1);
+
+    // add ports
+    Rf.add_port(External2, 2);  // SIS 1
+    Rf.add_port(External2, 3);  // SIS 2
+    Rf.add_port(Rf_Input, 1);   // RF Input
+
+    // IF Circuit
+    // Connect circuit and add ports
+    If.connect(If_External2, 1, If_Load, 1);
+    If.add_port(If_External2, 2);   // SIS_1
+    If.add_port(If_External2, 3);   // SIS_2
+    If.add_port(If_Load, 2);  // If output
+
+    // Create the 2 junction bias circuit
+    Bias_Source.source_f = 0.0;
+    Bias_Source.source_voltage = & Bias_Voltage;
+    Bias.connect(Bias_Source, 1, Series_Tee_1, 3);
+    Bias.add_port(Series_Tee_1, 1);
+    Bias.add_port(Series_Tee_1, 2);
+
+
+    // Create the two SIS junctions
+    JUNCTION_AREA = SDM_JUNCTION_1_AREA;
+
+    Sis_1.set_iv(Iv);
+    Sis_1.Vn = JUNCTION_VGAP;
+    Sis_1.Rn = JUNCTION_RNA/JUNCTION_AREA;
+    Sis_1.Cap = JUNCTION_SCAP*JUNCTION_AREA;
+
+    JUNCTION_AREA = SDM_JUNCTION_2_AREA;
+
+    Sis_2.set_iv(Iv);
+    Sis_2.Vn = JUNCTION_VGAP;
+    Sis_2.Rn = JUNCTION_RNA/JUNCTION_AREA;
+    Sis_2.Cap = JUNCTION_SCAP*JUNCTION_AREA;
+}
 
 if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
 {
@@ -896,6 +956,62 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_3")
     Sis_3.Rn = JUNCTION_RNA/JUNCTION_AREA;
     Sis_3.Cap = JUNCTION_SCAP*JUNCTION_AREA;
 
+}
+
+if (TUNER_TYPE == "SERIES_EXTERNAL_3")
+{
+    // RF Circuit
+    External3.touchstone(RF_TOUCHSTONE_FILE.c_str());
+    If_External3.touchstone(IF_TOUCHSTONE_FILE.c_str());
+
+    // Connect circuit
+    Rf.connect(Rf_Input, 2, External3, 1);
+
+    // add ports
+    Rf.add_port(External3, 2);  // SIS 1
+    Rf.add_port(External3, 3);  // SIS 2
+    Rf.add_port(External3, 4);  // SIS 3
+    Rf.add_port(Rf_Input, 1);   // RF Input
+
+    // IF Circuit
+    // Connect circuit and add ports
+    If.connect(If_External3, 1, If_Load, 1);
+    If.add_port(If_External3, 2);   // SIS_1
+    If.add_port(If_External3, 3);   // SIS_2
+    If.add_port(If_External3, 4);   // SIS_3
+    If.add_port(If_Load, 2);  // If output
+
+    // Create the 3 junction bias circuit
+    Bias_Source.source_f = 0.0;
+    Bias_Source.source_voltage = & Bias_Voltage;
+    Bias.connect(Bias_Source, 1, Series_Tee_1, 3);
+    Bias.connect(Series_Tee_1, 2, Series_Tee_2, 3);
+    // add the ports
+    Bias.add_port(Series_Tee_1, 1);
+    Bias.add_port(Series_Tee_2, 1);
+    Bias.add_port(Series_Tee_2, 2);
+
+    // Create the three SIS junctions
+    JUNCTION_AREA = SDM_JUNCTION_1_AREA;
+
+    Sis_1.set_iv(Iv);
+    Sis_1.Vn = JUNCTION_VGAP;
+    Sis_1.Rn = JUNCTION_RNA/JUNCTION_AREA;
+    Sis_1.Cap = JUNCTION_SCAP*JUNCTION_AREA;
+
+    JUNCTION_AREA = SDM_JUNCTION_2_AREA;
+
+    Sis_2.set_iv(Iv);
+    Sis_2.Vn = JUNCTION_VGAP;
+    Sis_2.Rn = JUNCTION_RNA/JUNCTION_AREA;
+    Sis_2.Cap = JUNCTION_SCAP*JUNCTION_AREA;
+
+    JUNCTION_AREA = SDM_JUNCTION_3_AREA;
+
+    Sis_3.set_iv(Iv);
+    Sis_3.Vn = JUNCTION_VGAP;
+    Sis_3.Rn = JUNCTION_RNA/JUNCTION_AREA;
+    Sis_3.Cap = JUNCTION_SCAP*JUNCTION_AREA;
 }
 
 if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
@@ -1106,8 +1222,71 @@ if (TUNER_TYPE == "SERIES_DISTRIBUTED_4")
     Sis_4.Vn = JUNCTION_VGAP;
     Sis_4.Rn = JUNCTION_RNA/JUNCTION_AREA;
     Sis_4.Cap = JUNCTION_SCAP*JUNCTION_AREA;
-
 }
 
+if (TUNER_TYPE == "SERIES_EXTERNAL_4")
+{
+    // RF Circuit
+    External4.touchstone(RF_TOUCHSTONE_FILE.c_str());
+    If_External4.touchstone(IF_TOUCHSTONE_FILE.c_str());
+
+    // Connect circuit
+    Rf.connect(Rf_Input, 2, External4, 1);
+    // add ports
+    Rf.add_port(External4, 2);  // SIS 1
+    Rf.add_port(External4, 3);  // SIS 2
+    Rf.add_port(External4, 4);  // SIS 3
+    Rf.add_port(External4, 5);  // SIS 4
+    Rf.add_port(Rf_Input, 1);   // RF Input
+
+    // IF Circuit
+    // Connect circuit and add ports
+    If.connect(If_External4, 1, If_Load, 1);
+    If.add_port(If_External4, 2);   // SIS_1
+    If.add_port(If_External4, 3);   // SIS_2
+    If.add_port(If_External4, 4);   // SIS_3
+    If.add_port(If_External4, 5);   // SIS_4
+    If.add_port(If_Load, 2);  // If output
+
+    // Create the 3 junction bias circuit
+    Bias_Source.source_f = 0.0;
+    Bias_Source.source_voltage = & Bias_Voltage;
+    Bias.connect(Bias_Source, 1, Series_Tee_1, 3);
+    Bias.connect(Series_Tee_1, 2, Series_Tee_2, 3);
+    Bias.connect(Series_Tee_2, 2, Series_Tee_3, 3);
+    // add the ports
+    Bias.add_port(Series_Tee_1, 1);
+    Bias.add_port(Series_Tee_2, 1);
+    Bias.add_port(Series_Tee_3, 1);
+    Bias.add_port(Series_Tee_3, 2);
+
+    // Create the three SIS junctions
+    JUNCTION_AREA = SDM_JUNCTION_1_AREA;
+
+    Sis_1.set_iv(Iv);
+    Sis_1.Vn = JUNCTION_VGAP;
+    Sis_1.Rn = JUNCTION_RNA/JUNCTION_AREA;
+    Sis_1.Cap = JUNCTION_SCAP*JUNCTION_AREA;
+
+    JUNCTION_AREA = SDM_JUNCTION_2_AREA;
+
+    Sis_2.set_iv(Iv);
+    Sis_2.Vn = JUNCTION_VGAP;
+    Sis_2.Rn = JUNCTION_RNA/JUNCTION_AREA;
+    Sis_2.Cap = JUNCTION_SCAP*JUNCTION_AREA;
+
+    JUNCTION_AREA = SDM_JUNCTION_3_AREA;
+
+    Sis_3.set_iv(Iv);
+    Sis_3.Vn = JUNCTION_VGAP;
+    Sis_3.Rn = JUNCTION_RNA/JUNCTION_AREA;
+    Sis_3.Cap = JUNCTION_SCAP*JUNCTION_AREA;
+    JUNCTION_AREA = SDM_JUNCTION_4_AREA;
+
+    Sis_4.set_iv(Iv);
+    Sis_4.Vn = JUNCTION_VGAP;
+    Sis_4.Rn = JUNCTION_RNA/JUNCTION_AREA;
+    Sis_4.Cap = JUNCTION_SCAP*JUNCTION_AREA;
+}
 
 printf("# tuner complete\n");
