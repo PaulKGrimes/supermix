@@ -43,7 +43,7 @@ int main(int argc, char **argv)
             << "# Normal Resistivity: \t" << rho_normal/Micro*Ohm*Centi*Meter << " uOhm cm\n"
             << "# Temperature: \t" << Temp/Kelvin<< " K\n# \n"
             << "# Frequency Sweep:"
-            << "# Freq (GHz) | Sigma (Mho/meter) | Surf Imp (Ohm/square) | Surf Induct (pH/square) ";
+            << "# Freq (GHz) | Sigma (Mho/meter) | Surf Imp (Ohm/square) | Surf Induct (pH/square) \n";
 
   complex sigma, surfZ;
   parameter surfL;

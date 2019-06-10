@@ -1,9 +1,9 @@
 /*******************************************************************************
-** simple.c - test of using dotconf library to control SuperMix parameters at **
-**            run time.                                                       **
+** mixer-sim.c - SuperMix based command line application to simulate a        **
+**          variety of mixer tuning circuits.                                 **
 ** ========================================================================== **
 ** Author - Paul Grimes                                                       **
-** Date   - 14/07/03                                                          **
+** Date   - 6/10/2019                                                         **
 ** ========================================================================== **
 ** SuperMix parameters are currently created as globals, so that dotconf      **
 ** functions that interpret each line in the .conf file can alter them as     **
@@ -13,12 +13,10 @@
 ** SuperMix internal parameter names                                          **
 ** ========================================================================== **
 ** Changes:                                                                   **
+**          2019: Add series distributed mixer geometries.                    **
+**                Switch to separate Touchstone files for IF and RF circuits  **
 ** ========================================================================== **
 ** Bugs:                                                                      **
-** 14/7/03 - unitStr outputs incorrectly (poor use of pointers?)              **
-**   Resolved 18/06/03 - char * arrays set in DOTCONF_CB get deallocated      **
-**   on exit from DOTCONF_CB.  Use std::string instead of char * and use      **
-**   string.c_str() to return char * as necessary                             **
 *******************************************************************************/
 
 #include <stdio.h>
@@ -58,7 +56,7 @@ int main(int argc, char **argv)
     }
 
     dotconf_cleanup(configfile);
-    // Finished with simple.conf
+    // Finished with mixer-sim.conf
 
     // Now we work on the mixer configuration file
 
@@ -69,13 +67,13 @@ int main(int argc, char **argv)
 
     if (!mixerconfigfile)
     {
-        printf("Error opening mixer config file.\n\tMake sure that MIXER_CONFIG in \"simple.conf\" is set correctly.\n");
+        printf("Error opening mixer config file.\n\tMake sure that MIXER_CONFIG in \"mixer-sim.conf\" is set correctly.\n");
         return 1;
     }
 
     if (dotconf_command_loop(mixerconfigfile) == 0)
     {
-        printf("Error opening mixer config file.\n Make sure that MIXER_CONFIG in \"simple.conf\" is set correctly.\n");
+        printf("Error opening mixer config file.\n Make sure that MIXER_CONFIG in \"mixer-sim.conf\" is set correctly.\n");
     }
 
     dotconf_cleanup(mixerconfigfile);
