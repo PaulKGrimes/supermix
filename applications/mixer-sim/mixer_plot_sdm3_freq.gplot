@@ -33,7 +33,7 @@ set ylabel "Gain (dB)"
 set y2label "Sideband Ratio (USB/LSB)"
 set key bottom right
 set y2tics
-set y2range [0.999:1.001]
+set y2range [0.8:1.2]
 plot [:][-15:] "$1.dat" using 1:(20*log10(\$2)) title "LSB Gain" with lines, \
                "$1.dat" using 1:(20*log10(\$3)) title "USB Gain" with lines, \
                "$1.dat" using 1:(10*log10(\$2*\$2+\$3*\$3)) title "DSB Gain" with lines, \

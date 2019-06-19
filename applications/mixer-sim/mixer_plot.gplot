@@ -11,9 +11,17 @@ set multiplot
 set origin 0.1, 0.5
 set size 0.4, 0.4
 set title "Gain"
-plot [:][-30:] "$1.dat" using 1:(10*log10(\$2)) title "LSB Gain" with lines, \
-	"$1.dat" using 1:(10*log10(\$3)) title "USB Gain" with lines, \
-	"$1.dat" using 1:(10*log10((\$6-\$5)/210.0)) title "DSB Gain" with lines
+set ylabel "Gain (dB)"
+set y2label "Sideband Ratio (USB/LSB)"
+set key bottom right
+set y2tics
+set y2range [0.8:1.2]
+plot [:][-15:] "$1.dat" using 1:(20*log10(\$2)) title "LSB Gain" with lines, \
+               "$1.dat" using 1:(20*log10(\$3)) title "USB Gain" with lines, \
+               "$1.dat" using 1:(10*log10(\$2*\$2+\$3*\$3)) title "DSB Gain" with lines, \
+               "$1.dat" using 1:(\$3/\$2) axes x1y2 title "Sideband Ratio" with lines
+unset y2label
+unset y2tics
 
 set origin 0.5, 0.5
 set size 0.4, 0.4

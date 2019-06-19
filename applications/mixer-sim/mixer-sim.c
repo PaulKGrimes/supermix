@@ -99,6 +99,7 @@ int main(int argc, char **argv)
     Frequency = get_Frequency(FREQUENCY);
     Bias_Voltage = get_Bias(BIAS);
     Lo_Power = get_Lo_Power(LO_POWER);
+    If_Freq = get_If_Freq(IF_FREQ);
 
     // Initialise the mixer
 
