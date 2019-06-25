@@ -1,5 +1,5 @@
 mixer-sim.c: In function ‘int main(int, char**)’:
-mixer-sim.c:47:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+mixer-sim.c:45:56: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
                          options, NULL, CASE_INSENSITIVE);
                                                         ^
 mixer-sim2.c: In function ‘int main(int, char**)’:

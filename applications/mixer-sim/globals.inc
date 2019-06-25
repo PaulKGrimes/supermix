@@ -66,6 +66,10 @@ parameter Z0;
 parameter Z0_unit;
 std::string Z0_unitStr;
 
+complex_parameter SOURCE_Z0;
+parameter SOURCE_Z0_unit;
+std::string SOURCE_Z0_unitStr;
+
 parameter IF_FREQ;      // The actual parameter
 parameter IF_FREQ_unit; // The value of the parameter's unit
 std::string IF_FREQ_unitStr; // The name of the parameter's unit

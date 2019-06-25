@@ -35,6 +35,7 @@ static DOTCONF_CB(lo_power);
     // Environment parameters
 static DOTCONF_CB(temp);
 static DOTCONF_CB(z0);
+static DOTCONF_CB(source_z0);
 static DOTCONF_CB(if_freq);
 static DOTCONF_CB(if_z0);
 static DOTCONF_CB(harmonics);
@@ -146,6 +147,7 @@ static const configoption_t options[] = {
     // General enivronment parameters
     {"TEMP",                ARG_LIST,   temp,               NULL,   CTX_ALL },
     {"Z0",                  ARG_LIST,   z0,                 NULL,   CTX_ALL },
+    {"SOURCE_Z0",           ARG_LIST,   source_z0,          NULL,   CTX_ALL },
     {"IF_FREQ",             ARG_LIST,   if_freq,            NULL,   CTX_ALL },
     {"IF_Z0",               ARG_LIST,   if_z0,              NULL,   CTX_ALL },
     {"HARMONICS",           ARG_LIST,   harmonics,          NULL,   CTX_ALL },
@@ -370,6 +372,18 @@ DOTCONF_CB(z0)
     else {Z0_unit = 1.0;}
 
     Z0 = atof(cmd->data.list[0])*Z0_unit;
+
+    return NULL;
+}
+
+DOTCONF_CB(source_z0)
+{
+    SOURCE_Z0_unitStr = cmd->data.list[2];
+
+    if (SOURCE_Z0_unitStr == "Ohms") {SOURCE_Z0_unit = Ohm;}
+    else {SOURCE_Z0_unit = 1.0;}
+
+    SOURCE_Z0 = complex(atof(cmd->data.list[0])*Z0_unit, atof(cmd->data.list[1])*Z0_unit);
 
     return NULL;
 }

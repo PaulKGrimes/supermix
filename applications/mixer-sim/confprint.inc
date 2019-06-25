@@ -27,6 +27,7 @@ int outputConf()
 
     printf("# TEMP %f %s\n", TEMP/TEMP_unit, TEMP_unitStr.c_str());
     printf("# Z0 %f %s\n", Z0/Z0_unit, Z0_unitStr.c_str());
+    printf("# SOURCE_Z0 %f %fi %s\n", real(SOURCE_Z0)/SOURCE_Z0_unit, imag(SOURCE_Z0)/Z0_unit, SOURCE_Z0_unitStr.c_str());
     printf("# IF_FREQ %f %s\n", IF_FREQ/IF_FREQ_unit, IF_FREQ_unitStr.c_str());
     printf("# IF_Z0 %f %s\n", IF_Z0/IF_Z0_unit, IF_Z0_unitStr.c_str());
     printf("# HARMONICS %d\n#\n", HARMONICS);

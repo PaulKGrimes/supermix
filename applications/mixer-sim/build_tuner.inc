@@ -27,7 +27,7 @@ transformer If_Load;
 If_Load.Z1 = & IF_Z0;
 
 transformer Rf_Input;
-Rf_Input.Z2 = & Z0;
+Rf_Input.Z2 = & SOURCE_Z0;
 
 sdata_interp External(2, device::f); // Single junction external circuit
 sdata_interp External2(3, device::f);  // Two junction external circuit
